@@ -1,0 +1,299 @@
+.editorPageRoot {
+  padding: clamp(1rem, 2vh, 2rem) 0 var(--rai-space-3xl);
+  min-height: calc(100svh - var(--rai-header-height));
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rai-space-md);
+  max-width: 1080px;
+}
+
+.topNavRow {
+  display: flex;
+  align-items: center;
+}
+
+.backBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--rai-radius-full);
+  background-color: #ffffff;
+  border: 1px solid var(--rai-color-border-subtle);
+  font-family: var(--rai-font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--rai-color-text-secondary);
+  cursor: pointer;
+  transition: var(--rai-transition-all);
+}
+
+.backBtn:hover {
+  background-color: #f1f5f9;
+  color: var(--rai-color-text-primary);
+  transform: translateX(-2px);
+}
+
+.headerCard {
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--rai-radius-xl);
+  background: var(--rai-gradient-glass-hero);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.headerBadgeRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.gridNodeTag {
+  font-family: var(--rai-font-mono);
+  font-size: 0.625rem;
+  font-weight: 800;
+  color: #16a34a;
+  letter-spacing: 0.06em;
+}
+
+.headerTitle {
+  font-family: var(--rai-font-display);
+  font-size: clamp(1.25rem, 2vw, 1.6rem);
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+  margin: 0;
+}
+
+.headerSub {
+  font-family: var(--rai-font-body);
+  font-size: 0.78125rem;
+  color: var(--rai-color-text-secondary);
+  margin: 0;
+}
+
+.formGrid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rai-space-md);
+}
+
+.sectionCard {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+
+.sectionHeading {
+  font-family: var(--rai-font-display);
+  font-size: 0.9375rem;
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+  margin: 0;
+}
+
+.sectionSub {
+  font-family: var(--rai-font-body);
+  font-size: 0.6875rem;
+  color: var(--rai-color-text-secondary);
+}
+
+.inputsGrid2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.85rem;
+}
+
+@media (min-width: 640px) {
+  .inputsGrid2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.inputsGrid3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.85rem;
+}
+
+@media (min-width: 768px) {
+  .inputsGrid3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.formGroup label {
+  font-family: var(--rai-font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--rai-color-text-primary);
+}
+
+.formGroup input,
+.formGroup select {
+  padding: 0.55rem 0.85rem;
+  border-radius: var(--rai-radius-md);
+  border: 1px solid var(--rai-color-border-subtle);
+  background-color: var(--rai-color-bg-surface-subtle);
+  font-family: var(--rai-font-body);
+  font-size: 0.8125rem;
+  outline: none;
+  transition: var(--rai-transition-all);
+}
+
+.formGroup input:focus,
+.formGroup select:focus {
+  background-color: #ffffff;
+  border-color: #16a34a;
+  box-shadow: 0 0 0 2px rgba(22, 163, 74, 0.15);
+}
+
+.locButtonsRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.locToggleBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.95rem;
+  border-radius: var(--rai-radius-full);
+  background-color: #ffffff;
+  border: 1.5px solid var(--rai-color-border-subtle);
+  font-family: var(--rai-font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--rai-color-text-secondary);
+  cursor: pointer;
+  transition: var(--rai-transition-all);
+}
+
+.activeLocToggle {
+  background-color: #ecfeff;
+  border-color: #0891b2;
+  color: #0891b2;
+  box-shadow: 0 2px 8px -2px rgba(8, 145, 178, 0.25);
+}
+
+.geoMsgPill {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: var(--rai-radius-md);
+  background-color: #f0f9ff;
+  border: 1px solid #bae6fd;
+  font-family: var(--rai-font-body);
+  font-size: 0.75rem;
+  color: #0369a1;
+}
+
+.resolvedPill {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 0.95rem;
+  border-radius: var(--rai-radius-md);
+  background-color: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  font-family: var(--rai-font-body);
+  font-size: 0.75rem;
+  color: #166534;
+}
+
+.actionFooter {
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--rai-radius-xl);
+  background: #ffffff;
+  border: 1px solid var(--rai-color-border-subtle);
+  box-shadow: var(--rai-shadow-card);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+@media (min-width: 640px) {
+  .actionFooter {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.footerNote {
+  font-family: var(--rai-font-body);
+  font-size: 0.75rem;
+  color: var(--rai-color-text-secondary);
+}
+
+.successMsg {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--rai-font-display);
+  font-size: 0.78125rem;
+  font-weight: 700;
+  color: #16a34a;
+}
+
+.btnRow {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.cancelBtn {
+  padding: 0.5rem 1rem;
+  border-radius: var(--rai-radius-full);
+  background-color: #f1f5f9;
+  border: none;
+  font-family: var(--rai-font-display);
+  font-size: 0.78125rem;
+  font-weight: 700;
+  color: var(--rai-color-text-secondary);
+  cursor: pointer;
+}
+
+.saveBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 1.25rem;
+  border-radius: var(--rai-radius-full);
+  background-color: #16a34a;
+  color: #ffffff;
+  font-family: var(--rai-font-display);
+  font-size: 0.8125rem;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+  transition: var(--rai-transition-all);
+}
+
+.saveBtn:hover {
+  background-color: #15803d;
+  box-shadow: 0 4px 12px -2px rgba(22, 163, 74, 0.35);
+}

@@ -1,0 +1,1500 @@
+[
+  {
+    "id": "RAI-KB-COM-032532",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "what is the difference between 10 mm vs 50 mm rainfall",
+    "answerConcept": "10 mm is moderate rainfall (10 L/m²) that infiltrates normal soils easily. 50 mm is a heavy accumulated downpour (50 L/m²) that saturates topsoil and generates substantial surface runoff.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "10",
+      "mm",
+      "vs",
+      "50",
+      "rainfall"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032533",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "compare 10 mm vs 50 mm rainfall",
+    "answerConcept": "10 mm is moderate rainfall (10 L/m²) that infiltrates normal soils easily. 50 mm is a heavy accumulated downpour (50 L/m²) that saturates topsoil and generates substantial surface runoff.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "10",
+      "mm",
+      "vs",
+      "50",
+      "rainfall"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032534",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "difference between 10 mm vs 50 mm rainfall",
+    "answerConcept": "10 mm is moderate rainfall (10 L/m²) that infiltrates normal soils easily. 50 mm is a heavy accumulated downpour (50 L/m²) that saturates topsoil and generates substantial surface runoff.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "10",
+      "mm",
+      "vs",
+      "50",
+      "rainfall"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032535",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "how does 10 mm differ from 50 mm rainfall",
+    "answerConcept": "10 mm is moderate rainfall (10 L/m²) that infiltrates normal soils easily. 50 mm is a heavy accumulated downpour (50 L/m²) that saturates topsoil and generates substantial surface runoff.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "10",
+      "mm",
+      "vs",
+      "50",
+      "rainfall"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032536",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "explain 10 mm vs 50 mm rainfall",
+    "answerConcept": "10 mm is moderate rainfall (10 L/m²) that infiltrates normal soils easily. 50 mm is a heavy accumulated downpour (50 L/m²) that saturates topsoil and generates substantial surface runoff.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "10",
+      "mm",
+      "vs",
+      "50",
+      "rainfall"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032537",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "which is worse: 10 mm vs 50 mm rainfall",
+    "answerConcept": "10 mm is moderate rainfall (10 L/m²) that infiltrates normal soils easily. 50 mm is a heavy accumulated downpour (50 L/m²) that saturates topsoil and generates substantial surface runoff.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "10",
+      "mm",
+      "vs",
+      "50",
+      "rainfall"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032538",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "distinguish between 10 mm vs 50 mm rainfall",
+    "answerConcept": "10 mm is moderate rainfall (10 L/m²) that infiltrates normal soils easily. 50 mm is a heavy accumulated downpour (50 L/m²) that saturates topsoil and generates substantial surface runoff.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "10",
+      "mm",
+      "vs",
+      "50",
+      "rainfall"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032539",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "what is the difference between rain vs drizzle",
+    "answerConcept": "Drizzle consists of very fine water droplets (<0.5 mm diameter) falling gently with low accumulation (<1 mm/h). Rain consists of larger droplets (0.5–6 mm) with higher kinetic energy and variable accumulation rates.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "rain",
+      "vs",
+      "drizzle"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032540",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "compare rain vs drizzle",
+    "answerConcept": "Drizzle consists of very fine water droplets (<0.5 mm diameter) falling gently with low accumulation (<1 mm/h). Rain consists of larger droplets (0.5–6 mm) with higher kinetic energy and variable accumulation rates.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "rain",
+      "vs",
+      "drizzle"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032541",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "difference between rain vs drizzle",
+    "answerConcept": "Drizzle consists of very fine water droplets (<0.5 mm diameter) falling gently with low accumulation (<1 mm/h). Rain consists of larger droplets (0.5–6 mm) with higher kinetic energy and variable accumulation rates.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "rain",
+      "vs",
+      "drizzle"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032542",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "how does rain differ from drizzle",
+    "answerConcept": "Drizzle consists of very fine water droplets (<0.5 mm diameter) falling gently with low accumulation (<1 mm/h). Rain consists of larger droplets (0.5–6 mm) with higher kinetic energy and variable accumulation rates.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "rain",
+      "vs",
+      "drizzle"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032543",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "explain rain vs drizzle",
+    "answerConcept": "Drizzle consists of very fine water droplets (<0.5 mm diameter) falling gently with low accumulation (<1 mm/h). Rain consists of larger droplets (0.5–6 mm) with higher kinetic energy and variable accumulation rates.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "rain",
+      "vs",
+      "drizzle"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032544",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "which is worse: rain vs drizzle",
+    "answerConcept": "Drizzle consists of very fine water droplets (<0.5 mm diameter) falling gently with low accumulation (<1 mm/h). Rain consists of larger droplets (0.5–6 mm) with higher kinetic energy and variable accumulation rates.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "rain",
+      "vs",
+      "drizzle"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032545",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "distinguish between rain vs drizzle",
+    "answerConcept": "Drizzle consists of very fine water droplets (<0.5 mm diameter) falling gently with low accumulation (<1 mm/h). Rain consists of larger droplets (0.5–6 mm) with higher kinetic energy and variable accumulation rates.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "rain",
+      "vs",
+      "drizzle"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032546",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "what is the difference between heavy rain vs cloudburst",
+    "answerConcept": "Heavy rain is 64.5–115.5 mm accumulated over an entire 24-hour day. A cloudburst is an extreme localized deluge of ≥100 mm dumped within a single hour over a 20–30 km² area.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "heavy",
+      "rain",
+      "vs",
+      "cloudburst"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032547",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "compare heavy rain vs cloudburst",
+    "answerConcept": "Heavy rain is 64.5–115.5 mm accumulated over an entire 24-hour day. A cloudburst is an extreme localized deluge of ≥100 mm dumped within a single hour over a 20–30 km² area.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "heavy",
+      "rain",
+      "vs",
+      "cloudburst"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032548",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "difference between heavy rain vs cloudburst",
+    "answerConcept": "Heavy rain is 64.5–115.5 mm accumulated over an entire 24-hour day. A cloudburst is an extreme localized deluge of ≥100 mm dumped within a single hour over a 20–30 km² area.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "heavy",
+      "rain",
+      "vs",
+      "cloudburst"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032549",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "how does heavy rain differ from cloudburst",
+    "answerConcept": "Heavy rain is 64.5–115.5 mm accumulated over an entire 24-hour day. A cloudburst is an extreme localized deluge of ≥100 mm dumped within a single hour over a 20–30 km² area.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "heavy",
+      "rain",
+      "vs",
+      "cloudburst"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032550",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "explain heavy rain vs cloudburst",
+    "answerConcept": "Heavy rain is 64.5–115.5 mm accumulated over an entire 24-hour day. A cloudburst is an extreme localized deluge of ≥100 mm dumped within a single hour over a 20–30 km² area.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "heavy",
+      "rain",
+      "vs",
+      "cloudburst"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032551",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "which is worse: heavy rain vs cloudburst",
+    "answerConcept": "Heavy rain is 64.5–115.5 mm accumulated over an entire 24-hour day. A cloudburst is an extreme localized deluge of ≥100 mm dumped within a single hour over a 20–30 km² area.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "heavy",
+      "rain",
+      "vs",
+      "cloudburst"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032552",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "distinguish between heavy rain vs cloudburst",
+    "answerConcept": "Heavy rain is 64.5–115.5 mm accumulated over an entire 24-hour day. A cloudburst is an extreme localized deluge of ≥100 mm dumped within a single hour over a 20–30 km² area.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "heavy",
+      "rain",
+      "vs",
+      "cloudburst"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032553",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "what is the difference between rain probability vs rainfall amount",
+    "answerConcept": "Rain probability (%) measures how likely it is that measurable precipitation will occur. Rainfall amount (mm) measures the physical volume of water that will actually accumulate.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "rain",
+      "probability",
+      "vs",
+      "rainfall",
+      "amount"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032554",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "compare rain probability vs rainfall amount",
+    "answerConcept": "Rain probability (%) measures how likely it is that measurable precipitation will occur. Rainfall amount (mm) measures the physical volume of water that will actually accumulate.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "rain",
+      "probability",
+      "vs",
+      "rainfall",
+      "amount"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032555",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "difference between rain probability vs rainfall amount",
+    "answerConcept": "Rain probability (%) measures how likely it is that measurable precipitation will occur. Rainfall amount (mm) measures the physical volume of water that will actually accumulate.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "rain",
+      "probability",
+      "vs",
+      "rainfall",
+      "amount"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032556",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "how does rain probability differ from rainfall amount",
+    "answerConcept": "Rain probability (%) measures how likely it is that measurable precipitation will occur. Rainfall amount (mm) measures the physical volume of water that will actually accumulate.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "rain",
+      "probability",
+      "vs",
+      "rainfall",
+      "amount"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032557",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "explain rain probability vs rainfall amount",
+    "answerConcept": "Rain probability (%) measures how likely it is that measurable precipitation will occur. Rainfall amount (mm) measures the physical volume of water that will actually accumulate.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "rain",
+      "probability",
+      "vs",
+      "rainfall",
+      "amount"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032558",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "which is worse: rain probability vs rainfall amount",
+    "answerConcept": "Rain probability (%) measures how likely it is that measurable precipitation will occur. Rainfall amount (mm) measures the physical volume of water that will actually accumulate.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "rain",
+      "probability",
+      "vs",
+      "rainfall",
+      "amount"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032559",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "distinguish between rain probability vs rainfall amount",
+    "answerConcept": "Rain probability (%) measures how likely it is that measurable precipitation will occur. Rainfall amount (mm) measures the physical volume of water that will actually accumulate.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "rain",
+      "probability",
+      "vs",
+      "rainfall",
+      "amount"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032560",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "what is the difference between weather forecast vs rai ml prediction",
+    "answerConcept": "Standard weather forecasts estimate general precipitation likelihood (≥0.1 mm) from atmospheric models. R.A.I.'s ML model predicts the specific risk of rare extreme heavy-rainfall events (≥64.5 mm/day) using calibrated XGBoost and TreeSHAP.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "weather",
+      "forecast",
+      "vs",
+      "rai",
+      "ml",
+      "prediction"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032561",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "compare weather forecast vs rai ml prediction",
+    "answerConcept": "Standard weather forecasts estimate general precipitation likelihood (≥0.1 mm) from atmospheric models. R.A.I.'s ML model predicts the specific risk of rare extreme heavy-rainfall events (≥64.5 mm/day) using calibrated XGBoost and TreeSHAP.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "weather",
+      "forecast",
+      "vs",
+      "rai",
+      "ml",
+      "prediction"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032562",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "difference between weather forecast vs rai ml prediction",
+    "answerConcept": "Standard weather forecasts estimate general precipitation likelihood (≥0.1 mm) from atmospheric models. R.A.I.'s ML model predicts the specific risk of rare extreme heavy-rainfall events (≥64.5 mm/day) using calibrated XGBoost and TreeSHAP.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "weather",
+      "forecast",
+      "vs",
+      "rai",
+      "ml",
+      "prediction"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032563",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "how does weather forecast differ from rai ml prediction",
+    "answerConcept": "Standard weather forecasts estimate general precipitation likelihood (≥0.1 mm) from atmospheric models. R.A.I.'s ML model predicts the specific risk of rare extreme heavy-rainfall events (≥64.5 mm/day) using calibrated XGBoost and TreeSHAP.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "weather",
+      "forecast",
+      "vs",
+      "rai",
+      "ml",
+      "prediction"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032564",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "explain weather forecast vs rai ml prediction",
+    "answerConcept": "Standard weather forecasts estimate general precipitation likelihood (≥0.1 mm) from atmospheric models. R.A.I.'s ML model predicts the specific risk of rare extreme heavy-rainfall events (≥64.5 mm/day) using calibrated XGBoost and TreeSHAP.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "weather",
+      "forecast",
+      "vs",
+      "rai",
+      "ml",
+      "prediction"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032565",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "which is worse: weather forecast vs rai ml prediction",
+    "answerConcept": "Standard weather forecasts estimate general precipitation likelihood (≥0.1 mm) from atmospheric models. R.A.I.'s ML model predicts the specific risk of rare extreme heavy-rainfall events (≥64.5 mm/day) using calibrated XGBoost and TreeSHAP.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "weather",
+      "forecast",
+      "vs",
+      "rai",
+      "ml",
+      "prediction"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032566",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "distinguish between weather forecast vs rai ml prediction",
+    "answerConcept": "Standard weather forecasts estimate general precipitation likelihood (≥0.1 mm) from atmospheric models. R.A.I.'s ML model predicts the specific risk of rare extreme heavy-rainfall events (≥64.5 mm/day) using calibrated XGBoost and TreeSHAP.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "weather",
+      "forecast",
+      "vs",
+      "rai",
+      "ml",
+      "prediction"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032567",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "what is the difference between relative humidity vs rain probability",
+    "answerConcept": "Relative humidity measures water vapor saturation in the air near the ground. High humidity is a necessary moisture ingredient, but rain probability also requires vertical upward lift and convective cooling.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "relative",
+      "humidity",
+      "vs",
+      "rain",
+      "probability"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032568",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "compare relative humidity vs rain probability",
+    "answerConcept": "Relative humidity measures water vapor saturation in the air near the ground. High humidity is a necessary moisture ingredient, but rain probability also requires vertical upward lift and convective cooling.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "relative",
+      "humidity",
+      "vs",
+      "rain",
+      "probability"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032569",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "difference between relative humidity vs rain probability",
+    "answerConcept": "Relative humidity measures water vapor saturation in the air near the ground. High humidity is a necessary moisture ingredient, but rain probability also requires vertical upward lift and convective cooling.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "relative",
+      "humidity",
+      "vs",
+      "rain",
+      "probability"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032570",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "how does relative humidity differ from rain probability",
+    "answerConcept": "Relative humidity measures water vapor saturation in the air near the ground. High humidity is a necessary moisture ingredient, but rain probability also requires vertical upward lift and convective cooling.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "relative",
+      "humidity",
+      "vs",
+      "rain",
+      "probability"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032571",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "explain relative humidity vs rain probability",
+    "answerConcept": "Relative humidity measures water vapor saturation in the air near the ground. High humidity is a necessary moisture ingredient, but rain probability also requires vertical upward lift and convective cooling.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "relative",
+      "humidity",
+      "vs",
+      "rain",
+      "probability"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032572",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "which is worse: relative humidity vs rain probability",
+    "answerConcept": "Relative humidity measures water vapor saturation in the air near the ground. High humidity is a necessary moisture ingredient, but rain probability also requires vertical upward lift and convective cooling.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "relative",
+      "humidity",
+      "vs",
+      "rain",
+      "probability"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032573",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "distinguish between relative humidity vs rain probability",
+    "answerConcept": "Relative humidity measures water vapor saturation in the air near the ground. High humidity is a necessary moisture ingredient, but rain probability also requires vertical upward lift and convective cooling.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "relative",
+      "humidity",
+      "vs",
+      "rain",
+      "probability"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032574",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "what is the difference between convective rain vs stratiform rain",
+    "answerConcept": "Convective rain comes from towering cumulonimbus clouds, featuring intense, localized showers with rapid updrafts. Stratiform rain comes from continuous nimbostratus cloud sheets, producing steady, widespread, uniform precipitation.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "convective",
+      "rain",
+      "vs",
+      "stratiform"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032575",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "compare convective rain vs stratiform rain",
+    "answerConcept": "Convective rain comes from towering cumulonimbus clouds, featuring intense, localized showers with rapid updrafts. Stratiform rain comes from continuous nimbostratus cloud sheets, producing steady, widespread, uniform precipitation.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "convective",
+      "rain",
+      "vs",
+      "stratiform"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032576",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "difference between convective rain vs stratiform rain",
+    "answerConcept": "Convective rain comes from towering cumulonimbus clouds, featuring intense, localized showers with rapid updrafts. Stratiform rain comes from continuous nimbostratus cloud sheets, producing steady, widespread, uniform precipitation.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "convective",
+      "rain",
+      "vs",
+      "stratiform"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032577",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "how does convective rain differ from stratiform rain",
+    "answerConcept": "Convective rain comes from towering cumulonimbus clouds, featuring intense, localized showers with rapid updrafts. Stratiform rain comes from continuous nimbostratus cloud sheets, producing steady, widespread, uniform precipitation.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "convective",
+      "rain",
+      "vs",
+      "stratiform"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032578",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "explain convective rain vs stratiform rain",
+    "answerConcept": "Convective rain comes from towering cumulonimbus clouds, featuring intense, localized showers with rapid updrafts. Stratiform rain comes from continuous nimbostratus cloud sheets, producing steady, widespread, uniform precipitation.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "convective",
+      "rain",
+      "vs",
+      "stratiform"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032579",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "which is worse: convective rain vs stratiform rain",
+    "answerConcept": "Convective rain comes from towering cumulonimbus clouds, featuring intense, localized showers with rapid updrafts. Stratiform rain comes from continuous nimbostratus cloud sheets, producing steady, widespread, uniform precipitation.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "convective",
+      "rain",
+      "vs",
+      "stratiform"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032580",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "distinguish between convective rain vs stratiform rain",
+    "answerConcept": "Convective rain comes from towering cumulonimbus clouds, featuring intense, localized showers with rapid updrafts. Stratiform rain comes from continuous nimbostratus cloud sheets, producing steady, widespread, uniform precipitation.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "convective",
+      "rain",
+      "vs",
+      "stratiform"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032581",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "what is the difference between watch vs warning in disaster alerts",
+    "answerConcept": "A Watch (Moderate risk) signals atmospheric readiness and advises readiness without panic. A Warning (High/Critical risk) indicates an imminent or active severe weather event requiring protective action.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "watch",
+      "vs",
+      "warning",
+      "in",
+      "disaster",
+      "alerts"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032582",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "compare watch vs warning in disaster alerts",
+    "answerConcept": "A Watch (Moderate risk) signals atmospheric readiness and advises readiness without panic. A Warning (High/Critical risk) indicates an imminent or active severe weather event requiring protective action.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "watch",
+      "vs",
+      "warning",
+      "in",
+      "disaster",
+      "alerts"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032583",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "difference between watch vs warning in disaster alerts",
+    "answerConcept": "A Watch (Moderate risk) signals atmospheric readiness and advises readiness without panic. A Warning (High/Critical risk) indicates an imminent or active severe weather event requiring protective action.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "watch",
+      "vs",
+      "warning",
+      "in",
+      "disaster",
+      "alerts"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032584",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "how does watch differ from warning in disaster alerts",
+    "answerConcept": "A Watch (Moderate risk) signals atmospheric readiness and advises readiness without panic. A Warning (High/Critical risk) indicates an imminent or active severe weather event requiring protective action.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "watch",
+      "vs",
+      "warning",
+      "in",
+      "disaster",
+      "alerts"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032585",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "explain watch vs warning in disaster alerts",
+    "answerConcept": "A Watch (Moderate risk) signals atmospheric readiness and advises readiness without panic. A Warning (High/Critical risk) indicates an imminent or active severe weather event requiring protective action.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "watch",
+      "vs",
+      "warning",
+      "in",
+      "disaster",
+      "alerts"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032586",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "which is worse: watch vs warning in disaster alerts",
+    "answerConcept": "A Watch (Moderate risk) signals atmospheric readiness and advises readiness without panic. A Warning (High/Critical risk) indicates an imminent or active severe weather event requiring protective action.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "watch",
+      "vs",
+      "warning",
+      "in",
+      "disaster",
+      "alerts"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-COM-032587",
+    "category": "COMPARISONS",
+    "subCategory": "CONCEPT_COMPARISON",
+    "question": "distinguish between watch vs warning in disaster alerts",
+    "answerConcept": "A Watch (Moderate risk) signals atmospheric readiness and advises readiness without panic. A Warning (High/Critical risk) indicates an imminent or active severe weather event requiring protective action.",
+    "keywords": [
+      "comparison",
+      "difference",
+      "watch",
+      "vs",
+      "warning",
+      "in",
+      "disaster",
+      "alerts"
+    ],
+    "entities": [
+      "comparison_pair"
+    ],
+    "relatedIntents": [
+      "RAIN_VS_HEAVY_RAIN",
+      "DRIZZLE_VS_HEAVY_RAIN",
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  }
+]

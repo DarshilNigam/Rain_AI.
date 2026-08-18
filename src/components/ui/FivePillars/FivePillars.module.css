@@ -1,0 +1,366 @@
+.pillarsContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: var(--rai-space-xl);
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1024px) {
+  .pillarsContainer {
+    grid-template-columns: minmax(480px, 1fr) minmax(500px, 1.12fr);
+    gap: clamp(2rem, 3.5vw, 4.5rem);
+    align-items: center;
+  }
+}
+
+@media (min-width: 1440px) {
+  .pillarsContainer {
+    grid-template-columns: minmax(540px, 1.05fr) minmax(560px, 1.15fr);
+    gap: clamp(3rem, 4.5vw, 5.5rem);
+  }
+}
+
+/* ==========================================================================
+   LEFT COLUMN: Five-Pillars Planetary System & Centered Auth CTA
+   ========================================================================== */
+.wheelSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: clamp(1rem, 2.2vh, 1.75rem);
+  margin: 0 auto;
+}
+
+.wheelWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: clamp(440px, 56vh, 580px);
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+  padding: 0;
+  overflow: visible;
+}
+
+.svgSystem {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: visible;
+  filter: drop-shadow(0 14px 36px rgba(15, 23, 42, 0.08));
+}
+
+/* Radial Arc Segment with Physical Rise */
+.arcSegment {
+  cursor: pointer;
+  transition: transform 320ms cubic-bezier(0.175, 0.885, 0.32, 1.2),
+              filter 240ms ease-out,
+              stroke 200ms ease-out;
+  transform-origin: 240px 240px;
+}
+
+.arcSegment:hover,
+.arcSegment:focus-visible {
+  filter: drop-shadow(0 0 20px var(--segment-glow, rgba(6, 182, 212, 0.5)));
+  outline: none;
+}
+
+.arcSegmentActive {
+  filter: drop-shadow(0 0 24px var(--segment-glow, rgba(6, 182, 212, 0.65)));
+}
+
+.arcPath {
+  stroke-width: 1.25px;
+  transition: all 220ms ease-out;
+}
+
+/* Center Planetary Core */
+.centerCoreGroup {
+  cursor: pointer;
+  transform-origin: 240px 240px;
+  transition: transform 260ms var(--rai-ease-spring);
+}
+
+.centerCoreGroup:hover {
+  transform: scale(1.03);
+}
+
+.centerBackground {
+  transition: all 260ms ease;
+}
+
+.centerPulseRing {
+  transform-origin: 240px 240px;
+  animation: rai-pulse-subtle 3s ease-in-out infinite;
+}
+
+.centerTag {
+  font-family: var(--rai-font-display);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-anchor: middle;
+  fill: var(--rai-color-text-tertiary);
+  transition: fill 200ms ease;
+}
+
+.centerBrand {
+  font-family: var(--rai-font-display);
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  text-anchor: middle;
+  fill: var(--rai-color-text-primary);
+}
+
+.centerSubtitle {
+  font-family: var(--rai-font-display);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-anchor: middle;
+  fill: var(--rai-color-text-cyan);
+}
+
+.nodeNumber {
+  font-family: var(--rai-font-mono);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-anchor: middle;
+  pointer-events: none;
+}
+
+.nodeTitle {
+  font-family: var(--rai-font-display);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  text-anchor: middle;
+  pointer-events: none;
+}
+
+/* Left Action Button (Login / Register) directly under Pillar Circle */
+.wheelActionWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 0.25rem;
+}
+
+.wheelAuthBtn {
+  font-family: var(--rai-font-display);
+  font-size: 0.96875rem;
+  font-weight: 700;
+  padding: 0.7rem 2.25rem;
+  border-radius: var(--rai-radius-full);
+  box-shadow: 0 6px 22px -2px rgba(6, 182, 212, 0.4);
+  transition: all 260ms var(--rai-ease-spring);
+  letter-spacing: 0.02em;
+}
+
+.wheelAuthBtn:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 10px 28px -2px rgba(6, 182, 212, 0.55);
+}
+
+/* ==========================================================================
+   RIGHT COLUMN: Enlarged Synchronized Information Panel
+   ========================================================================== */
+.detailPane {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: clamp(0.875rem, 1.8vh, 1.4rem);
+  background: var(--rai-gradient-glass-hero);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(226, 232, 240, 0.95);
+  border-radius: var(--rai-radius-xl);
+  padding: clamp(1.25rem, 2.5vh, 2rem) clamp(1.5rem, 2.5vw, 2.25rem);
+  box-shadow: 0 20px 45px -10px rgba(15, 23, 42, 0.08), 0 0 0 1px rgba(255, 255, 255, 0.8) inset;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  min-height: clamp(460px, 56vh, 580px);
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.detailGlow {
+  position: absolute;
+  top: -70px;
+  right: -70px;
+  width: 220px;
+  height: 220px;
+  border-radius: var(--rai-radius-full);
+  pointer-events: none;
+  filter: blur(45px);
+  opacity: 0.35;
+  transition: background-color 300ms ease;
+}
+
+.selectorPills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid var(--rai-color-border-subtle);
+}
+
+.pillButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--rai-radius-full);
+  font-family: var(--rai-font-display);
+  font-size: 0.71875rem;
+  font-weight: 600;
+  color: var(--rai-color-text-secondary);
+  background-color: var(--rai-color-bg-surface-subtle);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: var(--rai-transition-all);
+}
+
+.pillButton:hover {
+  background-color: #ffffff;
+  color: var(--rai-color-text-primary);
+  border-color: var(--rai-color-border-default);
+  transform: translateY(-1px);
+}
+
+.pillActive {
+  background-color: #ffffff;
+  color: var(--rai-color-text-primary);
+  border-color: var(--pill-border, var(--rai-color-ai-400));
+  box-shadow: 0 2px 8px -1px var(--pill-glow, rgba(6, 182, 212, 0.3));
+}
+
+.detailHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--rai-space-md);
+}
+
+.iconAndTitleGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+}
+
+.pillarIconLarge {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--rai-radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px -2px rgba(15, 23, 42, 0.08);
+}
+
+.titleArea {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.pillarNumberTag {
+  font-family: var(--rai-font-display);
+  font-size: 0.71875rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.pillarTitleMain {
+  font-family: var(--rai-font-display);
+  font-size: clamp(1.1875rem, 1.5vw, 1.45rem);
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.pillarDescription {
+  font-family: var(--rai-font-body);
+  font-size: clamp(0.8125rem, 0.95vw, 0.875rem);
+  color: var(--rai-color-text-secondary);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.capabilitiesSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.capabilitiesHeading {
+  font-family: var(--rai-font-display);
+  font-size: 0.65625rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--rai-color-text-tertiary);
+}
+
+.capabilitiesGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.45rem;
+}
+
+.capabilityCard {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: clamp(0.45rem, 0.8vh, 0.6rem) 0.875rem;
+  border-radius: var(--rai-radius-md);
+  background-color: rgba(255, 255, 255, 0.85);
+  border: 1px solid var(--rai-color-border-subtle);
+  font-family: var(--rai-font-body);
+  font-size: 0.78125rem;
+  font-weight: 500;
+  color: var(--rai-color-text-secondary);
+  transition: var(--rai-transition-all);
+}
+
+.capabilityCard:hover {
+  background-color: #ffffff;
+  border-color: var(--rai-color-border-default);
+  transform: translateX(2px);
+}
+
+.capabilityDot {
+  width: 5px;
+  height: 5px;
+  border-radius: var(--rai-radius-full);
+  flex-shrink: 0;
+}
+
+.actionFooter {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 0.35rem;
+}

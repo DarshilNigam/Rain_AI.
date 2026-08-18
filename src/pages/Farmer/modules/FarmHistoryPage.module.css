@@ -1,0 +1,186 @@
+.pageRoot {
+  padding: clamp(0.75rem, 1.5vh, 1.5rem) 0 var(--rai-space-2xl);
+  min-height: calc(100svh - var(--rai-header-height));
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rai-space-md);
+  max-width: 1200px;
+}
+
+.rangeControlBar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: var(--rai-radius-md);
+  background-color: #ffffff;
+  border: 1px solid var(--rai-color-border-subtle);
+}
+
+.controlLabel {
+  font-family: var(--rai-font-mono);
+  font-size: 0.625rem;
+  font-weight: 800;
+  color: var(--rai-color-text-tertiary);
+  letter-spacing: 0.05em;
+}
+
+.rangeButtons {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.rangeBtn {
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--rai-radius-full);
+  background-color: #f1f5f9;
+  border: 1px solid var(--rai-color-border-subtle);
+  font-family: var(--rai-font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--rai-color-text-secondary);
+  cursor: pointer;
+  transition: var(--rai-transition-all);
+}
+
+.activeRangeBtn {
+  background-color: #475569;
+  color: #ffffff;
+  border-color: #475569;
+}
+
+/* History Hero */
+.historyHero {
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--rai-radius-xl);
+  background: #ffffff;
+  border: 1.5px solid #cbd5e1;
+  box-shadow: var(--rai-shadow-card);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.heroTopRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gridTag {
+  font-family: var(--rai-font-mono);
+  font-size: 0.625rem;
+  color: var(--rai-color-text-tertiary);
+}
+
+.heroTitle {
+  font-family: var(--rai-font-display);
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+  margin: 0;
+}
+
+.heroDesc {
+  font-family: var(--rai-font-body);
+  font-size: 0.8125rem;
+  color: var(--rai-color-text-secondary);
+  margin: 0;
+}
+
+.historyStatsStrip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.85rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--rai-color-border-subtle);
+}
+
+.statCol {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.statLabel {
+  display: block;
+  font-family: var(--rai-font-mono);
+  font-size: 0.5625rem;
+  font-weight: 800;
+  color: var(--rai-color-text-tertiary);
+  letter-spacing: 0.04em;
+}
+
+.statVal {
+  display: block;
+  font-family: var(--rai-font-display);
+  font-size: 0.9375rem;
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+}
+
+/* Table Card */
+.tableCard {
+  background-color: #ffffff;
+}
+
+.tableHeading {
+  font-family: var(--rai-font-display);
+  font-size: 0.9375rem;
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+  margin: 0 0 0.75rem;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.historyTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--rai-font-body);
+  font-size: 0.78125rem;
+}
+
+.historyTable th {
+  text-align: left;
+  padding: 0.55rem 0.75rem;
+  border-bottom: 1.5px solid var(--rai-color-border-subtle);
+  font-family: var(--rai-font-mono);
+  font-size: 0.625rem;
+  font-weight: 800;
+  color: var(--rai-color-text-tertiary);
+  letter-spacing: 0.05em;
+}
+
+.historyTable td {
+  padding: 0.65rem 0.75rem;
+  border-bottom: 1px solid var(--rai-color-border-subtle);
+  color: var(--rai-color-text-primary);
+}
+
+.dateCell {
+  font-family: var(--rai-font-mono);
+  font-weight: 700;
+}
+
+.rainCell {
+  color: #0284c7;
+}
+
+.noticeBar {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.65rem 0.95rem;
+  border-radius: var(--rai-radius-md);
+  background-color: #f8fafc;
+  border: 1px solid #cbd5e1;
+  font-family: var(--rai-font-body);
+  font-size: 0.6875rem;
+  color: var(--rai-color-text-secondary);
+}

@@ -1,0 +1,169 @@
+.pageRoot {
+  padding: clamp(0.75rem, 1.5vh, 1.5rem) 0 var(--rai-space-2xl);
+  min-height: calc(100svh - var(--rai-header-height));
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rai-space-md);
+  max-width: 1200px;
+}
+
+.summaryHero {
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--rai-radius-xl);
+  background: #ffffff;
+  border: 1.5px solid #fed7aa;
+  box-shadow: var(--rai-shadow-card);
+}
+
+.heroLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.heroBadgeRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.heroScope {
+  font-family: var(--rai-font-mono);
+  font-size: 0.625rem;
+  color: var(--rai-color-text-tertiary);
+}
+
+.heroTitle {
+  font-family: var(--rai-font-display);
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+  margin: 0.15rem 0 0;
+}
+
+.heroSub {
+  font-family: var(--rai-font-body);
+  font-size: 0.8125rem;
+  color: var(--rai-color-text-secondary);
+  margin: 0;
+}
+
+.alertsList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rai-space-md);
+}
+
+.alertCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background-color: #ffffff;
+}
+
+.alertHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.alertTypeBadge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.timeTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--rai-font-mono);
+  font-size: 0.6875rem;
+  color: var(--rai-color-text-secondary);
+}
+
+.alertCardTitle {
+  font-family: var(--rai-font-display);
+  font-size: 1.0625rem;
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+  margin: 0;
+}
+
+.triggerBox {
+  padding: 0.6rem 0.85rem;
+  border-radius: var(--rai-radius-md);
+  background-color: var(--rai-color-bg-surface-subtle);
+  border: 1px solid var(--rai-color-border-subtle);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.triggerLabel {
+  font-family: var(--rai-font-mono);
+  font-size: 0.5625rem;
+  font-weight: 800;
+  color: var(--rai-color-text-tertiary);
+  letter-spacing: 0.05em;
+}
+
+.triggerText {
+  font-family: var(--rai-font-body);
+  font-size: 0.78125rem;
+  color: var(--rai-color-text-primary);
+}
+
+.precautionBox {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  padding: 0.75rem 0.95rem;
+  border-radius: var(--rai-radius-md);
+  background-color: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  font-family: var(--rai-font-body);
+  font-size: 0.78125rem;
+  color: #166534;
+}
+
+.precautionBox strong {
+  font-family: var(--rai-font-display);
+  display: block;
+  margin-bottom: 2px;
+}
+
+.precautionBox p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.emptyAlertsBox {
+  padding: 2rem;
+  border-radius: var(--rai-radius-xl);
+  background-color: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.75rem;
+}
+
+.emptyText strong {
+  font-family: var(--rai-font-display);
+  font-size: 1rem;
+  color: #166534;
+}
+
+.emptyText p {
+  font-family: var(--rai-font-body);
+  font-size: 0.78125rem;
+  color: #15803d;
+  max-width: 520px;
+  margin: 0.25rem 0 0;
+  line-height: 1.45;
+}

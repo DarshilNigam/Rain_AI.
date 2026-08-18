@@ -1,0 +1,31 @@
+.root {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: var(--rai-space-base);
+  padding: var(--rai-space-4xl) var(--rai-space-base);
+}
+
+.code {
+  font-family: var(--rai-font-mono);
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--rai-color-weather-500);
+  line-height: 1;
+}
+
+.title {
+  font-family: var(--rai-font-display);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--rai-color-text-primary);
+}
+
+.desc {
+  font-size: 0.9375rem;
+  color: var(--rai-color-text-secondary);
+  max-width: 440px;
+}

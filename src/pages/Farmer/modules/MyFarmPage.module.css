@@ -1,0 +1,300 @@
+.pageRoot {
+  padding: clamp(0.75rem, 1.5vh, 1.5rem) 0 var(--rai-space-2xl);
+  min-height: calc(100svh - var(--rai-header-height));
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rai-space-md);
+  max-width: 1200px;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--rai-space-md);
+}
+
+@media (min-width: 900px) {
+  .contentGrid {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.mainCard {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  background-color: #ffffff;
+}
+
+.cardTopRow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+@media (min-width: 600px) {
+  .cardTopRow {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+.farmTitleBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.farmBadgeRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.completionPill {
+  font-family: var(--rai-font-mono);
+  font-size: 0.625rem;
+  font-weight: 700;
+  color: #16a34a;
+}
+
+.farmName {
+  font-family: var(--rai-font-display);
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+  margin: 0;
+}
+
+.farmerName {
+  font-family: var(--rai-font-body);
+  font-size: 0.78125rem;
+  color: var(--rai-color-text-secondary);
+  margin: 0;
+}
+
+.editBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--rai-radius-full);
+  background-color: #ffffff;
+  border: 1px solid #86efac;
+  font-family: var(--rai-font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #16a34a;
+  cursor: pointer;
+  transition: var(--rai-transition-all);
+}
+
+.editBtn:hover {
+  background-color: #f0fdf4;
+  border-color: #16a34a;
+}
+
+.propsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.propItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  padding: 0.75rem;
+  border-radius: var(--rai-radius-md);
+  background-color: var(--rai-color-bg-surface-subtle);
+  border: 1px solid var(--rai-color-border-subtle);
+}
+
+.propLabel {
+  display: block;
+  font-family: var(--rai-font-mono);
+  font-size: 0.5625rem;
+  font-weight: 800;
+  color: var(--rai-color-text-tertiary);
+  letter-spacing: 0.05em;
+}
+
+.propValue {
+  display: block;
+  font-family: var(--rai-font-display);
+  font-size: 0.84375rem;
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+  margin-top: 2px;
+}
+
+.geoStrip {
+  padding: 0.65rem 0.85rem;
+  border-radius: var(--rai-radius-md);
+  background-color: #ecfeff;
+  border: 1px solid #a5f3fc;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.geoLabel {
+  font-family: var(--rai-font-mono);
+  font-size: 0.5625rem;
+  font-weight: 800;
+  color: #0891b2;
+}
+
+.geoCoords {
+  font-family: var(--rai-font-mono);
+  font-size: 0.71875rem;
+  font-weight: 700;
+  color: #0e7490;
+}
+
+/* Side Col */
+.sideCol {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rai-space-md);
+}
+
+.sideTitle {
+  font-family: var(--rai-font-display);
+  font-size: 0.9375rem;
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+  margin: 0;
+}
+
+.sideDesc {
+  font-family: var(--rai-font-body);
+  font-size: 0.75rem;
+  color: var(--rai-color-text-secondary);
+  line-height: 1.45;
+  margin: 0.35rem 0 0.75rem;
+}
+
+.healthList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.healthItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--rai-font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #15803d;
+}
+
+/* Modal */
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 1rem;
+}
+
+.modalContent {
+  width: 100%;
+  max-width: 500px;
+  background-color: #ffffff;
+  border-radius: var(--rai-radius-xl);
+  padding: 1.5rem;
+  box-shadow: var(--rai-shadow-modal);
+  border: 1px solid var(--rai-color-border-subtle);
+}
+
+.modalTitle {
+  font-family: var(--rai-font-display);
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+  margin: 0 0 1rem;
+}
+
+.modalForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex: 1;
+}
+
+.formGroup label {
+  font-family: var(--rai-font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--rai-color-text-primary);
+}
+
+.formGroup input,
+.formGroup select {
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--rai-radius-md);
+  border: 1px solid var(--rai-color-border-subtle);
+  font-family: var(--rai-font-body);
+  font-size: 0.8125rem;
+  outline: none;
+}
+
+.formGroup input:focus,
+.formGroup select:focus {
+  border-color: #16a34a;
+  box-shadow: 0 0 0 2px rgba(22, 163, 74, 0.15);
+}
+
+.formRow {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.modalActions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+}
+
+.cancelBtn {
+  padding: 0.45rem 0.9rem;
+  border-radius: var(--rai-radius-full);
+  background-color: #f1f5f9;
+  border: none;
+  font-family: var(--rai-font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--rai-color-text-secondary);
+  cursor: pointer;
+}
+
+.saveBtn {
+  padding: 0.45rem 1rem;
+  border-radius: var(--rai-radius-full);
+  background-color: #16a34a;
+  border: none;
+  font-family: var(--rai-font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #ffffff;
+  cursor: pointer;
+}

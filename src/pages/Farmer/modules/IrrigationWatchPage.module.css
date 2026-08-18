@@ -1,0 +1,212 @@
+.pageRoot {
+  padding: clamp(0.75rem, 1.5vh, 1.5rem) 0 var(--rai-space-2xl);
+  min-height: calc(100svh - var(--rai-header-height));
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rai-space-md);
+  max-width: 1200px;
+}
+
+/* Primary Signal Hero */
+.signalHeroCard {
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--rai-radius-xl);
+  background: #ffffff;
+  border: 2px solid #bbf7d0;
+  box-shadow: var(--rai-shadow-card);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.signalTopRow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .signalTopRow {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.signalBadgeRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.fieldTag {
+  font-family: var(--rai-font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #0891b2;
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--rai-radius-full);
+  background-color: #ecfeff;
+}
+
+.soilNote {
+  font-family: var(--rai-font-mono);
+  font-size: 0.625rem;
+  color: var(--rai-color-text-tertiary);
+}
+
+.signalHeadline {
+  font-family: var(--rai-font-display);
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+.signalDescription {
+  font-family: var(--rai-font-body);
+  font-size: 0.8125rem;
+  color: var(--rai-color-text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.forecastMetricsStrip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.85rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--rai-color-border-subtle);
+}
+
+.metricItem {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.metricLabel {
+  display: block;
+  font-family: var(--rai-font-mono);
+  font-size: 0.5625rem;
+  font-weight: 800;
+  color: var(--rai-color-text-tertiary);
+  letter-spacing: 0.04em;
+}
+
+.metricVal {
+  display: block;
+  font-family: var(--rai-font-display);
+  font-size: 0.84375rem;
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+}
+
+/* Fields Section */
+.fieldsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.fieldsHeading {
+  font-family: var(--rai-font-display);
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+  margin: 0;
+}
+
+.fieldsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--rai-space-md);
+}
+
+.fieldCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  background-color: #ffffff;
+}
+
+.fieldCardTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fieldName {
+  font-family: var(--rai-font-display);
+  font-size: 0.9375rem;
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+}
+
+.fieldAreaPill {
+  font-family: var(--rai-font-mono);
+  font-size: 0.625rem;
+  font-weight: 700;
+  color: #16a34a;
+  padding: 0.1rem 0.45rem;
+  border-radius: var(--rai-radius-full);
+  background-color: #dcfce7;
+}
+
+.fieldMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-family: var(--rai-font-body);
+  font-size: 0.75rem;
+  color: var(--rai-color-text-secondary);
+  padding: 0.5rem;
+  border-radius: var(--rai-radius-md);
+  background-color: var(--rai-color-bg-surface-subtle);
+}
+
+.fieldMeta strong {
+  color: var(--rai-color-text-primary);
+}
+
+.fieldAction {
+  padding-top: 0.4rem;
+  border-top: 1px solid var(--rai-color-border-subtle);
+}
+
+.holdText {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--rai-font-display);
+  font-size: 0.71875rem;
+  font-weight: 700;
+  color: #dc2626;
+}
+
+.proceedText {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--rai-font-display);
+  font-size: 0.71875rem;
+  font-weight: 700;
+  color: #16a34a;
+}
+
+.guidanceNotice {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.65rem 0.95rem;
+  border-radius: var(--rai-radius-md);
+  background-color: #ecfeff;
+  border: 1px solid #a5f3fc;
+  font-family: var(--rai-font-body);
+  font-size: 0.6875rem;
+  color: #0e7490;
+}

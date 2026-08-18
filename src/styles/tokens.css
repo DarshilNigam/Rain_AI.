@@ -1,0 +1,208 @@
+/**
+ * R.A.I. Design Tokens
+ * Light-First Atmospheric & Futuristic Rainfall Intelligence Visual System
+ * 
+ * Semantic Roles:
+ * - SAFE / AGRI: Fresh Mint / Emerald / Lime (#10B981, #16A34A, #ECFDF5)
+ * - WEATHER / MAP: Ice Blue / Deep Sky / Cyan (#0EA5E9, #0284C7, #F0F9FF)
+ * - AI & XAI: Electric Aqua / Cyan / Teal (#06B6D4, #0891B2, #ECFEFF)
+ * - CAUTION / ADVISORY: Restrained Amber / Ochre (#F59E0B, #D97706, #FFFBEB)
+ * - HIGH RISK: Vibrant Coral Orange (#F97316, #EA580C, #FFF7ED)
+ * - CRITICAL EMERGENCY: High-contrast Alert Red (#EF4444, #DC2626, #FEF2F2)
+ * - SURFACE & CANVASES: Soft White / Ice Mist / Polar Glow (#F8FBFE, #FFFFFF, #F0F9FF)
+ * - TEXT: Obsidian & Slate Neutrals (#0F172A, #334155, #64748B)
+ */
+
+:root {
+  /* ==========================================================================
+     1. COLOR PALETTE (Luminous Light-First)
+     ========================================================================== */
+
+  /* Neutral & Surfaces */
+  --rai-color-bg-canvas: #f8fbfe;
+  --rai-color-bg-surface: #ffffff;
+  --rai-color-bg-surface-subtle: #f1f5f9;
+  --rai-color-bg-surface-elevated: #ffffff;
+  --rai-color-bg-surface-ice: #f0f9ff;
+  --rai-color-bg-surface-aqua: #ecfeff;
+  --rai-color-bg-surface-mint: #f0fdf4;
+  --rai-color-bg-surface-mist: #e2e8f0;
+
+  /* Borders & Dividers */
+  --rai-color-border-subtle: #e2e8f0;
+  --rai-color-border-default: #cbd5e1;
+  --rai-color-border-strong: #94a3b8;
+  --rai-color-border-accent: #38bdf8;
+  --rai-color-border-glow-cyan: rgba(6, 182, 212, 0.4);
+  --rai-color-border-glow-blue: rgba(14, 165, 233, 0.4);
+  --rai-color-border-glow-mint: rgba(16, 185, 129, 0.4);
+  --rai-color-border-glow-amber: rgba(245, 158, 11, 0.4);
+
+  /* Typography / Text Colors */
+  --rai-color-text-primary: #0f172a;     /* Deep slate / obsidian */
+  --rai-color-text-secondary: #334155;   /* Mid slate */
+  --rai-color-text-tertiary: #64748b;    /* Muted slate */
+  --rai-color-text-quaternary: #94a3b8;  /* Subtle placeholder */
+  --rai-color-text-inverse: #ffffff;     /* On dark/accent surfaces */
+  --rai-color-text-accent: #0284c7;      /* Primary interactive text */
+  --rai-color-text-cyan: #0891b2;        /* AI / XAI text */
+  --rai-color-text-mint: #15803d;        /* Agronomic text */
+  --rai-color-text-amber: #b45309;       /* Caution text */
+  --rai-color-text-coral: #c2410c;       /* High risk text */
+
+  /* Semantic - Weather & Atmosphere (Blue / Cyan) */
+  --rai-color-weather-50: #f0f9ff;
+  --rai-color-weather-100: #e0f2fe;
+  --rai-color-weather-200: #bae6fd;
+  --rai-color-weather-300: #7dd3fc;
+  --rai-color-weather-400: #38bdf8;
+  --rai-color-weather-500: #0ea5e9;
+  --rai-color-weather-600: #0284c7;
+  --rai-color-weather-700: #0369a1;
+
+  /* Semantic - Intelligence & XAI (Aqua / Teal) */
+  --rai-color-ai-50: #ecfeff;
+  --rai-color-ai-100: #cffafe;
+  --rai-color-ai-200: #a5f3fc;
+  --rai-color-ai-300: #67e8f9;
+  --rai-color-ai-400: #22d3ee;
+  --rai-color-ai-500: #06b6d4;
+  --rai-color-ai-600: #0891b2;
+  --rai-color-ai-700: #0e7490;
+
+  /* Semantic - Safe / Optimal Agri / Normal (Mint / Emerald) */
+  --rai-color-safe-50: #f0fdf4;
+  --rai-color-safe-100: #dcfce7;
+  --rai-color-safe-200: #bbf7d0;
+  --rai-color-safe-300: #86efac;
+  --rai-color-safe-400: #4ade80;
+  --rai-color-safe-500: #22c55e;
+  --rai-color-safe-600: #16a34a;
+  --rai-color-safe-700: #15803d;
+
+  /* Semantic - Caution / Advisory (Amber / Ochre) */
+  --rai-color-caution-50: #fffbeb;
+  --rai-color-caution-100: #fef3c7;
+  --rai-color-caution-200: #fde68a;
+  --rai-color-caution-300: #fcd34d;
+  --rai-color-caution-400: #fbbf24;
+  --rai-color-caution-500: #f59e0b;
+  --rai-color-caution-600: #d97706;
+  --rai-color-caution-700: #b45309;
+
+  /* Semantic - High Risk (Coral Orange) */
+  --rai-color-highrisk-50: #fff7ed;
+  --rai-color-highrisk-100: #ffedd5;
+  --rai-color-highrisk-200: #fed7aa;
+  --rai-color-highrisk-500: #f97316;
+  --rai-color-highrisk-600: #ea580c;
+  --rai-color-highrisk-700: #c2410c;
+
+  /* Semantic - Critical Emergency (Alert Red) */
+  --rai-color-critical-50: #fef2f2;
+  --rai-color-critical-100: #fee2e2;
+  --rai-color-critical-200: #fecaca;
+  --rai-color-critical-500: #ef4444;
+  --rai-color-critical-600: #dc2626;
+  --rai-color-critical-700: #b91c1c;
+
+  /* Atmospheric Gradients & Glow Fields */
+  --rai-glow-cyan: rgba(6, 182, 212, 0.18);
+  --rai-glow-blue: rgba(14, 165, 233, 0.16);
+  --rai-glow-mint: rgba(16, 185, 129, 0.16);
+  --rai-glow-amber: rgba(245, 158, 11, 0.15);
+  --rai-glow-coral: rgba(249, 115, 22, 0.15);
+
+  --rai-gradient-canvas: 
+    radial-gradient(ellipse at 15% 10%, rgba(207, 250, 254, 0.6) 0%, transparent 45%),
+    radial-gradient(ellipse at 85% 15%, rgba(224, 242, 254, 0.5) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 60%, rgba(240, 253, 244, 0.45) 0%, transparent 60%),
+    radial-gradient(circle at 80% 85%, rgba(254, 243, 199, 0.3) 0%, transparent 40%);
+
+  --rai-gradient-glass-hero: linear-gradient(135deg, rgba(255, 255, 255, 0.92) 0%, rgba(240, 249, 255, 0.82) 100%);
+  --rai-gradient-glass-pill: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(236, 254, 255, 0.85) 100%);
+
+  /* ==========================================================================
+     2. SPACING SCALE (8pt Harmonic Grid)
+     ========================================================================== */
+  --rai-space-2xs: 0.125rem; /* 2px */
+  --rai-space-xs: 0.25rem;   /* 4px */
+  --rai-space-sm: 0.5rem;    /* 8px */
+  --rai-space-md: 0.75rem;   /* 12px */
+  --rai-space-base: 1rem;    /* 16px */
+  --rai-space-lg: 1.5rem;    /* 24px */
+  --rai-space-xl: 2rem;      /* 32px */
+  --rai-space-2xl: 3rem;     /* 48px */
+  --rai-space-3xl: 4.5rem;   /* 72px */
+  --rai-space-4xl: 6rem;     /* 96px */
+
+  /* ==========================================================================
+     3. BORDER RADIUS
+     ========================================================================== */
+  --rai-radius-xs: 4px;
+  --rai-radius-sm: 8px;
+  --rai-radius-md: 12px;
+  --rai-radius-lg: 18px;
+  --rai-radius-xl: 26px;
+  --rai-radius-full: 9999px;
+
+  /* ==========================================================================
+     4. ELEVATION & ATMOSPHERIC GLOW SHADOWS
+     ========================================================================== */
+  --rai-shadow-subtle: 0 1px 3px 0 rgba(15, 23, 42, 0.04), 0 1px 2px -1px rgba(15, 23, 42, 0.02);
+  --rai-shadow-card: 0 4px 16px -2px rgba(15, 23, 42, 0.05), 0 2px 6px -2px rgba(15, 23, 42, 0.02);
+  --rai-shadow-card-hover: 0 16px 32px -4px rgba(15, 23, 42, 0.08), 0 6px 12px -2px rgba(15, 23, 42, 0.03);
+  --rai-shadow-floating: 0 24px 48px -8px rgba(15, 23, 42, 0.1), 0 12px 24px -4px rgba(15, 23, 42, 0.04);
+  
+  --rai-shadow-glow-cyan: 0 0 28px -4px rgba(6, 182, 212, 0.4);
+  --rai-shadow-glow-blue: 0 0 28px -4px rgba(14, 165, 233, 0.4);
+  --rai-shadow-glow-mint: 0 0 28px -4px rgba(16, 185, 129, 0.4);
+  --rai-shadow-glow-amber: 0 0 28px -4px rgba(245, 158, 11, 0.4);
+  --rai-shadow-glow-core: 0 0 40px 0 rgba(6, 182, 212, 0.25), 0 8px 24px -4px rgba(14, 165, 233, 0.15);
+
+  /* ==========================================================================
+     5. TYPOGRAPHY TOKENS
+     ========================================================================== */
+  --rai-font-display: 'Sora', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --rai-font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --rai-font-mono: 'JetBrains Mono', monospace;
+
+  /* ==========================================================================
+     6. MOTION & TRANSITIONS
+     ========================================================================== */
+  --rai-ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --rai-ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --rai-ease-spring: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  --rai-ease-bounce-subtle: cubic-bezier(0.34, 1.3, 0.64, 1);
+  
+  --rai-duration-instant: 100ms;
+  --rai-duration-fast: 180ms;
+  --rai-duration-normal: 280ms;
+  --rai-duration-slow: 450ms;
+  --rai-duration-deliberate: 750ms;
+
+  --rai-transition-all: all var(--rai-duration-normal) var(--rai-ease-standard);
+  --rai-transition-spring: all var(--rai-duration-slow) var(--rai-ease-spring);
+  --rai-transition-colors: color var(--rai-duration-fast) var(--rai-ease-smooth), background-color var(--rai-duration-fast) var(--rai-ease-smooth), border-color var(--rai-duration-fast) var(--rai-ease-smooth);
+  --rai-transition-transform: transform var(--rai-duration-normal) var(--rai-ease-spring);
+
+  /* ==========================================================================
+     7. Z-INDEX LAYERS
+     ========================================================================== */
+  --rai-z-base: 0;
+  --rai-z-card: 10;
+  --rai-z-header: 100;
+  --rai-z-sticky: 200;
+  --rai-z-dropdown: 500;
+  --rai-z-drawer: 800;
+  --rai-z-modal: 1000;
+  --rai-z-toast: 1100;
+  --rai-z-tooltip: 1200;
+
+  /* ==========================================================================
+     8. LAYOUT & BREAKPOINTS
+     ========================================================================== */
+  --rai-max-width-content: 1280px;
+  --rai-max-width-wide: 1440px;
+  --rai-header-height: 72px;
+}

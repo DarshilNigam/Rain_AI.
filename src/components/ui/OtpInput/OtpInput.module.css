@@ -1,0 +1,223 @@
+.otpContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 0.5rem 0;
+  width: 100%;
+}
+
+.otpHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.4rem;
+}
+
+.iconCircle {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #ecfeff;
+  border: 1px solid #a5f3fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.25rem;
+}
+
+.shieldIcon {
+  color: #0891b2;
+}
+
+.otpTitle {
+  font-family: var(--rai-font-display);
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+  margin: 0;
+}
+
+.otpSub {
+  font-family: var(--rai-font-body);
+  font-size: 0.84375rem;
+  color: var(--rai-color-text-secondary);
+  margin: 0;
+}
+
+.recipientBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  background: var(--rai-color-bg-alt);
+  border: 1px solid var(--rai-color-border-subtle);
+  border-radius: 9999px;
+  font-family: var(--rai-font-mono);
+  font-size: 0.78125rem;
+  color: var(--rai-color-text-primary);
+  font-weight: 600;
+  margin-top: 0.2rem;
+}
+
+.changeLink {
+  background: none;
+  border: none;
+  color: #0891b2;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.changeLink:hover {
+  color: #0e7490;
+}
+
+.devNoticeCard {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: #f0fdf4;
+  border: 1px dashed #86efac;
+  border-radius: var(--rai-radius-md);
+  font-size: 0.75rem;
+  color: #166534;
+}
+
+.devCode {
+  background: #dcfce7;
+  padding: 0.125rem 0.375rem;
+  border-radius: 4px;
+  font-family: var(--rai-font-mono);
+  font-weight: 800;
+  font-size: 0.875rem;
+  color: #15803d;
+  letter-spacing: 0.1em;
+}
+
+.errorBanner {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 0.75rem;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: var(--rai-radius-md);
+  color: #dc2626;
+  font-size: 0.8125rem;
+  font-family: var(--rai-font-body);
+}
+
+.otpForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.digitRow {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.digitInput {
+  width: 44px;
+  height: 52px;
+  font-family: var(--rai-font-mono);
+  font-size: 1.4rem;
+  font-weight: 800;
+  text-align: center;
+  color: var(--rai-color-text-primary);
+  background: var(--rai-color-bg-alt);
+  border: 1.5px solid var(--rai-color-border-subtle);
+  border-radius: var(--rai-radius-md);
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.digitInput:focus {
+  background: #ffffff;
+  border-color: #0891b2;
+  box-shadow: 0 0 0 3px rgba(8, 145, 178, 0.15);
+}
+
+.digitInput.filled {
+  border-color: #0284c7;
+  background: #f0f9ff;
+  color: #0369a1;
+}
+
+.otpFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.countdownText {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.78125rem;
+  color: var(--rai-color-text-secondary);
+  font-family: var(--rai-font-mono);
+}
+
+.resendBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: none;
+  border: none;
+  color: #0891b2;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: all 0.15s ease;
+}
+
+.resendBtn:hover {
+  background: #ecfeff;
+  color: #0e7490;
+}
+
+.resendBtn:disabled {
+  color: #94a3b8;
+  cursor: not-allowed;
+}
+
+.backBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: none;
+  border: none;
+  color: var(--rai-color-text-secondary);
+  font-size: 0.78125rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.backBtn:hover {
+  color: var(--rai-color-text-primary);
+  text-decoration: underline;
+}
+
+.spinning {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

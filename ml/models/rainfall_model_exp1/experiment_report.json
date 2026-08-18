@@ -1,0 +1,362 @@
+{
+  "modelName": "RAI-HeavyRain-XGBoost-SeasonalExp",
+  "modelVersion": "v1.1.0-seasonal-experiment",
+  "featuresCount": 38,
+  "featuresList": [
+    "temperature_2m",
+    "relative_humidity_2m",
+    "surface_pressure",
+    "wind_speed_10m",
+    "wind_direction_10m",
+    "cloud_cover",
+    "precipitation",
+    "rain_1h",
+    "rain_3h",
+    "rain_6h",
+    "rain_12h",
+    "rain_24h",
+    "satellite_precipitation",
+    "satellite_precipitation_3h",
+    "satellite_precipitation_24h",
+    "pressure_change",
+    "humidity_change",
+    "temperature_change",
+    "wind_speed_change",
+    "dew_point_spread",
+    "convective_energy_proxy",
+    "sin_hour",
+    "cos_hour",
+    "sin_month",
+    "cos_month",
+    "latitude",
+    "longitude",
+    "sin_doy",
+    "cos_doy",
+    "is_sw_monsoon",
+    "is_ne_monsoon",
+    "lat_x_sin_month",
+    "lng_x_cos_month",
+    "rain_rate_change",
+    "rain_6h_to_24h_ratio",
+    "cloud_x_precip",
+    "convective_x_wind",
+    "saturation_deficit_tendency"
+  ],
+  "validationEvaluation": {
+    "model_A_baseline": {
+      "rocAuc": 0.8671,
+      "prAuc": 0.1577,
+      "brierScore": 0.0141,
+      "selectedThreshold": 0.015,
+      "precision": 0.1096,
+      "recall": 0.521,
+      "f1": 0.181,
+      "f2": 0.2975,
+      "alertRate": 0.0732
+    },
+    "model_B_experimental": {
+      "rocAuc": 0.841,
+      "prAuc": 0.1824,
+      "brierScore": 0.014,
+      "selectedThreshold": 0.02,
+      "precision": 0.1055,
+      "recall": 0.4642,
+      "f1": 0.1719,
+      "f2": 0.2763,
+      "alertRate": 0.0677
+    }
+  },
+  "testEvaluation": {
+    "model_A_baseline": {
+      "rocAuc": 0.9605,
+      "prAuc": 0.1082,
+      "brierScore": 0.0044,
+      "thresholdUsed": 0.015,
+      "precision": 0.12,
+      "recall": 0.0776,
+      "f1": 0.0942,
+      "f2": 0.0835,
+      "confusionMatrix": {
+        "tp": 9,
+        "fp": 66,
+        "tn": 26138,
+        "fn": 107
+      }
+    },
+    "model_B_experimental": {
+      "rocAuc": 0.9593,
+      "prAuc": 0.0889,
+      "brierScore": 0.0044,
+      "thresholdUsed": 0.02,
+      "precision": 0.131,
+      "recall": 0.1638,
+      "f1": 0.1456,
+      "f2": 0.156,
+      "confusionMatrix": {
+        "tp": 19,
+        "fp": 126,
+        "tn": 26078,
+        "fn": 97
+      }
+    }
+  },
+  "topFeatureImportances": [
+    {
+      "feature": "cloud_x_precip",
+      "importance": 0.3225
+    },
+    {
+      "feature": "satellite_precipitation",
+      "importance": 0.2723
+    },
+    {
+      "feature": "precipitation",
+      "importance": 0.1445
+    },
+    {
+      "feature": "convective_energy_proxy",
+      "importance": 0.0289
+    },
+    {
+      "feature": "rain_12h",
+      "importance": 0.0248
+    },
+    {
+      "feature": "cloud_cover",
+      "importance": 0.0229
+    },
+    {
+      "feature": "sin_doy",
+      "importance": 0.0158
+    },
+    {
+      "feature": "lat_x_sin_month",
+      "importance": 0.0112
+    },
+    {
+      "feature": "sin_month",
+      "importance": 0.0107
+    },
+    {
+      "feature": "wind_speed_10m",
+      "importance": 0.0092
+    },
+    {
+      "feature": "convective_x_wind",
+      "importance": 0.0089
+    },
+    {
+      "feature": "temperature_2m",
+      "importance": 0.0083
+    },
+    {
+      "feature": "dew_point_spread",
+      "importance": 0.0083
+    },
+    {
+      "feature": "wind_direction_10m",
+      "importance": 0.0081
+    },
+    {
+      "feature": "sin_hour",
+      "importance": 0.0077
+    }
+  ],
+  "validationSweepB": [
+    {
+      "threshold": 0.005,
+      "precision": 0.0154,
+      "recall": 1.0,
+      "f1Score": 0.0303,
+      "f2Score": 0.0725,
+      "falsePositiveRate": 1.0,
+      "truePositiveRate": 1.0,
+      "confusionMatrix": {
+        "tp": 405,
+        "fp": 25915,
+        "tn": 0,
+        "fn": 0
+      }
+    },
+    {
+      "threshold": 0.01,
+      "precision": 0.0714,
+      "recall": 0.6148,
+      "f1Score": 0.1279,
+      "f2Score": 0.2437,
+      "falsePositiveRate": 0.125,
+      "truePositiveRate": 0.6148,
+      "confusionMatrix": {
+        "tp": 249,
+        "fp": 3240,
+        "tn": 22675,
+        "fn": 156
+      }
+    },
+    {
+      "threshold": 0.015,
+      "precision": 0.0966,
+      "recall": 0.5407,
+      "f1Score": 0.1639,
+      "f2Score": 0.2817,
+      "falsePositiveRate": 0.079,
+      "truePositiveRate": 0.5407,
+      "confusionMatrix": {
+        "tp": 219,
+        "fp": 2048,
+        "tn": 23867,
+        "fn": 186
+      }
+    },
+    {
+      "threshold": 0.02,
+      "precision": 0.1055,
+      "recall": 0.4642,
+      "f1Score": 0.1719,
+      "f2Score": 0.2763,
+      "falsePositiveRate": 0.0615,
+      "truePositiveRate": 0.4642,
+      "confusionMatrix": {
+        "tp": 188,
+        "fp": 1594,
+        "tn": 24321,
+        "fn": 217
+      }
+    },
+    {
+      "threshold": 0.03,
+      "precision": 0.1223,
+      "recall": 0.4123,
+      "f1Score": 0.1886,
+      "f2Score": 0.2796,
+      "falsePositiveRate": 0.0463,
+      "truePositiveRate": 0.4123,
+      "confusionMatrix": {
+        "tp": 167,
+        "fp": 1199,
+        "tn": 24716,
+        "fn": 238
+      }
+    },
+    {
+      "threshold": 0.04,
+      "precision": 0.1391,
+      "recall": 0.4049,
+      "f1Score": 0.2071,
+      "f2Score": 0.293,
+      "falsePositiveRate": 0.0392,
+      "truePositiveRate": 0.4049,
+      "confusionMatrix": {
+        "tp": 164,
+        "fp": 1015,
+        "tn": 24900,
+        "fn": 241
+      }
+    },
+    {
+      "threshold": 0.05,
+      "precision": 0.1538,
+      "recall": 0.3926,
+      "f1Score": 0.221,
+      "f2Score": 0.2995,
+      "falsePositiveRate": 0.0338,
+      "truePositiveRate": 0.3926,
+      "confusionMatrix": {
+        "tp": 159,
+        "fp": 875,
+        "tn": 25040,
+        "fn": 246
+      }
+    },
+    {
+      "threshold": 0.075,
+      "precision": 0.1701,
+      "recall": 0.363,
+      "f1Score": 0.2317,
+      "f2Score": 0.2959,
+      "falsePositiveRate": 0.0277,
+      "truePositiveRate": 0.363,
+      "confusionMatrix": {
+        "tp": 147,
+        "fp": 717,
+        "tn": 25198,
+        "fn": 258
+      }
+    },
+    {
+      "threshold": 0.1,
+      "precision": 0.1848,
+      "recall": 0.3531,
+      "f1Score": 0.2426,
+      "f2Score": 0.2987,
+      "falsePositiveRate": 0.0243,
+      "truePositiveRate": 0.3531,
+      "confusionMatrix": {
+        "tp": 143,
+        "fp": 631,
+        "tn": 25284,
+        "fn": 262
+      }
+    },
+    {
+      "threshold": 0.15,
+      "precision": 0.2125,
+      "recall": 0.3358,
+      "f1Score": 0.2603,
+      "f2Score": 0.3009,
+      "falsePositiveRate": 0.0194,
+      "truePositiveRate": 0.3358,
+      "confusionMatrix": {
+        "tp": 136,
+        "fp": 504,
+        "tn": 25411,
+        "fn": 269
+      }
+    },
+    {
+      "threshold": 0.2,
+      "precision": 0.2638,
+      "recall": 0.284,
+      "f1Score": 0.2735,
+      "f2Score": 0.2797,
+      "falsePositiveRate": 0.0124,
+      "truePositiveRate": 0.284,
+      "confusionMatrix": {
+        "tp": 115,
+        "fp": 321,
+        "tn": 25594,
+        "fn": 290
+      }
+    },
+    {
+      "threshold": 0.3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1Score": 0.0,
+      "f2Score": 0.0,
+      "falsePositiveRate": 0.0,
+      "truePositiveRate": 0.0,
+      "confusionMatrix": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 25915,
+        "fn": 405
+      }
+    },
+    {
+      "threshold": 0.5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1Score": 0.0,
+      "f2Score": 0.0,
+      "falsePositiveRate": 0.0,
+      "truePositiveRate": 0.0,
+      "confusionMatrix": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 25915,
+        "fn": 405
+      }
+    }
+  ]
+}

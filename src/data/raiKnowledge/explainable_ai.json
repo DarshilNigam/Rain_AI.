@@ -1,0 +1,1822 @@
+[
+  {
+    "id": "RAI-KB-EXP-031401",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "what is explainable ai in rai",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031402",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "what is explainable ai in rai?",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031403",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "explain what is explainable ai in rai",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031404",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "tell me what is explainable ai in rai",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031405",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "why does what is explainable ai in rai",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031406",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "what is shap",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031407",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "what is shap?",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031408",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "explain what is shap",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031409",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "tell me what is shap",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031410",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "why does what is shap",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031411",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "what is treeshap",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031412",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "what is treeshap?",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031413",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "explain what is treeshap",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031414",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "tell me what is treeshap",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031415",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "why does what is treeshap",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031416",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "how does treeshap calculate feature importance",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031417",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "how does treeshap calculate feature importance?",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031418",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "explain how does treeshap calculate feature importance",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031419",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "tell me how does treeshap calculate feature importance",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031420",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "why does how does treeshap calculate feature importance",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031421",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "what does a positive shap value mean",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031422",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "what does a positive shap value mean?",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031423",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "explain what does a positive shap value mean",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031424",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "tell me what does a positive shap value mean",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031425",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "why does what does a positive shap value mean",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031426",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "what does a negative shap value mean",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031427",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "what does a negative shap value mean?",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031428",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "explain what does a negative shap value mean",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031429",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "tell me what does a negative shap value mean",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031430",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "why does what does a negative shap value mean",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031431",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "why does shap describe correlation rather than physical causation",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031432",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "why does shap describe correlation rather than physical causation?",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031433",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "explain why does shap describe correlation rather than physical causation",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031434",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "tell me why does shap describe correlation rather than physical causation",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031435",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "why does why does shap describe correlation rather than physical causation",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031436",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "why does high cloud cover reduce heavy rain risk in shap",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031437",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "why does high cloud cover reduce heavy rain risk in shap?",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031438",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "explain why does high cloud cover reduce heavy rain risk in shap",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031439",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "tell me why does high cloud cover reduce heavy rain risk in shap",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031440",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "why does why does high cloud cover reduce heavy rain risk in shap",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031441",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "why does convective instability increase heavy rain risk in shap",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031442",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "why does convective instability increase heavy rain risk in shap?",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031443",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "explain why does convective instability increase heavy rain risk in shap",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031444",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "tell me why does convective instability increase heavy rain risk in shap",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031445",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "why does why does convective instability increase heavy rain risk in shap",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031446",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "why does low surface pressure increase heavy rain risk in shap",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031447",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "why does low surface pressure increase heavy rain risk in shap?",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031448",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "explain why does low surface pressure increase heavy rain risk in shap",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031449",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "tell me why does low surface pressure increase heavy rain risk in shap",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031450",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "why does why does low surface pressure increase heavy rain risk in shap",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031451",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "how does rai ensure scientific honesty in explanations",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031452",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "how does rai ensure scientific honesty in explanations?",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031453",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "explain how does rai ensure scientific honesty in explanations",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031454",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "tell me how does rai ensure scientific honesty in explanations",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031455",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "why does how does rai ensure scientific honesty in explanations",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031456",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "what are the limitations of shap explanations in weather modeling",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031457",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "what are the limitations of shap explanations in weather modeling?",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031458",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "explain what are the limitations of shap explanations in weather modeling",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031459",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "tell me what are the limitations of shap explanations in weather modeling",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031460",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "why does what are the limitations of shap explanations in weather modeling",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031461",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "what is the baseline log odds in treeshap",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031462",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "what is the baseline log odds in treeshap?",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031463",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "explain what is the baseline log odds in treeshap",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031464",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "tell me what is the baseline log odds in treeshap",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031465",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "why does what is the baseline log odds in treeshap",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031466",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "how does treeshap satisfy efficiency and additivity properties",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031467",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "how does treeshap satisfy efficiency and additivity properties?",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031468",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "explain how does treeshap satisfy efficiency and additivity properties",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031469",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "tell me how does treeshap satisfy efficiency and additivity properties",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-EXP-031470",
+    "category": "EXPLAINABLE_AI",
+    "subCategory": "TREESHAP_METHODOLOGY",
+    "question": "why does how does treeshap satisfy efficiency and additivity properties",
+    "answerConcept": "TreeSHAP (SHapley Additive exPlanations) provides mathematically exact, game-theoretic feature attribution by computing each meteorological variable's marginal contribution to shifting the model's log-odds output away from the base expected value. Positive SHAP values indicate features associated with increased predicted risk; negative SHAP values indicate features associated with reduced predicted risk. Crucially, SHAP quantifies statistical feature attribution rather than proving direct physical causation.",
+    "keywords": [
+      "shap",
+      "treeshap",
+      "attribution",
+      "causation",
+      "positive shap",
+      "negative shap"
+    ],
+    "entities": [
+      "xai_concept"
+    ],
+    "relatedIntents": [
+      "XAI_SHAP_METHODOLOGY",
+      "XAI_INCREASING_FACTORS",
+      "XAI_REDUCING_FACTORS"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  }
+]

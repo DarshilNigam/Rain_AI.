@@ -1,0 +1,2082 @@
+[
+  {
+    "id": "RAI-KB-RAI-031321",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "how does rai predict rainfall",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031322",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "how does rai predict rainfall?",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031323",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "explain how does rai predict rainfall",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031324",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "tell me how does rai predict rainfall",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031325",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "why does how does rai predict rainfall",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031326",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "what model does rai use",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031327",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "what model does rai use?",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031328",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "explain what model does rai use",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031329",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "tell me what model does rai use",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031330",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "why does what model does rai use",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031331",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "what is the rai xgboost model",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031332",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "what is the rai xgboost model?",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031333",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "explain what is the rai xgboost model",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031334",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "tell me what is the rai xgboost model",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031335",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "why does what is the rai xgboost model",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031336",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "why does rai predict heavy rainfall instead of normal rain",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031337",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "why does rai predict heavy rainfall instead of normal rain?",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031338",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "explain why does rai predict heavy rainfall instead of normal rain",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031339",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "tell me why does rai predict heavy rainfall instead of normal rain",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031340",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "why does why does rai predict heavy rainfall instead of normal rain",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031341",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "what is the 64.5 mm threshold in rai",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031342",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "what is the 64.5 mm threshold in rai?",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031343",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "explain what is the 64.5 mm threshold in rai",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031344",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "tell me what is the 64.5 mm threshold in rai",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031345",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "why does what is the 64.5 mm threshold in rai",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031346",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "what 14 features does rai use",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031347",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "what 14 features does rai use?",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031348",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "explain what 14 features does rai use",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031349",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "tell me what 14 features does rai use",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031350",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "why does what 14 features does rai use",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031351",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "what is isotonic calibration in rai",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031352",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "what is isotonic calibration in rai?",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031353",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "explain what is isotonic calibration in rai",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031354",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "tell me what is isotonic calibration in rai",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031355",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "why does what is isotonic calibration in rai",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031356",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "why is probability calibration necessary in machine learning",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031357",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "why is probability calibration necessary in machine learning?",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031358",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "explain why is probability calibration necessary in machine learning",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031359",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "tell me why is probability calibration necessary in machine learning",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031360",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "why does why is probability calibration necessary in machine learning",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031361",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "how was rai trained on imd data",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031362",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "how was rai trained on imd data?",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031363",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "explain how was rai trained on imd data",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031364",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "tell me how was rai trained on imd data",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031365",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "why does how was rai trained on imd data",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031366",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "what is the rai operational threshold of 1.5%",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031367",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "what is the rai operational threshold of 1.5%?",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031368",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "explain what is the rai operational threshold of 1.5%",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031369",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "tell me what is the rai operational threshold of 1.5%",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031370",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "why does what is the rai operational threshold of 1.5%",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031371",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "why is the threshold 1.5% and not 50%",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031372",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "why is the threshold 1.5% and not 50%?",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031373",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "explain why is the threshold 1.5% and not 50%",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031374",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "tell me why is the threshold 1.5% and not 50%",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031375",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "why does why is the threshold 1.5% and not 50%",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031376",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "what is extreme class imbalance in weather prediction",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031377",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "what is extreme class imbalance in weather prediction?",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031378",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "explain what is extreme class imbalance in weather prediction",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031379",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "tell me what is extreme class imbalance in weather prediction",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031380",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "why does what is extreme class imbalance in weather prediction",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031381",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "how does rai prevent false alarms in heavy rain alerts",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031382",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "how does rai prevent false alarms in heavy rain alerts?",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031383",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "explain how does rai prevent false alarms in heavy rain alerts",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031384",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "tell me how does rai prevent false alarms in heavy rain alerts",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031385",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "why does how does rai prevent false alarms in heavy rain alerts",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031386",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "what is the difference between raw model probability and calibrated probability",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031387",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "what is the difference between raw model probability and calibrated probability?",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031388",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "explain what is the difference between raw model probability and calibrated probability",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031389",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "tell me what is the difference between raw model probability and calibrated probability",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031390",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "why does what is the difference between raw model probability and calibrated probability",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031391",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "what is brier score calibration in rai",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031392",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "what is brier score calibration in rai?",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031393",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "explain what is brier score calibration in rai",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031394",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "tell me what is brier score calibration in rai",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031395",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "why does what is brier score calibration in rai",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031396",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "how does rai combine live open meteo telemetry with xgboost inference",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031397",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "how does rai combine live open meteo telemetry with xgboost inference?",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031398",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "explain how does rai combine live open meteo telemetry with xgboost inference",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031399",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "tell me how does rai combine live open meteo telemetry with xgboost inference",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RAI-031400",
+    "category": "RAI_ML",
+    "subCategory": "PIPELINE_ARCHITECTURE",
+    "question": "why does how does rai combine live open meteo telemetry with xgboost inference",
+    "answerConcept": "R.A.I. uses a production-trained XGBoost ensemble (RAI-HeavyRain-XGBoost-IMD) with isotonic probability calibration to predict binary heavy-rainfall occurrence (≥64.5 mm/day). Because extreme heavy rain accounts for <1% of natural meteorological days, an operational decision threshold of tau* = 0.015 (1.5%) balances high precision and recall while minimizing false alarms.",
+    "keywords": [
+      "xgboost",
+      "isotonic calibration",
+      "14 features",
+      "imbalance",
+      "operational threshold",
+      "1.5%"
+    ],
+    "entities": [
+      "rai_ml_architecture"
+    ],
+    "relatedIntents": [
+      "XAI_PIPELINE",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  }
+]

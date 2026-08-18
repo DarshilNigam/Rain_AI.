@@ -1,0 +1,280 @@
+.pageRoot {
+  padding: clamp(0.75rem, 1.5vh, 1.5rem) 0 var(--rai-space-2xl);
+  min-height: calc(100svh - var(--rai-header-height));
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rai-space-md);
+  max-width: 1200px;
+}
+
+.actionBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  border-radius: var(--rai-radius-md);
+  background-color: #ffffff;
+  border: 1px solid var(--rai-color-border-subtle);
+}
+
+.countText {
+  font-family: var(--rai-font-body);
+  font-size: 0.8125rem;
+  color: var(--rai-color-text-secondary);
+}
+
+.countText strong {
+  color: var(--rai-color-text-primary);
+}
+
+.addCropBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: var(--rai-radius-full);
+  background-color: #0891b2;
+  color: #ffffff;
+  font-family: var(--rai-font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: var(--rai-transition-all);
+}
+
+.addCropBtn:hover {
+  background-color: #0e7490;
+  box-shadow: 0 2px 8px -2px rgba(8, 145, 178, 0.4);
+}
+
+.cropsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--rai-space-md);
+}
+
+.cropCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  background-color: #ffffff;
+  transition: var(--rai-transition-all);
+}
+
+.activeCardBorder {
+  border: 2px solid #86efac;
+  background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cropIconWrapper {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--rai-radius-md);
+  background-color: #ecfeff;
+  border: 1px solid #a5f3fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cropEmoji {
+  font-size: 1.4rem;
+}
+
+.badgeCol {
+  display: flex;
+  align-items: center;
+}
+
+.selectActiveBtn {
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--rai-radius-full);
+  background-color: #f1f5f9;
+  border: 1px solid var(--rai-color-border-subtle);
+  font-family: var(--rai-font-display);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: var(--rai-color-text-secondary);
+  cursor: pointer;
+  transition: var(--rai-transition-all);
+}
+
+.selectActiveBtn:hover {
+  background-color: #0891b2;
+  color: #ffffff;
+  border-color: #0891b2;
+}
+
+.cropTitle {
+  font-family: var(--rai-font-display);
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+  margin: 0;
+}
+
+.varietyText {
+  font-family: var(--rai-font-mono);
+  font-size: 0.6875rem;
+  color: var(--rai-color-text-secondary);
+}
+
+.cropMetaList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  padding: 0.6rem 0.75rem;
+  border-radius: var(--rai-radius-md);
+  background-color: var(--rai-color-bg-surface-subtle);
+  border: 1px solid var(--rai-color-border-subtle);
+}
+
+.metaRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--rai-font-body);
+  font-size: 0.75rem;
+  color: var(--rai-color-text-secondary);
+}
+
+.metaRow strong {
+  color: var(--rai-color-text-primary);
+}
+
+.cardFooter {
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--rai-color-border-subtle);
+}
+
+.activePill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--rai-font-display);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: #16a34a;
+}
+
+.switchFocusBtn {
+  background: none;
+  border: none;
+  font-family: var(--rai-font-display);
+  font-size: 0.71875rem;
+  font-weight: 700;
+  color: #0891b2;
+  cursor: pointer;
+  padding: 0;
+}
+
+.switchFocusBtn:hover {
+  text-decoration: underline;
+}
+
+/* Modal */
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 1rem;
+}
+
+.modalContent {
+  width: 100%;
+  max-width: 480px;
+  background-color: #ffffff;
+  border-radius: var(--rai-radius-xl);
+  padding: 1.5rem;
+  box-shadow: var(--rai-shadow-modal);
+}
+
+.modalTitle {
+  font-family: var(--rai-font-display);
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+  margin: 0 0 1rem;
+}
+
+.modalForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex: 1;
+}
+
+.formGroup label {
+  font-family: var(--rai-font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--rai-color-text-primary);
+}
+
+.formGroup input,
+.formGroup select {
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--rai-radius-md);
+  border: 1px solid var(--rai-color-border-subtle);
+  font-family: var(--rai-font-body);
+  font-size: 0.8125rem;
+  outline: none;
+}
+
+.formRow {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.modalActions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+}
+
+.cancelBtn {
+  padding: 0.45rem 0.9rem;
+  border-radius: var(--rai-radius-full);
+  background-color: #f1f5f9;
+  border: none;
+  font-family: var(--rai-font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--rai-color-text-secondary);
+  cursor: pointer;
+}
+
+.saveBtn {
+  padding: 0.45rem 1rem;
+  border-radius: var(--rai-radius-full);
+  background-color: #0891b2;
+  border: none;
+  font-family: var(--rai-font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #ffffff;
+  cursor: pointer;
+}

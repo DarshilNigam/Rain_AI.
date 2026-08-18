@@ -1,0 +1,555 @@
+.reliefPageRoot {
+  padding: clamp(1rem, 2vh, 2rem) 0 var(--rai-space-2xl);
+  min-height: calc(100svh - var(--rai-header-height));
+  display: flex;
+  flex-direction: column;
+}
+
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rai-space-md);
+  max-width: 1280px;
+}
+
+/* Header Banner */
+.headerBanner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rai-space-sm);
+  padding: 1rem 1.25rem;
+  border-radius: var(--rai-radius-lg);
+  background: var(--rai-gradient-glass-hero);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+}
+
+@media (min-width: 768px) {
+  .headerBanner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.headerLeft {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.iconCircle {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--rai-radius-md);
+  background-color: #f0fdf4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid #bbf7d0;
+}
+
+.headerMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.badgeRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.centerNodeTag {
+  font-family: var(--rai-font-mono);
+  font-size: 0.625rem;
+  font-weight: 700;
+  color: #16a34a;
+  letter-spacing: 0.05em;
+}
+
+.title {
+  font-family: var(--rai-font-display);
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+  margin: 0;
+}
+
+.subtitle {
+  font-family: var(--rai-font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--rai-color-text-secondary);
+  margin: 0;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+}
+
+.changeCenterBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.4rem 0.875rem;
+  border-radius: var(--rai-radius-full);
+  background-color: #ffffff;
+  border: 1px solid #bbf7d0;
+  font-family: var(--rai-font-display);
+  font-size: 0.78125rem;
+  font-weight: 700;
+  color: #16a34a;
+  cursor: pointer;
+  transition: var(--rai-transition-all);
+}
+
+.changeCenterBtn:hover {
+  background-color: #f0fdf4;
+  border-color: #16a34a;
+  box-shadow: 0 2px 10px -2px rgba(22, 163, 74, 0.25);
+  transform: translateY(-1px);
+}
+
+.compassIcon {
+  color: #16a34a;
+}
+
+/* Exploration Notification Bar */
+.explorationBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.55rem 1rem;
+  border-radius: var(--rai-radius-md);
+  background-color: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  box-shadow: 0 2px 8px -2px rgba(22, 163, 74, 0.15);
+}
+
+.explorationInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--rai-font-body);
+  font-size: 0.78125rem;
+  color: #15803d;
+}
+
+.pulseIcon {
+  animation: pulse-icon 1.8s infinite ease-in-out;
+}
+
+@keyframes pulse-icon {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.18); opacity: 0.6; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.resetMyLocationBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.28rem 0.7rem;
+  border-radius: var(--rai-radius-full);
+  background-color: #ffffff;
+  border: 1.5px solid #16a34a;
+  font-family: var(--rai-font-display);
+  font-size: 0.71875rem;
+  font-weight: 700;
+  color: #16a34a;
+  cursor: pointer;
+  transition: var(--rai-transition-all);
+  white-space: nowrap;
+}
+
+.resetMyLocationBtn:hover {
+  background-color: #16a34a;
+  color: #ffffff;
+  box-shadow: 0 2px 8px -2px rgba(22, 163, 74, 0.3);
+}
+
+/* Hub Summary Card */
+.hubSummaryCard {
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--rai-radius-xl);
+  background: #ffffff;
+  border: 1.5px solid #bbf7d0;
+  box-shadow: var(--rai-shadow-card);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.hubTopRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hubStatusBadge {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--rai-font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #16a34a;
+}
+
+.sdmaBadgeText {
+  font-family: var(--rai-font-mono);
+  font-size: 0.625rem;
+  font-weight: 600;
+  color: var(--rai-color-text-tertiary);
+}
+
+.hubTitle {
+  font-family: var(--rai-font-display);
+  font-size: clamp(1.15rem, 2vw, 1.35rem);
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+  margin: 0;
+}
+
+.hubDesc {
+  font-family: var(--rai-font-body);
+  font-size: 0.8125rem;
+  color: var(--rai-color-text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Sections */
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.sectionHeaderBanner {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sectionTitle {
+  font-family: var(--rai-font-display);
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+  margin: 0;
+}
+
+.sectionSub {
+  font-family: var(--rai-font-body);
+  font-size: 0.6875rem;
+  color: var(--rai-color-text-secondary);
+}
+
+/* Helplines Grid */
+.helplinesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0.65rem;
+}
+
+.helplineCard {
+  padding: 0.875rem 1rem;
+  border-radius: var(--rai-radius-lg);
+  background-color: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.95);
+  box-shadow: 0 2px 8px -2px rgba(15, 23, 42, 0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.citySpecialCard {
+  border: 1.5px solid #bae6fd;
+  background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
+}
+
+.cityBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--rai-font-mono);
+  font-size: 0.5625rem;
+  font-weight: 800;
+  color: #0284c7;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+}
+
+.helplineName {
+  display: block;
+  font-family: var(--rai-font-display);
+  font-size: 0.8125rem;
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+}
+
+.helplinePurpose {
+  display: block;
+  font-family: var(--rai-font-body);
+  font-size: 0.6875rem;
+  color: var(--rai-color-text-secondary);
+  margin-top: 0.15rem;
+  line-height: 1.35;
+}
+
+.helplineCardBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--rai-color-border-subtle);
+}
+
+.helplineNumber {
+  font-family: var(--rai-font-mono);
+  font-size: 0.875rem;
+  font-weight: 800;
+  color: #0891b2;
+}
+
+.callBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--rai-radius-full);
+  background-color: #0891b2;
+  color: #ffffff;
+  font-family: var(--rai-font-display);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: var(--rai-transition-all);
+}
+
+.callBtn:hover {
+  background-color: #0e7490;
+  box-shadow: 0 2px 8px -2px rgba(8, 145, 178, 0.4);
+}
+
+/* Resources Grid */
+.resourcesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--rai-space-md);
+}
+
+.resourceCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: #ffffff;
+}
+
+.resourceCardTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.resourceIconCircle {
+  width: 34px;
+  height: 34px;
+  border-radius: var(--rai-radius-md);
+  background-color: #ecfeff;
+  border: 1px solid #a5f3fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resourceTitle {
+  font-family: var(--rai-font-display);
+  font-size: 0.9375rem;
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+  margin: 0;
+}
+
+.resourceDescription {
+  font-family: var(--rai-font-body);
+  font-size: 0.75rem;
+  color: var(--rai-color-text-secondary);
+  line-height: 1.45;
+  margin: 0;
+  flex: 1;
+}
+
+.resourceAgencyBlock {
+  padding: 0.4rem 0.6rem;
+  border-radius: var(--rai-radius-sm);
+  background-color: var(--rai-color-bg-surface-subtle);
+  border: 1px solid var(--rai-color-border-subtle);
+}
+
+.agencyLabel {
+  display: block;
+  font-family: var(--rai-font-mono);
+  font-size: 0.5625rem;
+  font-weight: 800;
+  color: var(--rai-color-text-tertiary);
+  letter-spacing: 0.05em;
+}
+
+.agencyName {
+  display: block;
+  font-family: var(--rai-font-display);
+  font-size: 0.71875rem;
+  font-weight: 700;
+  color: var(--rai-color-text-primary);
+}
+
+.resourceFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--rai-color-border-subtle);
+}
+
+.resourceContactText {
+  font-family: var(--rai-font-body);
+  font-size: 0.6875rem;
+  color: var(--rai-color-text-secondary);
+}
+
+.openPortalBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-family: var(--rai-font-display);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: #0284c7;
+  text-decoration: underline;
+}
+
+/* SDMA Card */
+.sdmaCard {
+  background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
+  border: 1.5px solid #bbf7d0;
+}
+
+.sdmaCardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .sdmaCardContent {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.sdmaLeft {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.875rem;
+}
+
+.sdmaIcon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--rai-radius-lg);
+  background-color: #ecfeff;
+  border: 1px solid #a5f3fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.sdmaSuperTag {
+  font-family: var(--rai-font-mono);
+  font-size: 0.59375rem;
+  font-weight: 800;
+  color: #0891b2;
+  letter-spacing: 0.06em;
+}
+
+.sdmaTitle {
+  font-family: var(--rai-font-display);
+  font-size: 1.0625rem;
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+  margin: 0.15rem 0 0.25rem;
+}
+
+.sdmaDesc {
+  font-family: var(--rai-font-body);
+  font-size: 0.75rem;
+  color: var(--rai-color-text-secondary);
+  line-height: 1.45;
+  margin: 0 0 0.5rem;
+}
+
+.sdmaMetaRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.875rem;
+  font-family: var(--rai-font-body);
+  font-size: 0.71875rem;
+  color: var(--rai-color-text-secondary);
+}
+
+.sdmaPortalBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 1rem;
+  border-radius: var(--rai-radius-full);
+  background-color: #16a34a;
+  color: #ffffff;
+  font-family: var(--rai-font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: var(--rai-transition-all);
+  white-space: nowrap;
+}
+
+.sdmaPortalBtn:hover {
+  background-color: #15803d;
+  box-shadow: 0 4px 12px -2px rgba(22, 163, 74, 0.35);
+}
+
+/* Attribution Strip */
+.attributionStrip {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+@media (min-width: 768px) {
+  .attributionStrip {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.attributionItem {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--rai-font-body);
+  font-size: 0.6875rem;
+  color: var(--rai-color-text-tertiary);
+}

@@ -1,0 +1,633 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: var(--rai-z-modal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--rai-space-md);
+  overflow-y: auto;
+  animation: rai-fade-in var(--rai-duration-fast) ease-out;
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: opacity var(--rai-duration-normal) ease;
+}
+
+.dialog {
+  position: relative;
+  width: 100%;
+  max-width: 820px;
+  background-color: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(226, 232, 240, 0.95);
+  border-radius: var(--rai-radius-xl);
+  box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.8) inset;
+  padding: clamp(1.25rem, 3vh, 2rem) clamp(1.25rem, 3vw, 2.25rem);
+  z-index: 1;
+  overflow: hidden;
+  animation: rai-slide-up var(--rai-duration-normal) var(--rai-ease-spring);
+  margin: auto;
+}
+
+.modalAura {
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(circle, rgba(6, 182, 212, 0.18) 0%, rgba(14, 165, 233, 0.08) 50%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(40px);
+}
+
+.closeBtn {
+  position: absolute;
+  top: var(--rai-space-base);
+  right: var(--rai-space-base);
+  width: 34px;
+  height: 34px;
+  border-radius: var(--rai-radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--rai-color-border-subtle);
+  background-color: var(--rai-color-bg-surface);
+  color: var(--rai-color-text-secondary);
+  cursor: pointer;
+  transition: var(--rai-transition-all);
+  z-index: 10;
+}
+
+.closeBtn:hover {
+  background-color: var(--rai-color-bg-surface-subtle);
+  color: var(--rai-color-text-primary);
+  border-color: var(--rai-color-border-default);
+  transform: scale(1.05);
+}
+
+/* ==========================================================================
+   SELECTION VIEW (3D AUTH CARDS)
+   ========================================================================== */
+.selectionView {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rai-space-lg);
+  position: relative;
+}
+
+.modalHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.35rem;
+}
+
+.loginRequiredBanner {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: var(--rai-radius-lg);
+  background-color: #ecfeff;
+  border: 1.5px solid #a5f3fc;
+  box-shadow: 0 2px 10px -2px rgba(6, 182, 212, 0.15);
+  margin-bottom: 0.5rem;
+  text-align: left;
+  width: 100%;
+}
+
+.loginRequiredIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--rai-radius-md);
+  background-color: #ffffff;
+  border: 1px solid #a5f3fc;
+  color: #0891b2;
+  flex-shrink: 0;
+}
+
+.loginRequiredText {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.loginRequiredTitle {
+  font-family: var(--rai-font-display);
+  font-size: 0.8125rem;
+  font-weight: 800;
+  color: #0e7490;
+  letter-spacing: 0.02em;
+}
+
+.loginRequiredSubtitle {
+  font-family: var(--rai-font-body);
+  font-size: 0.75rem;
+  color: var(--rai-color-text-secondary);
+  line-height: 1.35;
+}
+
+.brandSuperTag {
+  font-family: var(--rai-font-display);
+  font-size: 0.6875rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--rai-color-text-cyan);
+}
+
+.modalTitle {
+  font-family: var(--rai-font-display);
+  font-size: clamp(1.35rem, 2.2vw, 1.75rem);
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+  letter-spacing: -0.03em;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.modalSubtitle {
+  font-family: var(--rai-font-body);
+  font-size: 0.84375rem;
+  color: var(--rai-color-text-secondary);
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.45;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--rai-space-md);
+  perspective: 1200px;
+}
+
+@media (min-width: 720px) {
+  .cardsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* 3D Material Cards */
+.card3d {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.25rem 1.15rem;
+  border-radius: var(--rai-radius-lg);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 4px 14px -2px rgba(15, 23, 42, 0.04);
+  cursor: pointer;
+  transition: transform 300ms cubic-bezier(0.175, 0.885, 0.32, 1.2),
+              box-shadow 300ms ease,
+              border-color 250ms ease,
+              background-color 250ms ease;
+  overflow: hidden;
+  min-height: 240px;
+}
+
+.cardGlow {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(28px);
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+.card3d:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 16px 32px -6px rgba(15, 23, 42, 0.1);
+  background-color: #ffffff;
+}
+
+.card3d:hover .cardGlow {
+  opacity: 0.6;
+}
+
+/* Card Specific Theming */
+.cardLogin:hover {
+  border-color: #38bdf8;
+}
+.cardLogin .cardGlow {
+  background: rgba(14, 165, 233, 0.4);
+}
+
+.cardUser:hover {
+  border-color: #22d3ee;
+}
+.cardUser .cardGlow {
+  background: rgba(6, 182, 212, 0.4);
+}
+
+.cardFarmer:hover {
+  border-color: #4ade80;
+}
+.cardFarmer .cardGlow {
+  background: rgba(34, 197, 94, 0.4);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.875rem;
+}
+
+.iconCircle {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--rai-radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--rai-color-bg-surface-subtle);
+  border: 1px solid var(--rai-color-border-subtle);
+  box-shadow: 0 2px 6px -1px rgba(15, 23, 42, 0.05);
+  transition: transform 260ms ease, box-shadow 260ms ease;
+}
+
+.card3d:hover .iconCircle {
+  transform: translateY(-1px) scale(1.06);
+  box-shadow: 0 4px 10px -2px rgba(15, 23, 42, 0.1);
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+.cardTitle {
+  font-family: var(--rai-font-display);
+  font-size: 0.9375rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: var(--rai-color-text-primary);
+  margin: 0;
+}
+
+.cardDesc {
+  font-family: var(--rai-font-body);
+  font-size: 0.78125rem;
+  color: var(--rai-color-text-secondary);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.cardFooter {
+  margin-top: auto;
+}
+
+/* ==========================================================================
+   FORM CONTAINER & SHARED FORM STYLES
+   ========================================================================== */
+.formView {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rai-space-md);
+  animation: rai-fade-in var(--rai-duration-fast) ease-out;
+}
+
+.backBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--rai-font-display);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--rai-color-text-secondary);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: fit-content;
+  transition: var(--rai-transition-colors);
+}
+
+.backBtn:hover {
+  color: var(--rai-color-text-cyan);
+}
+
+.formHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.formSuperTag {
+  font-family: var(--rai-font-display);
+  font-size: 0.65625rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--rai-color-text-cyan);
+}
+
+.formTitle {
+  font-family: var(--rai-font-display);
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.formSubtitle {
+  font-family: var(--rai-font-body);
+  font-size: 0.8125rem;
+  color: var(--rai-color-text-secondary);
+  margin: 0;
+}
+
+.formErrorBanner {
+  padding: 0.65rem 0.875rem;
+  border-radius: var(--rai-radius-md);
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #dc2626;
+  font-family: var(--rai-font-body);
+  font-size: 0.78125rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.formFields {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.fieldLabel {
+  font-family: var(--rai-font-display);
+  font-size: 0.71875rem;
+  font-weight: 700;
+  color: var(--rai-color-text-primary);
+  letter-spacing: 0.02em;
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.inputField {
+  width: 100%;
+  height: 40px;
+  padding: 0 0.875rem;
+  border-radius: var(--rai-radius-md);
+  border: 1px solid var(--rai-color-border-subtle);
+  background-color: var(--rai-color-bg-surface);
+  font-family: var(--rai-font-body);
+  font-size: 0.84375rem;
+  color: var(--rai-color-text-primary);
+  transition: var(--rai-transition-all);
+}
+
+.inputField:focus {
+  outline: none;
+  border-color: var(--rai-color-ai-500);
+  box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.15);
+  background-color: #ffffff;
+}
+
+.togglePassBtn {
+  position: absolute;
+  right: 0.75rem;
+  background: none;
+  border: none;
+  color: var(--rai-color-text-tertiary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.togglePassBtn:hover {
+  color: var(--rai-color-text-primary);
+}
+
+.formRowTwo {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.875rem;
+}
+
+@media (min-width: 600px) {
+  .formRowTwo {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.forgotPassLink {
+  background: none;
+  border: none;
+  font-family: var(--rai-font-body);
+  font-size: 0.71875rem;
+  color: var(--rai-color-text-cyan);
+  text-decoration: none;
+  cursor: pointer;
+  align-self: flex-end;
+  padding: 0;
+}
+
+.forgotPassLink:hover {
+  text-decoration: underline;
+}
+
+.rememberMeGroup {
+  display: flex;
+  align-items: center;
+  margin-top: -0.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--rai-font-body);
+  font-size: 0.8125rem;
+  color: var(--rai-color-text-secondary);
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkboxInput {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  accent-color: #0284c7;
+  cursor: pointer;
+}
+
+.forgotPassLink:hover {
+  text-decoration: underline;
+}
+
+.unverifiedNoticeBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  border-radius: var(--rai-radius-md);
+  margin-bottom: 0.25rem;
+}
+
+.unverifiedNoticeText {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.78125rem;
+  color: #92400e;
+  font-weight: 500;
+}
+
+.formSecondaryActions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-family: var(--rai-font-body);
+  font-size: 0.78125rem;
+  color: var(--rai-color-text-secondary);
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--rai-color-border-subtle);
+}
+
+.switchAuthBtn {
+  background: none;
+  border: none;
+  color: var(--rai-color-text-cyan);
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0;
+}
+
+.switchAuthBtn:hover {
+  text-decoration: underline;
+}
+
+/* Location Selector for Farmer */
+.locationSelectorBox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  border-radius: var(--rai-radius-md);
+  background-color: #f0fdf4;
+  border: 1px solid #bbf7d0;
+}
+
+.locationTopRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.locationBadge {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--rai-font-mono);
+  font-size: 0.71875rem;
+  color: #15803d;
+  font-weight: 600;
+}
+
+.useLocationBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--rai-radius-sm);
+  background-color: #ffffff;
+  border: 1px solid #86efac;
+  color: #166534;
+  font-family: var(--rai-font-display);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--rai-transition-all);
+}
+
+.useLocationBtn:hover {
+  background-color: #dcfce7;
+  border-color: #4ade80;
+}
+
+/* ==========================================================================
+   SUCCESS CONFIRMATION STATE
+   ========================================================================== */
+.successView {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--rai-space-md);
+  padding: 1.5rem 0;
+  animation: rai-fade-in var(--rai-duration-normal) ease-out;
+}
+
+.successIconWrapper {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #16a34a;
+  box-shadow: 0 0 24px -2px rgba(34, 197, 94, 0.35);
+}
+
+.successTitle {
+  font-family: var(--rai-font-display);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+  margin: 0;
+}
+
+.successSubtitle {
+  font-family: var(--rai-font-body);
+  font-size: 0.875rem;
+  color: var(--rai-color-text-secondary);
+  max-width: 420px;
+  margin: 0;
+  line-height: 1.45;
+}

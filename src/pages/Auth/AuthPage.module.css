@@ -1,0 +1,16 @@
+.authPageRoot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100svh - var(--rai-header-height));
+  width: 100%;
+  position: relative;
+  padding: var(--rai-space-lg) 0;
+}
+
+.authPageCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}

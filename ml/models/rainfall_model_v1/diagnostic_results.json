@@ -1,0 +1,708 @@
+{
+  "validationSweep": [
+    {
+      "threshold": 0.001,
+      "tp": 405,
+      "fp": 25915,
+      "tn": 0,
+      "fn": 0,
+      "predictedPositives": 26320,
+      "precision": 0.0154,
+      "recall": 1.0,
+      "f1": 0.0303,
+      "f2": 0.0725
+    },
+    {
+      "threshold": 0.0025,
+      "tp": 405,
+      "fp": 25915,
+      "tn": 0,
+      "fn": 0,
+      "predictedPositives": 26320,
+      "precision": 0.0154,
+      "recall": 1.0,
+      "f1": 0.0303,
+      "f2": 0.0725
+    },
+    {
+      "threshold": 0.005,
+      "tp": 405,
+      "fp": 25915,
+      "tn": 0,
+      "fn": 0,
+      "predictedPositives": 26320,
+      "precision": 0.0154,
+      "recall": 1.0,
+      "f1": 0.0303,
+      "f2": 0.0725
+    },
+    {
+      "threshold": 0.01,
+      "tp": 248,
+      "fp": 2906,
+      "tn": 23009,
+      "fn": 157,
+      "predictedPositives": 3154,
+      "precision": 0.0786,
+      "recall": 0.6123,
+      "f1": 0.1394,
+      "f2": 0.2597
+    },
+    {
+      "threshold": 0.015,
+      "tp": 211,
+      "fp": 1715,
+      "tn": 24200,
+      "fn": 194,
+      "predictedPositives": 1926,
+      "precision": 0.1096,
+      "recall": 0.521,
+      "f1": 0.181,
+      "f2": 0.2975
+    },
+    {
+      "threshold": 0.02,
+      "tp": 191,
+      "fp": 1391,
+      "tn": 24524,
+      "fn": 214,
+      "predictedPositives": 1582,
+      "precision": 0.1207,
+      "recall": 0.4716,
+      "f1": 0.1922,
+      "f2": 0.2983
+    },
+    {
+      "threshold": 0.03,
+      "tp": 180,
+      "fp": 1096,
+      "tn": 24819,
+      "fn": 225,
+      "predictedPositives": 1276,
+      "precision": 0.1411,
+      "recall": 0.4444,
+      "f1": 0.2142,
+      "f2": 0.3108
+    },
+    {
+      "threshold": 0.04,
+      "tp": 173,
+      "fp": 942,
+      "tn": 24973,
+      "fn": 232,
+      "predictedPositives": 1115,
+      "precision": 0.1552,
+      "recall": 0.4272,
+      "f1": 0.2276,
+      "f2": 0.3163
+    },
+    {
+      "threshold": 0.05,
+      "tp": 165,
+      "fp": 853,
+      "tn": 25062,
+      "fn": 240,
+      "predictedPositives": 1018,
+      "precision": 0.1621,
+      "recall": 0.4074,
+      "f1": 0.2319,
+      "f2": 0.3127
+    },
+    {
+      "threshold": 0.075,
+      "tp": 150,
+      "fp": 706,
+      "tn": 25209,
+      "fn": 255,
+      "predictedPositives": 856,
+      "precision": 0.1752,
+      "recall": 0.3704,
+      "f1": 0.2379,
+      "f2": 0.3029
+    },
+    {
+      "threshold": 0.1,
+      "tp": 135,
+      "fp": 602,
+      "tn": 25313,
+      "fn": 270,
+      "predictedPositives": 737,
+      "precision": 0.1832,
+      "recall": 0.3333,
+      "f1": 0.2364,
+      "f2": 0.2864
+    },
+    {
+      "threshold": 0.15,
+      "tp": 117,
+      "fp": 459,
+      "tn": 25456,
+      "fn": 288,
+      "predictedPositives": 576,
+      "precision": 0.2031,
+      "recall": 0.2889,
+      "f1": 0.2385,
+      "f2": 0.2664
+    },
+    {
+      "threshold": 0.2,
+      "tp": 88,
+      "fp": 325,
+      "tn": 25590,
+      "fn": 317,
+      "predictedPositives": 413,
+      "precision": 0.2131,
+      "recall": 0.2173,
+      "f1": 0.2152,
+      "f2": 0.2164
+    },
+    {
+      "threshold": 0.3,
+      "tp": 0,
+      "fp": 0,
+      "tn": 25915,
+      "fn": 405,
+      "predictedPositives": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "f2": 0.0
+    },
+    {
+      "threshold": 0.5,
+      "tp": 0,
+      "fp": 0,
+      "tn": 25915,
+      "fn": 405,
+      "predictedPositives": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "f2": 0.0
+    }
+  ],
+  "testSweep": [
+    {
+      "threshold": 0.001,
+      "tp": 116,
+      "fp": 26204,
+      "tn": 0,
+      "fn": 0,
+      "predictedPositives": 26320,
+      "precision": 0.0044,
+      "recall": 1.0,
+      "f1": 0.0088,
+      "f2": 0.0217
+    },
+    {
+      "threshold": 0.0025,
+      "tp": 116,
+      "fp": 26204,
+      "tn": 0,
+      "fn": 0,
+      "predictedPositives": 26320,
+      "precision": 0.0044,
+      "recall": 1.0,
+      "f1": 0.0088,
+      "f2": 0.0217
+    },
+    {
+      "threshold": 0.005,
+      "tp": 116,
+      "fp": 26204,
+      "tn": 0,
+      "fn": 0,
+      "predictedPositives": 26320,
+      "precision": 0.0044,
+      "recall": 1.0,
+      "f1": 0.0088,
+      "f2": 0.0217
+    },
+    {
+      "threshold": 0.01,
+      "tp": 30,
+      "fp": 160,
+      "tn": 26044,
+      "fn": 86,
+      "predictedPositives": 190,
+      "precision": 0.1579,
+      "recall": 0.2586,
+      "f1": 0.1961,
+      "f2": 0.2294
+    },
+    {
+      "threshold": 0.015,
+      "tp": 9,
+      "fp": 66,
+      "tn": 26138,
+      "fn": 107,
+      "predictedPositives": 75,
+      "precision": 0.12,
+      "recall": 0.0776,
+      "f1": 0.0942,
+      "f2": 0.0835
+    },
+    {
+      "threshold": 0.02,
+      "tp": 8,
+      "fp": 49,
+      "tn": 26155,
+      "fn": 108,
+      "predictedPositives": 57,
+      "precision": 0.1404,
+      "recall": 0.069,
+      "f1": 0.0925,
+      "f2": 0.0768
+    },
+    {
+      "threshold": 0.03,
+      "tp": 8,
+      "fp": 37,
+      "tn": 26167,
+      "fn": 108,
+      "predictedPositives": 45,
+      "precision": 0.1778,
+      "recall": 0.069,
+      "f1": 0.0994,
+      "f2": 0.0786
+    },
+    {
+      "threshold": 0.04,
+      "tp": 7,
+      "fp": 35,
+      "tn": 26169,
+      "fn": 109,
+      "predictedPositives": 42,
+      "precision": 0.1667,
+      "recall": 0.0603,
+      "f1": 0.0886,
+      "f2": 0.0692
+    },
+    {
+      "threshold": 0.05,
+      "tp": 6,
+      "fp": 30,
+      "tn": 26174,
+      "fn": 110,
+      "predictedPositives": 36,
+      "precision": 0.1667,
+      "recall": 0.0517,
+      "f1": 0.0789,
+      "f2": 0.06
+    },
+    {
+      "threshold": 0.075,
+      "tp": 4,
+      "fp": 25,
+      "tn": 26179,
+      "fn": 112,
+      "predictedPositives": 29,
+      "precision": 0.1379,
+      "recall": 0.0345,
+      "f1": 0.0552,
+      "f2": 0.0406
+    },
+    {
+      "threshold": 0.1,
+      "tp": 2,
+      "fp": 23,
+      "tn": 26181,
+      "fn": 114,
+      "predictedPositives": 25,
+      "precision": 0.08,
+      "recall": 0.0172,
+      "f1": 0.0284,
+      "f2": 0.0204
+    },
+    {
+      "threshold": 0.15,
+      "tp": 0,
+      "fp": 9,
+      "tn": 26195,
+      "fn": 116,
+      "predictedPositives": 9,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "f2": 0.0
+    },
+    {
+      "threshold": 0.2,
+      "tp": 0,
+      "fp": 4,
+      "tn": 26200,
+      "fn": 116,
+      "predictedPositives": 4,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "f2": 0.0
+    },
+    {
+      "threshold": 0.3,
+      "tp": 0,
+      "fp": 0,
+      "tn": 26204,
+      "fn": 116,
+      "predictedPositives": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "f2": 0.0
+    },
+    {
+      "threshold": 0.5,
+      "tp": 0,
+      "fp": 0,
+      "tn": 26204,
+      "fn": 116,
+      "predictedPositives": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "f2": 0.0
+    }
+  ],
+  "stationStats": {
+    "Ahmedabad": {
+      "validation": {
+        "totalRecords": 2632,
+        "positives": 79,
+        "at_tau_05": {
+          "alerts": 315,
+          "tp": 47,
+          "precision": 0.1492,
+          "recall": 0.5949
+        },
+        "at_tau_015": {
+          "alerts": 492,
+          "tp": 57,
+          "precision": 0.1159,
+          "recall": 0.7215
+        }
+      },
+      "test": {
+        "totalRecords": 2632,
+        "positives": 0,
+        "at_tau_05": {
+          "alerts": 0,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "at_tau_015": {
+          "alerts": 0,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        }
+      }
+    },
+    "Chennai": {
+      "validation": {
+        "totalRecords": 2632,
+        "positives": 0,
+        "at_tau_05": {
+          "alerts": 16,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "at_tau_015": {
+          "alerts": 34,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        }
+      },
+      "test": {
+        "totalRecords": 2632,
+        "positives": 51,
+        "at_tau_05": {
+          "alerts": 36,
+          "tp": 6,
+          "precision": 0.1667,
+          "recall": 0.1176
+        },
+        "at_tau_015": {
+          "alerts": 71,
+          "tp": 9,
+          "precision": 0.1268,
+          "recall": 0.1765
+        }
+      }
+    },
+    "Delhi": {
+      "validation": {
+        "totalRecords": 2632,
+        "positives": 60,
+        "at_tau_05": {
+          "alerts": 13,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "at_tau_015": {
+          "alerts": 59,
+          "tp": 1,
+          "precision": 0.0169,
+          "recall": 0.0167
+        }
+      },
+      "test": {
+        "totalRecords": 2632,
+        "positives": 16,
+        "at_tau_05": {
+          "alerts": 0,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "at_tau_015": {
+          "alerts": 0,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        }
+      }
+    },
+    "Karnal": {
+      "validation": {
+        "totalRecords": 2632,
+        "positives": 17,
+        "at_tau_05": {
+          "alerts": 8,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "at_tau_015": {
+          "alerts": 21,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        }
+      },
+      "test": {
+        "totalRecords": 2632,
+        "positives": 0,
+        "at_tau_05": {
+          "alerts": 0,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "at_tau_015": {
+          "alerts": 0,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        }
+      }
+    },
+    "Kolkata": {
+      "validation": {
+        "totalRecords": 2632,
+        "positives": 24,
+        "at_tau_05": {
+          "alerts": 49,
+          "tp": 9,
+          "precision": 0.1837,
+          "recall": 0.375
+        },
+        "at_tau_015": {
+          "alerts": 212,
+          "tp": 9,
+          "precision": 0.0425,
+          "recall": 0.375
+        }
+      },
+      "test": {
+        "totalRecords": 2632,
+        "positives": 17,
+        "at_tau_05": {
+          "alerts": 0,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "at_tau_015": {
+          "alerts": 0,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        }
+      }
+    },
+    "Lakhimpur": {
+      "validation": {
+        "totalRecords": 2632,
+        "positives": 67,
+        "at_tau_05": {
+          "alerts": 139,
+          "tp": 1,
+          "precision": 0.0072,
+          "recall": 0.0149
+        },
+        "at_tau_015": {
+          "alerts": 322,
+          "tp": 18,
+          "precision": 0.0559,
+          "recall": 0.2687
+        }
+      },
+      "test": {
+        "totalRecords": 2632,
+        "positives": 21,
+        "at_tau_05": {
+          "alerts": 0,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "at_tau_015": {
+          "alerts": 0,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        }
+      }
+    },
+    "Ludhiana": {
+      "validation": {
+        "totalRecords": 2632,
+        "positives": 0,
+        "at_tau_05": {
+          "alerts": 3,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "at_tau_015": {
+          "alerts": 15,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        }
+      },
+      "test": {
+        "totalRecords": 2632,
+        "positives": 0,
+        "at_tau_05": {
+          "alerts": 0,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "at_tau_015": {
+          "alerts": 0,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        }
+      }
+    },
+    "Mumbai": {
+      "validation": {
+        "totalRecords": 2632,
+        "positives": 158,
+        "at_tau_05": {
+          "alerts": 454,
+          "tp": 108,
+          "precision": 0.2379,
+          "recall": 0.6835
+        },
+        "at_tau_015": {
+          "alerts": 640,
+          "tp": 126,
+          "precision": 0.1969,
+          "recall": 0.7975
+        }
+      },
+      "test": {
+        "totalRecords": 2632,
+        "positives": 11,
+        "at_tau_05": {
+          "alerts": 0,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "at_tau_015": {
+          "alerts": 4,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        }
+      }
+    },
+    "Nashik": {
+      "validation": {
+        "totalRecords": 2632,
+        "positives": 0,
+        "at_tau_05": {
+          "alerts": 0,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "at_tau_015": {
+          "alerts": 1,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        }
+      },
+      "test": {
+        "totalRecords": 2632,
+        "positives": 0,
+        "at_tau_05": {
+          "alerts": 0,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "at_tau_015": {
+          "alerts": 0,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        }
+      }
+    },
+    "Patna": {
+      "validation": {
+        "totalRecords": 2632,
+        "positives": 0,
+        "at_tau_05": {
+          "alerts": 21,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "at_tau_015": {
+          "alerts": 130,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        }
+      },
+      "test": {
+        "totalRecords": 2632,
+        "positives": 0,
+        "at_tau_05": {
+          "alerts": 0,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "at_tau_015": {
+          "alerts": 0,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        }
+      }
+    }
+  }
+}

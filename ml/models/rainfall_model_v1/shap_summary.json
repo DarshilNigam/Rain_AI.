@@ -1,0 +1,173 @@
+{
+  "modelName": "RAI-HeavyRain-XGBoost-IMD",
+  "baseExpectedValue": 0.432928204536438,
+  "globalFeatureImportance": [
+    {
+      "feature": "sin_month",
+      "meanAbsShap": 1.4895,
+      "displayName": "Monsoon Seasonality (Sine)",
+      "unit": "dimensionless (-1 to 1)"
+    },
+    {
+      "feature": "cloud_cover",
+      "meanAbsShap": 1.2605,
+      "displayName": "Atmospheric Cloud Cover",
+      "unit": "%"
+    },
+    {
+      "feature": "precipitation",
+      "meanAbsShap": 0.8705,
+      "displayName": "Current Precipitation Rate",
+      "unit": "mm/h"
+    },
+    {
+      "feature": "convective_energy_proxy",
+      "meanAbsShap": 0.709,
+      "displayName": "Convective Instability Index",
+      "unit": "dimensionless"
+    },
+    {
+      "feature": "wind_speed_10m",
+      "meanAbsShap": 0.704,
+      "displayName": "Sustained Wind Speed",
+      "unit": "km/h"
+    },
+    {
+      "feature": "rain_24h",
+      "meanAbsShap": 0.621,
+      "displayName": "Past 24h Accumulated Rain",
+      "unit": "mm"
+    },
+    {
+      "feature": "surface_pressure",
+      "meanAbsShap": 0.4683,
+      "displayName": "Surface Barometric Pressure",
+      "unit": "hPa"
+    },
+    {
+      "feature": "rain_6h",
+      "meanAbsShap": 0.4365,
+      "displayName": "Past 6h Accumulated Rain",
+      "unit": "mm"
+    },
+    {
+      "feature": "wind_direction_10m",
+      "meanAbsShap": 0.4267,
+      "displayName": "Wind Direction",
+      "unit": "degrees"
+    },
+    {
+      "feature": "cos_month",
+      "meanAbsShap": 0.3313,
+      "displayName": "Monsoon Seasonality (Cosine)",
+      "unit": "dimensionless (-1 to 1)"
+    },
+    {
+      "feature": "rain_12h",
+      "meanAbsShap": 0.3183,
+      "displayName": "Past 12h Accumulated Rain",
+      "unit": "mm"
+    },
+    {
+      "feature": "temperature_2m",
+      "meanAbsShap": 0.2871,
+      "displayName": "Ambient Temperature",
+      "unit": "\u00b0C"
+    },
+    {
+      "feature": "rain_3h",
+      "meanAbsShap": 0.2585,
+      "displayName": "Past 3h Accumulated Rain",
+      "unit": "mm"
+    },
+    {
+      "feature": "temperature_change",
+      "meanAbsShap": 0.245,
+      "displayName": "3-Hour Temperature Shift",
+      "unit": "\u00b0C/3h"
+    },
+    {
+      "feature": "satellite_precipitation",
+      "meanAbsShap": 0.207,
+      "displayName": "Satellite Instantaneous Rain Rate",
+      "unit": "mm/h"
+    },
+    {
+      "feature": "satellite_precipitation_24h",
+      "meanAbsShap": 0.1567,
+      "displayName": "Satellite 24h Accumulation",
+      "unit": "mm"
+    },
+    {
+      "feature": "sin_hour",
+      "meanAbsShap": 0.1101,
+      "displayName": "Diurnal Solar Cycle (Sine)",
+      "unit": "dimensionless (-1 to 1)"
+    },
+    {
+      "feature": "rain_1h",
+      "meanAbsShap": 0.106,
+      "displayName": "Past 1h Rainfall",
+      "unit": "mm"
+    },
+    {
+      "feature": "relative_humidity_2m",
+      "meanAbsShap": 0.0918,
+      "displayName": "Relative Humidity",
+      "unit": "%"
+    },
+    {
+      "feature": "pressure_change",
+      "meanAbsShap": 0.0762,
+      "displayName": "3-Hour Pressure Tendency",
+      "unit": "hPa/3h"
+    },
+    {
+      "feature": "latitude",
+      "meanAbsShap": 0.0743,
+      "displayName": "Geographic Latitude",
+      "unit": "degrees N"
+    },
+    {
+      "feature": "cos_hour",
+      "meanAbsShap": 0.0645,
+      "displayName": "Diurnal Solar Cycle (Cosine)",
+      "unit": "dimensionless (-1 to 1)"
+    },
+    {
+      "feature": "longitude",
+      "meanAbsShap": 0.0578,
+      "displayName": "Geographic Longitude",
+      "unit": "degrees E"
+    },
+    {
+      "feature": "humidity_change",
+      "meanAbsShap": 0.0501,
+      "displayName": "3-Hour Humidity Surge",
+      "unit": "%/3h"
+    },
+    {
+      "feature": "wind_speed_change",
+      "meanAbsShap": 0.0404,
+      "displayName": "3-Hour Wind Acceleration",
+      "unit": "km/h/3h"
+    },
+    {
+      "feature": "satellite_precipitation_3h",
+      "meanAbsShap": 0.0336,
+      "displayName": "Satellite 3h Accumulation",
+      "unit": "mm"
+    },
+    {
+      "feature": "dew_point_spread",
+      "meanAbsShap": 0.0121,
+      "displayName": "Dew Point Saturation Spread",
+      "unit": "\u00b0C"
+    }
+  ],
+  "sampleExplanation": {
+    "testSampleIndex": 0,
+    "actualLabel": 0,
+    "predictedProb": 0.009
+  }
+}

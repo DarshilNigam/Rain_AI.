@@ -1,0 +1,1612 @@
+[
+  {
+    "id": "RAI-KB-WEA-031191",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "SURFACE_BAROMETRIC_PRESSURE",
+    "question": "what is surface barometric pressure",
+    "answerConcept": "Surface Barometric Pressure (hPa / mbar): Weight of the atmospheric column. Low surface pressure creates a convergence zone pulling warm moist air inward and upward, which is strongly associated with cloud development and storm formation.",
+    "keywords": [
+      "variable",
+      "surface barometric pressure",
+      "hpa / mbar",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031192",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "SURFACE_BAROMETRIC_PRESSURE",
+    "question": "why is surface barometric pressure important in weather",
+    "answerConcept": "Surface Barometric Pressure (hPa / mbar): Weight of the atmospheric column. Low surface pressure creates a convergence zone pulling warm moist air inward and upward, which is strongly associated with cloud development and storm formation.",
+    "keywords": [
+      "variable",
+      "surface barometric pressure",
+      "hpa / mbar",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031193",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "SURFACE_BAROMETRIC_PRESSURE",
+    "question": "how does surface barometric pressure affect rainfall",
+    "answerConcept": "Surface Barometric Pressure (hPa / mbar): Weight of the atmospheric column. Low surface pressure creates a convergence zone pulling warm moist air inward and upward, which is strongly associated with cloud development and storm formation.",
+    "keywords": [
+      "variable",
+      "surface barometric pressure",
+      "hpa / mbar",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031194",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "SURFACE_BAROMETRIC_PRESSURE",
+    "question": "what does high surface barometric pressure mean",
+    "answerConcept": "Surface Barometric Pressure (hPa / mbar): Weight of the atmospheric column. Low surface pressure creates a convergence zone pulling warm moist air inward and upward, which is strongly associated with cloud development and storm formation.",
+    "keywords": [
+      "variable",
+      "surface barometric pressure",
+      "hpa / mbar",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031195",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "SURFACE_BAROMETRIC_PRESSURE",
+    "question": "what does low surface barometric pressure mean",
+    "answerConcept": "Surface Barometric Pressure (hPa / mbar): Weight of the atmospheric column. Low surface pressure creates a convergence zone pulling warm moist air inward and upward, which is strongly associated with cloud development and storm formation.",
+    "keywords": [
+      "variable",
+      "surface barometric pressure",
+      "hpa / mbar",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031196",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "SURFACE_BAROMETRIC_PRESSURE",
+    "question": "how is surface barometric pressure measured",
+    "answerConcept": "Surface Barometric Pressure (hPa / mbar): Weight of the atmospheric column. Low surface pressure creates a convergence zone pulling warm moist air inward and upward, which is strongly associated with cloud development and storm formation.",
+    "keywords": [
+      "variable",
+      "surface barometric pressure",
+      "hpa / mbar",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031197",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "SURFACE_BAROMETRIC_PRESSURE",
+    "question": "what role does surface barometric pressure play in storm prediction",
+    "answerConcept": "Surface Barometric Pressure (hPa / mbar): Weight of the atmospheric column. Low surface pressure creates a convergence zone pulling warm moist air inward and upward, which is strongly associated with cloud development and storm formation.",
+    "keywords": [
+      "variable",
+      "surface barometric pressure",
+      "hpa / mbar",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031198",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "SURFACE_BAROMETRIC_PRESSURE",
+    "question": "how does surface barometric pressure influence heavy rain risk",
+    "answerConcept": "Surface Barometric Pressure (hPa / mbar): Weight of the atmospheric column. Low surface pressure creates a convergence zone pulling warm moist air inward and upward, which is strongly associated with cloud development and storm formation.",
+    "keywords": [
+      "variable",
+      "surface barometric pressure",
+      "hpa / mbar",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031199",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "SURFACE_BAROMETRIC_PRESSURE",
+    "question": "is high surface barometric pressure dangerous",
+    "answerConcept": "Surface Barometric Pressure (hPa / mbar): Weight of the atmospheric column. Low surface pressure creates a convergence zone pulling warm moist air inward and upward, which is strongly associated with cloud development and storm formation.",
+    "keywords": [
+      "variable",
+      "surface barometric pressure",
+      "hpa / mbar",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031200",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "SURFACE_BAROMETRIC_PRESSURE",
+    "question": "how does rai use surface barometric pressure",
+    "answerConcept": "Surface Barometric Pressure (hPa / mbar): Weight of the atmospheric column. Low surface pressure creates a convergence zone pulling warm moist air inward and upward, which is strongly associated with cloud development and storm formation.",
+    "keywords": [
+      "variable",
+      "surface barometric pressure",
+      "hpa / mbar",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031201",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "RELATIVE_HUMIDITY",
+    "question": "what is relative humidity",
+    "answerConcept": "Relative Humidity (%): Percentage of water vapor present in air relative to saturation at current temperature. High humidity prevents falling raindrops from evaporating and maintains high atmospheric moisture.",
+    "keywords": [
+      "variable",
+      "relative humidity",
+      "%",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031202",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "RELATIVE_HUMIDITY",
+    "question": "why is relative humidity important in weather",
+    "answerConcept": "Relative Humidity (%): Percentage of water vapor present in air relative to saturation at current temperature. High humidity prevents falling raindrops from evaporating and maintains high atmospheric moisture.",
+    "keywords": [
+      "variable",
+      "relative humidity",
+      "%",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031203",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "RELATIVE_HUMIDITY",
+    "question": "how does relative humidity affect rainfall",
+    "answerConcept": "Relative Humidity (%): Percentage of water vapor present in air relative to saturation at current temperature. High humidity prevents falling raindrops from evaporating and maintains high atmospheric moisture.",
+    "keywords": [
+      "variable",
+      "relative humidity",
+      "%",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031204",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "RELATIVE_HUMIDITY",
+    "question": "what does high relative humidity mean",
+    "answerConcept": "Relative Humidity (%): Percentage of water vapor present in air relative to saturation at current temperature. High humidity prevents falling raindrops from evaporating and maintains high atmospheric moisture.",
+    "keywords": [
+      "variable",
+      "relative humidity",
+      "%",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031205",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "RELATIVE_HUMIDITY",
+    "question": "what does low relative humidity mean",
+    "answerConcept": "Relative Humidity (%): Percentage of water vapor present in air relative to saturation at current temperature. High humidity prevents falling raindrops from evaporating and maintains high atmospheric moisture.",
+    "keywords": [
+      "variable",
+      "relative humidity",
+      "%",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031206",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "RELATIVE_HUMIDITY",
+    "question": "how is relative humidity measured",
+    "answerConcept": "Relative Humidity (%): Percentage of water vapor present in air relative to saturation at current temperature. High humidity prevents falling raindrops from evaporating and maintains high atmospheric moisture.",
+    "keywords": [
+      "variable",
+      "relative humidity",
+      "%",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031207",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "RELATIVE_HUMIDITY",
+    "question": "what role does relative humidity play in storm prediction",
+    "answerConcept": "Relative Humidity (%): Percentage of water vapor present in air relative to saturation at current temperature. High humidity prevents falling raindrops from evaporating and maintains high atmospheric moisture.",
+    "keywords": [
+      "variable",
+      "relative humidity",
+      "%",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031208",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "RELATIVE_HUMIDITY",
+    "question": "how does relative humidity influence heavy rain risk",
+    "answerConcept": "Relative Humidity (%): Percentage of water vapor present in air relative to saturation at current temperature. High humidity prevents falling raindrops from evaporating and maintains high atmospheric moisture.",
+    "keywords": [
+      "variable",
+      "relative humidity",
+      "%",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031209",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "RELATIVE_HUMIDITY",
+    "question": "is high relative humidity dangerous",
+    "answerConcept": "Relative Humidity (%): Percentage of water vapor present in air relative to saturation at current temperature. High humidity prevents falling raindrops from evaporating and maintains high atmospheric moisture.",
+    "keywords": [
+      "variable",
+      "relative humidity",
+      "%",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031210",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "RELATIVE_HUMIDITY",
+    "question": "how does rai use relative humidity",
+    "answerConcept": "Relative Humidity (%): Percentage of water vapor present in air relative to saturation at current temperature. High humidity prevents falling raindrops from evaporating and maintains high atmospheric moisture.",
+    "keywords": [
+      "variable",
+      "relative humidity",
+      "%",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031211",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "CONVECTIVE_INSTABILITY",
+    "question": "what is convective instability",
+    "answerConcept": "Convective Instability (lapse rate / CAPE): Tendency of warm surface air parcels to accelerate vertically through colder surrounding air aloft, driving rapid cumulonimbus cloud expansion.",
+    "keywords": [
+      "variable",
+      "convective instability",
+      "lapse rate / cape",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031212",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "CONVECTIVE_INSTABILITY",
+    "question": "why is convective instability important in weather",
+    "answerConcept": "Convective Instability (lapse rate / CAPE): Tendency of warm surface air parcels to accelerate vertically through colder surrounding air aloft, driving rapid cumulonimbus cloud expansion.",
+    "keywords": [
+      "variable",
+      "convective instability",
+      "lapse rate / cape",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031213",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "CONVECTIVE_INSTABILITY",
+    "question": "how does convective instability affect rainfall",
+    "answerConcept": "Convective Instability (lapse rate / CAPE): Tendency of warm surface air parcels to accelerate vertically through colder surrounding air aloft, driving rapid cumulonimbus cloud expansion.",
+    "keywords": [
+      "variable",
+      "convective instability",
+      "lapse rate / cape",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031214",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "CONVECTIVE_INSTABILITY",
+    "question": "what does high convective instability mean",
+    "answerConcept": "Convective Instability (lapse rate / CAPE): Tendency of warm surface air parcels to accelerate vertically through colder surrounding air aloft, driving rapid cumulonimbus cloud expansion.",
+    "keywords": [
+      "variable",
+      "convective instability",
+      "lapse rate / cape",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031215",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "CONVECTIVE_INSTABILITY",
+    "question": "what does low convective instability mean",
+    "answerConcept": "Convective Instability (lapse rate / CAPE): Tendency of warm surface air parcels to accelerate vertically through colder surrounding air aloft, driving rapid cumulonimbus cloud expansion.",
+    "keywords": [
+      "variable",
+      "convective instability",
+      "lapse rate / cape",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031216",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "CONVECTIVE_INSTABILITY",
+    "question": "how is convective instability measured",
+    "answerConcept": "Convective Instability (lapse rate / CAPE): Tendency of warm surface air parcels to accelerate vertically through colder surrounding air aloft, driving rapid cumulonimbus cloud expansion.",
+    "keywords": [
+      "variable",
+      "convective instability",
+      "lapse rate / cape",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031217",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "CONVECTIVE_INSTABILITY",
+    "question": "what role does convective instability play in storm prediction",
+    "answerConcept": "Convective Instability (lapse rate / CAPE): Tendency of warm surface air parcels to accelerate vertically through colder surrounding air aloft, driving rapid cumulonimbus cloud expansion.",
+    "keywords": [
+      "variable",
+      "convective instability",
+      "lapse rate / cape",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031218",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "CONVECTIVE_INSTABILITY",
+    "question": "how does convective instability influence heavy rain risk",
+    "answerConcept": "Convective Instability (lapse rate / CAPE): Tendency of warm surface air parcels to accelerate vertically through colder surrounding air aloft, driving rapid cumulonimbus cloud expansion.",
+    "keywords": [
+      "variable",
+      "convective instability",
+      "lapse rate / cape",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031219",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "CONVECTIVE_INSTABILITY",
+    "question": "is high convective instability dangerous",
+    "answerConcept": "Convective Instability (lapse rate / CAPE): Tendency of warm surface air parcels to accelerate vertically through colder surrounding air aloft, driving rapid cumulonimbus cloud expansion.",
+    "keywords": [
+      "variable",
+      "convective instability",
+      "lapse rate / cape",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031220",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "CONVECTIVE_INSTABILITY",
+    "question": "how does rai use convective instability",
+    "answerConcept": "Convective Instability (lapse rate / CAPE): Tendency of warm surface air parcels to accelerate vertically through colder surrounding air aloft, driving rapid cumulonimbus cloud expansion.",
+    "keywords": [
+      "variable",
+      "convective instability",
+      "lapse rate / cape",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031221",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "SUSTAINED_WIND_SPEED_AND_SHEAR",
+    "question": "what is sustained wind speed and shear",
+    "answerConcept": "Sustained Wind Speed and Shear (km/h): Horizontal air movement. Moderate to high horizontal wind shear can disperse concentrated vertical moisture columns, mitigating localized extreme rainfall accumulation.",
+    "keywords": [
+      "variable",
+      "sustained wind speed and shear",
+      "km/h",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031222",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "SUSTAINED_WIND_SPEED_AND_SHEAR",
+    "question": "why is sustained wind speed and shear important in weather",
+    "answerConcept": "Sustained Wind Speed and Shear (km/h): Horizontal air movement. Moderate to high horizontal wind shear can disperse concentrated vertical moisture columns, mitigating localized extreme rainfall accumulation.",
+    "keywords": [
+      "variable",
+      "sustained wind speed and shear",
+      "km/h",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031223",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "SUSTAINED_WIND_SPEED_AND_SHEAR",
+    "question": "how does sustained wind speed and shear affect rainfall",
+    "answerConcept": "Sustained Wind Speed and Shear (km/h): Horizontal air movement. Moderate to high horizontal wind shear can disperse concentrated vertical moisture columns, mitigating localized extreme rainfall accumulation.",
+    "keywords": [
+      "variable",
+      "sustained wind speed and shear",
+      "km/h",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031224",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "SUSTAINED_WIND_SPEED_AND_SHEAR",
+    "question": "what does high sustained wind speed and shear mean",
+    "answerConcept": "Sustained Wind Speed and Shear (km/h): Horizontal air movement. Moderate to high horizontal wind shear can disperse concentrated vertical moisture columns, mitigating localized extreme rainfall accumulation.",
+    "keywords": [
+      "variable",
+      "sustained wind speed and shear",
+      "km/h",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031225",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "SUSTAINED_WIND_SPEED_AND_SHEAR",
+    "question": "what does low sustained wind speed and shear mean",
+    "answerConcept": "Sustained Wind Speed and Shear (km/h): Horizontal air movement. Moderate to high horizontal wind shear can disperse concentrated vertical moisture columns, mitigating localized extreme rainfall accumulation.",
+    "keywords": [
+      "variable",
+      "sustained wind speed and shear",
+      "km/h",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031226",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "SUSTAINED_WIND_SPEED_AND_SHEAR",
+    "question": "how is sustained wind speed and shear measured",
+    "answerConcept": "Sustained Wind Speed and Shear (km/h): Horizontal air movement. Moderate to high horizontal wind shear can disperse concentrated vertical moisture columns, mitigating localized extreme rainfall accumulation.",
+    "keywords": [
+      "variable",
+      "sustained wind speed and shear",
+      "km/h",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031227",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "SUSTAINED_WIND_SPEED_AND_SHEAR",
+    "question": "what role does sustained wind speed and shear play in storm prediction",
+    "answerConcept": "Sustained Wind Speed and Shear (km/h): Horizontal air movement. Moderate to high horizontal wind shear can disperse concentrated vertical moisture columns, mitigating localized extreme rainfall accumulation.",
+    "keywords": [
+      "variable",
+      "sustained wind speed and shear",
+      "km/h",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031228",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "SUSTAINED_WIND_SPEED_AND_SHEAR",
+    "question": "how does sustained wind speed and shear influence heavy rain risk",
+    "answerConcept": "Sustained Wind Speed and Shear (km/h): Horizontal air movement. Moderate to high horizontal wind shear can disperse concentrated vertical moisture columns, mitigating localized extreme rainfall accumulation.",
+    "keywords": [
+      "variable",
+      "sustained wind speed and shear",
+      "km/h",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031229",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "SUSTAINED_WIND_SPEED_AND_SHEAR",
+    "question": "is high sustained wind speed and shear dangerous",
+    "answerConcept": "Sustained Wind Speed and Shear (km/h): Horizontal air movement. Moderate to high horizontal wind shear can disperse concentrated vertical moisture columns, mitigating localized extreme rainfall accumulation.",
+    "keywords": [
+      "variable",
+      "sustained wind speed and shear",
+      "km/h",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031230",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "SUSTAINED_WIND_SPEED_AND_SHEAR",
+    "question": "how does rai use sustained wind speed and shear",
+    "answerConcept": "Sustained Wind Speed and Shear (km/h): Horizontal air movement. Moderate to high horizontal wind shear can disperse concentrated vertical moisture columns, mitigating localized extreme rainfall accumulation.",
+    "keywords": [
+      "variable",
+      "sustained wind speed and shear",
+      "km/h",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031231",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "CLOUD_COVER_AND_TYPE",
+    "question": "what is cloud cover and type",
+    "answerConcept": "Cloud Cover and Type (%): Fraction of sky obscured by clouds. Dense stratiform clouds block incoming solar radiation, reducing surface heating and limiting intense localized updraft development.",
+    "keywords": [
+      "variable",
+      "cloud cover and type",
+      "%",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031232",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "CLOUD_COVER_AND_TYPE",
+    "question": "why is cloud cover and type important in weather",
+    "answerConcept": "Cloud Cover and Type (%): Fraction of sky obscured by clouds. Dense stratiform clouds block incoming solar radiation, reducing surface heating and limiting intense localized updraft development.",
+    "keywords": [
+      "variable",
+      "cloud cover and type",
+      "%",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031233",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "CLOUD_COVER_AND_TYPE",
+    "question": "how does cloud cover and type affect rainfall",
+    "answerConcept": "Cloud Cover and Type (%): Fraction of sky obscured by clouds. Dense stratiform clouds block incoming solar radiation, reducing surface heating and limiting intense localized updraft development.",
+    "keywords": [
+      "variable",
+      "cloud cover and type",
+      "%",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031234",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "CLOUD_COVER_AND_TYPE",
+    "question": "what does high cloud cover and type mean",
+    "answerConcept": "Cloud Cover and Type (%): Fraction of sky obscured by clouds. Dense stratiform clouds block incoming solar radiation, reducing surface heating and limiting intense localized updraft development.",
+    "keywords": [
+      "variable",
+      "cloud cover and type",
+      "%",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031235",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "CLOUD_COVER_AND_TYPE",
+    "question": "what does low cloud cover and type mean",
+    "answerConcept": "Cloud Cover and Type (%): Fraction of sky obscured by clouds. Dense stratiform clouds block incoming solar radiation, reducing surface heating and limiting intense localized updraft development.",
+    "keywords": [
+      "variable",
+      "cloud cover and type",
+      "%",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031236",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "CLOUD_COVER_AND_TYPE",
+    "question": "how is cloud cover and type measured",
+    "answerConcept": "Cloud Cover and Type (%): Fraction of sky obscured by clouds. Dense stratiform clouds block incoming solar radiation, reducing surface heating and limiting intense localized updraft development.",
+    "keywords": [
+      "variable",
+      "cloud cover and type",
+      "%",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031237",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "CLOUD_COVER_AND_TYPE",
+    "question": "what role does cloud cover and type play in storm prediction",
+    "answerConcept": "Cloud Cover and Type (%): Fraction of sky obscured by clouds. Dense stratiform clouds block incoming solar radiation, reducing surface heating and limiting intense localized updraft development.",
+    "keywords": [
+      "variable",
+      "cloud cover and type",
+      "%",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031238",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "CLOUD_COVER_AND_TYPE",
+    "question": "how does cloud cover and type influence heavy rain risk",
+    "answerConcept": "Cloud Cover and Type (%): Fraction of sky obscured by clouds. Dense stratiform clouds block incoming solar radiation, reducing surface heating and limiting intense localized updraft development.",
+    "keywords": [
+      "variable",
+      "cloud cover and type",
+      "%",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031239",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "CLOUD_COVER_AND_TYPE",
+    "question": "is high cloud cover and type dangerous",
+    "answerConcept": "Cloud Cover and Type (%): Fraction of sky obscured by clouds. Dense stratiform clouds block incoming solar radiation, reducing surface heating and limiting intense localized updraft development.",
+    "keywords": [
+      "variable",
+      "cloud cover and type",
+      "%",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031240",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "CLOUD_COVER_AND_TYPE",
+    "question": "how does rai use cloud cover and type",
+    "answerConcept": "Cloud Cover and Type (%): Fraction of sky obscured by clouds. Dense stratiform clouds block incoming solar radiation, reducing surface heating and limiting intense localized updraft development.",
+    "keywords": [
+      "variable",
+      "cloud cover and type",
+      "%",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031241",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "DEW_POINT_TEMPERATURE",
+    "question": "what is dew point temperature",
+    "answerConcept": "Dew Point Temperature (°C): The temperature to which air must be cooled to become saturated with water vapor. A high dew point (>22°C) indicates high atmospheric moisture content.",
+    "keywords": [
+      "variable",
+      "dew point temperature",
+      "°c",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031242",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "DEW_POINT_TEMPERATURE",
+    "question": "why is dew point temperature important in weather",
+    "answerConcept": "Dew Point Temperature (°C): The temperature to which air must be cooled to become saturated with water vapor. A high dew point (>22°C) indicates high atmospheric moisture content.",
+    "keywords": [
+      "variable",
+      "dew point temperature",
+      "°c",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031243",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "DEW_POINT_TEMPERATURE",
+    "question": "how does dew point temperature affect rainfall",
+    "answerConcept": "Dew Point Temperature (°C): The temperature to which air must be cooled to become saturated with water vapor. A high dew point (>22°C) indicates high atmospheric moisture content.",
+    "keywords": [
+      "variable",
+      "dew point temperature",
+      "°c",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031244",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "DEW_POINT_TEMPERATURE",
+    "question": "what does high dew point temperature mean",
+    "answerConcept": "Dew Point Temperature (°C): The temperature to which air must be cooled to become saturated with water vapor. A high dew point (>22°C) indicates high atmospheric moisture content.",
+    "keywords": [
+      "variable",
+      "dew point temperature",
+      "°c",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031245",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "DEW_POINT_TEMPERATURE",
+    "question": "what does low dew point temperature mean",
+    "answerConcept": "Dew Point Temperature (°C): The temperature to which air must be cooled to become saturated with water vapor. A high dew point (>22°C) indicates high atmospheric moisture content.",
+    "keywords": [
+      "variable",
+      "dew point temperature",
+      "°c",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031246",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "DEW_POINT_TEMPERATURE",
+    "question": "how is dew point temperature measured",
+    "answerConcept": "Dew Point Temperature (°C): The temperature to which air must be cooled to become saturated with water vapor. A high dew point (>22°C) indicates high atmospheric moisture content.",
+    "keywords": [
+      "variable",
+      "dew point temperature",
+      "°c",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031247",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "DEW_POINT_TEMPERATURE",
+    "question": "what role does dew point temperature play in storm prediction",
+    "answerConcept": "Dew Point Temperature (°C): The temperature to which air must be cooled to become saturated with water vapor. A high dew point (>22°C) indicates high atmospheric moisture content.",
+    "keywords": [
+      "variable",
+      "dew point temperature",
+      "°c",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031248",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "DEW_POINT_TEMPERATURE",
+    "question": "how does dew point temperature influence heavy rain risk",
+    "answerConcept": "Dew Point Temperature (°C): The temperature to which air must be cooled to become saturated with water vapor. A high dew point (>22°C) indicates high atmospheric moisture content.",
+    "keywords": [
+      "variable",
+      "dew point temperature",
+      "°c",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031249",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "DEW_POINT_TEMPERATURE",
+    "question": "is high dew point temperature dangerous",
+    "answerConcept": "Dew Point Temperature (°C): The temperature to which air must be cooled to become saturated with water vapor. A high dew point (>22°C) indicates high atmospheric moisture content.",
+    "keywords": [
+      "variable",
+      "dew point temperature",
+      "°c",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031250",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "DEW_POINT_TEMPERATURE",
+    "question": "how does rai use dew point temperature",
+    "answerConcept": "Dew Point Temperature (°C): The temperature to which air must be cooled to become saturated with water vapor. A high dew point (>22°C) indicates high atmospheric moisture content.",
+    "keywords": [
+      "variable",
+      "dew point temperature",
+      "°c",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031251",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "SOLAR_RADIATION_AND_INSOLATION",
+    "question": "what is solar radiation and insolation",
+    "answerConcept": "Solar Radiation and Insolation (W/m²): Incoming solar energy heating the Earth's surface, which drives boundary-layer thermals and convective thunderstorm initiation.",
+    "keywords": [
+      "variable",
+      "solar radiation and insolation",
+      "w/m²",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031252",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "SOLAR_RADIATION_AND_INSOLATION",
+    "question": "why is solar radiation and insolation important in weather",
+    "answerConcept": "Solar Radiation and Insolation (W/m²): Incoming solar energy heating the Earth's surface, which drives boundary-layer thermals and convective thunderstorm initiation.",
+    "keywords": [
+      "variable",
+      "solar radiation and insolation",
+      "w/m²",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031253",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "SOLAR_RADIATION_AND_INSOLATION",
+    "question": "how does solar radiation and insolation affect rainfall",
+    "answerConcept": "Solar Radiation and Insolation (W/m²): Incoming solar energy heating the Earth's surface, which drives boundary-layer thermals and convective thunderstorm initiation.",
+    "keywords": [
+      "variable",
+      "solar radiation and insolation",
+      "w/m²",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031254",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "SOLAR_RADIATION_AND_INSOLATION",
+    "question": "what does high solar radiation and insolation mean",
+    "answerConcept": "Solar Radiation and Insolation (W/m²): Incoming solar energy heating the Earth's surface, which drives boundary-layer thermals and convective thunderstorm initiation.",
+    "keywords": [
+      "variable",
+      "solar radiation and insolation",
+      "w/m²",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031255",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "SOLAR_RADIATION_AND_INSOLATION",
+    "question": "what does low solar radiation and insolation mean",
+    "answerConcept": "Solar Radiation and Insolation (W/m²): Incoming solar energy heating the Earth's surface, which drives boundary-layer thermals and convective thunderstorm initiation.",
+    "keywords": [
+      "variable",
+      "solar radiation and insolation",
+      "w/m²",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031256",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "SOLAR_RADIATION_AND_INSOLATION",
+    "question": "how is solar radiation and insolation measured",
+    "answerConcept": "Solar Radiation and Insolation (W/m²): Incoming solar energy heating the Earth's surface, which drives boundary-layer thermals and convective thunderstorm initiation.",
+    "keywords": [
+      "variable",
+      "solar radiation and insolation",
+      "w/m²",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031257",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "SOLAR_RADIATION_AND_INSOLATION",
+    "question": "what role does solar radiation and insolation play in storm prediction",
+    "answerConcept": "Solar Radiation and Insolation (W/m²): Incoming solar energy heating the Earth's surface, which drives boundary-layer thermals and convective thunderstorm initiation.",
+    "keywords": [
+      "variable",
+      "solar radiation and insolation",
+      "w/m²",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031258",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "SOLAR_RADIATION_AND_INSOLATION",
+    "question": "how does solar radiation and insolation influence heavy rain risk",
+    "answerConcept": "Solar Radiation and Insolation (W/m²): Incoming solar energy heating the Earth's surface, which drives boundary-layer thermals and convective thunderstorm initiation.",
+    "keywords": [
+      "variable",
+      "solar radiation and insolation",
+      "w/m²",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031259",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "SOLAR_RADIATION_AND_INSOLATION",
+    "question": "is high solar radiation and insolation dangerous",
+    "answerConcept": "Solar Radiation and Insolation (W/m²): Incoming solar energy heating the Earth's surface, which drives boundary-layer thermals and convective thunderstorm initiation.",
+    "keywords": [
+      "variable",
+      "solar radiation and insolation",
+      "w/m²",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-WEA-031260",
+    "category": "WEATHER_VARIABLES",
+    "subCategory": "SOLAR_RADIATION_AND_INSOLATION",
+    "question": "how does rai use solar radiation and insolation",
+    "answerConcept": "Solar Radiation and Insolation (W/m²): Incoming solar energy heating the Earth's surface, which drives boundary-layer thermals and convective thunderstorm initiation.",
+    "keywords": [
+      "variable",
+      "solar radiation and insolation",
+      "w/m²",
+      "meteorology"
+    ],
+    "entities": [
+      "atmospheric_variable"
+    ],
+    "relatedIntents": [
+      "XAI_FEATURE_EXPLANATION",
+      "CURRENT_WEATHER"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  }
+]

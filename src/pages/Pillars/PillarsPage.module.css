@@ -1,0 +1,25 @@
+.pillarsPageRoot {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  min-height: calc(100svh - var(--rai-header-height));
+}
+
+.viewportContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: clamp(1rem, 2.5vh, 2rem);
+  padding-bottom: clamp(1.25rem, 3vh, 2.5rem);
+  flex: 1;
+}
+
+.viewportHeroLayout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex: 1;
+}

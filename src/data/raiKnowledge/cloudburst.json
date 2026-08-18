@@ -1,0 +1,1221 @@
+[
+  {
+    "id": "RAI-KB-CLO-031138",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "what is a cloudburst",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031139",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "what is a cloudburst?",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031140",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "explain what is a cloudburst",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031141",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "how is a cloudburst defined",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031142",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "tell me what is a cloudburst",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031143",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "what is the definition of a cloudburst",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031144",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "what is the definition of a cloudburst?",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031145",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "explain what is the definition of a cloudburst",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031146",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "tell me what is the definition of a cloudburst",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031147",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "how do cloudbursts occur",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031148",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "how do cloudbursts occur?",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031149",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "explain how do cloudbursts occur",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031150",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "tell me how do cloudbursts occur",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031151",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "what causes a cloudburst",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031152",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "what causes a cloudburst?",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031153",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "explain what causes a cloudburst",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031154",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "tell me what causes a cloudburst",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031155",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "why do cloudbursts happen in hilly areas",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031156",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "why do cloudbursts happen in hilly areas?",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031157",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "explain why do cloudbursts happen in hilly areas",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031158",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "tell me why do cloudbursts happen in hilly areas",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031159",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "what is the difference between a cloudburst and heavy rain",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031160",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "what is the difference between a cloudburst and heavy rain?",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031161",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "explain what is the difference between a cloudburst and heavy rain",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031162",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "tell me what is the difference between a cloudburst and heavy rain",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031163",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "is 50 mm of rain a cloudburst",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031164",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "is 50 mm of rain a cloudburst?",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031165",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "explain is 50 mm of rain a cloudburst",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031166",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "tell me is 50 mm of rain a cloudburst",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031167",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "is 100 mm of rain a cloudburst",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031168",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "is 100 mm of rain a cloudburst?",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031169",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "explain is 100 mm of rain a cloudburst",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031170",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "tell me is 100 mm of rain a cloudburst",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031171",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "can a cloudburst be predicted days in advance",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031172",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "can a cloudburst be predicted days in advance?",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031173",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "explain can a cloudburst be predicted days in advance",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031174",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "tell me can a cloudburst be predicted days in advance",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031175",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "how much damage does a cloudburst cause",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031176",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "how much damage does a cloudburst cause?",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031177",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "explain how much damage does a cloudburst cause",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031178",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "tell me how much damage does a cloudburst cause",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031179",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "why are cloudbursts so dangerous",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031180",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "why are cloudbursts so dangerous?",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031181",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "explain why are cloudbursts so dangerous",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031182",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "tell me why are cloudbursts so dangerous",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031183",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "what is the atmospheric updraft mechanism in a cloudburst",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031184",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "what is the atmospheric updraft mechanism in a cloudburst?",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031185",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "explain what is the atmospheric updraft mechanism in a cloudburst",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031186",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "tell me what is the atmospheric updraft mechanism in a cloudburst",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031187",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "how does the imd verify a cloudburst",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031188",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "how does the imd verify a cloudburst?",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031189",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "explain how does the imd verify a cloudburst",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-CLO-031190",
+    "category": "CLOUDBURST",
+    "subCategory": "ATMOSPHERIC_MECHANISM",
+    "question": "tell me how does the imd verify a cloudburst",
+    "answerConcept": "Under official IMD standards, a cloudburst is defined as an intense, localized convective deluge of 100 mm or more of rainfall occurring within a single hour over a geographical area of roughly 20–30 km². It occurs when powerful vertical thermal updrafts trap descending rain columns inside a thundercloud until the updraft suddenly collapses, dumping the entire suspended water volume instantaneously.",
+    "keywords": [
+      "cloudburst",
+      "100 mm/h",
+      "updraft collapse",
+      "deluge",
+      "flash flood"
+    ],
+    "entities": [
+      "cloudburst_concept"
+    ],
+    "relatedIntents": [
+      "CLOUDBURST_INFO"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  }
+]

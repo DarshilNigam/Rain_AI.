@@ -1,0 +1,1877 @@
+[
+  {
+    "id": "RAI-KB-HEA-031063",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "what causes heavy rain",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031064",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "what causes heavy rain?",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031065",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "explain what causes heavy rain",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031066",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "tell me what causes heavy rain",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031067",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "why is what causes heavy rain",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031068",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "what is convective precipitation",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031069",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "what is convective precipitation?",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031070",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "explain what is convective precipitation",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031071",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "tell me what is convective precipitation",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031072",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "why is what is convective precipitation",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031073",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "what is orographic heavy rainfall",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031074",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "what is orographic heavy rainfall?",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031075",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "explain what is orographic heavy rainfall",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031076",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "tell me what is orographic heavy rainfall",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031077",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "why is what is orographic heavy rainfall",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031078",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "what is cyclonic depression rainfall",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031079",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "what is cyclonic depression rainfall?",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031080",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "explain what is cyclonic depression rainfall",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031081",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "tell me what is cyclonic depression rainfall",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031082",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "why is what is cyclonic depression rainfall",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031083",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "what makes heavy rainfall dangerous",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031084",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "what makes heavy rainfall dangerous?",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031085",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "explain what makes heavy rainfall dangerous",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031086",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "tell me what makes heavy rainfall dangerous",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031087",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "why is what makes heavy rainfall dangerous",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031088",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "how does heavy rain cause urban flooding",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031089",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "how does heavy rain cause urban flooding?",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031090",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "explain how does heavy rain cause urban flooding",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031091",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "tell me how does heavy rain cause urban flooding",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031092",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "why is how does heavy rain cause urban flooding",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031093",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "how does heavy rain cause agricultural waterlogging",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031094",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "how does heavy rain cause agricultural waterlogging?",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031095",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "explain how does heavy rain cause agricultural waterlogging",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031096",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "tell me how does heavy rain cause agricultural waterlogging",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031097",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "why is how does heavy rain cause agricultural waterlogging",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031098",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "what is soil saturation point",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031099",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "what is soil saturation point?",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031100",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "explain what is soil saturation point",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031101",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "tell me what is soil saturation point",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031102",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "why is what is soil saturation point",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031103",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "how fast does rain need to fall to cause flash floods",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031104",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "how fast does rain need to fall to cause flash floods?",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031105",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "explain how fast does rain need to fall to cause flash floods",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031106",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "tell me how fast does rain need to fall to cause flash floods",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031107",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "why is how fast does rain need to fall to cause flash floods",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031108",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "what is the difference between steady rain and torrential downpour",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031109",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "what is the difference between steady rain and torrential downpour?",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031110",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "explain what is the difference between steady rain and torrential downpour",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031111",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "tell me what is the difference between steady rain and torrential downpour",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031112",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "why is what is the difference between steady rain and torrential downpour",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031113",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "how to prepare for heavy rainfall",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031114",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "how to prepare for heavy rainfall?",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031115",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "explain how to prepare for heavy rainfall",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031116",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "tell me how to prepare for heavy rainfall",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031117",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "why is how to prepare for heavy rainfall",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031118",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "what should a city municipal corporation do before heavy rain",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031119",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "what should a city municipal corporation do before heavy rain?",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031120",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "explain what should a city municipal corporation do before heavy rain",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031121",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "tell me what should a city municipal corporation do before heavy rain",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031122",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "why is what should a city municipal corporation do before heavy rain",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031123",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "what should farmers do before heavy rain",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031124",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "what should farmers do before heavy rain?",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031125",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "explain what should farmers do before heavy rain",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031126",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "tell me what should farmers do before heavy rain",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031127",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "why is what should farmers do before heavy rain",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031128",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "how does heavy rainfall affect river levels",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031129",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "how does heavy rainfall affect river levels?",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031130",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "explain how does heavy rainfall affect river levels",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031131",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "tell me how does heavy rainfall affect river levels",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031132",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "why is how does heavy rainfall affect river levels",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031133",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "what is urban runoff coefficient in heavy rain",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031134",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "what is urban runoff coefficient in heavy rain?",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031135",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "explain what is urban runoff coefficient in heavy rain",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031136",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "tell me what is urban runoff coefficient in heavy rain",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-HEA-031137",
+    "category": "HEAVY_RAIN",
+    "subCategory": "DELUGE_DYNAMICS",
+    "question": "why is what is urban runoff coefficient in heavy rain",
+    "answerConcept": "Heavy rainfall (≥64.5 mm/day) occurs when deep convective updrafts or monsoon depressions continuously feed warm, moisture-laden air into freezing upper atmospheric layers. When precipitation rate exceeds soil infiltration capacity (typically 10–25 mm/h in alluvial soils), surface runoff rapidly accumulates into localized waterlogging and urban flooding.",
+    "keywords": [
+      "convective",
+      "saturation",
+      "waterlogging",
+      "flooding",
+      "runoff",
+      "deluge"
+    ],
+    "entities": [
+      "flood_dynamics"
+    ],
+    "relatedIntents": [
+      "HEAVY_RAIN_THRESHOLD",
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  }
+]

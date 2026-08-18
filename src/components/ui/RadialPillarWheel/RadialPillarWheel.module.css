@@ -1,0 +1,315 @@
+.wheelContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: var(--rai-space-md);
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .wheelContainer {
+    grid-template-columns: 1fr 1.05fr;
+    gap: clamp(1rem, 2.5vw, 2.5rem);
+  }
+}
+
+/* Left Column: Responsive Radial Wheel Visualization */
+.wheelVisualWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: clamp(280px, 42vh, 400px);
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+  padding: 0;
+  overflow: visible;
+}
+
+.svgWheel {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: visible;
+  filter: drop-shadow(0 8px 24px rgba(15, 23, 42, 0.05));
+}
+
+/* Radial Arc Segment */
+.arcSegment {
+  cursor: pointer;
+  transition: transform 320ms cubic-bezier(0.175, 0.885, 0.32, 1.2),
+              filter 240ms ease-out,
+              stroke 200ms ease-out;
+  transform-origin: 230px 230px;
+}
+
+.arcSegment:hover,
+.arcSegment:focus-visible {
+  filter: drop-shadow(0 0 14px var(--segment-glow, rgba(6, 182, 212, 0.45)));
+  outline: none;
+}
+
+.arcSegmentActive {
+  filter: drop-shadow(0 0 16px var(--segment-glow, rgba(6, 182, 212, 0.55)));
+}
+
+.arcPath {
+  stroke-width: 1.25px;
+  transition: all 220ms ease-out;
+}
+
+/* Center Core Hub */
+.centerCoreGroup {
+  cursor: pointer;
+  transform-origin: 230px 230px;
+  transition: transform 260ms var(--rai-ease-spring);
+}
+
+.centerCoreGroup:hover {
+  transform: scale(1.03);
+}
+
+.centerBackground {
+  transition: all 260ms ease;
+}
+
+.centerPulseRing {
+  transform-origin: 230px 230px;
+  animation: rai-pulse-subtle 3s ease-in-out infinite;
+}
+
+/* Text inside SVG */
+.centerTag {
+  font-family: var(--rai-font-display);
+  font-size: 8.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-anchor: middle;
+  fill: var(--rai-color-text-tertiary);
+  transition: fill 200ms ease;
+}
+
+.centerBrand {
+  font-family: var(--rai-font-display);
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  text-anchor: middle;
+  fill: var(--rai-color-text-primary);
+}
+
+.centerSubtitle {
+  font-family: var(--rai-font-display);
+  font-size: 8.5px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-anchor: middle;
+  fill: var(--rai-color-text-cyan);
+}
+
+.nodeNumber {
+  font-family: var(--rai-font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-anchor: middle;
+  pointer-events: none;
+}
+
+.nodeTitle {
+  font-family: var(--rai-font-display);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  text-anchor: middle;
+  pointer-events: none;
+}
+
+/* Right Column: Responsive Active Pillar Experience Card */
+.detailPane {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.4rem, 1vh, 0.75rem);
+  background: var(--rai-gradient-glass-hero);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  border-radius: var(--rai-radius-lg);
+  padding: clamp(0.75rem, 1.5vh, 1.25rem) clamp(0.875rem, 1.8vw, 1.375rem);
+  box-shadow: var(--rai-shadow-card);
+  position: relative;
+  overflow: hidden;
+  max-width: 520px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Ambient glow accent in detail pane */
+.detailGlow {
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 180px;
+  height: 180px;
+  border-radius: var(--rai-radius-full);
+  pointer-events: none;
+  filter: blur(36px);
+  opacity: 0.35;
+  transition: background-color 300ms ease;
+}
+
+/* Quick selector tabs */
+.selectorPills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--rai-color-border-subtle);
+}
+
+.pillButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 0.15rem 0.45rem;
+  border-radius: var(--rai-radius-full);
+  font-family: var(--rai-font-display);
+  font-size: 0.65625rem;
+  font-weight: 600;
+  color: var(--rai-color-text-secondary);
+  background-color: var(--rai-color-bg-surface-subtle);
+  border: 1px solid transparent;
+  transition: var(--rai-transition-all);
+}
+
+.pillButton:hover {
+  background-color: #ffffff;
+  color: var(--rai-color-text-primary);
+  border-color: var(--rai-color-border-default);
+}
+
+.pillActive {
+  background-color: #ffffff;
+  color: var(--rai-color-text-primary);
+  border-color: var(--pill-border, var(--rai-color-ai-400));
+  box-shadow: 0 1px 6px -1px var(--pill-glow, rgba(6, 182, 212, 0.25));
+}
+
+.detailHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--rai-space-sm);
+}
+
+.iconAndTitleGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.pillarIconLarge {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--rai-radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px -2px rgba(15, 23, 42, 0.05);
+}
+
+.titleArea {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.pillarTagline {
+  font-family: var(--rai-font-display);
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.pillarTitleMain {
+  font-family: var(--rai-font-display);
+  font-size: clamp(1rem, 1.2vw, 1.1875rem);
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.pillarDescription {
+  font-family: var(--rai-font-body);
+  font-size: clamp(0.75rem, 0.9vw, 0.8125rem);
+  color: var(--rai-color-text-secondary);
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Capabilities list */
+.capabilitiesSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.capabilitiesHeading {
+  font-family: var(--rai-font-display);
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--rai-color-text-tertiary);
+}
+
+.capabilitiesGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.25rem;
+}
+
+.capabilityCard {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: clamp(0.25rem, 0.5vh, 0.35rem) 0.55rem;
+  border-radius: var(--rai-radius-sm);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--rai-color-border-subtle);
+  font-family: var(--rai-font-body);
+  font-size: 0.71875rem;
+  font-weight: 500;
+  color: var(--rai-color-text-secondary);
+  transition: var(--rai-transition-all);
+}
+
+.capabilityCard:hover {
+  background-color: #ffffff;
+  border-color: var(--rai-color-border-default);
+}
+
+.capabilityDot {
+  width: 4px;
+  height: 4px;
+  border-radius: var(--rai-radius-full);
+  flex-shrink: 0;
+}
+
+.actionFooter {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 0.1rem;
+}

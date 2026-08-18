@@ -1,0 +1,200 @@
+.headerWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rai-space-sm);
+  margin-bottom: var(--rai-space-md);
+}
+
+.topBar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rai-space-xs);
+}
+
+@media (min-width: 768px) {
+  .topBar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.backBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--rai-radius-full);
+  background-color: #ffffff;
+  border: 1px solid var(--rai-color-border-subtle);
+  font-family: var(--rai-font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--rai-color-text-secondary);
+  cursor: pointer;
+  transition: var(--rai-transition-all);
+  width: fit-content;
+}
+
+.backBtn:hover {
+  background-color: #f0fdf4;
+  border-color: #16a34a;
+  color: #16a34a;
+  transform: translateX(-2px);
+}
+
+.metaRight {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.locationPill,
+.activeCropPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--rai-radius-full);
+  background-color: #ffffff;
+  border: 1px solid var(--rai-color-border-subtle);
+  font-family: var(--rai-font-body);
+  font-size: 0.71875rem;
+  color: var(--rai-color-text-secondary);
+}
+
+.changeLocBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: var(--rai-radius-xs);
+  background-color: #f1f5f9;
+  border: none;
+  font-family: var(--rai-font-display);
+  font-size: 0.625rem;
+  font-weight: 700;
+  color: #0891b2;
+  cursor: pointer;
+  margin-left: 0.25rem;
+  transition: all 0.2s ease;
+}
+
+.changeLocBtn:hover {
+  background-color: #ecfeff;
+  color: #0284c7;
+}
+
+.cropIcon {
+  font-size: 0.85rem;
+}
+
+/* Title Card */
+.titleCard {
+  padding: 1.15rem 1.4rem;
+  border-radius: var(--rai-radius-xl);
+  background: var(--rai-gradient-glass-hero);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .titleCard {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.titleLeft {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+}
+
+.iconCircle {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--rai-radius-lg);
+  background: #ffffff;
+  border: 1px solid var(--rai-color-border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px -2px rgba(15, 23, 42, 0.08);
+}
+
+.breadcrumbRow {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 2px;
+}
+
+.breadcrumb {
+  font-family: var(--rai-font-mono);
+  font-size: 0.625rem;
+  font-weight: 600;
+  color: var(--rai-color-text-tertiary);
+}
+
+.separator {
+  color: var(--rai-color-border-subtle);
+  font-size: 0.625rem;
+}
+
+.moduleTag {
+  font-family: var(--rai-font-mono);
+  font-size: 0.625rem;
+  font-weight: 800;
+  color: #16a34a;
+  letter-spacing: 0.05em;
+}
+
+.title {
+  font-family: var(--rai-font-display);
+  font-size: clamp(1.15rem, 2vw, 1.4rem);
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+  margin: 0;
+}
+
+.subtitle {
+  font-family: var(--rai-font-body);
+  font-size: 0.78125rem;
+  color: var(--rai-color-text-secondary);
+  line-height: 1.4;
+  margin: 2px 0 0;
+}
+
+.aiAssistQuickAction {
+  flex-shrink: 0;
+}
+
+.openAiBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.95rem;
+  border-radius: var(--rai-radius-full);
+  background-color: #ffffff;
+  border: 1.5px solid #bbf7d0;
+  font-family: var(--rai-font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #166534;
+  cursor: pointer;
+  box-shadow: 0 2px 6px -2px rgba(22, 163, 74, 0.15);
+  transition: var(--rai-transition-all);
+}
+
+.openAiBtn:hover {
+  background-color: #f0fdf4;
+  border-color: #16a34a;
+  transform: translateY(-1px);
+}

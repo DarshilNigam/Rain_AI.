@@ -1,0 +1,55 @@
+.indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rai-space-xs);
+  font-family: var(--rai-font-body);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--rai-color-text-secondary);
+}
+
+.pingWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+}
+
+.pulseRing {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--rai-radius-full);
+  opacity: 0.75;
+  animation: rai-pulse-subtle 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.coreDot {
+  position: relative;
+  width: 6px;
+  height: 6px;
+  border-radius: var(--rai-radius-full);
+}
+
+/* Status variants */
+.online .pulseRing,
+.online .coreDot {
+  background-color: var(--rai-color-safe-500);
+}
+
+.syncing .pulseRing,
+.syncing .coreDot {
+  background-color: var(--rai-color-ai-500);
+}
+
+.warning .pulseRing,
+.warning .coreDot {
+  background-color: var(--rai-color-caution-500);
+}
+
+.offline .pulseRing,
+.offline .coreDot {
+  background-color: var(--rai-color-critical-500);
+}

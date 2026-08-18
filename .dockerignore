@@ -1,0 +1,47 @@
+# Git & Version Control
+.git
+.gitignore
+
+# Environment & Secret Files (CRITICAL: Never bake into image)
+.env
+.env.*
+!.env.example
+
+# Node / Frontend Artifacts (Frontend is decoupled / separate build)
+node_modules
+src
+public
+dist
+dist-ssr
+*.ts
+*.tsx
+tsconfig*.json
+vite.config.*
+package.json
+package-lock.json
+
+# Python Virtual Environments & Caches
+.venv
+venv
+ENV
+env
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local Scratch, Backups & Presentations
+scratch/
+backups/
+slides_preview/
+*.pdf
+*.pptx
+*.log
+
+# Editor & System Files
+.vscode
+.idea
+.DS_Store
+Thumbs.db

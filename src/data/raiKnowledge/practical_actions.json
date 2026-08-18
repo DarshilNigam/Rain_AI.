@@ -1,0 +1,5482 @@
+[
+  {
+    "id": "RAI-KB-PRA-032292",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "do i need an umbrella",
+    "answerConcept": "Umbrella and rainwear advisories evaluate current precipitation probability (>40%) and expected rain accumulation.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "do"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032293",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "do i need an umbrella today",
+    "answerConcept": "Umbrella and rainwear advisories evaluate current precipitation probability (>40%) and expected rain accumulation.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "do"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032294",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "do i need an umbrella tomorrow",
+    "answerConcept": "Umbrella and rainwear advisories evaluate current precipitation probability (>40%) and expected rain accumulation.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "do"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032295",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "do i need an umbrella right now",
+    "answerConcept": "Umbrella and rainwear advisories evaluate current precipitation probability (>40%) and expected rain accumulation.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "do"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032296",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "do i need an umbrella this weekend",
+    "answerConcept": "Umbrella and rainwear advisories evaluate current precipitation probability (>40%) and expected rain accumulation.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "do"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032297",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "do i need an umbrella in Kanpur",
+    "answerConcept": "Umbrella and rainwear advisories evaluate current precipitation probability (>40%) and expected rain accumulation.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "do",
+      "kanpur"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032298",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "do i need an umbrella in Kanpur today",
+    "answerConcept": "Umbrella and rainwear advisories evaluate current precipitation probability (>40%) and expected rain accumulation.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "do",
+      "kanpur"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032299",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "do i need an umbrella in Kanpur tomorrow",
+    "answerConcept": "Umbrella and rainwear advisories evaluate current precipitation probability (>40%) and expected rain accumulation.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "do",
+      "kanpur"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032300",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "do i need an umbrella in Kanpur right now",
+    "answerConcept": "Umbrella and rainwear advisories evaluate current precipitation probability (>40%) and expected rain accumulation.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "do",
+      "kanpur"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032301",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "do i need an umbrella in Kanpur this weekend",
+    "answerConcept": "Umbrella and rainwear advisories evaluate current precipitation probability (>40%) and expected rain accumulation.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "do",
+      "kanpur"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032302",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "do i need an umbrella in Lucknow",
+    "answerConcept": "Umbrella and rainwear advisories evaluate current precipitation probability (>40%) and expected rain accumulation.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "do",
+      "lucknow"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032303",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "do i need an umbrella in Lucknow today",
+    "answerConcept": "Umbrella and rainwear advisories evaluate current precipitation probability (>40%) and expected rain accumulation.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "do",
+      "lucknow"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032304",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "do i need an umbrella in Lucknow tomorrow",
+    "answerConcept": "Umbrella and rainwear advisories evaluate current precipitation probability (>40%) and expected rain accumulation.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "do",
+      "lucknow"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032305",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "do i need an umbrella in Lucknow right now",
+    "answerConcept": "Umbrella and rainwear advisories evaluate current precipitation probability (>40%) and expected rain accumulation.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "do",
+      "lucknow"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032306",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "do i need an umbrella in Lucknow this weekend",
+    "answerConcept": "Umbrella and rainwear advisories evaluate current precipitation probability (>40%) and expected rain accumulation.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "do",
+      "lucknow"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032307",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "do i need an umbrella in Varanasi",
+    "answerConcept": "Umbrella and rainwear advisories evaluate current precipitation probability (>40%) and expected rain accumulation.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "do",
+      "varanasi"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032308",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "do i need an umbrella in Varanasi today",
+    "answerConcept": "Umbrella and rainwear advisories evaluate current precipitation probability (>40%) and expected rain accumulation.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "do",
+      "varanasi"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032309",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "do i need an umbrella in Varanasi tomorrow",
+    "answerConcept": "Umbrella and rainwear advisories evaluate current precipitation probability (>40%) and expected rain accumulation.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "do",
+      "varanasi"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032310",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "do i need an umbrella in Varanasi right now",
+    "answerConcept": "Umbrella and rainwear advisories evaluate current precipitation probability (>40%) and expected rain accumulation.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "do",
+      "varanasi"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032311",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "do i need an umbrella in Varanasi this weekend",
+    "answerConcept": "Umbrella and rainwear advisories evaluate current precipitation probability (>40%) and expected rain accumulation.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "do",
+      "varanasi"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032312",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "do i need an umbrella in Lakhimpur Kheri",
+    "answerConcept": "Umbrella and rainwear advisories evaluate current precipitation probability (>40%) and expected rain accumulation.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "do",
+      "lakhimpur kheri"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032313",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "do i need an umbrella in Lakhimpur Kheri today",
+    "answerConcept": "Umbrella and rainwear advisories evaluate current precipitation probability (>40%) and expected rain accumulation.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "do",
+      "lakhimpur kheri"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032314",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "do i need an umbrella in Lakhimpur Kheri tomorrow",
+    "answerConcept": "Umbrella and rainwear advisories evaluate current precipitation probability (>40%) and expected rain accumulation.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "do",
+      "lakhimpur kheri"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032315",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "do i need an umbrella in Lakhimpur Kheri right now",
+    "answerConcept": "Umbrella and rainwear advisories evaluate current precipitation probability (>40%) and expected rain accumulation.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "do",
+      "lakhimpur kheri"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032316",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "do i need an umbrella in Lakhimpur Kheri this weekend",
+    "answerConcept": "Umbrella and rainwear advisories evaluate current precipitation probability (>40%) and expected rain accumulation.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "do",
+      "lakhimpur kheri"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032317",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "do i need an umbrella in Agra",
+    "answerConcept": "Umbrella and rainwear advisories evaluate current precipitation probability (>40%) and expected rain accumulation.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "do",
+      "agra"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032318",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "do i need an umbrella in Agra today",
+    "answerConcept": "Umbrella and rainwear advisories evaluate current precipitation probability (>40%) and expected rain accumulation.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "do",
+      "agra"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032319",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "do i need an umbrella in Agra tomorrow",
+    "answerConcept": "Umbrella and rainwear advisories evaluate current precipitation probability (>40%) and expected rain accumulation.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "do",
+      "agra"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032320",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "do i need an umbrella in Agra right now",
+    "answerConcept": "Umbrella and rainwear advisories evaluate current precipitation probability (>40%) and expected rain accumulation.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "do",
+      "agra"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032321",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "do i need an umbrella in Agra this weekend",
+    "answerConcept": "Umbrella and rainwear advisories evaluate current precipitation probability (>40%) and expected rain accumulation.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "do",
+      "agra"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032322",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i carry an umbrella today",
+    "answerConcept": "Carrying an umbrella is advised when 24-hour rainfall probability exceeds 40% or active showers are observed on radar.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032323",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i carry an umbrella today today",
+    "answerConcept": "Carrying an umbrella is advised when 24-hour rainfall probability exceeds 40% or active showers are observed on radar.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032324",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i carry an umbrella today tomorrow",
+    "answerConcept": "Carrying an umbrella is advised when 24-hour rainfall probability exceeds 40% or active showers are observed on radar.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032325",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i carry an umbrella today right now",
+    "answerConcept": "Carrying an umbrella is advised when 24-hour rainfall probability exceeds 40% or active showers are observed on radar.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032326",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i carry an umbrella today this weekend",
+    "answerConcept": "Carrying an umbrella is advised when 24-hour rainfall probability exceeds 40% or active showers are observed on radar.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032327",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i carry an umbrella today in Kanpur",
+    "answerConcept": "Carrying an umbrella is advised when 24-hour rainfall probability exceeds 40% or active showers are observed on radar.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "kanpur"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032328",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i carry an umbrella today in Kanpur today",
+    "answerConcept": "Carrying an umbrella is advised when 24-hour rainfall probability exceeds 40% or active showers are observed on radar.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "kanpur"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032329",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i carry an umbrella today in Kanpur tomorrow",
+    "answerConcept": "Carrying an umbrella is advised when 24-hour rainfall probability exceeds 40% or active showers are observed on radar.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "kanpur"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032330",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i carry an umbrella today in Kanpur right now",
+    "answerConcept": "Carrying an umbrella is advised when 24-hour rainfall probability exceeds 40% or active showers are observed on radar.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "kanpur"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032331",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i carry an umbrella today in Kanpur this weekend",
+    "answerConcept": "Carrying an umbrella is advised when 24-hour rainfall probability exceeds 40% or active showers are observed on radar.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "kanpur"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032332",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i carry an umbrella today in Lucknow",
+    "answerConcept": "Carrying an umbrella is advised when 24-hour rainfall probability exceeds 40% or active showers are observed on radar.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "lucknow"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032333",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i carry an umbrella today in Lucknow today",
+    "answerConcept": "Carrying an umbrella is advised when 24-hour rainfall probability exceeds 40% or active showers are observed on radar.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "lucknow"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032334",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i carry an umbrella today in Lucknow tomorrow",
+    "answerConcept": "Carrying an umbrella is advised when 24-hour rainfall probability exceeds 40% or active showers are observed on radar.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "lucknow"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032335",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i carry an umbrella today in Lucknow right now",
+    "answerConcept": "Carrying an umbrella is advised when 24-hour rainfall probability exceeds 40% or active showers are observed on radar.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "lucknow"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032336",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i carry an umbrella today in Lucknow this weekend",
+    "answerConcept": "Carrying an umbrella is advised when 24-hour rainfall probability exceeds 40% or active showers are observed on radar.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "lucknow"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032337",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i carry an umbrella today in Varanasi",
+    "answerConcept": "Carrying an umbrella is advised when 24-hour rainfall probability exceeds 40% or active showers are observed on radar.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "varanasi"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032338",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i carry an umbrella today in Varanasi today",
+    "answerConcept": "Carrying an umbrella is advised when 24-hour rainfall probability exceeds 40% or active showers are observed on radar.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "varanasi"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032339",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i carry an umbrella today in Varanasi tomorrow",
+    "answerConcept": "Carrying an umbrella is advised when 24-hour rainfall probability exceeds 40% or active showers are observed on radar.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "varanasi"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032340",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i carry an umbrella today in Varanasi right now",
+    "answerConcept": "Carrying an umbrella is advised when 24-hour rainfall probability exceeds 40% or active showers are observed on radar.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "varanasi"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032341",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i carry an umbrella today in Varanasi this weekend",
+    "answerConcept": "Carrying an umbrella is advised when 24-hour rainfall probability exceeds 40% or active showers are observed on radar.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "varanasi"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032342",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i carry an umbrella today in Lakhimpur Kheri",
+    "answerConcept": "Carrying an umbrella is advised when 24-hour rainfall probability exceeds 40% or active showers are observed on radar.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "lakhimpur kheri"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032343",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i carry an umbrella today in Lakhimpur Kheri today",
+    "answerConcept": "Carrying an umbrella is advised when 24-hour rainfall probability exceeds 40% or active showers are observed on radar.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "lakhimpur kheri"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032344",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i carry an umbrella today in Lakhimpur Kheri tomorrow",
+    "answerConcept": "Carrying an umbrella is advised when 24-hour rainfall probability exceeds 40% or active showers are observed on radar.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "lakhimpur kheri"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032345",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i carry an umbrella today in Lakhimpur Kheri right now",
+    "answerConcept": "Carrying an umbrella is advised when 24-hour rainfall probability exceeds 40% or active showers are observed on radar.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "lakhimpur kheri"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032346",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i carry an umbrella today in Lakhimpur Kheri this weekend",
+    "answerConcept": "Carrying an umbrella is advised when 24-hour rainfall probability exceeds 40% or active showers are observed on radar.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "lakhimpur kheri"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032347",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i carry an umbrella today in Agra",
+    "answerConcept": "Carrying an umbrella is advised when 24-hour rainfall probability exceeds 40% or active showers are observed on radar.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "agra"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032348",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i carry an umbrella today in Agra today",
+    "answerConcept": "Carrying an umbrella is advised when 24-hour rainfall probability exceeds 40% or active showers are observed on radar.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "agra"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032349",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i carry an umbrella today in Agra tomorrow",
+    "answerConcept": "Carrying an umbrella is advised when 24-hour rainfall probability exceeds 40% or active showers are observed on radar.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "agra"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032350",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i carry an umbrella today in Agra right now",
+    "answerConcept": "Carrying an umbrella is advised when 24-hour rainfall probability exceeds 40% or active showers are observed on radar.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "agra"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032351",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i carry an umbrella today in Agra this weekend",
+    "answerConcept": "Carrying an umbrella is advised when 24-hour rainfall probability exceeds 40% or active showers are observed on radar.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "agra"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "UMBRELLA_ADVICE"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032352",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to travel on highways in heavy rain",
+    "answerConcept": "Highway travel in heavy rain requires caution due to hydroplaning risk, reduced visibility (<500 m), and waterlogging in low-lying underpasses.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032353",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to travel on highways in heavy rain today",
+    "answerConcept": "Highway travel in heavy rain requires caution due to hydroplaning risk, reduced visibility (<500 m), and waterlogging in low-lying underpasses.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032354",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to travel on highways in heavy rain tomorrow",
+    "answerConcept": "Highway travel in heavy rain requires caution due to hydroplaning risk, reduced visibility (<500 m), and waterlogging in low-lying underpasses.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032355",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to travel on highways in heavy rain right now",
+    "answerConcept": "Highway travel in heavy rain requires caution due to hydroplaning risk, reduced visibility (<500 m), and waterlogging in low-lying underpasses.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032356",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to travel on highways in heavy rain this weekend",
+    "answerConcept": "Highway travel in heavy rain requires caution due to hydroplaning risk, reduced visibility (<500 m), and waterlogging in low-lying underpasses.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032357",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to travel on highways in heavy rain in Kanpur",
+    "answerConcept": "Highway travel in heavy rain requires caution due to hydroplaning risk, reduced visibility (<500 m), and waterlogging in low-lying underpasses.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "kanpur"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032358",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to travel on highways in heavy rain in Kanpur today",
+    "answerConcept": "Highway travel in heavy rain requires caution due to hydroplaning risk, reduced visibility (<500 m), and waterlogging in low-lying underpasses.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "kanpur"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032359",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to travel on highways in heavy rain in Kanpur tomorrow",
+    "answerConcept": "Highway travel in heavy rain requires caution due to hydroplaning risk, reduced visibility (<500 m), and waterlogging in low-lying underpasses.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "kanpur"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032360",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to travel on highways in heavy rain in Kanpur right now",
+    "answerConcept": "Highway travel in heavy rain requires caution due to hydroplaning risk, reduced visibility (<500 m), and waterlogging in low-lying underpasses.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "kanpur"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032361",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to travel on highways in heavy rain in Kanpur this weekend",
+    "answerConcept": "Highway travel in heavy rain requires caution due to hydroplaning risk, reduced visibility (<500 m), and waterlogging in low-lying underpasses.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "kanpur"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032362",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to travel on highways in heavy rain in Lucknow",
+    "answerConcept": "Highway travel in heavy rain requires caution due to hydroplaning risk, reduced visibility (<500 m), and waterlogging in low-lying underpasses.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "lucknow"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032363",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to travel on highways in heavy rain in Lucknow today",
+    "answerConcept": "Highway travel in heavy rain requires caution due to hydroplaning risk, reduced visibility (<500 m), and waterlogging in low-lying underpasses.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "lucknow"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032364",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to travel on highways in heavy rain in Lucknow tomorrow",
+    "answerConcept": "Highway travel in heavy rain requires caution due to hydroplaning risk, reduced visibility (<500 m), and waterlogging in low-lying underpasses.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "lucknow"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032365",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to travel on highways in heavy rain in Lucknow right now",
+    "answerConcept": "Highway travel in heavy rain requires caution due to hydroplaning risk, reduced visibility (<500 m), and waterlogging in low-lying underpasses.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "lucknow"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032366",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to travel on highways in heavy rain in Lucknow this weekend",
+    "answerConcept": "Highway travel in heavy rain requires caution due to hydroplaning risk, reduced visibility (<500 m), and waterlogging in low-lying underpasses.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "lucknow"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032367",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to travel on highways in heavy rain in Varanasi",
+    "answerConcept": "Highway travel in heavy rain requires caution due to hydroplaning risk, reduced visibility (<500 m), and waterlogging in low-lying underpasses.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "varanasi"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032368",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to travel on highways in heavy rain in Varanasi today",
+    "answerConcept": "Highway travel in heavy rain requires caution due to hydroplaning risk, reduced visibility (<500 m), and waterlogging in low-lying underpasses.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "varanasi"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032369",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to travel on highways in heavy rain in Varanasi tomorrow",
+    "answerConcept": "Highway travel in heavy rain requires caution due to hydroplaning risk, reduced visibility (<500 m), and waterlogging in low-lying underpasses.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "varanasi"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032370",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to travel on highways in heavy rain in Varanasi right now",
+    "answerConcept": "Highway travel in heavy rain requires caution due to hydroplaning risk, reduced visibility (<500 m), and waterlogging in low-lying underpasses.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "varanasi"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032371",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to travel on highways in heavy rain in Varanasi this weekend",
+    "answerConcept": "Highway travel in heavy rain requires caution due to hydroplaning risk, reduced visibility (<500 m), and waterlogging in low-lying underpasses.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "varanasi"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032372",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to travel on highways in heavy rain in Lakhimpur Kheri",
+    "answerConcept": "Highway travel in heavy rain requires caution due to hydroplaning risk, reduced visibility (<500 m), and waterlogging in low-lying underpasses.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "lakhimpur kheri"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032373",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to travel on highways in heavy rain in Lakhimpur Kheri today",
+    "answerConcept": "Highway travel in heavy rain requires caution due to hydroplaning risk, reduced visibility (<500 m), and waterlogging in low-lying underpasses.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "lakhimpur kheri"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032374",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to travel on highways in heavy rain in Lakhimpur Kheri tomorrow",
+    "answerConcept": "Highway travel in heavy rain requires caution due to hydroplaning risk, reduced visibility (<500 m), and waterlogging in low-lying underpasses.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "lakhimpur kheri"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032375",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to travel on highways in heavy rain in Lakhimpur Kheri right now",
+    "answerConcept": "Highway travel in heavy rain requires caution due to hydroplaning risk, reduced visibility (<500 m), and waterlogging in low-lying underpasses.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "lakhimpur kheri"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032376",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to travel on highways in heavy rain in Lakhimpur Kheri this weekend",
+    "answerConcept": "Highway travel in heavy rain requires caution due to hydroplaning risk, reduced visibility (<500 m), and waterlogging in low-lying underpasses.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "lakhimpur kheri"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032377",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to travel on highways in heavy rain in Agra",
+    "answerConcept": "Highway travel in heavy rain requires caution due to hydroplaning risk, reduced visibility (<500 m), and waterlogging in low-lying underpasses.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "agra"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032378",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to travel on highways in heavy rain in Agra today",
+    "answerConcept": "Highway travel in heavy rain requires caution due to hydroplaning risk, reduced visibility (<500 m), and waterlogging in low-lying underpasses.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "agra"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032379",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to travel on highways in heavy rain in Agra tomorrow",
+    "answerConcept": "Highway travel in heavy rain requires caution due to hydroplaning risk, reduced visibility (<500 m), and waterlogging in low-lying underpasses.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "agra"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032380",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to travel on highways in heavy rain in Agra right now",
+    "answerConcept": "Highway travel in heavy rain requires caution due to hydroplaning risk, reduced visibility (<500 m), and waterlogging in low-lying underpasses.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "agra"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032381",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to travel on highways in heavy rain in Agra this weekend",
+    "answerConcept": "Highway travel in heavy rain requires caution due to hydroplaning risk, reduced visibility (<500 m), and waterlogging in low-lying underpasses.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "agra"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032382",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to work outside in open fields",
+    "answerConcept": "Field work is safe during light rain, but open field labor must halt immediately if convective instability produces lightning or heavy rainfall.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032383",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to work outside in open fields today",
+    "answerConcept": "Field work is safe during light rain, but open field labor must halt immediately if convective instability produces lightning or heavy rainfall.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032384",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to work outside in open fields tomorrow",
+    "answerConcept": "Field work is safe during light rain, but open field labor must halt immediately if convective instability produces lightning or heavy rainfall.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032385",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to work outside in open fields right now",
+    "answerConcept": "Field work is safe during light rain, but open field labor must halt immediately if convective instability produces lightning or heavy rainfall.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032386",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to work outside in open fields this weekend",
+    "answerConcept": "Field work is safe during light rain, but open field labor must halt immediately if convective instability produces lightning or heavy rainfall.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032387",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to work outside in open fields in Kanpur",
+    "answerConcept": "Field work is safe during light rain, but open field labor must halt immediately if convective instability produces lightning or heavy rainfall.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "kanpur"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032388",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to work outside in open fields in Kanpur today",
+    "answerConcept": "Field work is safe during light rain, but open field labor must halt immediately if convective instability produces lightning or heavy rainfall.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "kanpur"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032389",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to work outside in open fields in Kanpur tomorrow",
+    "answerConcept": "Field work is safe during light rain, but open field labor must halt immediately if convective instability produces lightning or heavy rainfall.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "kanpur"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032390",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to work outside in open fields in Kanpur right now",
+    "answerConcept": "Field work is safe during light rain, but open field labor must halt immediately if convective instability produces lightning or heavy rainfall.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "kanpur"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032391",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to work outside in open fields in Kanpur this weekend",
+    "answerConcept": "Field work is safe during light rain, but open field labor must halt immediately if convective instability produces lightning or heavy rainfall.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "kanpur"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032392",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to work outside in open fields in Lucknow",
+    "answerConcept": "Field work is safe during light rain, but open field labor must halt immediately if convective instability produces lightning or heavy rainfall.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "lucknow"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032393",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to work outside in open fields in Lucknow today",
+    "answerConcept": "Field work is safe during light rain, but open field labor must halt immediately if convective instability produces lightning or heavy rainfall.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "lucknow"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032394",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to work outside in open fields in Lucknow tomorrow",
+    "answerConcept": "Field work is safe during light rain, but open field labor must halt immediately if convective instability produces lightning or heavy rainfall.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "lucknow"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032395",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to work outside in open fields in Lucknow right now",
+    "answerConcept": "Field work is safe during light rain, but open field labor must halt immediately if convective instability produces lightning or heavy rainfall.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "lucknow"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032396",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to work outside in open fields in Lucknow this weekend",
+    "answerConcept": "Field work is safe during light rain, but open field labor must halt immediately if convective instability produces lightning or heavy rainfall.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "lucknow"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032397",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to work outside in open fields in Varanasi",
+    "answerConcept": "Field work is safe during light rain, but open field labor must halt immediately if convective instability produces lightning or heavy rainfall.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "varanasi"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032398",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to work outside in open fields in Varanasi today",
+    "answerConcept": "Field work is safe during light rain, but open field labor must halt immediately if convective instability produces lightning or heavy rainfall.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "varanasi"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032399",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to work outside in open fields in Varanasi tomorrow",
+    "answerConcept": "Field work is safe during light rain, but open field labor must halt immediately if convective instability produces lightning or heavy rainfall.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "varanasi"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032400",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to work outside in open fields in Varanasi right now",
+    "answerConcept": "Field work is safe during light rain, but open field labor must halt immediately if convective instability produces lightning or heavy rainfall.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "varanasi"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032401",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to work outside in open fields in Varanasi this weekend",
+    "answerConcept": "Field work is safe during light rain, but open field labor must halt immediately if convective instability produces lightning or heavy rainfall.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "varanasi"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032402",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to work outside in open fields in Lakhimpur Kheri",
+    "answerConcept": "Field work is safe during light rain, but open field labor must halt immediately if convective instability produces lightning or heavy rainfall.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "lakhimpur kheri"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032403",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to work outside in open fields in Lakhimpur Kheri today",
+    "answerConcept": "Field work is safe during light rain, but open field labor must halt immediately if convective instability produces lightning or heavy rainfall.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "lakhimpur kheri"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032404",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to work outside in open fields in Lakhimpur Kheri tomorrow",
+    "answerConcept": "Field work is safe during light rain, but open field labor must halt immediately if convective instability produces lightning or heavy rainfall.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "lakhimpur kheri"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032405",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to work outside in open fields in Lakhimpur Kheri right now",
+    "answerConcept": "Field work is safe during light rain, but open field labor must halt immediately if convective instability produces lightning or heavy rainfall.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "lakhimpur kheri"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032406",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to work outside in open fields in Lakhimpur Kheri this weekend",
+    "answerConcept": "Field work is safe during light rain, but open field labor must halt immediately if convective instability produces lightning or heavy rainfall.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "lakhimpur kheri"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032407",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to work outside in open fields in Agra",
+    "answerConcept": "Field work is safe during light rain, but open field labor must halt immediately if convective instability produces lightning or heavy rainfall.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "agra"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032408",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to work outside in open fields in Agra today",
+    "answerConcept": "Field work is safe during light rain, but open field labor must halt immediately if convective instability produces lightning or heavy rainfall.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "agra"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032409",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to work outside in open fields in Agra tomorrow",
+    "answerConcept": "Field work is safe during light rain, but open field labor must halt immediately if convective instability produces lightning or heavy rainfall.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "agra"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032410",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to work outside in open fields in Agra right now",
+    "answerConcept": "Field work is safe during light rain, but open field labor must halt immediately if convective instability produces lightning or heavy rainfall.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "agra"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032411",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "is it safe to work outside in open fields in Agra this weekend",
+    "answerConcept": "Field work is safe during light rain, but open field labor must halt immediately if convective instability produces lightning or heavy rainfall.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "is",
+      "agra"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032412",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i postpone pesticide spraying",
+    "answerConcept": "Pesticide and fungicide applications must be postponed if rain is expected within 4–6 hours to prevent chemical wash-off and environmental contamination.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032413",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i postpone pesticide spraying today",
+    "answerConcept": "Pesticide and fungicide applications must be postponed if rain is expected within 4–6 hours to prevent chemical wash-off and environmental contamination.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032414",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i postpone pesticide spraying tomorrow",
+    "answerConcept": "Pesticide and fungicide applications must be postponed if rain is expected within 4–6 hours to prevent chemical wash-off and environmental contamination.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032415",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i postpone pesticide spraying right now",
+    "answerConcept": "Pesticide and fungicide applications must be postponed if rain is expected within 4–6 hours to prevent chemical wash-off and environmental contamination.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032416",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i postpone pesticide spraying this weekend",
+    "answerConcept": "Pesticide and fungicide applications must be postponed if rain is expected within 4–6 hours to prevent chemical wash-off and environmental contamination.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032417",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i postpone pesticide spraying in Kanpur",
+    "answerConcept": "Pesticide and fungicide applications must be postponed if rain is expected within 4–6 hours to prevent chemical wash-off and environmental contamination.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "kanpur"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032418",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i postpone pesticide spraying in Kanpur today",
+    "answerConcept": "Pesticide and fungicide applications must be postponed if rain is expected within 4–6 hours to prevent chemical wash-off and environmental contamination.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "kanpur"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032419",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i postpone pesticide spraying in Kanpur tomorrow",
+    "answerConcept": "Pesticide and fungicide applications must be postponed if rain is expected within 4–6 hours to prevent chemical wash-off and environmental contamination.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "kanpur"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032420",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i postpone pesticide spraying in Kanpur right now",
+    "answerConcept": "Pesticide and fungicide applications must be postponed if rain is expected within 4–6 hours to prevent chemical wash-off and environmental contamination.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "kanpur"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032421",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i postpone pesticide spraying in Kanpur this weekend",
+    "answerConcept": "Pesticide and fungicide applications must be postponed if rain is expected within 4–6 hours to prevent chemical wash-off and environmental contamination.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "kanpur"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032422",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i postpone pesticide spraying in Lucknow",
+    "answerConcept": "Pesticide and fungicide applications must be postponed if rain is expected within 4–6 hours to prevent chemical wash-off and environmental contamination.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "lucknow"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032423",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i postpone pesticide spraying in Lucknow today",
+    "answerConcept": "Pesticide and fungicide applications must be postponed if rain is expected within 4–6 hours to prevent chemical wash-off and environmental contamination.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "lucknow"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032424",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i postpone pesticide spraying in Lucknow tomorrow",
+    "answerConcept": "Pesticide and fungicide applications must be postponed if rain is expected within 4–6 hours to prevent chemical wash-off and environmental contamination.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "lucknow"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032425",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i postpone pesticide spraying in Lucknow right now",
+    "answerConcept": "Pesticide and fungicide applications must be postponed if rain is expected within 4–6 hours to prevent chemical wash-off and environmental contamination.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "lucknow"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032426",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i postpone pesticide spraying in Lucknow this weekend",
+    "answerConcept": "Pesticide and fungicide applications must be postponed if rain is expected within 4–6 hours to prevent chemical wash-off and environmental contamination.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "lucknow"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032427",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i postpone pesticide spraying in Varanasi",
+    "answerConcept": "Pesticide and fungicide applications must be postponed if rain is expected within 4–6 hours to prevent chemical wash-off and environmental contamination.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "varanasi"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032428",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i postpone pesticide spraying in Varanasi today",
+    "answerConcept": "Pesticide and fungicide applications must be postponed if rain is expected within 4–6 hours to prevent chemical wash-off and environmental contamination.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "varanasi"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032429",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i postpone pesticide spraying in Varanasi tomorrow",
+    "answerConcept": "Pesticide and fungicide applications must be postponed if rain is expected within 4–6 hours to prevent chemical wash-off and environmental contamination.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "varanasi"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032430",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i postpone pesticide spraying in Varanasi right now",
+    "answerConcept": "Pesticide and fungicide applications must be postponed if rain is expected within 4–6 hours to prevent chemical wash-off and environmental contamination.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "varanasi"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032431",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i postpone pesticide spraying in Varanasi this weekend",
+    "answerConcept": "Pesticide and fungicide applications must be postponed if rain is expected within 4–6 hours to prevent chemical wash-off and environmental contamination.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "varanasi"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032432",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i postpone pesticide spraying in Lakhimpur Kheri",
+    "answerConcept": "Pesticide and fungicide applications must be postponed if rain is expected within 4–6 hours to prevent chemical wash-off and environmental contamination.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "lakhimpur kheri"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032433",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i postpone pesticide spraying in Lakhimpur Kheri today",
+    "answerConcept": "Pesticide and fungicide applications must be postponed if rain is expected within 4–6 hours to prevent chemical wash-off and environmental contamination.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "lakhimpur kheri"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032434",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i postpone pesticide spraying in Lakhimpur Kheri tomorrow",
+    "answerConcept": "Pesticide and fungicide applications must be postponed if rain is expected within 4–6 hours to prevent chemical wash-off and environmental contamination.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "lakhimpur kheri"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032435",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i postpone pesticide spraying in Lakhimpur Kheri right now",
+    "answerConcept": "Pesticide and fungicide applications must be postponed if rain is expected within 4–6 hours to prevent chemical wash-off and environmental contamination.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "lakhimpur kheri"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032436",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i postpone pesticide spraying in Lakhimpur Kheri this weekend",
+    "answerConcept": "Pesticide and fungicide applications must be postponed if rain is expected within 4–6 hours to prevent chemical wash-off and environmental contamination.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "lakhimpur kheri"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032437",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i postpone pesticide spraying in Agra",
+    "answerConcept": "Pesticide and fungicide applications must be postponed if rain is expected within 4–6 hours to prevent chemical wash-off and environmental contamination.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "agra"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032438",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i postpone pesticide spraying in Agra today",
+    "answerConcept": "Pesticide and fungicide applications must be postponed if rain is expected within 4–6 hours to prevent chemical wash-off and environmental contamination.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "agra"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032439",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i postpone pesticide spraying in Agra tomorrow",
+    "answerConcept": "Pesticide and fungicide applications must be postponed if rain is expected within 4–6 hours to prevent chemical wash-off and environmental contamination.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "agra"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032440",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i postpone pesticide spraying in Agra right now",
+    "answerConcept": "Pesticide and fungicide applications must be postponed if rain is expected within 4–6 hours to prevent chemical wash-off and environmental contamination.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "agra"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032441",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i postpone pesticide spraying in Agra this weekend",
+    "answerConcept": "Pesticide and fungicide applications must be postponed if rain is expected within 4–6 hours to prevent chemical wash-off and environmental contamination.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "agra"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032442",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "what should i check after heavy rain on my farm",
+    "answerConcept": "Post-rain farm inspections should check for standing water in field depressions, eroded bunds, root exposure, and early signs of fungal disease.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "what"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032443",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "what should i check after heavy rain on my farm today",
+    "answerConcept": "Post-rain farm inspections should check for standing water in field depressions, eroded bunds, root exposure, and early signs of fungal disease.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "what"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032444",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "what should i check after heavy rain on my farm tomorrow",
+    "answerConcept": "Post-rain farm inspections should check for standing water in field depressions, eroded bunds, root exposure, and early signs of fungal disease.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "what"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032445",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "what should i check after heavy rain on my farm right now",
+    "answerConcept": "Post-rain farm inspections should check for standing water in field depressions, eroded bunds, root exposure, and early signs of fungal disease.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "what"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032446",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "what should i check after heavy rain on my farm this weekend",
+    "answerConcept": "Post-rain farm inspections should check for standing water in field depressions, eroded bunds, root exposure, and early signs of fungal disease.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "what"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032447",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "what should i check after heavy rain on my farm in Kanpur",
+    "answerConcept": "Post-rain farm inspections should check for standing water in field depressions, eroded bunds, root exposure, and early signs of fungal disease.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "what",
+      "kanpur"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032448",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "what should i check after heavy rain on my farm in Kanpur today",
+    "answerConcept": "Post-rain farm inspections should check for standing water in field depressions, eroded bunds, root exposure, and early signs of fungal disease.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "what",
+      "kanpur"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032449",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "what should i check after heavy rain on my farm in Kanpur tomorrow",
+    "answerConcept": "Post-rain farm inspections should check for standing water in field depressions, eroded bunds, root exposure, and early signs of fungal disease.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "what",
+      "kanpur"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032450",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "what should i check after heavy rain on my farm in Kanpur right now",
+    "answerConcept": "Post-rain farm inspections should check for standing water in field depressions, eroded bunds, root exposure, and early signs of fungal disease.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "what",
+      "kanpur"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032451",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "what should i check after heavy rain on my farm in Kanpur this weekend",
+    "answerConcept": "Post-rain farm inspections should check for standing water in field depressions, eroded bunds, root exposure, and early signs of fungal disease.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "what",
+      "kanpur"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032452",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "what should i check after heavy rain on my farm in Lucknow",
+    "answerConcept": "Post-rain farm inspections should check for standing water in field depressions, eroded bunds, root exposure, and early signs of fungal disease.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "what",
+      "lucknow"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032453",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "what should i check after heavy rain on my farm in Lucknow today",
+    "answerConcept": "Post-rain farm inspections should check for standing water in field depressions, eroded bunds, root exposure, and early signs of fungal disease.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "what",
+      "lucknow"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032454",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "what should i check after heavy rain on my farm in Lucknow tomorrow",
+    "answerConcept": "Post-rain farm inspections should check for standing water in field depressions, eroded bunds, root exposure, and early signs of fungal disease.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "what",
+      "lucknow"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032455",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "what should i check after heavy rain on my farm in Lucknow right now",
+    "answerConcept": "Post-rain farm inspections should check for standing water in field depressions, eroded bunds, root exposure, and early signs of fungal disease.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "what",
+      "lucknow"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032456",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "what should i check after heavy rain on my farm in Lucknow this weekend",
+    "answerConcept": "Post-rain farm inspections should check for standing water in field depressions, eroded bunds, root exposure, and early signs of fungal disease.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "what",
+      "lucknow"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032457",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "what should i check after heavy rain on my farm in Varanasi",
+    "answerConcept": "Post-rain farm inspections should check for standing water in field depressions, eroded bunds, root exposure, and early signs of fungal disease.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "what",
+      "varanasi"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032458",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "what should i check after heavy rain on my farm in Varanasi today",
+    "answerConcept": "Post-rain farm inspections should check for standing water in field depressions, eroded bunds, root exposure, and early signs of fungal disease.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "what",
+      "varanasi"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032459",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "what should i check after heavy rain on my farm in Varanasi tomorrow",
+    "answerConcept": "Post-rain farm inspections should check for standing water in field depressions, eroded bunds, root exposure, and early signs of fungal disease.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "what",
+      "varanasi"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032460",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "what should i check after heavy rain on my farm in Varanasi right now",
+    "answerConcept": "Post-rain farm inspections should check for standing water in field depressions, eroded bunds, root exposure, and early signs of fungal disease.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "what",
+      "varanasi"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032461",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "what should i check after heavy rain on my farm in Varanasi this weekend",
+    "answerConcept": "Post-rain farm inspections should check for standing water in field depressions, eroded bunds, root exposure, and early signs of fungal disease.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "what",
+      "varanasi"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032462",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "what should i check after heavy rain on my farm in Lakhimpur Kheri",
+    "answerConcept": "Post-rain farm inspections should check for standing water in field depressions, eroded bunds, root exposure, and early signs of fungal disease.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "what",
+      "lakhimpur kheri"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032463",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "what should i check after heavy rain on my farm in Lakhimpur Kheri today",
+    "answerConcept": "Post-rain farm inspections should check for standing water in field depressions, eroded bunds, root exposure, and early signs of fungal disease.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "what",
+      "lakhimpur kheri"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032464",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "what should i check after heavy rain on my farm in Lakhimpur Kheri tomorrow",
+    "answerConcept": "Post-rain farm inspections should check for standing water in field depressions, eroded bunds, root exposure, and early signs of fungal disease.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "what",
+      "lakhimpur kheri"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032465",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "what should i check after heavy rain on my farm in Lakhimpur Kheri right now",
+    "answerConcept": "Post-rain farm inspections should check for standing water in field depressions, eroded bunds, root exposure, and early signs of fungal disease.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "what",
+      "lakhimpur kheri"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032466",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "what should i check after heavy rain on my farm in Lakhimpur Kheri this weekend",
+    "answerConcept": "Post-rain farm inspections should check for standing water in field depressions, eroded bunds, root exposure, and early signs of fungal disease.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "what",
+      "lakhimpur kheri"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032467",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "what should i check after heavy rain on my farm in Agra",
+    "answerConcept": "Post-rain farm inspections should check for standing water in field depressions, eroded bunds, root exposure, and early signs of fungal disease.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "what",
+      "agra"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032468",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "what should i check after heavy rain on my farm in Agra today",
+    "answerConcept": "Post-rain farm inspections should check for standing water in field depressions, eroded bunds, root exposure, and early signs of fungal disease.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "what",
+      "agra"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032469",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "what should i check after heavy rain on my farm in Agra tomorrow",
+    "answerConcept": "Post-rain farm inspections should check for standing water in field depressions, eroded bunds, root exposure, and early signs of fungal disease.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "what",
+      "agra"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032470",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "what should i check after heavy rain on my farm in Agra right now",
+    "answerConcept": "Post-rain farm inspections should check for standing water in field depressions, eroded bunds, root exposure, and early signs of fungal disease.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "what",
+      "agra"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032471",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "what should i check after heavy rain on my farm in Agra this weekend",
+    "answerConcept": "Post-rain farm inspections should check for standing water in field depressions, eroded bunds, root exposure, and early signs of fungal disease.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "what",
+      "agra"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032472",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "how to protect harvested grain from unexpected rain",
+    "answerConcept": "Cover threshing yards and harvested grain with waterproof tarpaulins elevated on wooden pallets to prevent bottom moisture seepage.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "how"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032473",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "how to protect harvested grain from unexpected rain today",
+    "answerConcept": "Cover threshing yards and harvested grain with waterproof tarpaulins elevated on wooden pallets to prevent bottom moisture seepage.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "how"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032474",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "how to protect harvested grain from unexpected rain tomorrow",
+    "answerConcept": "Cover threshing yards and harvested grain with waterproof tarpaulins elevated on wooden pallets to prevent bottom moisture seepage.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "how"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032475",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "how to protect harvested grain from unexpected rain right now",
+    "answerConcept": "Cover threshing yards and harvested grain with waterproof tarpaulins elevated on wooden pallets to prevent bottom moisture seepage.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "how"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032476",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "how to protect harvested grain from unexpected rain this weekend",
+    "answerConcept": "Cover threshing yards and harvested grain with waterproof tarpaulins elevated on wooden pallets to prevent bottom moisture seepage.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "how"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032477",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "how to protect harvested grain from unexpected rain in Kanpur",
+    "answerConcept": "Cover threshing yards and harvested grain with waterproof tarpaulins elevated on wooden pallets to prevent bottom moisture seepage.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "how",
+      "kanpur"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032478",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "how to protect harvested grain from unexpected rain in Kanpur today",
+    "answerConcept": "Cover threshing yards and harvested grain with waterproof tarpaulins elevated on wooden pallets to prevent bottom moisture seepage.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "how",
+      "kanpur"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032479",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "how to protect harvested grain from unexpected rain in Kanpur tomorrow",
+    "answerConcept": "Cover threshing yards and harvested grain with waterproof tarpaulins elevated on wooden pallets to prevent bottom moisture seepage.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "how",
+      "kanpur"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032480",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "how to protect harvested grain from unexpected rain in Kanpur right now",
+    "answerConcept": "Cover threshing yards and harvested grain with waterproof tarpaulins elevated on wooden pallets to prevent bottom moisture seepage.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "how",
+      "kanpur"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032481",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "how to protect harvested grain from unexpected rain in Kanpur this weekend",
+    "answerConcept": "Cover threshing yards and harvested grain with waterproof tarpaulins elevated on wooden pallets to prevent bottom moisture seepage.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "how",
+      "kanpur"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032482",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "how to protect harvested grain from unexpected rain in Lucknow",
+    "answerConcept": "Cover threshing yards and harvested grain with waterproof tarpaulins elevated on wooden pallets to prevent bottom moisture seepage.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "how",
+      "lucknow"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032483",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "how to protect harvested grain from unexpected rain in Lucknow today",
+    "answerConcept": "Cover threshing yards and harvested grain with waterproof tarpaulins elevated on wooden pallets to prevent bottom moisture seepage.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "how",
+      "lucknow"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032484",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "how to protect harvested grain from unexpected rain in Lucknow tomorrow",
+    "answerConcept": "Cover threshing yards and harvested grain with waterproof tarpaulins elevated on wooden pallets to prevent bottom moisture seepage.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "how",
+      "lucknow"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032485",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "how to protect harvested grain from unexpected rain in Lucknow right now",
+    "answerConcept": "Cover threshing yards and harvested grain with waterproof tarpaulins elevated on wooden pallets to prevent bottom moisture seepage.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "how",
+      "lucknow"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032486",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "how to protect harvested grain from unexpected rain in Lucknow this weekend",
+    "answerConcept": "Cover threshing yards and harvested grain with waterproof tarpaulins elevated on wooden pallets to prevent bottom moisture seepage.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "how",
+      "lucknow"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032487",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "how to protect harvested grain from unexpected rain in Varanasi",
+    "answerConcept": "Cover threshing yards and harvested grain with waterproof tarpaulins elevated on wooden pallets to prevent bottom moisture seepage.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "how",
+      "varanasi"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032488",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "how to protect harvested grain from unexpected rain in Varanasi today",
+    "answerConcept": "Cover threshing yards and harvested grain with waterproof tarpaulins elevated on wooden pallets to prevent bottom moisture seepage.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "how",
+      "varanasi"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032489",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "how to protect harvested grain from unexpected rain in Varanasi tomorrow",
+    "answerConcept": "Cover threshing yards and harvested grain with waterproof tarpaulins elevated on wooden pallets to prevent bottom moisture seepage.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "how",
+      "varanasi"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032490",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "how to protect harvested grain from unexpected rain in Varanasi right now",
+    "answerConcept": "Cover threshing yards and harvested grain with waterproof tarpaulins elevated on wooden pallets to prevent bottom moisture seepage.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "how",
+      "varanasi"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032491",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "how to protect harvested grain from unexpected rain in Varanasi this weekend",
+    "answerConcept": "Cover threshing yards and harvested grain with waterproof tarpaulins elevated on wooden pallets to prevent bottom moisture seepage.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "how",
+      "varanasi"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032492",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "how to protect harvested grain from unexpected rain in Lakhimpur Kheri",
+    "answerConcept": "Cover threshing yards and harvested grain with waterproof tarpaulins elevated on wooden pallets to prevent bottom moisture seepage.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "how",
+      "lakhimpur kheri"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032493",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "how to protect harvested grain from unexpected rain in Lakhimpur Kheri today",
+    "answerConcept": "Cover threshing yards and harvested grain with waterproof tarpaulins elevated on wooden pallets to prevent bottom moisture seepage.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "how",
+      "lakhimpur kheri"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032494",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "how to protect harvested grain from unexpected rain in Lakhimpur Kheri tomorrow",
+    "answerConcept": "Cover threshing yards and harvested grain with waterproof tarpaulins elevated on wooden pallets to prevent bottom moisture seepage.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "how",
+      "lakhimpur kheri"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032495",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "how to protect harvested grain from unexpected rain in Lakhimpur Kheri right now",
+    "answerConcept": "Cover threshing yards and harvested grain with waterproof tarpaulins elevated on wooden pallets to prevent bottom moisture seepage.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "how",
+      "lakhimpur kheri"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032496",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "how to protect harvested grain from unexpected rain in Lakhimpur Kheri this weekend",
+    "answerConcept": "Cover threshing yards and harvested grain with waterproof tarpaulins elevated on wooden pallets to prevent bottom moisture seepage.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "how",
+      "lakhimpur kheri"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032497",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "how to protect harvested grain from unexpected rain in Agra",
+    "answerConcept": "Cover threshing yards and harvested grain with waterproof tarpaulins elevated on wooden pallets to prevent bottom moisture seepage.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "how",
+      "agra"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032498",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "how to protect harvested grain from unexpected rain in Agra today",
+    "answerConcept": "Cover threshing yards and harvested grain with waterproof tarpaulins elevated on wooden pallets to prevent bottom moisture seepage.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "how",
+      "agra"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032499",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "how to protect harvested grain from unexpected rain in Agra tomorrow",
+    "answerConcept": "Cover threshing yards and harvested grain with waterproof tarpaulins elevated on wooden pallets to prevent bottom moisture seepage.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "how",
+      "agra"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032500",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "how to protect harvested grain from unexpected rain in Agra right now",
+    "answerConcept": "Cover threshing yards and harvested grain with waterproof tarpaulins elevated on wooden pallets to prevent bottom moisture seepage.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "how",
+      "agra"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032501",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "how to protect harvested grain from unexpected rain in Agra this weekend",
+    "answerConcept": "Cover threshing yards and harvested grain with waterproof tarpaulins elevated on wooden pallets to prevent bottom moisture seepage.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "how",
+      "agra"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "CROP_WEATHER_ACTION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032502",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i irrigate my field today",
+    "answerConcept": "Hold irrigation if expected rainfall over the next 24–48 hours exceeds 10 mm; proceed only if topsoil is dry and no rain is forecasted.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "IRRIGATION_DECISION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032503",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i irrigate my field today today",
+    "answerConcept": "Hold irrigation if expected rainfall over the next 24–48 hours exceeds 10 mm; proceed only if topsoil is dry and no rain is forecasted.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "IRRIGATION_DECISION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032504",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i irrigate my field today tomorrow",
+    "answerConcept": "Hold irrigation if expected rainfall over the next 24–48 hours exceeds 10 mm; proceed only if topsoil is dry and no rain is forecasted.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "IRRIGATION_DECISION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032505",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i irrigate my field today right now",
+    "answerConcept": "Hold irrigation if expected rainfall over the next 24–48 hours exceeds 10 mm; proceed only if topsoil is dry and no rain is forecasted.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "IRRIGATION_DECISION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032506",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i irrigate my field today this weekend",
+    "answerConcept": "Hold irrigation if expected rainfall over the next 24–48 hours exceeds 10 mm; proceed only if topsoil is dry and no rain is forecasted.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "IRRIGATION_DECISION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032507",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i irrigate my field today in Kanpur",
+    "answerConcept": "Hold irrigation if expected rainfall over the next 24–48 hours exceeds 10 mm; proceed only if topsoil is dry and no rain is forecasted.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "kanpur"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "IRRIGATION_DECISION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032508",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i irrigate my field today in Kanpur today",
+    "answerConcept": "Hold irrigation if expected rainfall over the next 24–48 hours exceeds 10 mm; proceed only if topsoil is dry and no rain is forecasted.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "kanpur"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "IRRIGATION_DECISION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032509",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i irrigate my field today in Kanpur tomorrow",
+    "answerConcept": "Hold irrigation if expected rainfall over the next 24–48 hours exceeds 10 mm; proceed only if topsoil is dry and no rain is forecasted.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "kanpur"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "IRRIGATION_DECISION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032510",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i irrigate my field today in Kanpur right now",
+    "answerConcept": "Hold irrigation if expected rainfall over the next 24–48 hours exceeds 10 mm; proceed only if topsoil is dry and no rain is forecasted.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "kanpur"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "IRRIGATION_DECISION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032511",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i irrigate my field today in Kanpur this weekend",
+    "answerConcept": "Hold irrigation if expected rainfall over the next 24–48 hours exceeds 10 mm; proceed only if topsoil is dry and no rain is forecasted.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "kanpur"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "IRRIGATION_DECISION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032512",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i irrigate my field today in Lucknow",
+    "answerConcept": "Hold irrigation if expected rainfall over the next 24–48 hours exceeds 10 mm; proceed only if topsoil is dry and no rain is forecasted.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "lucknow"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "IRRIGATION_DECISION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032513",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i irrigate my field today in Lucknow today",
+    "answerConcept": "Hold irrigation if expected rainfall over the next 24–48 hours exceeds 10 mm; proceed only if topsoil is dry and no rain is forecasted.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "lucknow"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "IRRIGATION_DECISION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032514",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i irrigate my field today in Lucknow tomorrow",
+    "answerConcept": "Hold irrigation if expected rainfall over the next 24–48 hours exceeds 10 mm; proceed only if topsoil is dry and no rain is forecasted.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "lucknow"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "IRRIGATION_DECISION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032515",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i irrigate my field today in Lucknow right now",
+    "answerConcept": "Hold irrigation if expected rainfall over the next 24–48 hours exceeds 10 mm; proceed only if topsoil is dry and no rain is forecasted.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "lucknow"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "IRRIGATION_DECISION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032516",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i irrigate my field today in Lucknow this weekend",
+    "answerConcept": "Hold irrigation if expected rainfall over the next 24–48 hours exceeds 10 mm; proceed only if topsoil is dry and no rain is forecasted.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "lucknow"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "IRRIGATION_DECISION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032517",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i irrigate my field today in Varanasi",
+    "answerConcept": "Hold irrigation if expected rainfall over the next 24–48 hours exceeds 10 mm; proceed only if topsoil is dry and no rain is forecasted.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "varanasi"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "IRRIGATION_DECISION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032518",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i irrigate my field today in Varanasi today",
+    "answerConcept": "Hold irrigation if expected rainfall over the next 24–48 hours exceeds 10 mm; proceed only if topsoil is dry and no rain is forecasted.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "varanasi"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "IRRIGATION_DECISION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032519",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i irrigate my field today in Varanasi tomorrow",
+    "answerConcept": "Hold irrigation if expected rainfall over the next 24–48 hours exceeds 10 mm; proceed only if topsoil is dry and no rain is forecasted.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "varanasi"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "IRRIGATION_DECISION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032520",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i irrigate my field today in Varanasi right now",
+    "answerConcept": "Hold irrigation if expected rainfall over the next 24–48 hours exceeds 10 mm; proceed only if topsoil is dry and no rain is forecasted.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "varanasi"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "IRRIGATION_DECISION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032521",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i irrigate my field today in Varanasi this weekend",
+    "answerConcept": "Hold irrigation if expected rainfall over the next 24–48 hours exceeds 10 mm; proceed only if topsoil is dry and no rain is forecasted.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "varanasi"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "IRRIGATION_DECISION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032522",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i irrigate my field today in Lakhimpur Kheri",
+    "answerConcept": "Hold irrigation if expected rainfall over the next 24–48 hours exceeds 10 mm; proceed only if topsoil is dry and no rain is forecasted.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "lakhimpur kheri"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "IRRIGATION_DECISION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032523",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i irrigate my field today in Lakhimpur Kheri today",
+    "answerConcept": "Hold irrigation if expected rainfall over the next 24–48 hours exceeds 10 mm; proceed only if topsoil is dry and no rain is forecasted.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "lakhimpur kheri"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "IRRIGATION_DECISION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032524",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i irrigate my field today in Lakhimpur Kheri tomorrow",
+    "answerConcept": "Hold irrigation if expected rainfall over the next 24–48 hours exceeds 10 mm; proceed only if topsoil is dry and no rain is forecasted.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "lakhimpur kheri"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "IRRIGATION_DECISION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032525",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i irrigate my field today in Lakhimpur Kheri right now",
+    "answerConcept": "Hold irrigation if expected rainfall over the next 24–48 hours exceeds 10 mm; proceed only if topsoil is dry and no rain is forecasted.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "lakhimpur kheri"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "IRRIGATION_DECISION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032526",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i irrigate my field today in Lakhimpur Kheri this weekend",
+    "answerConcept": "Hold irrigation if expected rainfall over the next 24–48 hours exceeds 10 mm; proceed only if topsoil is dry and no rain is forecasted.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "lakhimpur kheri"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "IRRIGATION_DECISION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032527",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i irrigate my field today in Agra",
+    "answerConcept": "Hold irrigation if expected rainfall over the next 24–48 hours exceeds 10 mm; proceed only if topsoil is dry and no rain is forecasted.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "agra"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "IRRIGATION_DECISION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032528",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i irrigate my field today in Agra today",
+    "answerConcept": "Hold irrigation if expected rainfall over the next 24–48 hours exceeds 10 mm; proceed only if topsoil is dry and no rain is forecasted.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "agra"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "IRRIGATION_DECISION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032529",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i irrigate my field today in Agra tomorrow",
+    "answerConcept": "Hold irrigation if expected rainfall over the next 24–48 hours exceeds 10 mm; proceed only if topsoil is dry and no rain is forecasted.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "agra"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "IRRIGATION_DECISION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032530",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i irrigate my field today in Agra right now",
+    "answerConcept": "Hold irrigation if expected rainfall over the next 24–48 hours exceeds 10 mm; proceed only if topsoil is dry and no rain is forecasted.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "agra"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "IRRIGATION_DECISION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-PRA-032531",
+    "category": "PRACTICAL_ACTIONS",
+    "subCategory": "DAILY_ADVISORY",
+    "question": "should i irrigate my field today in Agra this weekend",
+    "answerConcept": "Hold irrigation if expected rainfall over the next 24–48 hours exceeds 10 mm; proceed only if topsoil is dry and no rain is forecasted.",
+    "keywords": [
+      "practical",
+      "advice",
+      "action",
+      "should",
+      "agra"
+    ],
+    "entities": [
+      "practical_advisory"
+    ],
+    "relatedIntents": [
+      "IRRIGATION_DECISION"
+    ],
+    "requiresLiveData": true,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  }
+]

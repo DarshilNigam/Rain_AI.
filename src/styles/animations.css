@@ -1,0 +1,91 @@
+/**
+ * R.A.I. Motion & Atmospheric Animations System
+ */
+
+/* 1. Keyframe Definitions */
+@keyframes rai-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes rai-scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes rai-pulse-subtle {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.65;
+    transform: scale(0.96);
+  }
+}
+
+@keyframes rai-radar-sweep {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rai-shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* 2. Utility Animation Classes */
+.rai-animate-fade-in {
+  animation: rai-fade-in var(--rai-duration-normal) var(--rai-ease-standard) forwards;
+}
+
+.rai-animate-scale-in {
+  animation: rai-scale-in var(--rai-duration-normal) var(--rai-ease-standard) forwards;
+}
+
+.rai-animate-pulse {
+  animation: rai-pulse-subtle 2.4s ease-in-out infinite;
+}
+
+.rai-skeleton-shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--rai-color-bg-surface-subtle) 25%,
+    var(--rai-color-bg-surface-ice) 50%,
+    var(--rai-color-bg-surface-subtle) 75%
+  );
+  background-size: 200% 100%;
+  animation: rai-shimmer 1.8s infinite;
+}
+
+/* 3. Accessibility - Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

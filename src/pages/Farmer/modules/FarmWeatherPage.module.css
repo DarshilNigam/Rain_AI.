@@ -1,0 +1,274 @@
+.pageRoot {
+  padding: clamp(0.75rem, 1.5vh, 1.5rem) 0 var(--rai-space-2xl);
+  min-height: calc(100svh - var(--rai-header-height));
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rai-space-md);
+  max-width: 1200px;
+}
+
+/* Hero Weather Card */
+.heroWeatherCard {
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--rai-radius-xl);
+  background: #ffffff;
+  border: 1.5px solid #fed7aa;
+  box-shadow: var(--rai-shadow-card);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media (min-width: 900px) {
+  .heroWeatherCard {
+    grid-template-columns: 1.2fr 1fr;
+  }
+}
+
+.heroLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.stationBadgeRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.coordsTag {
+  font-family: var(--rai-font-mono);
+  font-size: 0.625rem;
+  color: var(--rai-color-text-tertiary);
+}
+
+.tempMainRow {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.tempLarge {
+  font-family: var(--rai-font-display);
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+  line-height: 1;
+}
+
+.conditionCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.conditionTitle {
+  font-family: var(--rai-font-display);
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: #ea580c;
+}
+
+.feelsLike {
+  font-family: var(--rai-font-body);
+  font-size: 0.75rem;
+  color: var(--rai-color-text-secondary);
+}
+
+.agriInterpretationBox {
+  padding: 0.75rem;
+  border-radius: var(--rai-radius-md);
+  background-color: #fff7ed;
+  border: 1px solid #fed7aa;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.interpTag {
+  font-family: var(--rai-font-mono);
+  font-size: 0.5625rem;
+  font-weight: 800;
+  color: #c2410c;
+  letter-spacing: 0.05em;
+}
+
+.interpText {
+  font-family: var(--rai-font-body);
+  font-size: 0.78125rem;
+  color: #7c2d12;
+  line-height: 1.45;
+  margin: 0;
+}
+
+/* Metrics Grid */
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.65rem;
+}
+
+.metricItem {
+  padding: 0.65rem 0.85rem;
+  border-radius: var(--rai-radius-md);
+  background-color: var(--rai-color-bg-surface-subtle);
+  border: 1px solid var(--rai-color-border-subtle);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.metricHead {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--rai-font-mono);
+  font-size: 0.5625rem;
+  font-weight: 800;
+  color: var(--rai-color-text-tertiary);
+  letter-spacing: 0.04em;
+}
+
+.metricVal {
+  font-family: var(--rai-font-display);
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+}
+
+.metricSub {
+  font-family: var(--rai-font-body);
+  font-size: 0.625rem;
+  color: var(--rai-color-text-secondary);
+}
+
+/* Section Header */
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.sectionTitle {
+  font-family: var(--rai-font-display);
+  font-size: 0.9375rem;
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+  margin: 0;
+}
+
+/* Hourly Card */
+.hourlyCard {
+  background-color: #ffffff;
+}
+
+.hourlyList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 0.5rem;
+}
+
+.hourlyCol {
+  padding: 0.65rem 0.4rem;
+  border-radius: var(--rai-radius-md);
+  background-color: var(--rai-color-bg-surface-subtle);
+  border: 1px solid var(--rai-color-border-subtle);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  text-align: center;
+}
+
+.hourlyTime {
+  font-family: var(--rai-font-mono);
+  font-size: 0.625rem;
+  font-weight: 700;
+  color: var(--rai-color-text-secondary);
+}
+
+.hourlyTemp {
+  font-family: var(--rai-font-display);
+  font-size: 0.875rem;
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+}
+
+.hourlyRainBox {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-family: var(--rai-font-mono);
+  font-size: 0.625rem;
+  font-weight: 700;
+  color: #0284c7;
+}
+
+.hourlyProb {
+  font-family: var(--rai-font-body);
+  font-size: 0.59375rem;
+  color: var(--rai-color-text-tertiary);
+}
+
+/* Daily Card */
+.dailyCard {
+  background: #ffffff;
+}
+
+.dailyList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.dailyRow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0.65rem 0.85rem;
+  border-radius: var(--rai-radius-md);
+  background-color: var(--rai-color-bg-surface-subtle);
+  border: 1px solid var(--rai-color-border-subtle);
+}
+
+@media (min-width: 640px) {
+  .dailyRow {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.dailyDay {
+  font-family: var(--rai-font-display);
+  font-size: 0.8125rem;
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+  min-width: 110px;
+}
+
+.dailyCondition {
+  font-family: var(--rai-font-body);
+  font-size: 0.75rem;
+  color: var(--rai-color-text-secondary);
+  min-width: 100px;
+}
+
+.dailyTempRange,
+.dailyRainSum {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--rai-font-body);
+  font-size: 0.71875rem;
+  color: var(--rai-color-text-secondary);
+}
+
+.dailyTempRange strong,
+.dailyRainSum strong {
+  color: var(--rai-color-text-primary);
+}

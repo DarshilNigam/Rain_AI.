@@ -1,0 +1,1382 @@
+[
+  {
+    "id": "RAI-KB-FOR-031261",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "why do weather forecasts change over time",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031262",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "why do weather forecasts change over time?",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031263",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "explain why do weather forecasts change over time",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031264",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "tell me why do weather forecasts change over time",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031265",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "why does why do weather forecasts change over time",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031266",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "why is a 24 hour forecast more accurate than a 7 day forecast",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031267",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "why is a 24 hour forecast more accurate than a 7 day forecast?",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031268",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "explain why is a 24 hour forecast more accurate than a 7 day forecast",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031269",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "tell me why is a 24 hour forecast more accurate than a 7 day forecast",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031270",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "why does why is a 24 hour forecast more accurate than a 7 day forecast",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031271",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "how often are numerical weather models updated",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031272",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "how often are numerical weather models updated?",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031273",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "explain how often are numerical weather models updated",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031274",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "tell me how often are numerical weather models updated",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031275",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "why does how often are numerical weather models updated",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031276",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "what is the difference between gfs ecmwf and icon weather models",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031277",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "what is the difference between gfs ecmwf and icon weather models?",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031278",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "explain what is the difference between gfs ecmwf and icon weather models",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031279",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "tell me what is the difference between gfs ecmwf and icon weather models",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031280",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "why does what is the difference between gfs ecmwf and icon weather models",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031281",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "why does rain start later than forecasted",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031282",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "why does rain start later than forecasted?",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031283",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "explain why does rain start later than forecasted",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031284",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "tell me why does rain start later than forecasted",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031285",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "why does why does rain start later than forecasted",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031286",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "what causes forecast uncertainty",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031287",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "what causes forecast uncertainty?",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031288",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "explain what causes forecast uncertainty",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031289",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "tell me what causes forecast uncertainty",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031290",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "why does what causes forecast uncertainty",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031291",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "why did it rain when the forecast said 20 percent",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031292",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "why did it rain when the forecast said 20 percent?",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031293",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "explain why did it rain when the forecast said 20 percent",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031294",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "tell me why did it rain when the forecast said 20 percent",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031295",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "why does why did it rain when the forecast said 20 percent",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031296",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "why did it not rain when the forecast said 80 percent",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031297",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "why did it not rain when the forecast said 80 percent?",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031298",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "explain why did it not rain when the forecast said 80 percent",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031299",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "tell me why did it not rain when the forecast said 80 percent",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031300",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "why does why did it not rain when the forecast said 80 percent",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031301",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "how to read weather radar imagery",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031302",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "how to read weather radar imagery?",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031303",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "explain how to read weather radar imagery",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031304",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "tell me how to read weather radar imagery",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031305",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "why does how to read weather radar imagery",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031306",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "what is the difference between convective rain and frontal rain",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031307",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "what is the difference between convective rain and frontal rain?",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031308",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "explain what is the difference between convective rain and frontal rain",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031309",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "tell me what is the difference between convective rain and frontal rain",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031310",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "why does what is the difference between convective rain and frontal rain",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031311",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "why do monsoon forecasts have regional variability",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031312",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "why do monsoon forecasts have regional variability?",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031313",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "explain why do monsoon forecasts have regional variability",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031314",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "tell me why do monsoon forecasts have regional variability",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031315",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "why does why do monsoon forecasts have regional variability",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031316",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "what is microclimate effect in rainfall distribution",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031317",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "what is microclimate effect in rainfall distribution?",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031318",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "explain what is microclimate effect in rainfall distribution",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031319",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "tell me what is microclimate effect in rainfall distribution",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-FOR-031320",
+    "category": "FORECAST_INTERPRETATION",
+    "subCategory": "MODEL_UNCERTAINTY",
+    "question": "why does what is microclimate effect in rainfall distribution",
+    "answerConcept": "Numerical Weather Prediction (NWP) models simulate atmospheric fluid thermodynamics using differential equations. Forecast uncertainty increases non-linearly with forecast lead time due to atmospheric chaos (Lorenz effect), which is why real-time satellite and radar assimilation continuously refines short-range forecasts.",
+    "keywords": [
+      "forecast accuracy",
+      "uncertainty",
+      "nwp",
+      "radar",
+      "lead time"
+    ],
+    "entities": [
+      "forecast_concept"
+    ],
+    "relatedIntents": [
+      "FORECAST_MULTI_DAY"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  }
+]

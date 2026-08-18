@@ -1,0 +1,358 @@
+.riskMapRoot {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 480px;
+  border-radius: var(--rai-radius-xl);
+  overflow: hidden;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  box-shadow: var(--rai-shadow-card);
+  background-color: #f8fafc;
+}
+
+.mapCanvas {
+  width: 100%;
+  height: 100%;
+  min-height: 480px;
+  z-index: 1;
+}
+
+/* Active Selected City Marker */
+.activeMarkerWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  cursor: pointer;
+  z-index: 2500 !important;
+}
+
+.activePulseRing {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(6, 182, 212, 0.55) 0%, rgba(14, 165, 233, 0.15) 65%, transparent 100%);
+  animation: active-marker-pulse 2.2s ease-in-out infinite;
+}
+
+.activeCoreDot {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%);
+  border: 2.5px solid #ffffff;
+  box-shadow: 0 0 14px rgba(6, 182, 212, 0.9);
+  z-index: 2;
+}
+
+.activeLabelPill {
+  position: absolute;
+  top: calc(100% + 4px);
+  background: rgba(15, 23, 42, 0.94);
+  backdrop-filter: blur(8px);
+  padding: 0.18rem 0.6rem;
+  border-radius: var(--rai-radius-xs);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  font-family: var(--rai-font-display);
+  font-size: 0.71875rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+}
+
+/* User's Saved Location Marker (when another city is active) */
+.savedMarkerWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.savedDot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #10b981;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 8px rgba(16, 185, 129, 0.7);
+}
+
+.savedLabelPill {
+  position: absolute;
+  top: calc(100% + 3px);
+  background: rgba(6, 78, 59, 0.92);
+  backdrop-filter: blur(6px);
+  padding: 0.12rem 0.45rem;
+  border-radius: var(--rai-radius-xs);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  white-space: nowrap;
+  font-family: var(--rai-font-display);
+  font-size: 0.625rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* Other Supported Station Markers */
+.stationMarkerWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  cursor: pointer;
+  transition: transform var(--rai-duration-fast) ease;
+}
+
+.stationMarkerWrapper:hover {
+  transform: scale(1.15);
+  z-index: 2000 !important;
+}
+
+.stationDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #0284c7;
+  border: 1.5px solid #ffffff;
+  box-shadow: 0 0 6px rgba(2, 132, 199, 0.5);
+}
+
+.stationLabel {
+  position: absolute;
+  top: calc(100% + 2px);
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(6px);
+  padding: 0.08rem 0.38rem;
+  border-radius: var(--rai-radius-xs);
+  border: 1px solid #cbd5e1;
+  white-space: nowrap;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.08);
+  font-family: var(--rai-font-display);
+  font-size: 0.625rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* Top Left Status Overlay */
+.topStatusOverlay {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 400;
+  pointer-events: none;
+}
+
+.statusPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--rai-radius-full);
+  background-color: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  box-shadow: 0 4px 14px -2px rgba(15, 23, 42, 0.1);
+  pointer-events: auto;
+}
+
+.liveGreenDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #22c55e;
+  box-shadow: 0 0 8px #22c55e;
+}
+
+.grayDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #94a3b8;
+}
+
+.statusLabel {
+  font-family: var(--rai-font-mono);
+  font-size: 0.65625rem;
+  font-weight: 700;
+  color: var(--rai-color-text-primary);
+  letter-spacing: 0.04em;
+}
+
+/* Top Right Minimal Controls */
+.controlsOverlay {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 400;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.controlBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.38rem 0.7rem;
+  border-radius: var(--rai-radius-md);
+  background-color: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(203, 213, 225, 0.9);
+  box-shadow: 0 2px 8px -2px rgba(15, 23, 42, 0.08);
+  font-family: var(--rai-font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--rai-color-text-primary);
+  cursor: pointer;
+  transition: var(--rai-transition-all);
+}
+
+.controlBtn:hover {
+  background-color: #ffffff;
+  border-color: #06b6d4;
+  box-shadow: 0 4px 12px -2px rgba(6, 182, 212, 0.25);
+  transform: translateY(-1px);
+}
+
+.controlBtnActive {
+  background-color: #ecfeff;
+  border-color: #0891b2;
+  color: #0e7490;
+}
+
+.resetMyLocationBtn {
+  background-color: #ecfeff;
+  border-color: #0891b2;
+  color: #0891b2;
+  box-shadow: 0 0 0 2px rgba(8, 145, 178, 0.15);
+}
+
+.resetMyLocationBtn:hover {
+  background-color: #0891b2;
+  color: #ffffff;
+}
+
+.resetIcon {
+  animation: spin-once 0.4s ease;
+}
+
+.controlText {
+  white-space: nowrap;
+}
+
+.zoomButtonGroup {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--rai-radius-md);
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(203, 213, 225, 0.9);
+  box-shadow: 0 2px 8px -2px rgba(15, 23, 42, 0.08);
+}
+
+.zoomBtn {
+  width: 32px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: var(--rai-color-text-primary);
+  cursor: pointer;
+  transition: background-color var(--rai-duration-fast) ease;
+}
+
+.zoomBtn:first-child {
+  border-bottom: 1px solid rgba(226, 232, 240, 0.9);
+}
+
+.zoomBtn:hover {
+  background-color: var(--rai-color-bg-surface-subtle);
+  color: #0891b2;
+}
+
+/* Bottom Floating Legend */
+.bottomLegendBar {
+  position: absolute;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  z-index: 400;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(226, 232, 240, 0.95);
+  border-radius: var(--rai-radius-md);
+  box-shadow: 0 4px 16px -2px rgba(15, 23, 42, 0.12);
+  padding: 0.5rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-width: 250px;
+}
+
+.legendHeaderRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.legendTitle {
+  font-family: var(--rai-font-mono);
+  font-size: 0.625rem;
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+  letter-spacing: 0.05em;
+}
+
+.legendSub {
+  font-family: var(--rai-font-body);
+  font-size: 0.5625rem;
+  color: var(--rai-color-text-tertiary);
+}
+
+.legendColorBar {
+  display: flex;
+  height: 6px;
+  border-radius: var(--rai-radius-full);
+  overflow: hidden;
+  width: 100%;
+}
+
+.legendColorStep {
+  flex: 1;
+}
+
+.legendLabels {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--rai-font-mono);
+  font-size: 0.5625rem;
+  font-weight: 700;
+  color: var(--rai-color-text-secondary);
+}
+
+@keyframes active-marker-pulse {
+  0% {
+    transform: scale(0.85);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.4);
+    opacity: 0.2;
+  }
+  100% {
+    transform: scale(0.85);
+    opacity: 0.8;
+  }
+}

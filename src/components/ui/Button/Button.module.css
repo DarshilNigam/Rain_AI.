@@ -1,0 +1,115 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--rai-space-sm);
+  font-family: var(--rai-font-body);
+  font-weight: 600;
+  border-radius: var(--rai-radius-md);
+  border: 1px solid transparent;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: var(--rai-transition-all);
+  user-select: none;
+}
+
+.button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Sizes */
+.sm {
+  font-size: 0.8125rem;
+  padding: 0.375rem 0.75rem;
+  height: 32px;
+}
+
+.md {
+  font-size: 0.875rem;
+  padding: 0.5rem 1.125rem;
+  height: 40px;
+}
+
+.lg {
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  height: 48px;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+/* Variants */
+.primary {
+  background-color: var(--rai-color-weather-600);
+  color: var(--rai-color-text-inverse);
+  box-shadow: var(--rai-shadow-subtle);
+}
+
+.primary:hover:not(:disabled) {
+  background-color: var(--rai-color-weather-700);
+  box-shadow: var(--rai-shadow-glow-cyan);
+  transform: translateY(-1px);
+}
+
+.primary:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.secondary {
+  background-color: var(--rai-color-weather-50);
+  color: var(--rai-color-weather-700);
+  border-color: var(--rai-color-weather-200);
+}
+
+.secondary:hover:not(:disabled) {
+  background-color: var(--rai-color-weather-100);
+  border-color: var(--rai-color-weather-300);
+  transform: translateY(-1px);
+}
+
+.outline {
+  background-color: var(--rai-color-bg-surface);
+  color: var(--rai-color-text-primary);
+  border-color: var(--rai-color-border-default);
+}
+
+.outline:hover:not(:disabled) {
+  background-color: var(--rai-color-bg-surface-subtle);
+  border-color: var(--rai-color-border-strong);
+  transform: translateY(-1px);
+}
+
+.ghost {
+  background-color: transparent;
+  color: var(--rai-color-text-secondary);
+}
+
+.ghost:hover:not(:disabled) {
+  background-color: var(--rai-color-bg-surface-subtle);
+  color: var(--rai-color-text-primary);
+}
+
+.safe {
+  background-color: var(--rai-color-safe-600);
+  color: var(--rai-color-text-inverse);
+}
+
+.safe:hover:not(:disabled) {
+  background-color: var(--rai-color-safe-700);
+  box-shadow: var(--rai-shadow-glow-mint);
+  transform: translateY(-1px);
+}
+
+.danger {
+  background-color: var(--rai-color-critical-600);
+  color: var(--rai-color-text-inverse);
+}
+
+.danger:hover:not(:disabled) {
+  background-color: var(--rai-color-critical-700);
+  transform: translateY(-1px);
+}

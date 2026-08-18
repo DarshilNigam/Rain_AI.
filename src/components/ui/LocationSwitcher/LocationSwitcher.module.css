@@ -1,0 +1,394 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: var(--rai-z-modal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--rai-space-md);
+  animation: rai-fade-in var(--rai-duration-fast) ease-out;
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.dialog {
+  position: relative;
+  width: 100%;
+  max-width: 540px;
+  max-height: 88vh;
+  background-color: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(226, 232, 240, 0.95);
+  border-radius: var(--rai-radius-xl);
+  box-shadow: 0 20px 45px -10px rgba(15, 23, 42, 0.2);
+  padding: 1.5rem;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  animation: rai-slide-up var(--rai-duration-normal) var(--rai-ease-spring);
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--rai-space-sm);
+}
+
+.titleGroup {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+}
+
+.iconCircle {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--rai-radius-md);
+  background: linear-gradient(135deg, #ecfeff 0%, #cffafe 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.title {
+  font-family: var(--rai-font-display);
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-family: var(--rai-font-body);
+  font-size: 0.75rem;
+  color: var(--rai-color-text-secondary);
+  margin: 2px 0 0;
+}
+
+.closeBtn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid var(--rai-color-border-subtle);
+  background-color: var(--rai-color-bg-surface);
+  color: var(--rai-color-text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--rai-transition-all);
+}
+
+.closeBtn:hover {
+  background-color: var(--rai-color-bg-surface-subtle);
+  color: var(--rai-color-text-primary);
+}
+
+.currentLocationBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: var(--rai-radius-lg);
+  background: linear-gradient(135deg, #f0fdf4 0%, #ecfeff 100%);
+  border: 1.5px solid #86efac;
+  cursor: pointer;
+  text-align: left;
+  transition: var(--rai-transition-all);
+}
+
+.currentLocationBtn:hover {
+  border-color: #22c55e;
+  box-shadow: 0 4px 14px -2px rgba(34, 197, 94, 0.2);
+  transform: translateY(-1px);
+}
+
+.currentLocationText {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  flex: 1;
+}
+
+.currentLocationTitle {
+  font-family: var(--rai-font-display);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: #166534;
+}
+
+.currentLocationDesc {
+  font-family: var(--rai-font-body);
+  font-size: 0.6875rem;
+  color: var(--rai-color-text-secondary);
+}
+
+.arrowIcon {
+  color: #16a34a;
+}
+
+.spinIcon {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.errorBanner {
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--rai-radius-md);
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #dc2626;
+  font-family: var(--rai-font-body);
+  font-size: 0.75rem;
+}
+
+.searchWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 0.875rem;
+  color: var(--rai-color-text-tertiary);
+  pointer-events: none;
+}
+
+.searchInput {
+  width: 100%;
+  height: 40px;
+  padding: 0 2.25rem 0 2.25rem;
+  border-radius: var(--rai-radius-md);
+  border: 1px solid var(--rai-color-border-subtle);
+  background-color: var(--rai-color-bg-surface);
+  font-family: var(--rai-font-body);
+  font-size: 0.8125rem;
+  color: var(--rai-color-text-primary);
+  transition: var(--rai-transition-all);
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: var(--rai-color-ai-500);
+  box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.12);
+  background-color: #ffffff;
+}
+
+.searchSpinner {
+  position: absolute;
+  right: 0.875rem;
+  color: var(--rai-color-ai-600);
+  animation: spin 0.8s linear infinite;
+}
+
+.clearSearchBtn {
+  position: absolute;
+  right: 0.75rem;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+  background-color: #e2e8f0;
+  color: #475569;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  transition: var(--rai-transition-all);
+}
+
+.clearSearchBtn:hover {
+  background-color: #cbd5e1;
+  color: #0f172a;
+}
+
+.citiesList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  max-height: 280px;
+  overflow-y: auto;
+  padding-right: 2px;
+}
+
+.listHeaderRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2px;
+}
+
+.listHeading {
+  font-family: var(--rai-font-display);
+  font-size: 0.625rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--rai-color-text-tertiary);
+  display: inline-flex;
+  align-items: center;
+}
+
+.searchHintText {
+  font-family: var(--rai-font-mono);
+  font-size: 0.59375rem;
+  color: var(--rai-color-text-tertiary);
+}
+
+.citiesGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+@media (max-width: 500px) {
+  .citiesGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cityCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 0.75rem;
+  border-radius: var(--rai-radius-md);
+  border: 1px solid var(--rai-color-border-subtle);
+  background-color: var(--rai-color-bg-surface-subtle);
+  cursor: pointer;
+  text-align: left;
+  transition: var(--rai-transition-all);
+}
+
+.cityCard:hover {
+  background-color: #ffffff;
+  border-color: var(--rai-color-border-default);
+  transform: translateY(-1px);
+}
+
+.cityCardHighlighted {
+  background-color: #ffffff;
+  border-color: var(--rai-color-ai-400);
+  box-shadow: 0 0 0 2px rgba(6, 182, 212, 0.15);
+}
+
+.cityCardActive {
+  background-color: #ecfeff;
+  border-color: #06b6d4;
+  box-shadow: 0 2px 8px -2px rgba(6, 182, 212, 0.2);
+}
+
+.cityCardMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+  min-width: 0;
+}
+
+.cityNameRow {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.cityName {
+  font-family: var(--rai-font-display);
+  font-size: 0.8125rem;
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.countryBadge {
+  font-family: var(--rai-font-mono);
+  font-size: 0.5625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #f1f5f9;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+  padding: 1px 4px;
+  border-radius: 3px;
+}
+
+.cityRegion {
+  font-family: var(--rai-font-body);
+  font-size: 0.6875rem;
+  color: var(--rai-color-text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cityCoords {
+  font-family: var(--rai-font-mono);
+  font-size: 0.59375rem;
+  color: var(--rai-color-text-tertiary);
+}
+
+.checkBadge {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #06b6d4;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-left: 0.35rem;
+}
+
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  gap: 0.4rem;
+  background-color: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  border-radius: var(--rai-radius-md);
+}
+
+.emptyIcon {
+  color: #94a3b8;
+  margin-bottom: 0.25rem;
+}
+
+.emptyTitle {
+  font-family: var(--rai-font-display);
+  font-size: 0.875rem;
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+  margin: 0;
+}
+
+.emptyDesc {
+  font-family: var(--rai-font-body);
+  font-size: 0.75rem;
+  color: var(--rai-color-text-secondary);
+  max-width: 320px;
+  margin: 0;
+  line-height: 1.4;
+}

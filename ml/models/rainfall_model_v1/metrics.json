@@ -1,0 +1,153 @@
+{
+  "evaluationDataset": "Chronological Unseen Future Test Partition",
+  "testSamplesTotal": 26320,
+  "testPositives": 116,
+  "testNegatives": 26204,
+  "positiveRate": 0.44,
+  "selectedOperationalThreshold": 0.015,
+  "primaryModel": {
+    "modelName": "RAI-HeavyRain-XGBoost-IMD",
+    "rocAuc": 0.9605,
+    "prAuc": 0.1082,
+    "operationalThreshold": 0.015,
+    "precision": 0.1667,
+    "recall": 0.0517,
+    "f1": 0.0789,
+    "f2": 0.06,
+    "rawBrierScore": 0.0047,
+    "calibratedBrierScore": 0.0044,
+    "confusionMatrix": {
+      "tp": 6,
+      "fp": 30,
+      "tn": 26174,
+      "fn": 110
+    },
+    "calibration": {
+      "brierScore": 0.0044,
+      "calibrationQuality": "EXCELLENT",
+      "reliabilityCurve": [
+        {
+          "predictedProb": 0.0086,
+          "observedFraction": 0.0043
+        },
+        {
+          "predictedProb": 0.1326,
+          "observedFraction": 0.0952
+        },
+        {
+          "predictedProb": 0.2189,
+          "observedFraction": 0.0
+        }
+      ]
+    },
+    "riskBoundaries": {
+      "LOW": {
+        "min": 0.0,
+        "max": 0.0075,
+        "description": "Atmospheric conditions unfavorable for heavy rain (<64.5mm)"
+      },
+      "MODERATE": {
+        "min": 0.0075,
+        "max": 0.015,
+        "description": "Elevated moisture/instability; heightened monitoring advised"
+      },
+      "HIGH": {
+        "min": 0.015,
+        "max": 0.05,
+        "description": "High probability of IMD Heavy Rainfall (>=64.5mm/day) [WATCH]"
+      },
+      "CRITICAL": {
+        "min": 0.05,
+        "max": 1.0,
+        "description": "Severe meteorological risk for Very Heavy / Extreme rainfall (>=115.6mm) [WARNING]"
+      }
+    },
+    "validationOperationalMetrics": {
+      "threshold": 0.015,
+      "precision": 0.1096,
+      "recall": 0.521,
+      "f1Score": 0.181,
+      "f2Score": 0.2975,
+      "alertRate": 0.0732,
+      "falsePositiveRate": 0.0662
+    }
+  },
+  "baselineComparison": {
+    "modelName": "Logistic Regression Baseline",
+    "rocAuc": 0.962,
+    "prAuc": 0.1053,
+    "precision": 0.0852,
+    "recall": 0.5517,
+    "f1": 0.1476,
+    "brierScore": 0.0213,
+    "confusionMatrix": {
+      "truePositives": 64,
+      "falsePositives": 687,
+      "trueNegatives": 25517,
+      "falseNegatives": 52
+    }
+  },
+  "globalTopFeatures": [
+    {
+      "feature": "sin_month",
+      "meanAbsShap": 1.4895,
+      "displayName": "Monsoon Seasonality (Sine)",
+      "unit": "dimensionless (-1 to 1)"
+    },
+    {
+      "feature": "cloud_cover",
+      "meanAbsShap": 1.2605,
+      "displayName": "Atmospheric Cloud Cover",
+      "unit": "%"
+    },
+    {
+      "feature": "precipitation",
+      "meanAbsShap": 0.8705,
+      "displayName": "Current Precipitation Rate",
+      "unit": "mm/h"
+    },
+    {
+      "feature": "convective_energy_proxy",
+      "meanAbsShap": 0.709,
+      "displayName": "Convective Instability Index",
+      "unit": "dimensionless"
+    },
+    {
+      "feature": "wind_speed_10m",
+      "meanAbsShap": 0.704,
+      "displayName": "Sustained Wind Speed",
+      "unit": "km/h"
+    },
+    {
+      "feature": "rain_24h",
+      "meanAbsShap": 0.621,
+      "displayName": "Past 24h Accumulated Rain",
+      "unit": "mm"
+    },
+    {
+      "feature": "surface_pressure",
+      "meanAbsShap": 0.4683,
+      "displayName": "Surface Barometric Pressure",
+      "unit": "hPa"
+    },
+    {
+      "feature": "rain_6h",
+      "meanAbsShap": 0.4365,
+      "displayName": "Past 6h Accumulated Rain",
+      "unit": "mm"
+    },
+    {
+      "feature": "wind_direction_10m",
+      "meanAbsShap": 0.4267,
+      "displayName": "Wind Direction",
+      "unit": "degrees"
+    },
+    {
+      "feature": "cos_month",
+      "meanAbsShap": 0.3313,
+      "displayName": "Monsoon Seasonality (Cosine)",
+      "unit": "dimensionless (-1 to 1)"
+    }
+  ],
+  "thresholdVersion": "v1.1-val-p10-recall"
+}

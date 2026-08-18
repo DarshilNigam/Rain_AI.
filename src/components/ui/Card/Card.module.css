@@ -1,0 +1,60 @@
+.card {
+  background-color: var(--rai-color-bg-surface);
+  border: 1px solid var(--rai-color-border-subtle);
+  border-radius: var(--rai-radius-lg);
+  box-shadow: var(--rai-shadow-card);
+  transition: var(--rai-transition-all);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Padding variants */
+.padNone {
+  padding: 0;
+}
+
+.padSm {
+  padding: var(--rai-space-sm);
+}
+
+.padMd {
+  padding: var(--rai-space-base);
+}
+
+.padLg {
+  padding: var(--rai-space-lg);
+}
+
+/* Appearance Variants */
+.default {
+  background-color: var(--rai-color-bg-surface);
+}
+
+.ice {
+  background: linear-gradient(180deg, var(--rai-color-bg-surface) 0%, var(--rai-color-bg-surface-ice) 100%);
+  border-color: var(--rai-color-weather-100);
+}
+
+.elevated {
+  box-shadow: var(--rai-shadow-floating);
+  border-color: var(--rai-color-border-subtle);
+}
+
+.interactive {
+  cursor: pointer;
+}
+
+.interactive:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--rai-shadow-card-hover);
+  border-color: var(--rai-color-weather-300);
+}
+
+.aiAccent {
+  border-top: 3px solid var(--rai-color-ai-500);
+}
+
+.alertCritical {
+  background-color: var(--rai-color-critical-50);
+  border-color: var(--rai-color-critical-200);
+}

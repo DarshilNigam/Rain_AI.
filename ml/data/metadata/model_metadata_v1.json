@@ -1,0 +1,96 @@
+{
+  "modelName": "RAI-HeavyRain-XGBoost",
+  "modelVersion": "v1.0.0-xgb",
+  "trainedAt": "2026-08-15T17:51:08.620719+00:00",
+  "algorithm": "XGBoost Gradient Boosted Trees",
+  "targetDefinition": "Precipitation >= 35.5mm in forward 24h horizon",
+  "thresholdMm": 35.5,
+  "trainingRecords": 122800,
+  "validationRecords": 26320,
+  "testRecords": 26320,
+  "featuresCount": 28,
+  "featuresList": [
+    "temperature_2m",
+    "relative_humidity_2m",
+    "surface_pressure",
+    "wind_speed_10m",
+    "wind_direction_10m",
+    "cloud_cover",
+    "precipitation",
+    "rain",
+    "showers",
+    "precipitation_probability",
+    "precip_1h",
+    "precip_3h_sum",
+    "precip_6h_sum",
+    "precip_24h_sum",
+    "pressure_change_3h",
+    "humidity_change_3h",
+    "wind_speed_change_3h",
+    "forecast_rain_6h",
+    "forecast_rain_24h",
+    "max_precip_probability_24h",
+    "dew_point_spread",
+    "convective_energy_proxy",
+    "sin_hour",
+    "cos_hour",
+    "sin_month",
+    "cos_month",
+    "latitude",
+    "longitude"
+  ],
+  "evaluation": {
+    "rocAuc": 0.9999,
+    "prAuc": 0.9948,
+    "precision": 0.967,
+    "recall": 1.0,
+    "f1": 0.9832,
+    "brierScore": 0.0006,
+    "confusionMatrix": {
+      "truePositives": 439,
+      "falsePositives": 15,
+      "trueNegatives": 25866,
+      "falseNegatives": 0
+    }
+  },
+  "topFeatures": [
+    {
+      "feature": "forecast_rain_24h",
+      "importance": 0.536775529384613
+    },
+    {
+      "feature": "max_precip_probability_24h",
+      "importance": 0.2415231615304947
+    },
+    {
+      "feature": "forecast_rain_6h",
+      "importance": 0.12424439191818237
+    },
+    {
+      "feature": "precipitation_probability",
+      "importance": 0.020888909697532654
+    },
+    {
+      "feature": "cloud_cover",
+      "importance": 0.015391922555863857
+    },
+    {
+      "feature": "precip_24h_sum",
+      "importance": 0.010734986513853073
+    },
+    {
+      "feature": "surface_pressure",
+      "importance": 0.00843124371021986
+    },
+    {
+      "feature": "latitude",
+      "importance": 0.007107830140739679
+    }
+  ],
+  "dataSources": [
+    "Open-Meteo Historical Archive",
+    "NASA GPM IMERG Calibrated Satellite Grid",
+    "Open-Meteo High-Resolution Forecast Engine"
+  ],
+  "status": "READY"
+}

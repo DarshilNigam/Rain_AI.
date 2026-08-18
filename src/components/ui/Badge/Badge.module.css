@@ -1,0 +1,84 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rai-space-xs);
+  font-family: var(--rai-font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.25rem 0.625rem;
+  border-radius: var(--rai-radius-full);
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: var(--rai-radius-full);
+  display: inline-block;
+}
+
+/* Status variants */
+.safe {
+  background-color: var(--rai-color-safe-50);
+  color: var(--rai-color-safe-700);
+  border-color: var(--rai-color-safe-200);
+}
+.safe .dot {
+  background-color: var(--rai-color-safe-500);
+}
+
+.weather {
+  background-color: var(--rai-color-weather-50);
+  color: var(--rai-color-weather-700);
+  border-color: var(--rai-color-weather-200);
+}
+.weather .dot {
+  background-color: var(--rai-color-weather-500);
+}
+
+.ai {
+  background-color: var(--rai-color-ai-50);
+  color: var(--rai-color-ai-700);
+  border-color: var(--rai-color-ai-200);
+}
+.ai .dot {
+  background-color: var(--rai-color-ai-500);
+}
+
+.caution {
+  background-color: var(--rai-color-caution-50);
+  color: var(--rai-color-caution-700);
+  border-color: var(--rai-color-caution-200);
+}
+.caution .dot {
+  background-color: var(--rai-color-caution-500);
+}
+
+.highRisk {
+  background-color: var(--rai-color-highrisk-50);
+  color: var(--rai-color-highrisk-700);
+  border-color: var(--rai-color-highrisk-100);
+}
+.highRisk .dot {
+  background-color: var(--rai-color-highrisk-600);
+}
+
+.critical {
+  background-color: var(--rai-color-critical-50);
+  color: var(--rai-color-critical-700);
+  border-color: var(--rai-color-critical-200);
+}
+.critical .dot {
+  background-color: var(--rai-color-critical-600);
+}
+
+.neutral {
+  background-color: var(--rai-color-bg-surface-subtle);
+  color: var(--rai-color-text-secondary);
+  border-color: var(--rai-color-border-subtle);
+}
+.neutral .dot {
+  background-color: var(--rai-color-text-quaternary);
+}

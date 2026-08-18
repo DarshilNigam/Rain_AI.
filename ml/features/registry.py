@@ -1,0 +1,266 @@
+"""
+R.A.I. Formal Feature Registry.
+Maintains comprehensive metadata, physical definitions, units, sources,
+leakage classifications, and missing-value strategies for all model features.
+"""
+from typing import Dict, List, Any
+
+# All candidate features classified with explicit LEAKAGE AUDIT STATUS: "SAFE"
+FEATURE_REGISTRY: Dict[str, Dict[str, Any]] = {
+    # 1. Base Atmospheric Surface Observations (Measured at or before t)
+    "temperature_2m": {
+        "displayName": "Ambient Temperature",
+        "source": "Open-Meteo Surface Observation",
+        "unit": "°C",
+        "timeWindow": "Instantaneous (t)",
+        "meaning": "2-meter surface air temperature denoting thermal heating.",
+        "missingStrategy": "Linear interpolation / Climatic median",
+        "leakageStatus": "SAFE"
+    },
+    "relative_humidity_2m": {
+        "displayName": "Relative Humidity",
+        "source": "Open-Meteo Surface Observation",
+        "unit": "%",
+        "timeWindow": "Instantaneous (t)",
+        "meaning": "Percentage of boundary-layer moisture saturation.",
+        "missingStrategy": "Climatic median",
+        "leakageStatus": "SAFE"
+    },
+    "surface_pressure": {
+        "displayName": "Surface Barometric Pressure",
+        "source": "Open-Meteo Surface Observation",
+        "unit": "hPa",
+        "timeWindow": "Instantaneous (t)",
+        "meaning": "Surface atmospheric pressure. Low pressure enables convective updrafts.",
+        "missingStrategy": "Standard sea-level proxy (1013.25 hPa)",
+        "leakageStatus": "SAFE"
+    },
+    "wind_speed_10m": {
+        "displayName": "Sustained Wind Speed",
+        "source": "Open-Meteo Surface Observation",
+        "unit": "km/h",
+        "timeWindow": "Instantaneous (t)",
+        "meaning": "10-meter wind velocity driving moisture advection.",
+        "missingStrategy": "Fill 0.0",
+        "leakageStatus": "SAFE"
+    },
+    "wind_direction_10m": {
+        "displayName": "Wind Direction",
+        "source": "Open-Meteo Surface Observation",
+        "unit": "degrees",
+        "timeWindow": "Instantaneous (t)",
+        "meaning": "Azimuth wind direction identifying maritime monsoon inflow.",
+        "missingStrategy": "Fill 0.0",
+        "leakageStatus": "SAFE"
+    },
+    "cloud_cover": {
+        "displayName": "Atmospheric Cloud Cover",
+        "source": "Open-Meteo Surface Observation",
+        "unit": "%",
+        "timeWindow": "Instantaneous (t)",
+        "meaning": "Total atmospheric column cloud area fraction.",
+        "missingStrategy": "Fill 0.0",
+        "leakageStatus": "SAFE"
+    },
+    "precipitation": {
+        "displayName": "Current Precipitation Rate",
+        "source": "Open-Meteo Surface Observation",
+        "unit": "mm/h",
+        "timeWindow": "Instantaneous (t)",
+        "meaning": "Rainfall measured at the current observation hour t.",
+        "missingStrategy": "Fill 0.0",
+        "leakageStatus": "SAFE"
+    },
+
+    # 2. Historical Backward Rainfall Lags & Rolling Accumulations (<= t)
+    "rain_1h": {
+        "displayName": "Past 1h Rainfall",
+        "source": "Derived Lag (t-1)",
+        "unit": "mm",
+        "timeWindow": "t-1 to t",
+        "meaning": "Precipitation recorded in the preceding 1 hour.",
+        "missingStrategy": "Fill 0.0",
+        "leakageStatus": "SAFE"
+    },
+    "rain_3h": {
+        "displayName": "Past 3h Accumulated Rain",
+        "source": "Derived Rolling Sum (t-3 to t)",
+        "unit": "mm",
+        "timeWindow": "t-3 to t",
+        "meaning": "Cumulative rainfall over the preceding 3-hour window.",
+        "missingStrategy": "Fill 0.0",
+        "leakageStatus": "SAFE"
+    },
+    "rain_6h": {
+        "displayName": "Past 6h Accumulated Rain",
+        "source": "Derived Rolling Sum (t-6 to t)",
+        "unit": "mm",
+        "timeWindow": "t-6 to t",
+        "meaning": "Cumulative rainfall over the preceding 6-hour window.",
+        "missingStrategy": "Fill 0.0",
+        "leakageStatus": "SAFE"
+    },
+    "rain_12h": {
+        "displayName": "Past 12h Accumulated Rain",
+        "source": "Derived Rolling Sum (t-12 to t)",
+        "unit": "mm",
+        "timeWindow": "t-12 to t",
+        "meaning": "Cumulative rainfall over the preceding 12-hour window.",
+        "missingStrategy": "Fill 0.0",
+        "leakageStatus": "SAFE"
+    },
+    "rain_24h": {
+        "displayName": "Past 24h Accumulated Rain",
+        "source": "Derived Rolling Sum (t-24 to t)",
+        "unit": "mm",
+        "timeWindow": "t-24 to t",
+        "meaning": "Cumulative rainfall over the preceding 24 hours indicating catchment saturation.",
+        "missingStrategy": "Fill 0.0",
+        "leakageStatus": "SAFE"
+    },
+
+    # 3. NASA GPM IMERG Satellite Precipitation (<= t)
+    "satellite_precipitation": {
+        "displayName": "Satellite Instantaneous Rain Rate",
+        "source": "NASA GPM IMERG Early/Late Run",
+        "unit": "mm/h",
+        "timeWindow": "t",
+        "meaning": "Spaceborne calibrated microwave/IR precipitation rate on 0.1° grid.",
+        "missingStrategy": "Fill 0.0",
+        "leakageStatus": "SAFE"
+    },
+    "satellite_precipitation_3h": {
+        "displayName": "Satellite 3h Accumulation",
+        "source": "NASA GPM IMERG Early/Late Run",
+        "unit": "mm",
+        "timeWindow": "t-3 to t",
+        "meaning": "Satellite-accumulated rainfall over preceding 3 hours.",
+        "missingStrategy": "Fill 0.0",
+        "leakageStatus": "SAFE"
+    },
+    "satellite_precipitation_24h": {
+        "displayName": "Satellite 24h Accumulation",
+        "source": "NASA GPM IMERG Early/Late Run",
+        "unit": "mm",
+        "timeWindow": "t-24 to t",
+        "meaning": "Satellite-accumulated rainfall over preceding 24 hours.",
+        "missingStrategy": "Fill 0.0",
+        "leakageStatus": "SAFE"
+    },
+
+    # 4. Atmospheric Dynamics / Tendencies (3-Hour Rates of Change <= t)
+    "pressure_change": {
+        "displayName": "3-Hour Pressure Tendency",
+        "source": "Derived Rate-of-Change",
+        "unit": "hPa/3h",
+        "timeWindow": "t-3 to t",
+        "meaning": "Barometric pressure delta (p(t) - p(t-3)) capturing storm approach.",
+        "missingStrategy": "Fill 0.0",
+        "leakageStatus": "SAFE"
+    },
+    "humidity_change": {
+        "displayName": "3-Hour Humidity Surge",
+        "source": "Derived Rate-of-Change",
+        "unit": "%/3h",
+        "timeWindow": "t-3 to t",
+        "meaning": "Moisture flux change over 3 hours (rh(t) - rh(t-3)).",
+        "missingStrategy": "Fill 0.0",
+        "leakageStatus": "SAFE"
+    },
+    "temperature_change": {
+        "displayName": "3-Hour Temperature Shift",
+        "source": "Derived Rate-of-Change",
+        "unit": "°C/3h",
+        "timeWindow": "t-3 to t",
+        "meaning": "Thermal delta (T(t) - T(t-3)) identifying cold downdrafts or diurnal heating.",
+        "missingStrategy": "Fill 0.0",
+        "leakageStatus": "SAFE"
+    },
+    "wind_speed_change": {
+        "displayName": "3-Hour Wind Acceleration",
+        "source": "Derived Rate-of-Change",
+        "unit": "km/h/3h",
+        "timeWindow": "t-3 to t",
+        "meaning": "Wind speed delta over 3 hours indicating gust fronts.",
+        "missingStrategy": "Fill 0.0",
+        "leakageStatus": "SAFE"
+    },
+
+    # 5. Physical Thermodynamic Proxies (<= t)
+    "dew_point_spread": {
+        "displayName": "Dew Point Saturation Spread",
+        "source": "Thermodynamic Magnus Calculation",
+        "unit": "°C",
+        "timeWindow": "Instantaneous (t)",
+        "meaning": "T - T_dew. Values near 0 denote deep tropospheric saturation.",
+        "missingStrategy": "Computed from T and RH",
+        "leakageStatus": "SAFE"
+    },
+    "convective_energy_proxy": {
+        "displayName": "Convective Instability Index",
+        "source": "Thermodynamic Hydrostatic Proxy",
+        "unit": "dimensionless",
+        "timeWindow": "Instantaneous (t)",
+        "meaning": "Combines thermal buoyancy, moisture saturation, and low pressure.",
+        "missingStrategy": "Computed from T, RH, and Pressure",
+        "leakageStatus": "SAFE"
+    },
+
+    # 6. Temporal Harmonics & Geographic Coordinates
+    "sin_hour": {
+        "displayName": "Diurnal Solar Cycle (Sine)",
+        "source": "Temporal Trigonometric Transform",
+        "unit": "dimensionless (-1 to 1)",
+        "timeWindow": "Instantaneous (t)",
+        "meaning": "Harmonic encoding of solar time of day.",
+        "missingStrategy": "Computed from timestamp",
+        "leakageStatus": "SAFE"
+    },
+    "cos_hour": {
+        "displayName": "Diurnal Solar Cycle (Cosine)",
+        "source": "Temporal Trigonometric Transform",
+        "unit": "dimensionless (-1 to 1)",
+        "timeWindow": "Instantaneous (t)",
+        "meaning": "Harmonic encoding of solar time of day.",
+        "missingStrategy": "Computed from timestamp",
+        "leakageStatus": "SAFE"
+    },
+    "sin_month": {
+        "displayName": "Monsoon Seasonality (Sine)",
+        "source": "Temporal Trigonometric Transform",
+        "unit": "dimensionless (-1 to 1)",
+        "timeWindow": "Instantaneous (t)",
+        "meaning": "Harmonic encoding of annual Indian monsoon cycle.",
+        "missingStrategy": "Computed from timestamp",
+        "leakageStatus": "SAFE"
+    },
+    "cos_month": {
+        "displayName": "Monsoon Seasonality (Cosine)",
+        "source": "Temporal Trigonometric Transform",
+        "unit": "dimensionless (-1 to 1)",
+        "timeWindow": "Instantaneous (t)",
+        "meaning": "Harmonic encoding of annual Indian monsoon cycle.",
+        "missingStrategy": "Computed from timestamp",
+        "leakageStatus": "SAFE"
+    },
+    "latitude": {
+        "displayName": "Geographic Latitude",
+        "source": "Spatial Coordinate",
+        "unit": "degrees N",
+        "timeWindow": "Static",
+        "meaning": "Station or pixel latitude coordinate.",
+        "missingStrategy": "Required",
+        "leakageStatus": "SAFE"
+    },
+    "longitude": {
+        "displayName": "Geographic Longitude",
+        "source": "Spatial Coordinate",
+        "unit": "degrees E",
+        "timeWindow": "Static",
+        "meaning": "Station or pixel longitude coordinate.",
+        "missingStrategy": "Required",
+        "leakageStatus": "SAFE"
+    },
+}
+
+ALL_MODEL_FEATURE_KEYS: List[str] = list(FEATURE_REGISTRY.keys())

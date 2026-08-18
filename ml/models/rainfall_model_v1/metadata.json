@@ -1,0 +1,25 @@
+{
+  "modelName": "RAI-HeavyRain-XGBoost-IMD",
+  "modelVersion": "v1.0.0-sih-xgb",
+  "thresholdVersion": "v1.1-val-p10-recall",
+  "trainedAt": "2026-08-15T18:53:28.004081+00:00",
+  "algorithm": "XGBoost Gradient Boosted Decision Trees",
+  "calibrationMethod": "Platt Sigmoid Logistic Scaling on Validation Partition",
+  "operationalThreshold": 0.015,
+  "imdThresholds": {
+    "heavyRainMm": 64.5,
+    "veryHeavyRainMm": 115.6,
+    "extremeRainMm": 204.5
+  },
+  "datasetPartitions": {
+    "trainingPeriod": "2023-01-01 00:00:00 to 2024-05-26 15:00:00",
+    "validationPeriod": "2024-05-26 16:00:00 to 2024-09-13 07:00:00",
+    "testPeriod": "2024-09-13 08:00:00 to 2024-12-31 23:00:00",
+    "trainingSamples": 122800,
+    "validationSamples": 26320,
+    "testSamples": 26320
+  },
+  "featuresCount": 27,
+  "status": "READY",
+  "selectionCriterion": "Validation recall maximization subject to precision >= 10% (Early-warning operating point; validation F2 peak is at tau=0.040)"
+}

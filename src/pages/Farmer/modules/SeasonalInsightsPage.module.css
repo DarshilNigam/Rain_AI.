@@ -1,0 +1,155 @@
+.pageRoot {
+  padding: clamp(0.75rem, 1.5vh, 1.5rem) 0 var(--rai-space-2xl);
+  min-height: calc(100svh - var(--rai-header-height));
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rai-space-md);
+  max-width: 1200px;
+}
+
+/* Seasonal Hero */
+.seasonalHero {
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--rai-radius-xl);
+  background: #ffffff;
+  border: 1.5px solid #e9d5ff;
+  box-shadow: var(--rai-shadow-card);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.heroTopRow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .heroTopRow {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.badgeRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.agroZonePill {
+  font-family: var(--rai-font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #7c3aed;
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--rai-radius-full);
+  background-color: #f3e8ff;
+}
+
+.stateTag {
+  font-family: var(--rai-font-mono);
+  font-size: 0.625rem;
+  color: var(--rai-color-text-tertiary);
+}
+
+.heroTitle {
+  font-family: var(--rai-font-display);
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+  margin: 0;
+}
+
+.heroDescription {
+  font-family: var(--rai-font-body);
+  font-size: 0.8125rem;
+  color: var(--rai-color-text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.trendsStrip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.85rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--rai-color-border-subtle);
+}
+
+.trendItem {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.trendLabel {
+  display: block;
+  font-family: var(--rai-font-mono);
+  font-size: 0.5625rem;
+  font-weight: 800;
+  color: var(--rai-color-text-tertiary);
+  letter-spacing: 0.04em;
+}
+
+.trendVal {
+  display: block;
+  font-family: var(--rai-font-display);
+  font-size: 0.84375rem;
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+}
+
+/* 3 Cycles Grid */
+.cyclesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--rai-space-md);
+}
+
+.cycleCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: #ffffff;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.cardTitle {
+  font-family: var(--rai-font-display);
+  font-size: 0.875rem;
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+  margin: 0;
+}
+
+.cardDesc {
+  font-family: var(--rai-font-body);
+  font-size: 0.75rem;
+  color: var(--rai-color-text-secondary);
+  line-height: 1.45;
+  margin: 0;
+}
+
+.noticeBar {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.65rem 0.95rem;
+  border-radius: var(--rai-radius-md);
+  background-color: #faf5ff;
+  border: 1px solid #e9d5ff;
+  font-family: var(--rai-font-body);
+  font-size: 0.6875rem;
+  color: #6b21a8;
+}

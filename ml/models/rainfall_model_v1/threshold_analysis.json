@@ -1,0 +1,355 @@
+{
+  "thresholdSweep": [
+    {
+      "threshold": 0.005,
+      "precision": 0.0154,
+      "recall": 1.0,
+      "f1Score": 0.0303,
+      "f2Score": 0.0725,
+      "falsePositiveRate": 1.0,
+      "truePositiveRate": 1.0,
+      "confusionMatrix": {
+        "tp": 405,
+        "fp": 25915,
+        "tn": 0,
+        "fn": 0
+      }
+    },
+    {
+      "threshold": 0.01,
+      "precision": 0.0786,
+      "recall": 0.6123,
+      "f1Score": 0.1394,
+      "f2Score": 0.2597,
+      "falsePositiveRate": 0.1121,
+      "truePositiveRate": 0.6123,
+      "confusionMatrix": {
+        "tp": 248,
+        "fp": 2906,
+        "tn": 23009,
+        "fn": 157
+      }
+    },
+    {
+      "threshold": 0.015,
+      "precision": 0.1096,
+      "recall": 0.521,
+      "f1Score": 0.181,
+      "f2Score": 0.2975,
+      "falsePositiveRate": 0.0662,
+      "truePositiveRate": 0.521,
+      "confusionMatrix": {
+        "tp": 211,
+        "fp": 1715,
+        "tn": 24200,
+        "fn": 194
+      }
+    },
+    {
+      "threshold": 0.02,
+      "precision": 0.1207,
+      "recall": 0.4716,
+      "f1Score": 0.1922,
+      "f2Score": 0.2983,
+      "falsePositiveRate": 0.0537,
+      "truePositiveRate": 0.4716,
+      "confusionMatrix": {
+        "tp": 191,
+        "fp": 1391,
+        "tn": 24524,
+        "fn": 214
+      }
+    },
+    {
+      "threshold": 0.03,
+      "precision": 0.1411,
+      "recall": 0.4444,
+      "f1Score": 0.2142,
+      "f2Score": 0.3108,
+      "falsePositiveRate": 0.0423,
+      "truePositiveRate": 0.4444,
+      "confusionMatrix": {
+        "tp": 180,
+        "fp": 1096,
+        "tn": 24819,
+        "fn": 225
+      }
+    },
+    {
+      "threshold": 0.04,
+      "precision": 0.1552,
+      "recall": 0.4272,
+      "f1Score": 0.2276,
+      "f2Score": 0.3163,
+      "falsePositiveRate": 0.0363,
+      "truePositiveRate": 0.4272,
+      "confusionMatrix": {
+        "tp": 173,
+        "fp": 942,
+        "tn": 24973,
+        "fn": 232
+      }
+    },
+    {
+      "threshold": 0.05,
+      "precision": 0.1621,
+      "recall": 0.4074,
+      "f1Score": 0.2319,
+      "f2Score": 0.3127,
+      "falsePositiveRate": 0.0329,
+      "truePositiveRate": 0.4074,
+      "confusionMatrix": {
+        "tp": 165,
+        "fp": 853,
+        "tn": 25062,
+        "fn": 240
+      }
+    },
+    {
+      "threshold": 0.075,
+      "precision": 0.1752,
+      "recall": 0.3704,
+      "f1Score": 0.2379,
+      "f2Score": 0.3029,
+      "falsePositiveRate": 0.0272,
+      "truePositiveRate": 0.3704,
+      "confusionMatrix": {
+        "tp": 150,
+        "fp": 706,
+        "tn": 25209,
+        "fn": 255
+      }
+    },
+    {
+      "threshold": 0.1,
+      "precision": 0.1832,
+      "recall": 0.3333,
+      "f1Score": 0.2364,
+      "f2Score": 0.2864,
+      "falsePositiveRate": 0.0232,
+      "truePositiveRate": 0.3333,
+      "confusionMatrix": {
+        "tp": 135,
+        "fp": 602,
+        "tn": 25313,
+        "fn": 270
+      }
+    },
+    {
+      "threshold": 0.15,
+      "precision": 0.2031,
+      "recall": 0.2889,
+      "f1Score": 0.2385,
+      "f2Score": 0.2664,
+      "falsePositiveRate": 0.0177,
+      "truePositiveRate": 0.2889,
+      "confusionMatrix": {
+        "tp": 117,
+        "fp": 459,
+        "tn": 25456,
+        "fn": 288
+      }
+    },
+    {
+      "threshold": 0.2,
+      "precision": 0.2131,
+      "recall": 0.2173,
+      "f1Score": 0.2152,
+      "f2Score": 0.2164,
+      "falsePositiveRate": 0.0125,
+      "truePositiveRate": 0.2173,
+      "confusionMatrix": {
+        "tp": 88,
+        "fp": 325,
+        "tn": 25590,
+        "fn": 317
+      }
+    },
+    {
+      "threshold": 0.25,
+      "precision": 0.2905,
+      "recall": 0.1284,
+      "f1Score": 0.1781,
+      "f2Score": 0.1445,
+      "falsePositiveRate": 0.0049,
+      "truePositiveRate": 0.1284,
+      "confusionMatrix": {
+        "tp": 52,
+        "fp": 127,
+        "tn": 25788,
+        "fn": 353
+      }
+    },
+    {
+      "threshold": 0.3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1Score": 0.0,
+      "f2Score": 0.0,
+      "falsePositiveRate": 0.0,
+      "truePositiveRate": 0.0,
+      "confusionMatrix": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 25915,
+        "fn": 405
+      }
+    },
+    {
+      "threshold": 0.35,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1Score": 0.0,
+      "f2Score": 0.0,
+      "falsePositiveRate": 0.0,
+      "truePositiveRate": 0.0,
+      "confusionMatrix": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 25915,
+        "fn": 405
+      }
+    },
+    {
+      "threshold": 0.4,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1Score": 0.0,
+      "f2Score": 0.0,
+      "falsePositiveRate": 0.0,
+      "truePositiveRate": 0.0,
+      "confusionMatrix": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 25915,
+        "fn": 405
+      }
+    },
+    {
+      "threshold": 0.45,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1Score": 0.0,
+      "f2Score": 0.0,
+      "falsePositiveRate": 0.0,
+      "truePositiveRate": 0.0,
+      "confusionMatrix": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 25915,
+        "fn": 405
+      }
+    },
+    {
+      "threshold": 0.5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1Score": 0.0,
+      "f2Score": 0.0,
+      "falsePositiveRate": 0.0,
+      "truePositiveRate": 0.0,
+      "confusionMatrix": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 25915,
+        "fn": 405
+      }
+    },
+    {
+      "threshold": 0.6,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1Score": 0.0,
+      "f2Score": 0.0,
+      "falsePositiveRate": 0.0,
+      "truePositiveRate": 0.0,
+      "confusionMatrix": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 25915,
+        "fn": 405
+      }
+    },
+    {
+      "threshold": 0.7,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1Score": 0.0,
+      "f2Score": 0.0,
+      "falsePositiveRate": 0.0,
+      "truePositiveRate": 0.0,
+      "confusionMatrix": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 25915,
+        "fn": 405
+      }
+    },
+    {
+      "threshold": 0.8,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1Score": 0.0,
+      "f2Score": 0.0,
+      "falsePositiveRate": 0.0,
+      "truePositiveRate": 0.0,
+      "confusionMatrix": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 25915,
+        "fn": 405
+      }
+    },
+    {
+      "threshold": 0.9,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1Score": 0.0,
+      "f2Score": 0.0,
+      "falsePositiveRate": 0.0,
+      "truePositiveRate": 0.0,
+      "confusionMatrix": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 25915,
+        "fn": 405
+      }
+    }
+  ],
+  "optimalThresholdF1": 0.15,
+  "optimalThresholdF2": 0.04,
+  "selectedOperationalThreshold": 0.015,
+  "thresholdVersion": "v1.1-val-p10-recall",
+  "selectionCriterion": "Validation recall maximization subject to precision >= 10% (Early-warning operating point; validation F2 peak is at tau=0.040)",
+  "validationPerformanceAtThreshold": {
+    "threshold": 0.015,
+    "precision": 0.1096,
+    "recall": 0.521,
+    "f1Score": 0.181,
+    "f2Score": 0.2975,
+    "alertRate": 0.0732,
+    "falsePositiveRate": 0.0662
+  },
+  "derivedRiskBoundaries": {
+    "LOW": {
+      "min": 0.0,
+      "max": 0.0075,
+      "description": "Atmospheric conditions unfavorable for heavy rain (<64.5mm)"
+    },
+    "MODERATE": {
+      "min": 0.0075,
+      "max": 0.015,
+      "description": "Elevated moisture/instability; heightened monitoring advised"
+    },
+    "HIGH": {
+      "min": 0.015,
+      "max": 0.05,
+      "description": "High probability of IMD Heavy Rainfall (>=64.5mm/day) [WATCH]"
+    },
+    "CRITICAL": {
+      "min": 0.05,
+      "max": 1.0,
+      "description": "Severe meteorological risk for Very Heavy / Extreme rainfall (>=115.6mm) [WARNING]"
+    }
+  }
+}

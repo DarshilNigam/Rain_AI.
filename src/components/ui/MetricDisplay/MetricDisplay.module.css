@@ -1,0 +1,67 @@
+.metricContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rai-space-xs);
+}
+
+.label {
+  font-family: var(--rai-font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--rai-color-text-tertiary);
+}
+
+.valueRow {
+  display: flex;
+  align-items: baseline;
+  gap: var(--rai-space-xs);
+}
+
+.value {
+  font-family: var(--rai-font-mono);
+  font-weight: 600;
+  color: var(--rai-color-text-primary);
+  line-height: 1;
+}
+
+.sm {
+  font-size: 1.25rem;
+}
+
+.md {
+  font-size: 1.875rem;
+}
+
+.lg {
+  font-size: 2.75rem;
+}
+
+.unit {
+  font-family: var(--rai-font-mono);
+  font-size: 0.875rem;
+  color: var(--rai-color-text-tertiary);
+  font-weight: 400;
+}
+
+.trendRow {
+  display: flex;
+  align-items: center;
+  gap: var(--rai-space-2xs);
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-top: var(--rai-space-2xs);
+}
+
+.trendSafe {
+  color: var(--rai-color-safe-600);
+}
+
+.trendCaution {
+  color: var(--rai-color-caution-600);
+}
+
+.trendCritical {
+  color: var(--rai-color-critical-600);
+}

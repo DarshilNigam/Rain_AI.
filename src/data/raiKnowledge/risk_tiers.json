@@ -1,0 +1,1622 @@
+[
+  {
+    "id": "RAI-KB-RIS-031471",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "what are the rai risk tiers",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031472",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "what are the rai risk tiers?",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031473",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "explain what are the rai risk tiers",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031474",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "tell me what are the rai risk tiers",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031475",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "why is what are the rai risk tiers",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031476",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "what does low risk mean in rai",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031477",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "what does low risk mean in rai?",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031478",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "explain what does low risk mean in rai",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031479",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "tell me what does low risk mean in rai",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031480",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "why is what does low risk mean in rai",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031481",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "what does moderate risk mean in rai",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031482",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "what does moderate risk mean in rai?",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031483",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "explain what does moderate risk mean in rai",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031484",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "tell me what does moderate risk mean in rai",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031485",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "why is what does moderate risk mean in rai",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031486",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "what does high risk mean in rai",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031487",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "what does high risk mean in rai?",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031488",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "explain what does high risk mean in rai",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031489",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "tell me what does high risk mean in rai",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031490",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "why is what does high risk mean in rai",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031491",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "what does critical risk mean in rai",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031492",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "what does critical risk mean in rai?",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031493",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "explain what does critical risk mean in rai",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031494",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "tell me what does critical risk mean in rai",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031495",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "why is what does critical risk mean in rai",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031496",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "why is the risk moderate when probability is only 0.9%",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031497",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "why is the risk moderate when probability is only 0.9%?",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031498",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "explain why is the risk moderate when probability is only 0.9%",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031499",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "tell me why is the risk moderate when probability is only 0.9%",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031500",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "why is why is the risk moderate when probability is only 0.9%",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031501",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "why is 0.9% not low risk",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031502",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "why is 0.9% not low risk?",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031503",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "explain why is 0.9% not low risk",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031504",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "tell me why is 0.9% not low risk",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031505",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "why is why is 0.9% not low risk",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031506",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "what is the difference between watch and warning tiers",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031507",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "what is the difference between watch and warning tiers?",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031508",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "explain what is the difference between watch and warning tiers",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031509",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "tell me what is the difference between watch and warning tiers",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031510",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "why is what is the difference between watch and warning tiers",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031511",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "why can ordinary rain happen when heavy rain risk is low",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031512",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "why can ordinary rain happen when heavy rain risk is low?",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031513",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "explain why can ordinary rain happen when heavy rain risk is low",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031514",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "tell me why can ordinary rain happen when heavy rain risk is low",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031515",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "why is why can ordinary rain happen when heavy rain risk is low",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031516",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "what is the operational action for moderate risk",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031517",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "what is the operational action for moderate risk?",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031518",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "explain what is the operational action for moderate risk",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031519",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "tell me what is the operational action for moderate risk",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031520",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "why is what is the operational action for moderate risk",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031521",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "what is the operational action for high risk",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031522",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "what is the operational action for high risk?",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031523",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "explain what is the operational action for high risk",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031524",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "tell me what is the operational action for high risk",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031525",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "why is what is the operational action for high risk",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031526",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "what is the operational action for critical risk",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031527",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "what is the operational action for critical risk?",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031528",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "explain what is the operational action for critical risk",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031529",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "tell me what is the operational action for critical risk",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  },
+  {
+    "id": "RAI-KB-RIS-031530",
+    "category": "RISK_TIERS",
+    "subCategory": "TIER_TAXONOMY",
+    "question": "why is what is the operational action for critical risk",
+    "answerConcept": "R.A.I. maps calibrated heavy-rainfall ML probabilities into 4 operational risk tiers: LOW (<0.75%), MODERATE / WATCH (0.75% to 1.50%), HIGH / WARNING (1.50% to 5.00%), and CRITICAL (≥5.00%). A 0.9% probability falls into MODERATE because it is elevated above the 0.75% baseline floor, reflecting atmospheric readiness for rain while staying below the 1.5% emergency warning threshold.",
+    "keywords": [
+      "risk tier",
+      "low",
+      "moderate",
+      "high",
+      "critical",
+      "0.9%",
+      "1.5%",
+      "threshold"
+    ],
+    "entities": [
+      "risk_taxonomy"
+    ],
+    "relatedIntents": [
+      "RISK_TIER_EXPLANATION",
+      "HEAVY_RAIN_PROBABILITY_EXPLANATION"
+    ],
+    "requiresLiveData": false,
+    "requiresML": false,
+    "requiresFarmerContext": false
+  }
+]
