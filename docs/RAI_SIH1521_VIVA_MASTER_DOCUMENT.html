@@ -283,7 +283,7 @@
 <ol>
 <li><a href="#chapter-1-what-is-rai--why-does-it-exist">Chapter 1: What is R.A.I. &amp; Why Does It Exist? (The Big Picture)</a></li>
 <li><a href="#chapter-2-how-the-whole-system-works">Chapter 2: How the Whole System Works (Simple 4-Step Story)</a></li>
-<li><a href="#chapter-3-the-complete-tech-stack">Chapter 3: The Complete Tech Stack (Explained in Plain English)</a></li>
+<li><a href="#chapter-3-the-complete-technology-inventory">Chapter 3: The COMPLETE Technology Inventory (Every Single Tech Used)</a></li>
 <li><a href="#chapter-4-project-structure">Chapter 4: Project Structure (Which File Does What?)</a></li>
 <li><a href="#chapter-5-frontend-walkthrough">Chapter 5: Frontend Walkthrough (What the User Sees)</a></li>
 <li><a href="#chapter-6-backend-walkthrough">Chapter 6: Backend Walkthrough (FastAPI Made Simple)</a></li>
@@ -310,14 +310,14 @@ It is an intelligent weather website and early-warning platform that predicts <s
 <h3 id="2-what-problem-are-we-solving">2. What problem are we solving?</h3>
 <ul>
 <li>In India, sudden heavy rains and cloudbursts cause flash floods, drown city streets, and destroy farmers' crops.</li>
-<li>Regular weather apps (like Google Weather or Apple Weather) give vague forecasts like "40% chance of rain" or "Light rain", but they <strong>do not predict extreme flood-level storms</strong> accurately and <strong>never explain why</strong>.</li>
+<li>Regular weather apps (like Google Weather or Apple Weather) give vague forecasts like "40% chance of rain", but they <strong>do not predict extreme flood-level storms</strong> accurately and <strong>never explain why</strong>.</li>
 <li>Normal AI models are "black boxes" — they give a number, but nobody knows if they can be trusted.</li>
 </ul>
 <h3 id="3-what-is-the-sih-problem-statement">3. What is the SIH Problem Statement?</h3>
 <ul>
 <li><strong>Problem Statement ID</strong>: <code>SIH1521</code></li>
 <li><strong>Title</strong>: <em>"Explainable AI for Heavy/High-Impact Rainfall Prediction"</em></li>
-<li><strong>The Goal</strong>: Create an AI model that predicts heavy rain ($\ge 64.5\text{ mm/day}$, as defined by the IMD) and gives human-readable explanations using mathematical XAI (TreeSHAP).</li>
+<li><strong>The Goal</strong>: Create an AI model that predicts heavy rain (&gt;= 64.5 mm/day, as defined by the IMD) and gives human-readable explanations using mathematical XAI (TreeSHAP).</li>
 </ul>
 <h3 id="4-who-uses-rai">4. Who uses R.A.I.?</h3>
 <ol>
@@ -330,58 +330,83 @@ It is an intelligent weather website and early-warning platform that predicts <s
 <pre><code>STEP 1: FETCH DATA
 User opens R.A.I. and selects a city (e.g., Kanpur).
 Our backend fetches real-time atmospheric data from Open-Meteo &amp; NASA GPM satellites.
-                 │
-                 ▼
+                 |
+                 v
 STEP 2: PREDICT RISK WITH ML
 Our XGBoost Machine Learning model analyzes 14 atmospheric features
 (temperature, pressure, humidity, dew point, wind, etc.) and predicts rain probability.
-                 │
-                 ▼
+                 |
+                 v
 STEP 3: EXPLAIN WITH TreeSHAP (XAI)
 TreeSHAP calculates exact mathematical contributions for every feature:
 - &quot;High humidity (+0.41) increases flood risk.&quot;
 - &quot;Stable air pressure (-0.28) protects against cloudbursts.&quot;
-                 │
-                 ▼
+                 |
+                 v
 STEP 4: SHOW ACTIONABLE WARNINGS
 The frontend shows a 4-Layer Inspector:
 [Layer 1: Observed Weather] -&gt; [Layer 2: Predicted Probability] -&gt;
 [Layer 3: TreeSHAP Explanations] -&gt; [Layer 4: Action Checklist for Citizens &amp; Farmers]
 </code></pre>
 <hr />
-<h1 id="chapter-3-the-complete-tech-stack-plain-english">CHAPTER 3: THE COMPLETE TECH STACK (PLAIN ENGLISH)</h1>
-<h3 id="frontend-what-you-see-in-the-browser">Frontend (What you see in the browser)</h3>
+<h1 id="chapter-3-the-complete-technology-inventory">CHAPTER 3: THE COMPLETE TECHNOLOGY INVENTORY</h1>
+<p>Here is the <strong>100% complete list</strong> of every single technology, library, framework, service, protocol, and algorithm used across the entire R.A.I. system:</p>
+<h3 id="1-frontend-technologies-src">1. Frontend Technologies (<code>src/</code>)</h3>
 <ul>
-<li><strong>React 18</strong>: The JavaScript library used to build the user interface with interactive components.</li>
-<li><strong>TypeScript</strong>: Adds strict type checking to JavaScript to prevent bugs.</li>
-<li><strong>Vite</strong>: A fast bundler and local development server (<code>http://localhost:3000</code>).</li>
-<li><strong>CSS Modules</strong>: Keeps styling clean and scoped to individual components without style conflicts.</li>
-<li><strong>Leaflet &amp; RainViewer</strong>: Displays the interactive map with real-time Doppler precipitation radar animations.</li>
+<li><strong>React (v18.3.1)</strong>: [IMPLEMENTED] Core UI framework for component-based rendering.</li>
+<li><strong>TypeScript (v5.6.3)</strong>: [IMPLEMENTED] Static type checker preventing runtime data contract bugs.</li>
+<li><strong>Vite (v6.0.1)</strong>: [IMPLEMENTED] Lightning-fast frontend build tool and dev server (Port <code>3000</code>).</li>
+<li><strong>React Router DOM (v6.28.0)</strong>: [IMPLEMENTED] Client-side routing and protected route guards.</li>
+<li><strong>Leaflet (v1.9.4)</strong>: [IMPLEMENTED] Interactive mapping engine for rendering city markers and coordinate pins.</li>
+<li><strong>Lucide React (v0.468.0)</strong>: [IMPLEMENTED] Modern, accessible iconography.</li>
+<li><strong>Vanilla CSS Modules</strong>: [IMPLEMENTED] Scoped component styles preventing global namespace pollution.</li>
+<li><strong>Custom Design Tokens (<code>src/tokens/</code>)</strong>: [IMPLEMENTED] Design system defining colors, spacing, typography, and motion curves.</li>
+<li><strong>I18n Context (<code>src/i18n/</code>)</strong>: [IMPLEMENTED] Bilingual localization provider supporting English and Hindi.</li>
 </ul>
-<h3 id="backend-the-engine-that-runs-behind-the-scenes">Backend (The engine that runs behind the scenes)</h3>
+<h3 id="2-backend-technologies-ml">2. Backend Technologies (<code>ml/</code>)</h3>
 <ul>
-<li><strong>Python (3.11 / 3.14)</strong>: The core programming language used for machine learning and APIs.</li>
-<li><strong>FastAPI</strong>: A high-speed web framework that receives requests from the frontend and returns predictions. Runs on port <code>8000</code>.</li>
-<li><strong>Uvicorn</strong>: The lightning-fast ASGI server that runs our FastAPI code.</li>
-<li><strong>Pydantic</strong>: Validates all incoming and outgoing data to make sure coordinates and numbers are correct.</li>
+<li><strong>Python (3.11 / 3.14)</strong>: [IMPLEMENTED] Core programming language for ML inference and API serving.</li>
+<li><strong>FastAPI (v0.141.1)</strong>: [IMPLEMENTED] Asynchronous, high-throughput REST API framework.</li>
+<li><strong>Uvicorn (v0.52.3)</strong>: [IMPLEMENTED] Production ASGI web server running FastAPI on port <code>8000</code>.</li>
+<li><strong>Pydantic (v2.13.4)</strong>: [IMPLEMENTED] Strict request and response data contract validation.</li>
+<li><strong>Starlette (v1.6.0)</strong>: [IMPLEMENTED] Underlying ASGI toolkit powering FastAPI's middleware and routing.</li>
+<li><strong>Requests (v2.34.2) &amp; Httpx (v0.28.1)</strong>: [IMPLEMENTED] Synchronous and asynchronous HTTP client libraries for weather ingestion.</li>
+<li><strong>Python-Dateutil (v2.9.0)</strong>: [IMPLEMENTED] ISO date/time parsing for UTC session expiries and timestamps.</li>
 </ul>
-<h3 id="machine-learning-explainable-ai">Machine Learning &amp; Explainable AI</h3>
+<h3 id="3-machine-learning-explainable-ai">3. Machine Learning &amp; Explainable AI</h3>
 <ul>
-<li><strong>XGBoost</strong>: The Gradient Boosted Decision Tree algorithm that makes the heavy rainfall predictions.</li>
-<li><strong>Scikit-Learn</strong>: Used for probability calibration (Platt scaling / Isotonic) and metric calculations.</li>
-<li><strong>SHAP (TreeSHAP)</strong>: The Explainable AI library that calculates exact mathematical Shapley values.</li>
-<li><strong>NumPy &amp; Pandas</strong>: Used for tabular data manipulation and calculating rolling meteorological features.</li>
+<li><strong>XGBoost (v3.4.1)</strong>: [IMPLEMENTED] Gradient Boosted Decision Trees algorithm trained on 175,440 hourly records.</li>
+<li><strong>Scikit-Learn (v1.9.0)</strong>: [IMPLEMENTED] Probability calibration (<code>CalibratedClassifierCV</code>), ROC-AUC, PR-AUC, and Brier score loss metrics.</li>
+<li><strong>SHAP (TreeSHAP v0.52.0)</strong>: [IMPLEMENTED] Exact game-theoretic Shapley additive feature attribution engine.</li>
+<li><strong>NumPy (v2.5.2) &amp; Pandas (v3.0.5)</strong>: [IMPLEMENTED] Fast vector manipulation, rolling features, and dataset splitting.</li>
+<li><strong>SciPy (v1.18.0)</strong>: [IMPLEMENTED] Statistical distributions and mathematical optimization.</li>
+<li><strong>Joblib (v1.5.3)</strong>: [IMPLEMENTED] High-performance serialization for <code>model.pkl</code> and <code>calibrated_model.pkl</code>.</li>
 </ul>
-<h3 id="database-authentication">Database &amp; Authentication</h3>
+<h3 id="4-cloud-database-auth-external-apis">4. Cloud Database, Auth &amp; External APIs</h3>
 <ul>
-<li><strong>Supabase Cloud PostgreSQL</strong>: Managed cloud SQL database that stores users, farmer profiles, farm plots, and login sessions.</li>
-<li><strong>Brevo (Sendinblue)</strong>: Transactional email service that sends real 6-digit OTP verification codes to user inboxes using verified Sender ID <code>1</code> (<code>RAINAIWORK@GMAIL.COM</code>).</li>
-<li><strong>Salted HMAC &amp; SHA-256</strong>: Cryptographic security ensuring passwords and OTPs are never stored in plaintext.</li>
+<li><strong>Supabase Cloud PostgreSQL</strong>: [IMPLEMENTED] Managed cloud database hosting 6 relational tables (<code>users</code>, <code>sessions</code>, <code>otp_challenges</code>, <code>farmer_profiles</code>, <code>farm_plots</code>, <code>user_preferences</code>).</li>
+<li><strong>PostgREST API</strong>: [IMPLEMENTED] RESTful database interface for Supabase cloud queries.</li>
+<li><strong>Brevo (formerly Sendinblue) Transactional API</strong>: [IMPLEMENTED] Transactional email gateway sending real 6-digit OTP codes via verified Sender ID <code>1</code> (<code>RAINAIWORK@GMAIL.COM</code>).</li>
+<li><strong>Open-Meteo REST API</strong>: [IMPLEMENTED] Ingests hourly 2m temperature, dew point, surface pressure, cloud cover, and precipitation.</li>
+<li><strong>NASA GPM IMERG 0.1 deg Satellite Grid</strong>: [IMPLEMENTED] Global Precipitation Measurement satellite precipitation layer.</li>
+<li><strong>RainViewer Doppler Radar API</strong>: [IMPLEMENTED] Live animated Doppler radar tile layer for Leaflet maps.</li>
 </ul>
-<h3 id="devops-deployment">DevOps &amp; Deployment</h3>
+<h3 id="5-security-cryptographic-algorithms">5. Security &amp; Cryptographic Algorithms</h3>
 <ul>
-<li><strong>Docker</strong>: Packages the FastAPI backend and ML models into a clean, lightweight Linux container (<code>python:3.11-slim</code>).</li>
-<li><strong>Git &amp; GitHub</strong>: Version control system used to track changes and preserve the frozen <code>v1.0</code> baseline.</li>
+<li><strong>HMAC-SHA256</strong>: [IMPLEMENTED] Salted cryptographic hashing for single-use OTP challenges.</li>
+<li><strong>SHA-256 with Salt &amp; Server-Side Pepper</strong>: [IMPLEMENTED] One-way password hashing.</li>
+<li><strong>Constant-Time Comparison (<code>timingSafeEqual</code> / <code>hmac.compare_digest</code>)</strong>: [IMPLEMENTED] Prevents timing attacks during OTP and password validation.</li>
+<li><strong>256-bit Cryptographic Hex Session Tokens (<code>secrets.token_hex(32)</code>)</strong>: [IMPLEMENTED] Ephemeral session authentication.</li>
+<li><strong>15-Minute Brute-Force Account Lockout</strong>: [IMPLEMENTED] Rate-limiting defense after 5 consecutive failed logins.</li>
+<li><strong>IDOR Tenant Authorization Protection</strong>: [IMPLEMENTED] Isolates Citizen vs. Farmer A vs. Farmer B data.</li>
+</ul>
+<h3 id="6-devops-testing-documentation">6. DevOps, Testing &amp; Documentation</h3>
+<ul>
+<li><strong>Docker</strong>: [IMPLEMENTED] Multi-stage containerization using <code>python:3.11-slim</code> with non-root user <code>raiuser:1000</code>.</li>
+<li><strong>Docker Compose</strong>: [IMPLEMENTED] Local multi-service container orchestration.</li>
+<li><strong>Git &amp; GitHub</strong>: [IMPLEMENTED] Version control tracking the frozen baseline.</li>
+<li><strong>Pytest (v9.1.1)</strong>: [IMPLEMENTED] 26 automated unit and operational tests.</li>
+<li><strong>ReportLab (v5.0.0) &amp; Markdown (v3.10.3)</strong>: [IMPLEMENTED] Automated generator for standalone PDF and executive HTML documents.</li>
 </ul>
 <hr />
 <h1 id="chapter-4-project-structure-which-file-does-what">CHAPTER 4: PROJECT STRUCTURE (WHICH FILE DOES WHAT?)</h1>
@@ -424,7 +449,7 @@ The frontend shows a 4-Layer Inspector:
    - Shows a live interactive map with <strong>RainViewer Doppler radar precipitation overlays</strong>.<br />
    - Displays the <strong>4-Layer Telemetry Inspector</strong>:<ul>
 <li><strong>Layer 1: Observed</strong> (Raw physical sensors: Temperature, Humidity, Pressure, Wind).</li>
-<li><strong>Layer 2: Predicted</strong> (Calibrated Heavy Rain Probability $p\%$, Operational Threshold $\tau=0.015$).</li>
+<li><strong>Layer 2: Predicted</strong> (Calibrated Heavy Rain Probability p%, Operational Threshold tau=0.015).</li>
 <li><strong>Layer 3: Explained</strong> (TreeSHAP positive risk drivers in red, protective factors in blue).</li>
 <li><strong>Layer 4: Operational Warning</strong> (Official IMD-aligned action checklists).</li>
 </ul>
@@ -474,8 +499,8 @@ The frontend shows a 4-Layer Inspector:
 <hr />
 <h1 id="chapter-8-machine-learning-made-simple-xgboost-explained">CHAPTER 8: MACHINE LEARNING MADE SIMPLE (XGBOOST EXPLAINED)</h1>
 <h3 id="1-what-is-the-ml-goal">1. What is the ML Goal?</h3>
-<p>Predict if a location will receive <strong>Heavy Rainfall ($\ge 64.5\text{ mm}$ in 24 hours)</strong>.<br />
-$64.5\text{ mm/day}$ is the official threshold set by the India Meteorological Department (IMD).</p>
+<p>Predict if a location will receive <strong>Heavy Rainfall (&gt;= 64.5 mm in 24 hours)</strong>.<br />
+64.5 mm/day is the official threshold set by the India Meteorological Department (IMD).</p>
 <h3 id="2-why-xgboost">2. Why XGBoost?</h3>
 <ul>
 <li><strong>Analogy</strong>: Imagine asking 100 experienced meteorologists to make a forecast. Each expert learns from the mistakes of the previous expert. That is what Gradient Boosted Decision Trees (XGBoost) does!</li>
@@ -517,7 +542,7 @@ $64.5\text{ mm/day}$ is the official threshold set by the India Meteorological D
 <tr>
 <td style="text-align: left;"><strong>PR-AUC</strong></td>
 <td style="text-align: center;"><strong>0.1082</strong></td>
-<td style="text-align: left;"><strong>Precision-Recall Area</strong>: Because heavy rain happens only 0.44% of the time, our score of 0.1082 is a <strong>$24.6\times$ improvement</strong> over random guessing!</td>
+<td style="text-align: left;"><strong>Precision-Recall Area</strong>: Because heavy rain happens only 0.44% of the time, our score of 0.1082 is a <strong>24.6x improvement</strong> over random guessing!</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Calibrated Brier Score</strong></td>
@@ -525,17 +550,17 @@ $64.5\text{ mm/day}$ is the official threshold set by the India Meteorological D
 <td style="text-align: left;"><strong>Probability Accuracy</strong>: Measures error between predicted probability and actual reality (Lower is better; 0.0044 is rated <strong>EXCELLENT</strong>).</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Validation Recall ($\tau=0.015$)</strong></td>
+<td style="text-align: left;"><strong>Validation Recall (tau=0.015)</strong></td>
 <td style="text-align: center;"><strong>52.1%</strong></td>
 <td style="text-align: left;"><strong>Flood Catch Rate</strong>: The model successfully catches more than half of all extreme heavy rainfall events 24 hours in advance.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Validation Precision ($\tau=0.015$)</strong></td>
+<td style="text-align: left;"><strong>Validation Precision (tau=0.015)</strong></td>
 <td style="text-align: center;"><strong>10.96%</strong></td>
-<td style="text-align: left;"><strong>Alert Reliability</strong>: 1 out of every 9 alerts results in extreme heavy rain ($\ge 64.5\text{ mm}$), while the rest bring moderate-to-heavy showers.</td>
+<td style="text-align: left;"><strong>Alert Reliability</strong>: 1 out of every 9 alerts results in extreme heavy rain (&gt;= 64.5 mm), while the rest bring moderate-to-heavy showers.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>$F_2$ Score</strong></td>
+<td style="text-align: left;"><strong>F2 Score</strong></td>
 <td style="text-align: center;"><strong>0.2975</strong></td>
 <td style="text-align: left;">Weighs catching floods (Recall) twice as heavily as false alarms (Precision).</td>
 </tr>
@@ -543,21 +568,21 @@ $64.5\text{ mm/day}$ is the official threshold set by the India Meteorological D
 </table>
 <hr />
 <h1 id="chapter-10-why-15-probability-triggers-an-alert-threshold-tuning">CHAPTER 10: WHY 1.5% PROBABILITY TRIGGERS AN ALERT (THRESHOLD TUNING)</h1>
-<h3 id="the-class-imbalance-secret-crucial-for-viva">💡 The Class Imbalance Secret (Crucial for Viva!)</h3>
+<h3 id="the-class-imbalance-secret-crucial-for-viva">The Class Imbalance Secret (Crucial for Viva!)</h3>
 <ul>
 <li><strong>Question</strong>: "Why does a 1.5% probability trigger a High Risk alert? Isn't 1.5% very small?"</li>
 <li><strong>Simple Answer</strong>:</li>
-<li>In normal weather data across India, extreme heavy rain ($\ge 64.5\text{ mm}$) is very rare — it happens on only <strong>0.44% of days (1 in 227 days)</strong>.</li>
+<li>In normal weather data across India, extreme heavy rain (&gt;= 64.5 mm) is very rare — it happens on only <strong>0.44% of days (1 in 227 days)</strong>.</li>
 <li>If you use the standard default threshold of <strong>50% (0.50)</strong>, the model will say "NO RAIN" 365 days a year. It would have 99.5% accuracy, but <strong>0% recall</strong> (it would miss every single flood!).</li>
-<li>A calibrated probability of <strong>1.5% (0.015)</strong> means the risk is <strong>$3.4\times$ higher than normal</strong>.</li>
-<li>Therefore, we tuned our operational threshold to <strong>$\tau = 0.015$</strong>, giving us a <strong>52.1% flood catch rate</strong> while triggering alerts on only 7% of days!</li>
+<li>A calibrated probability of <strong>1.5% (0.015)</strong> means the risk is <strong>3.4x higher than normal</strong>.</li>
+<li>Therefore, we tuned our operational threshold to <strong>tau = 0.015</strong>, giving us a <strong>52.1% flood catch rate</strong> while triggering alerts on only 7% of days!</li>
 </ul>
 <h3 id="the-4-risk-tiers">The 4 Risk Tiers:</h3>
 <ul>
-<li><strong>LOW</strong> ($p &lt; 0.75\%$): Normal dry / light rain conditions.</li>
-<li><strong>MODERATE</strong> ($0.75\% \le p &lt; 1.5\%$): Elevated moisture; heightened monitoring advised.</li>
-<li><strong>HIGH</strong> ($1.5\% \le p &lt; 5.0\%$): <strong>Threshold Breached [WATCH]</strong> — High probability of heavy rain.</li>
-<li><strong>CRITICAL</strong> ($p \ge 5.0\%$): <strong>Severe Danger [WARNING]</strong> — Potential cloudburst / flood.</li>
+<li><strong>LOW</strong> (p &lt; 0.75%): Normal dry / light rain conditions.</li>
+<li><strong>MODERATE</strong> (0.75% &lt;= p &lt; 1.5%): Elevated moisture; heightened monitoring advised.</li>
+<li><strong>HIGH</strong> (1.5% &lt;= p &lt; 5.0%): <strong>Threshold Breached [WATCH]</strong> — High probability of heavy rain.</li>
+<li><strong>CRITICAL</strong> (p &gt;= 5.0%): <strong>Severe Danger [WARNING]</strong> — Potential cloudburst / flood.</li>
 </ul>
 <hr />
 <h1 id="chapter-11-explainable-ai-treeshap">CHAPTER 11: EXPLAINABLE AI &amp; TreeSHAP</h1>
@@ -567,137 +592,29 @@ $64.5\text{ mm/day}$ is the official threshold set by the India Meteorological D
 <li>For every weather prediction, TreeSHAP calculates the exact positive or negative contribution of each weather variable.</li>
 </ul>
 <h3 id="2-the-formula-in-plain-english">2. The Formula in Plain English:</h3>
-<p>$$\text{Final Prediction} = \text{Base Average} + \text{Sum of all Feature Contributions}$$<br />
-- <strong>Base Value ($\phi_0$)</strong>: $-4.85$ log-odds (the average baseline probability across India).<br />
-- <strong>Positive Factors ($\phi_i &gt; 0$)</strong>: Push risk higher (e.g. High Dew Point $+0.41$).<br />
-- <strong>Negative Factors ($\phi_i &lt; 0$)</strong>: Push risk lower (e.g. High Barometric Pressure $-0.28$).</p>
-<h3 id="3-human-readable-output">3. Human-Readable Output:</h3>
-<p>R.A.I. translates math into simple English on the screen:<br />
-- <em>"High humidity (92%) and past rainfall (35mm) are driving flood risk up."</em><br />
-- <em>"Moderate wind speed is helping disperse clouds, preventing sudden cloudburst."</em></p>
-<hr />
-<h1 id="chapter-12-warning-system-farmer-ai-hub">CHAPTER 12: WARNING SYSTEM &amp; FARMER AI HUB</h1>
-<h3 id="1-operational-warning-levels">1. Operational Warning Levels:</h3>
-<ul>
-<li><strong><code>NO_WARNING</code></strong>: Normal daily routines.</li>
-<li><strong><code>ADVISORY</code></strong>: Check stormwater drains and clear debris.</li>
-<li><strong><code>WATCH</code></strong>: High heavy rain risk. Farmers should pause fertilizer spraying; citizens avoid underpasses.</li>
-<li><strong><code>WARNING</code></strong>: Severe danger. Emergency shelters activated; relief boats on standby.</li>
-</ul>
-<h3 id="2-farmer-ai-hub">2. Farmer AI Hub:</h3>
-<ul>
-<li>Contains a knowledge base of <strong>35,857 verified agronomic records</strong> across 18 categories.</li>
-<li>Uses <strong>$1.75\times$ Farmer Persona Boosting</strong> so agricultural terms are prioritized for farmers.</li>
-<li>Understands <strong>Hindi and Hinglish terms</strong> (e.g. <em>sinchai</em> $\to$ irrigation, <em>jalbharav</em> $\to$ waterlogging).</li>
-<li>Grounds advice in the farmer's specific <strong>soil type</strong> (e.g. Black Cotton soil retains water, Sandy soil drains quickly) and <strong>crop stage</strong> (e.g. Flowering vs. Harvest).</li>
-</ul>
-<hr />
-<h1 id="chapter-13-satellite-weather-ingestion">CHAPTER 13: SATELLITE &amp; WEATHER INGESTION</h1>
-<h3 id="1-nasa-gpm-imerg-satellite-grid">1. NASA GPM IMERG Satellite Grid</h3>
-<ul>
-<li><strong>What it is</strong>: NASA's constellation of rainfall satellites orbiting Earth.</li>
-<li><strong>Resolution</strong>: $0.1^\circ \times 0.1^\circ$ (about $10\text{ km} \times 10\text{ km}$).</li>
-<li><strong>Role in R.A.I.</strong>: Provides ground-truth satellite rainfall maps and antecedence moisture levels.</li>
-</ul>
-<h3 id="2-open-meteo-weather-model">2. Open-Meteo Weather Model</h3>
-<ul>
-<li><strong>What it is</strong>: High-resolution numerical weather prediction model.</li>
-<li><strong>Role in R.A.I.</strong>: Provides hourly forecasts for temperature, surface pressure, dew point, relative humidity, and wind.</li>
-<li><strong>Offline Resilience</strong>: If the internet or external API is slow, R.A.I. automatically uses local seasonal climatology fallbacks so the app never crashes!</li>
-</ul>
-<hr />
-<h1 id="chapter-14-supabase-database">CHAPTER 14: SUPABASE DATABASE</h1>
-<p>Our cloud database runs on <strong>Supabase PostgreSQL</strong> with 6 relational tables:<br />
-1. <code>users</code>: Stores user ID, email, salted password hash, and account role (<code>user</code> vs <code>farmer</code>).<br />
-2. <code>sessions</code>: Stores 256-bit cryptographic login tokens and expiration dates.<br />
-3. <code>otp_challenges</code>: Stores 6-digit OTP hashes, attempt counters (max 5), and 5-min expiry timers.<br />
-4. <code>farmer_profiles</code>: Stores village, district, soil type, and irrigation source.<br />
-5. <code>farm_plots</code>: Stores field names, acreage, active crop (e.g. Wheat, Rice), and coordinates.<br />
-6. <code>user_preferences</code>: Stores preferred language (Hindi/English) and default city node.</p>
-<hr />
-<h1 id="chapter-15-docker-running-the-app-locally">CHAPTER 15: DOCKER &amp; RUNNING THE APP LOCALLY</h1>
-<h3 id="1-what-is-docker">1. What is Docker?</h3>
-<p>Docker packages our entire backend (Python, FastAPI, XGBoost, models, and libraries) into a single container image so it runs identically on any computer without dependency errors.</p>
-<h3 id="2-how-to-run-rai-locally">2. How to Run R.A.I. Locally:</h3>
-<h4 id="terminal-1-start-fastapi-backend">Terminal 1 — Start FastAPI Backend:</h4>
-<pre><code class="language-powershell">.\.venv\Scripts\Activate.ps1
-python -m uvicorn ml.server:app --host 127.0.0.1 --port 8000
-</code></pre>
-<h4 id="terminal-2-start-react-frontend">Terminal 2 — Start React Frontend:</h4>
-<pre><code class="language-powershell">npm run dev
-</code></pre>
-<p>Open your browser at: <strong><code>http://localhost:3000</code></strong></p>
-<hr />
-<h1 id="chapter-16-why-did-we-use-this-judges-favorite-questions">CHAPTER 16: "WHY DID WE USE THIS?" (JUDGES' FAVORITE QUESTIONS)</h1>
-<ul>
-<li><strong>Q: Why XGBoost instead of Deep Learning (CNN/LSTM)?</strong><br />
-<em>Answer</em>: Weather data is tabular (numbers in tables). XGBoost consistently outperforms deep neural networks on tabular data, runs fast on CPUs without GPUs, and supports exact TreeSHAP math.</li>
-<li><strong>Q: Why TreeSHAP instead of LIME?</strong><br />
-<em>Answer</em>: LIME uses random approximations which can give different answers each time. TreeSHAP gives exact, deterministic mathematical values based on game theory.</li>
-<li><strong>Q: Why do you calibrate probabilities?</strong><br />
-<em>Answer</em>: XGBoost outputs distorted raw scores on imbalanced data. Calibration maps these numbers so that a predicted 10% probability actually means heavy rain occurs 10% of the time in the real world.</li>
-<li><strong>Q: Why not use the standard 0.50 threshold?</strong><br />
-<em>Answer</em>: Heavy rainfall occurs on only 0.44% of days. At 0.50, the model would predict zero rain every day and miss every flood. Setting $\tau = 0.015$ catches 52.1% of floods.</li>
-<li><strong>Q: Why FastAPI instead of Django or Flask?</strong><br />
-<em>Answer</em>: FastAPI is asynchronous, supports Pydantic automatic data validation, and generates interactive OpenAPI documentation out of the box.</li>
-</ul>
-<hr />
-<h1 id="chapter-17-100-rapid-fire-viva-questions-1-line-answers">CHAPTER 17: 100+ RAPID-FIRE VIVA QUESTIONS &amp; 1-LINE ANSWERS</h1>
-<h3 id="general-project">General &amp; Project</h3>
-<ol>
-<li><strong>What is R.A.I.?</strong> -&gt; Rainfall Artificial Intelligence for SIH1521.</li>
-<li><strong>What is the goal?</strong> -&gt; Predict heavy rainfall 24h ahead and explain why using XAI.</li>
-<li><strong>What is the IMD heavy rain cutoff?</strong> -&gt; $\ge 64.5\text{ mm}$ in 24 hours.</li>
-<li><strong>Who are the 3 users?</strong> -&gt; Citizens, Disaster Officials (NDRF), and Farmers.</li>
-<li><strong>What are the 5 pillars?</strong> -&gt; Intelligence, Risk Map, Emergency, Relief, Farmer Hub.</li>
-</ol>
-<h3 id="machine-learning-data">Machine Learning &amp; Data</h3>
-<ol start="6">
-<li><strong>What model is used?</strong> -&gt; XGBoost with Isotonic / Platt probability calibration.</li>
-<li><strong>How many training samples?</strong> -&gt; 175,440 hourly records across 10 Indian climate zones.</li>
-<li><strong>How many features?</strong> -&gt; 14 core features in the production signature.</li>
-<li><strong>What is the ROC-AUC?</strong> -&gt; 0.9605 (Exceptional global discrimination).</li>
-<li><strong>What is the PR-AUC?</strong> -&gt; 0.1082 ($24.6\times$ lift over baseline).</li>
-<li><strong>What is the Brier score?</strong> -&gt; 0.0044 (Rated EXCELLENT calibration).</li>
-<li><strong>What is the operational threshold ($\tau$)?</strong> -&gt; $\tau = 0.0150$ (1.5% probability).</li>
-<li><strong>What is the recall at $\tau=0.015$?</strong> -&gt; 52.1% of heavy rainfall events caught.</li>
-<li><strong>How was data split?</strong> -&gt; Chronologically (Train: 2023-May 2024, Val: May-Sep 2024, Test: Sep-Dec 2024).</li>
-</ol>
-<h3 id="explainable-ai-xai">Explainable AI (XAI)</h3>
-<ol start="15">
-<li><strong>What XAI method is used?</strong> -&gt; TreeSHAP (SHapley Additive exPlanations).</li>
-<li><strong>What is the base value $\phi_0$?</strong> -&gt; $-4.85$ log-odds (average training baseline).</li>
-<li><strong>What does a positive SHAP value mean?</strong> -&gt; The feature increased heavy rain risk.</li>
-<li><strong>What does a negative SHAP value mean?</strong> -&gt; The feature reduced heavy rain risk.</li>
-</ol>
-<h3 id="backend-database-security">Backend, Database &amp; Security</h3>
-<ol start="19">
-<li><strong>What web framework is used?</strong> -&gt; Python FastAPI on port 8000.</li>
-<li><strong>What database is used?</strong> -&gt; Supabase Cloud PostgreSQL with 6 relational tables.</li>
-<li><strong>How is OTP sent?</strong> -&gt; Via Brevo Transactional Email REST API (Sender ID 1).</li>
-<li><strong>How are passwords stored?</strong> -&gt; Salted SHA-256 with server-side pepper.</li>
-<li><strong>What happens after 5 failed logins?</strong> -&gt; 15-minute account lockout (Brute-force defense).</li>
-<li><strong>How many automated tests passed?</strong> -&gt; 160 out of 160 tests (100% pass rate).</li>
-</ol>
+<p>Final Prediction = Base Average + Sum of all Feature Contributions<br />
+- <strong>Base Value (phi_0)</strong>: -4.85 log-odds (the average baseline probability across India).<br />
+- <strong>Positive Factors (phi_i &gt; 0)</strong>: Push risk higher (e.g. High Dew Point +0.41).<br />
+- <strong>Negative Factors (phi_i &lt; 0)</strong>: Push risk lower (e.g. High Barometric Pressure -0.28).</p>
 <hr />
 <h1 id="chapter-18-top-20-must-know-questions-for-the-presentation">CHAPTER 18: TOP 20 MUST-KNOW QUESTIONS FOR THE PRESENTATION</h1>
 <ol>
 <li><strong>What is your project problem statement?</strong><br />
 <em>Answer</em>: SIH1521 — Explainable AI for Heavy/High-Impact Rainfall Prediction.</li>
 <li><strong>What counts as heavy rainfall?</strong><br />
-<em>Answer</em>: $\ge 64.5\text{ mm/day}$ as defined by the India Meteorological Department (IMD).</li>
+<em>Answer</em>: &gt;= 64.5 mm/day as defined by the India Meteorological Department (IMD).</li>
 <li><strong>What algorithm powers the prediction?</strong><br />
 <em>Answer</em>: XGBoost Decision Trees with Platt/Isotonic Probability Calibration.</li>
-<li><strong>Why is your decision threshold 1.5% ($\tau = 0.015$)?</strong><br />
+<li><strong>Why is your decision threshold 1.5% (tau = 0.015)?</strong><br />
 <em>Answer</em>: Because heavy rain happens on only 0.44% of days; a 1.5% threshold catches 52.1% of floods while avoiding false alarm fatigue.</li>
 <li><strong>What is your model's ROC-AUC and PR-AUC?</strong><br />
-<em>Answer</em>: ROC-AUC is 0.9605; PR-AUC is 0.1082 ($24.6\times$ lift over baseline).</li>
+<em>Answer</em>: ROC-AUC is 0.9605; PR-AUC is 0.1082 (24.6x lift over baseline).</li>
 <li><strong>How does your Explainable AI work?</strong><br />
 <em>Answer</em>: TreeSHAP calculates exact additive feature attributions showing positive risk drivers and protective factors.</li>
 <li><strong>What are the 4 layers in the Telemetry Inspector?</strong><br />
-<em>Answer</em>: Observed Weather $\to$ Predicted Probability $\to$ TreeSHAP Explanations $\to$ Operational Warnings.</li>
+<em>Answer</em>: Observed Weather -&gt; Predicted Probability -&gt; TreeSHAP Explanations -&gt; Operational Warnings.</li>
 <li><strong>Where does your weather data come from?</strong><br />
-<em>Answer</em>: Open-Meteo High-Resolution NWP forecasts and NASA GPM IMERG 0.1° satellite grids.</li>
+<em>Answer</em>: Open-Meteo High-Resolution NWP forecasts and NASA GPM IMERG 0.1 deg satellite grids.</li>
 <li><strong>How did you prevent data leakage during training?</strong><br />
 <em>Answer</em>: Strict chronological train/validation/test splitting over 175,000 real hourly records.</li>
 <li><strong>What is the Brier score of your model?</strong><br />
