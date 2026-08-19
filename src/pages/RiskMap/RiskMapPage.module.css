@@ -187,13 +187,245 @@
   }
 }
 
+.mapViewerColumn {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rai-space-md);
+  width: 100%;
+}
+
 .mapViewerPane {
   width: 100%;
-  height: clamp(480px, 62vh, 660px);
+  height: clamp(440px, 56vh, 600px);
+  border-radius: var(--rai-radius-lg);
+  overflow: hidden;
 }
 
 .mapElement {
   height: 100%;
+}
+
+/* Map Legend & Interpretation Card */
+.mapLegendCard {
+  background: #ffffff;
+  border-radius: var(--rai-radius-lg);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  padding: 1rem 1.25rem;
+  box-shadow: 0 4px 16px -4px rgba(2, 132, 199, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  transition: var(--rai-transition-all);
+}
+
+.legendCardHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--rai-color-border-subtle);
+}
+
+@media (min-width: 768px) {
+  .legendCardHeader {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.legendHeaderLeft {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.legendIconWrap {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--rai-radius-md);
+  background-color: #f0f9ff;
+  border: 1px solid #bae6fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.legendTitle {
+  font-family: var(--rai-font-display);
+  font-size: 0.8125rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: var(--rai-color-text-primary);
+  margin: 0;
+}
+
+.legendSubtitle {
+  font-family: var(--rai-font-body);
+  font-size: 0.6875rem;
+  color: var(--rai-color-text-secondary);
+  margin: 2px 0 0;
+}
+
+.severityScaleBar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.severityScaleLabel {
+  font-family: var(--rai-font-mono);
+  font-size: 0.59375rem;
+  font-weight: 800;
+  color: var(--rai-color-text-tertiary);
+  letter-spacing: 0.04em;
+}
+
+.severityPillsGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.severityPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--rai-radius-full);
+  background-color: var(--rai-color-bg-surface-subtle);
+  border: 1px solid var(--rai-color-border-subtle);
+  font-family: var(--rai-font-mono);
+  font-size: 0.59375rem;
+  font-weight: 700;
+  color: var(--rai-color-text-secondary);
+}
+
+.dotLow {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #16a34a;
+  box-shadow: 0 0 6px rgba(22, 163, 74, 0.45);
+}
+
+.dotModerate {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #0284c7;
+  box-shadow: 0 0 6px rgba(2, 132, 199, 0.45);
+}
+
+.dotHigh {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #ea580c;
+  box-shadow: 0 0 6px rgba(234, 88, 12, 0.45);
+}
+
+.dotCritical {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #dc2626;
+  box-shadow: 0 0 6px rgba(220, 38, 38, 0.45);
+}
+
+.legendGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.65rem;
+}
+
+@media (min-width: 580px) {
+  .legendGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1100px) {
+  .legendGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.legendGridItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0.5rem 0.65rem;
+  border-radius: var(--rai-radius-md);
+  background-color: var(--rai-color-bg-surface-subtle);
+  border: 1px solid var(--rai-color-border-subtle);
+}
+
+.legendItemIconCircle {
+  width: 26px;
+  height: 26px;
+  border-radius: var(--rai-radius-sm);
+  background-color: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.legendItemText {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.legendItemTitle {
+  font-family: var(--rai-font-mono);
+  font-size: 0.625rem;
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+  letter-spacing: 0.03em;
+}
+
+.legendItemDesc {
+  font-family: var(--rai-font-body);
+  font-size: 0.65625rem;
+  color: var(--rai-color-text-secondary);
+  line-height: 1.35;
+  margin: 0;
+}
+
+.legendFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  padding-top: 0.65rem;
+  border-top: 1px dashed var(--rai-color-border-subtle);
+}
+
+.legendExplanation {
+  font-family: var(--rai-font-body);
+  font-size: 0.6875rem;
+  color: var(--rai-color-text-secondary);
+  line-height: 1.45;
+  margin: 0;
+}
+
+.legendMetadataRow {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  font-family: var(--rai-font-mono);
+  font-size: 0.59375rem;
+  color: var(--rai-color-text-tertiary);
+}
+
+.metaDot {
+  color: var(--rai-color-border-strong);
 }
 
 .sideTelemetryPane {

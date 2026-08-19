@@ -155,20 +155,131 @@ export const RiskMapPage: React.FC = () => {
 
         {/* Main Map + Weather / Risk Engine Telemetry Layout */}
         <div className={styles.mainContentGrid}>
-          {/* Left Column: Interactive Map with Clickable Cities & RainViewer Radar */}
-          <div className={styles.mapViewerPane}>
-            <InteractiveRiskMap
-              userLocation={userLocation}
-              activeLocation={activeLocation}
-              onSelectCity={(loc) => setActiveLocation(loc)}
-              radarEnabled={radarEnabled}
-              onToggleRadar={() => setRadarEnabled((prev) => !prev)}
-              cloudsEnabled={cloudsEnabled}
-              onToggleClouds={() => setCloudsEnabled((prev) => !prev)}
-              riskLayerEnabled={riskLayerEnabled}
-              onToggleRiskLayer={() => setRiskLayerEnabled((prev) => !prev)}
-              className={styles.mapElement}
-            />
+          {/* Left Column: Interactive Map with Clickable Cities & RainViewer Radar + Map Legend */}
+          <div className={styles.mapViewerColumn}>
+            <div className={styles.mapViewerPane}>
+              <InteractiveRiskMap
+                userLocation={userLocation}
+                activeLocation={activeLocation}
+                onSelectCity={(loc) => setActiveLocation(loc)}
+                radarEnabled={radarEnabled}
+                onToggleRadar={() => setRadarEnabled((prev) => !prev)}
+                cloudsEnabled={cloudsEnabled}
+                onToggleClouds={() => setCloudsEnabled((prev) => !prev)}
+                riskLayerEnabled={riskLayerEnabled}
+                onToggleRiskLayer={() => setRiskLayerEnabled((prev) => !prev)}
+                className={styles.mapElement}
+              />
+            </div>
+
+            {/* Polished Compact Map Legend & Interpretation Guide */}
+            <div className={styles.mapLegendCard}>
+              <div className={styles.legendCardHeader}>
+                <div className={styles.legendHeaderLeft}>
+                  <div className={styles.legendIconWrap}>
+                    <Info size={16} color="#0284c7" />
+                  </div>
+                  <div>
+                    <h3 className={styles.legendTitle}>HOW TO READ THE RISK MAP</h3>
+                    <p className={styles.legendSubtitle}>
+                      Live spatial weather observations, rainfall risk, and model signals for the selected location.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Subtle Severity Scale */}
+                <div className={styles.severityScaleBar}>
+                  <span className={styles.severityScaleLabel}>SEVERITY SCALE:</span>
+                  <div className={styles.severityPillsGroup}>
+                    <div className={styles.severityPill}>
+                      <span className={styles.dotLow} />
+                      <span>LOW</span>
+                    </div>
+                    <div className={styles.severityPill}>
+                      <span className={styles.dotModerate} />
+                      <span>MODERATE</span>
+                    </div>
+                    <div className={styles.severityPill}>
+                      <span className={styles.dotHigh} />
+                      <span>HIGH</span>
+                    </div>
+                    <div className={styles.severityPill}>
+                      <span className={styles.dotCritical} />
+                      <span>CRITICAL</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* 4-Item Visual Legend Grid */}
+              <div className={styles.legendGrid}>
+                <div className={styles.legendGridItem}>
+                  <div className={styles.legendItemIconCircle}>
+                    <Cloud size={15} color="#0284c7" />
+                  </div>
+                  <div className={styles.legendItemText}>
+                    <span className={styles.legendItemTitle}>WEATHER / OBSERVED</span>
+                    <p className={styles.legendItemDesc}>
+                      Current meteorological conditions from the live weather feed.
+                    </p>
+                  </div>
+                </div>
+
+                <div className={styles.legendGridItem}>
+                  <div className={styles.legendItemIconCircle}>
+                    <CloudRain size={15} color="#0891b2" />
+                  </div>
+                  <div className={styles.legendItemText}>
+                    <span className={styles.legendItemTitle}>RAIN / RADAR</span>
+                    <p className={styles.legendItemDesc}>
+                      Radar precipitation activity across the visible region.
+                    </p>
+                  </div>
+                </div>
+
+                <div className={styles.legendGridItem}>
+                  <div className={styles.legendItemIconCircle}>
+                    <ShieldAlert size={15} color="#d97706" />
+                  </div>
+                  <div className={styles.legendItemText}>
+                    <span className={styles.legendItemTitle}>RAINFALL RISK</span>
+                    <p className={styles.legendItemDesc}>
+                      Model-derived rainfall risk around monitored locations.
+                    </p>
+                  </div>
+                </div>
+
+                <div className={styles.legendGridItem}>
+                  <div className={styles.legendItemIconCircle}>
+                    <MapPin size={15} color="#16a34a" />
+                  </div>
+                  <div className={styles.legendItemText}>
+                    <span className={styles.legendItemTitle}>SELECTED LOCATION</span>
+                    <p className={styles.legendItemDesc}>
+                      Your active location used for local telemetry and prediction.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Scientific Explanation & Subtle Metadata Row */}
+              <div className={styles.legendFooter}>
+                <p className={styles.legendExplanation}>
+                  Risk is derived from the calibrated rainfall prediction for each monitored location. TreeSHAP highlights the weather features that are pushing the model risk higher or lower.
+                </p>
+                <div className={styles.legendMetadataRow}>
+                  <span>Observed weather</span>
+                  <span className={styles.metaDot}>•</span>
+                  <span>Radar</span>
+                  <span className={styles.metaDot}>•</span>
+                  <span>Cloud cover</span>
+                  <span className={styles.metaDot}>•</span>
+                  <span>Rainfall risk</span>
+                  <span className={styles.metaDot}>•</span>
+                  <span>TreeSHAP explanation</span>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Right Column: Real Weather Context & Explainable AI Prediction Panel */}
