@@ -5,6 +5,7 @@ import { Card } from '../../../components/ui/Card';
 import { Badge } from '../../../components/ui/Badge';
 import { FarmerModuleHeader } from '../components/FarmerModuleHeader';
 import { useFarmerContext } from '../../../context/FarmerContext';
+import { FarmerOnboardingPage } from '../onboarding/FarmerOnboardingPage';
 import styles from './CropStagePage.module.css';
 
 interface StageDefinition {
@@ -84,7 +85,11 @@ const STAGES: readonly StageDefinition[] = [
 ];
 
 export const CropStagePage: React.FC = () => {
-  const { activeCrop, updateCropStage, crops, setActiveCropId } = useFarmerContext();
+  const { activeCrop, updateCropStage, crops, setActiveCropId, isProfileComplete } = useFarmerContext();
+
+  if (!isProfileComplete) {
+    return <FarmerOnboardingPage />;
+  }
 
   const currentStageIndex = STAGES.findIndex(
     (s) => s.name.toLowerCase().includes(activeCrop.currentStage.toLowerCase())

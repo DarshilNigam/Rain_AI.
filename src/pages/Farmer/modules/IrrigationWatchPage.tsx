@@ -6,11 +6,16 @@ import { Badge } from '../../../components/ui/Badge';
 import { FarmerModuleHeader } from '../components/FarmerModuleHeader';
 import { useFarmerContext } from '../../../context/FarmerContext';
 import { useWeatherData } from '../../../hooks/useWeatherData';
+import { FarmerOnboardingPage } from '../onboarding/FarmerOnboardingPage';
 import styles from './IrrigationWatchPage.module.css';
 
 export const IrrigationWatchPage: React.FC = () => {
-  const { farmProfile, farmerLocation, farmLocationAsUserLocation, activeCrop, fields } = useFarmerContext();
+  const { farmProfile, farmerLocation, farmLocationAsUserLocation, activeCrop, fields, isProfileComplete } = useFarmerContext();
   const { weatherData } = useWeatherData(farmLocationAsUserLocation);
+
+  if (!isProfileComplete) {
+    return <FarmerOnboardingPage />;
+  }
 
   const next24h = weatherData?.hourly.slice(0, 24) || [];
   const rain24hSum = next24h.reduce((sum, h) => sum + (h.precipitation || 0), 0);

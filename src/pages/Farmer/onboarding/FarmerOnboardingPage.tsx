@@ -28,18 +28,24 @@ export const FarmerOnboardingPage: React.FC = () => {
   const { completeOnboarding } = useFarmerContext();
 
   // Step 1: Profile & Farm Identity
-  const [farmerName, setFarmerName] = useState(user?.fullName || 'Darshil Farmer');
-  const [farmName, setFarmName] = useState('Lakhimpur Green Acres');
-  const [totalAreaAcres, setTotalAreaAcres] = useState<number>(12.5);
+  const [farmerName, setFarmerName] = useState(user?.fullName || '');
+  const [farmName, setFarmName] = useState(
+    user?.villageArea
+      ? `${user.villageArea} Farm`
+      : user?.fullName
+      ? `${user.fullName}'s Farm Parcel`
+      : ''
+  );
+  const [totalAreaAcres, setTotalAreaAcres] = useState<number>(5.0);
   const [soilType, setSoilType] = useState('Clayey / Black Cotton');
 
   // Step 2: Location
   const [locationMode, setLocationMode] = useState<'current' | 'manual'>('manual');
-  const [village, setVillage] = useState('Mitauli Agri Block');
-  const [district, setDistrict] = useState('Lakhimpur Kheri');
-  const [state, setState] = useState('Uttar Pradesh');
-  const [customLat, setCustomLat] = useState<number | undefined>(27.9468);
-  const [customLng, setCustomLng] = useState<number | undefined>(80.7788);
+  const [village, setVillage] = useState(user?.villageArea || '');
+  const [district, setDistrict] = useState(user?.district || '');
+  const [state, setState] = useState('Gujarat');
+  const [customLat, setCustomLat] = useState<number | undefined>(user?.farmLocation?.lat);
+  const [customLng, setCustomLng] = useState<number | undefined>(user?.farmLocation?.lng);
   const [geoStatusMsg, setGeoStatusMsg] = useState<string | null>(null);
   const [isLocating, setIsLocating] = useState<boolean>(false);
 

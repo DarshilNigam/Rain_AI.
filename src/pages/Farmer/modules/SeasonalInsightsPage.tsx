@@ -5,10 +5,15 @@ import { Card } from '../../../components/ui/Card';
 import { Badge } from '../../../components/ui/Badge';
 import { FarmerModuleHeader } from '../components/FarmerModuleHeader';
 import { useFarmerContext } from '../../../context/FarmerContext';
+import { FarmerOnboardingPage } from '../onboarding/FarmerOnboardingPage';
 import styles from './SeasonalInsightsPage.module.css';
 
 export const SeasonalInsightsPage: React.FC = () => {
-  const { farmerLocation, activeCrop } = useFarmerContext();
+  const { farmerLocation, activeCrop, isProfileComplete } = useFarmerContext();
+
+  if (!isProfileComplete) {
+    return <FarmerOnboardingPage />;
+  }
 
   return (
     <div className={styles.pageRoot}>

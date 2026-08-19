@@ -5,10 +5,15 @@ import { Card } from '../../../components/ui/Card';
 import { Badge } from '../../../components/ui/Badge';
 import { FarmerModuleHeader } from '../components/FarmerModuleHeader';
 import { useFarmerContext } from '../../../context/FarmerContext';
+import { FarmerOnboardingPage } from '../onboarding/FarmerOnboardingPage';
 import styles from './MyCropsPage.module.css';
 
 export const MyCropsPage: React.FC = () => {
-  const { crops, activeCropId, setActiveCropId, addCrop, fields } = useFarmerContext();
+  const { crops, activeCropId, setActiveCropId, addCrop, fields, isProfileComplete } = useFarmerContext();
+
+  if (!isProfileComplete) {
+    return <FarmerOnboardingPage />;
+  }
   const [isAddModalOpen, setIsAddModalOpen] = useState<boolean>(false);
   const [newCropName, setNewCropName] = useState('');
   const [newCropVariety, setNewCropVariety] = useState('');

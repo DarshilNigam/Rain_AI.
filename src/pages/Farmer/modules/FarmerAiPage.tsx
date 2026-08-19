@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Sparkles, Send, Bot, User, Wheat, MapPin, Droplets, Info } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import { Sparkles, Send, Bot, User, Wheat, MapPin, Droplets, Info, Settings } from 'lucide-react';
 import { Container } from '../../../components/ui/Container';
 import { Card } from '../../../components/ui/Card';
 import { FarmerModuleHeader } from '../components/FarmerModuleHeader';
@@ -7,6 +8,7 @@ import { useFarmerContext } from '../../../context/FarmerContext';
 import { useWeatherData } from '../../../hooks/useWeatherData';
 import { useI18n } from '../../../i18n';
 import { farmerAiService } from '../../../services/farmerAi.service';
+import { FarmerOnboardingPage } from '../onboarding/FarmerOnboardingPage';
 import styles from './FarmerAiPage.module.css';
 
 interface ChatMsg {
@@ -17,25 +19,52 @@ interface ChatMsg {
 }
 
 export const FarmerAiPage: React.FC = () => {
-  const { farmProfile, farmerLocation, farmLocationAsUserLocation, activeCrop } = useFarmerContext();
+  const navigate = useNavigate();
+  const { farmProfile, farmerLocation, farmLocationAsUserLocation, activeCrop, isProfileComplete } = useFarmerContext();
   const { weatherData } = useWeatherData(farmLocationAsUserLocation);
   const { language } = useI18n();
+
+  // If farmer profile or location is unassigned for current user, show onboarding form immediately
+  if (!isProfileComplete) {
+    return <FarmerOnboardingPage />;
+  }
 
   const curr = weatherData?.current;
   const next24h = weatherData?.hourly.slice(0, 24) || [];
   const rain24hSum = next24h.reduce((sum, h) => sum + (h.precipitation || 0), 0);
-  const maxProb24h = next24h.reduce((max, h) => Math.max(max, h.precipitationProbability || 0), 0);
 
-  const initialMsg: ChatMsg = {
-    id: 'msg-init',
-    role: 'assistant',
-    content: language === 'hi'
-      ? `नमस्ते ${farmProfile.farmerName}! मैं R.A.I. किसान AI सहायक हूँ। मैं आपके खेत (${farmerLocation.village}, ${farmerLocation.district}), आपकी फसल **${activeCrop.name}** (${activeCrop.currentStage} अवस्था) और लाइव मौसम डेटा से जुड़ा हूँ।\n\nवर्तमान में ${farmerLocation.district} में तापमान **${curr ? curr.temperature.toFixed(1) : '31'}°C**, बारिश **${curr ? curr.precipitation : 0} मिमी**, और 24 घंटे में अनुमानित बारिश **${rain24hSum.toFixed(1)} मिमी** (${maxProb24h}% संभावना) है। आज आप अपनी खेती के लिए क्या मार्गदर्शन चाहते हैं?`
-      : `Namaste ${farmProfile.farmerName}! I am R.A.I. Farmer AI. I am synchronized with your farm in ${farmerLocation.village}, ${farmerLocation.district} (${farmerLocation.latitude.toFixed(2)}°N, ${farmerLocation.longitude.toFixed(2)}°E), your active crop **${activeCrop.name}** at the **${activeCrop.currentStage}** stage, and live Open-Meteo observations.\n\nCurrently in ${farmerLocation.district}, temperature is **${curr ? curr.temperature.toFixed(1) : '31'}°C**, rainfall is **${curr ? curr.precipitation : 0} mm**, and 24h expected accumulation is **${rain24hSum.toFixed(1)} mm** (${maxProb24h}% peak probability). How can I assist your field operations today?`,
-    timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+  const buildInitialGreeting = (loc: typeof farmerLocation, crop: typeof activeCrop, profile: typeof farmProfile, weather: typeof weatherData): string => {
+    const c = weather?.current;
+    const n24 = weather?.hourly.slice(0, 24) || [];
+    const r24 = n24.reduce((sum, h) => sum + (h.precipitation || 0), 0);
+    const p24 = n24.reduce((max, h) => Math.max(max, h.precipitationProbability || 0), 0);
+
+    return language === 'hi'
+      ? `नमस्ते ${profile.farmerName}! मैं R.A.I. किसान AI सहायक हूँ। मैं आपके खेत (${loc.village}, ${loc.district}), आपकी फसल **${crop.name}** (${crop.currentStage} अवस्था) और लाइव मौसम डेटा से जुड़ा हूँ।\n\nवर्तमान में ${loc.district} में तापमान **${c ? c.temperature.toFixed(1) : '31'}°C**, बारिश **${c ? c.precipitation : 0} मिमी**, और 24 घंटे में अनुमानित बारिश **${r24.toFixed(1)} मिमी** (${p24}% संभावना) है। आज आप अपनी खेती के लिए क्या मार्गदर्शन चाहते हैं?`
+      : `Namaste ${profile.farmerName}! I am R.A.I. Farmer AI. I am synchronized with your farm in ${loc.village}, ${loc.district} (${loc.latitude.toFixed(2)}°N, ${loc.longitude.toFixed(2)}°E), your active crop **${crop.name}** at the **${crop.currentStage}** stage, and live Open-Meteo observations.\n\nCurrently in ${loc.district}, temperature is **${c ? c.temperature.toFixed(1) : '31'}°C**, rainfall is **${c ? c.precipitation : 0} mm**, and 24h expected accumulation is **${r24.toFixed(1)} mm** (${p24}% peak probability). How can I assist your field operations today?`;
   };
 
-  const [messages, setMessages] = useState<readonly ChatMsg[]>([initialMsg]);
+  const [messages, setMessages] = useState<readonly ChatMsg[]>(() => [
+    {
+      id: 'msg-init',
+      role: 'assistant',
+      content: buildInitialGreeting(farmerLocation, activeCrop, farmProfile, weatherData),
+      timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+    },
+  ]);
+
+  // Reactive Chat Memory: whenever farm location updates in the active session, reset/update the conversation context
+  useEffect(() => {
+    const updatedGreeting: ChatMsg = {
+      id: `msg-loc-sync-${Date.now()}`,
+      role: 'assistant',
+      content: language === 'hi'
+        ? `📍 **खेत स्थान अद्यतन:** मैं अब इस बातचीत के लिए आपके खेत स्थान **${farmerLocation.village}, ${farmerLocation.district}** (${farmerLocation.latitude.toFixed(2)}°N, ${farmerLocation.longitude.toFixed(2)}°E) का उपयोग कर रहा हूँ। लाइव मौसम टेलीमेट्री को नए निर्देशांकों के साथ ताज़ा कर दिया गया है।`
+        : `📍 **Farm Location Synchronized:** I'm now using your farm location: **${farmerLocation.village}, ${farmerLocation.district}** (${farmerLocation.latitude.toFixed(2)}°N, ${farmerLocation.longitude.toFixed(2)}°E) for this conversation.\n\nLive observations and forecasts have been updated for ${farmerLocation.district}. How can I assist your field operations?`,
+      timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+    };
+    setMessages([updatedGreeting]);
+  }, [farmerLocation.village, farmerLocation.district, farmerLocation.latitude, farmerLocation.longitude, language]);
   const [inputText, setInputText] = useState<string>('');
   const [isTyping, setIsTyping] = useState<boolean>(false);
   const messagesThreadRef = useRef<HTMLDivElement>(null);
@@ -128,6 +157,16 @@ export const FarmerAiPage: React.FC = () => {
             <Droplets size={13} color="#0284c7" />
             <span>Live Rain: <strong>{curr ? curr.precipitation : 0} mm</strong> (24h sum: {rain24hSum.toFixed(1)} mm)</span>
           </div>
+
+          <button
+            type="button"
+            className={styles.updateLocationBtn}
+            onClick={() => navigate('/farmer/profile/edit')}
+            title="Update Farm Location"
+          >
+            <Settings size={11} />
+            <span>{language === 'hi' ? 'खेत का स्थान बदलें' : 'Update Farm Location'}</span>
+          </button>
         </div>
 
         {/* Chat Conversation Card */}

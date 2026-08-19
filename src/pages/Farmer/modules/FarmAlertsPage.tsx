@@ -6,6 +6,7 @@ import { Badge } from '../../../components/ui/Badge';
 import { FarmerModuleHeader } from '../components/FarmerModuleHeader';
 import { useFarmerContext } from '../../../context/FarmerContext';
 import { useWeatherData } from '../../../hooks/useWeatherData';
+import { FarmerOnboardingPage } from '../onboarding/FarmerOnboardingPage';
 import styles from './FarmAlertsPage.module.css';
 
 interface FarmAlertItem {
@@ -20,8 +21,12 @@ interface FarmAlertItem {
 }
 
 export const FarmAlertsPage: React.FC = () => {
-  const { farmProfile, farmerLocation, farmLocationAsUserLocation, activeCrop } = useFarmerContext();
+  const { farmProfile, farmerLocation, farmLocationAsUserLocation, activeCrop, isProfileComplete } = useFarmerContext();
   const { weatherData } = useWeatherData(farmLocationAsUserLocation);
+
+  if (!isProfileComplete) {
+    return <FarmerOnboardingPage />;
+  }
 
   const curr = weatherData?.current;
   const next24h = weatherData?.hourly.slice(0, 24) || [];

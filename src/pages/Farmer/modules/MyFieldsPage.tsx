@@ -5,11 +5,16 @@ import { Card } from '../../../components/ui/Card';
 import { Badge } from '../../../components/ui/Badge';
 import { FarmerModuleHeader } from '../components/FarmerModuleHeader';
 import { useFarmerContext } from '../../../context/FarmerContext';
+import { FarmerOnboardingPage } from '../onboarding/FarmerOnboardingPage';
 import { FarmField } from '../../../types/farmer';
 import styles from './MyFieldsPage.module.css';
 
 export const MyFieldsPage: React.FC = () => {
-  const { fields, addField, crops } = useFarmerContext();
+  const { fields, addField, crops, isProfileComplete } = useFarmerContext();
+
+  if (!isProfileComplete) {
+    return <FarmerOnboardingPage />;
+  }
   const [isAddModalOpen, setIsAddModalOpen] = useState<boolean>(false);
   const [editingField, setEditingField] = useState<FarmField | null>(null);
 

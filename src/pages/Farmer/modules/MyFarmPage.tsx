@@ -6,11 +6,16 @@ import { Card } from '../../../components/ui/Card';
 import { Badge } from '../../../components/ui/Badge';
 import { FarmerModuleHeader } from '../components/FarmerModuleHeader';
 import { useFarmerContext } from '../../../context/FarmerContext';
+import { FarmerOnboardingPage } from '../onboarding/FarmerOnboardingPage';
 import styles from './MyFarmPage.module.css';
 
 export const MyFarmPage: React.FC = () => {
   const navigate = useNavigate();
-  const { farmProfile, farmerLocation } = useFarmerContext();
+  const { farmProfile, farmerLocation, isProfileComplete } = useFarmerContext();
+
+  if (!isProfileComplete) {
+    return <FarmerOnboardingPage />;
+  }
 
   return (
     <div className={styles.pageRoot}>

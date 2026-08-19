@@ -6,15 +6,20 @@ import { Badge } from '../../../components/ui/Badge';
 import { FarmerModuleHeader } from '../components/FarmerModuleHeader';
 import { useFarmerContext } from '../../../context/FarmerContext';
 import { useWeatherData } from '../../../hooks/useWeatherData';
+import { FarmerOnboardingPage } from '../onboarding/FarmerOnboardingPage';
 import styles from './FarmHistoryPage.module.css';
 
 type HistoryRange = '7d' | '30d' | 'season';
 
 export const FarmHistoryPage: React.FC = () => {
-  const { farmProfile, farmerLocation, farmLocationAsUserLocation } = useFarmerContext();
+  const { farmProfile, farmerLocation, farmLocationAsUserLocation, isProfileComplete } = useFarmerContext();
   const [range, setRange] = useState<HistoryRange>('7d');
 
   const { weatherData } = useWeatherData(farmLocationAsUserLocation);
+
+  if (!isProfileComplete) {
+    return <FarmerOnboardingPage />;
+  }
   const daily = weatherData?.daily || [];
 
   // Generate real daily observation logs

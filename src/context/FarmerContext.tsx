@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect, ReactNode, useMemo } from 'react';
+import React, { createContext, useContext, useState, useEffect, ReactNode, useMemo, useCallback } from 'react';
 import { FarmProfile, FarmCrop, FarmField, FarmerLocation } from '../types/farmer';
 import { UserLocation } from '../types/location';
 import { createFarmerLocation } from '../utils/farmerLocation';
@@ -32,25 +32,37 @@ export interface FarmerContextType {
   readonly updateCropStage: (cropId: string, stage: string) => void;
   readonly addField: (newField: Omit<FarmField, 'id'>) => void;
   readonly resetToDefaultOnboarding: () => void;
+  readonly clearFarmerSession: () => void;
 }
 
-const STORAGE_KEYS = {
-  PROFILE: 'rai_farmer_profile_v1',
-  CROPS: 'rai_farmer_crops_v1',
-  FIELDS: 'rai_farmer_fields_v1',
-  ACTIVE_CROP: 'rai_farmer_active_crop_v1',
+// User-scoped storage key generator
+const getScopedKey = (userId: string | undefined, suffix: string): string => {
+  const safeId = userId && userId.trim() ? userId.trim().replace(/[^a-zA-Z0-9_-]/g, '_') : 'unauthenticated';
+  return `rai_farmer_v2_${safeId}_${suffix}`;
 };
 
-const DEFAULT_FARM_LOCATION: FarmerLocation = {
-  city: 'Lakhimpur',
-  village: 'Mitauli Agri Block',
-  district: 'Lakhimpur Kheri',
-  state: 'Uttar Pradesh',
+// Purge any legacy unscoped storage keys that could leak across accounts
+const purgeLegacyGlobalStorage = (): void => {
+  try {
+    localStorage.removeItem('rai_farmer_profile_v1');
+    localStorage.removeItem('rai_farmer_crops_v1');
+    localStorage.removeItem('rai_farmer_fields_v1');
+    localStorage.removeItem('rai_farmer_active_crop_v1');
+  } catch {
+    // Ignore storage errors
+  }
+};
+
+export const EMPTY_FARM_LOCATION: FarmerLocation = {
+  city: '',
+  village: '',
+  district: '',
+  state: '',
   country: 'India',
-  latitude: 27.9468,
-  longitude: 80.7788,
-  formattedAddress: 'Mitauli Agri Block, Lakhimpur Kheri, Uttar Pradesh',
-  source: 'SAVED',
+  latitude: 20.5937,
+  longitude: 78.9629,
+  formattedAddress: '',
+  source: 'MANUAL',
 };
 
 const DEFAULT_CROPS: readonly FarmCrop[] = [
@@ -101,126 +113,208 @@ const DEFAULT_FIELDS: readonly FarmField[] = [
   },
 ];
 
+interface ScopedFarmerState {
+  readonly profile: FarmProfile | null;
+  readonly crops: readonly FarmCrop[];
+  readonly fields: readonly FarmField[];
+  readonly activeCropId: string;
+  readonly isComplete: boolean;
+}
+
 const FarmerContext = createContext<FarmerContextType | undefined>(undefined);
 
 export const FarmerProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const { user } = useAuth();
+  const currentUserId = user?.id;
+
+  // Cleanup legacy global storage on mount to guarantee data isolation
+  useEffect(() => {
+    purgeLegacyGlobalStorage();
+  }, []);
+
   const [isLocationUpdating, setIsLocationUpdating] = useState<boolean>(false);
 
-  // Initialize Farm Profile from localStorage or auth
-  const [farmProfile, setFarmProfile] = useState<FarmProfile>(() => {
-    const saved = localStorage.getItem(STORAGE_KEYS.PROFILE);
-    if (saved) {
-      try {
-        return JSON.parse(saved);
-      } catch (e) {
-        console.warn('Failed to parse saved farmer profile', e);
-      }
+  // Pure function to load farmer state strictly scoped to the active user's ID
+  const loadScopedData = useCallback((uid: string | undefined): ScopedFarmerState => {
+    if (!uid) {
+      return {
+        profile: null,
+        crops: DEFAULT_CROPS,
+        fields: DEFAULT_FIELDS,
+        activeCropId: 'crop-1',
+        isComplete: false,
+      };
     }
 
+    try {
+      const profileKey = getScopedKey(uid, 'profile');
+      const cropsKey = getScopedKey(uid, 'crops');
+      const fieldsKey = getScopedKey(uid, 'fields');
+      const activeCropKey = getScopedKey(uid, 'active_crop');
+
+      const savedProfileStr = localStorage.getItem(profileKey);
+      let parsedProfile: FarmProfile | null = null;
+      if (savedProfileStr) {
+        try {
+          const parsed = JSON.parse(savedProfileStr);
+          // Verify that this profile has legitimate non-empty location fields
+          if (parsed && parsed.location && parsed.location.village && parsed.location.district) {
+            parsedProfile = parsed;
+          }
+        } catch {
+          console.warn('Failed to parse scoped farmer profile');
+        }
+      }
+
+      // If user registered with explicit farmer details, use them as pristine initial state
+      if (!parsedProfile && user && user.role === 'farmer' && user.villageArea && user.district) {
+        const regLoc = createFarmerLocation(
+          user.villageArea,
+          user.district,
+          'Gujarat',
+          'SAVED',
+          user.farmLocation?.lat,
+          user.farmLocation?.lng
+        );
+        parsedProfile = {
+          name: `${user.villageArea} Farm Parcel`,
+          farmerName: user.fullName || 'Farmer',
+          email: user.email,
+          location: regLoc,
+          totalAreaAcres: 5.0,
+          soilType: 'Clayey / Black Cotton',
+          isProfileComplete: true,
+        };
+        // Persist to user-scoped storage
+        localStorage.setItem(profileKey, JSON.stringify(parsedProfile));
+      }
+
+      const savedCropsStr = localStorage.getItem(cropsKey);
+      const parsedCrops: readonly FarmCrop[] = savedCropsStr ? JSON.parse(savedCropsStr) : DEFAULT_CROPS;
+
+      const savedFieldsStr = localStorage.getItem(fieldsKey);
+      const parsedFields: readonly FarmField[] = savedFieldsStr ? JSON.parse(savedFieldsStr) : DEFAULT_FIELDS;
+
+      const savedActiveCropId = localStorage.getItem(activeCropKey) || parsedCrops[0]?.id || 'crop-1';
+
+      return {
+        profile: parsedProfile,
+        crops: parsedCrops,
+        fields: parsedFields,
+        activeCropId: savedActiveCropId,
+        isComplete: Boolean(parsedProfile && parsedProfile.isProfileComplete),
+      };
+    } catch (err) {
+      console.warn('Failed to load user-scoped farmer profile', err);
+      return {
+        profile: null,
+        crops: DEFAULT_CROPS,
+        fields: DEFAULT_FIELDS,
+        activeCropId: 'crop-1',
+        isComplete: false,
+      };
+    }
+  }, [user]);
+
+  // Scoped state holder
+  const [scopedState, setScopedState] = useState<ScopedFarmerState>(() => loadScopedData(currentUserId));
+
+  // Critical reactivity: whenever user logs in, logs out, or switches accounts, re-scope immediately
+  useEffect(() => {
+    setScopedState(loadScopedData(currentUserId));
+  }, [currentUserId, loadScopedData]);
+
+  // Fallback pristine profile when no valid profile has been established for current user
+  const fallbackEmptyProfile: FarmProfile = useMemo(() => {
     const defaultLoc = user?.villageArea && user?.district
       ? createFarmerLocation(user.villageArea, user.district, 'Gujarat', 'SAVED', user.farmLocation?.lat, user.farmLocation?.lng)
-      : DEFAULT_FARM_LOCATION;
+      : EMPTY_FARM_LOCATION;
 
     return {
-      name: `${defaultLoc.village} Farm Parcel`,
-      farmerName: user?.fullName || 'Darshil Farmer',
+      name: user?.fullName ? `${user.fullName}'s Farm` : 'Unassigned Farm Parcel',
+      farmerName: user?.fullName || 'Farmer',
       email: user?.email,
       location: defaultLoc,
-      totalAreaAcres: 10.5,
+      totalAreaAcres: 0,
       soilType: 'Clayey / Black Cotton',
-      isProfileComplete: Boolean(saved), // Only true if explicitly saved
+      isProfileComplete: false,
     };
-  });
+  }, [user]);
 
-  // Initialize Crops
-  const [crops, setCrops] = useState<readonly FarmCrop[]>(() => {
-    const saved = localStorage.getItem(STORAGE_KEYS.CROPS);
-    if (saved) {
-      try {
-        return JSON.parse(saved);
-      } catch (e) {
-        console.warn('Failed to parse saved farmer crops', e);
-      }
-    }
-    return DEFAULT_CROPS;
-  });
+  const farmProfile: FarmProfile = scopedState.profile || fallbackEmptyProfile;
+  const farmerLocation: FarmerLocation = farmProfile.location;
+  const isProfileComplete: boolean = scopedState.isComplete && Boolean(farmerLocation.village && farmerLocation.district);
 
-  // Initialize Fields
-  const [fields, setFields] = useState<readonly FarmField[]>(() => {
-    const saved = localStorage.getItem(STORAGE_KEYS.FIELDS);
-    if (saved) {
-      try {
-        return JSON.parse(saved);
-      } catch (e) {
-        console.warn('Failed to parse saved farmer fields', e);
-      }
-    }
-    return DEFAULT_FIELDS;
-  });
-
-  // Active Crop ID
-  const [activeCropId, setActiveCropIdState] = useState<string>(() => {
-    return localStorage.getItem(STORAGE_KEYS.ACTIVE_CROP) || crops[0]?.id || 'crop-1';
-  });
-
-  // Sync to localStorage
-  useEffect(() => {
-    if (farmProfile.isProfileComplete) {
-      localStorage.setItem(STORAGE_KEYS.PROFILE, JSON.stringify(farmProfile));
-    }
-  }, [farmProfile]);
-
-  useEffect(() => {
-    localStorage.setItem(STORAGE_KEYS.CROPS, JSON.stringify(crops));
-  }, [crops]);
-
-  useEffect(() => {
-    localStorage.setItem(STORAGE_KEYS.FIELDS, JSON.stringify(fields));
-  }, [fields]);
-
-  const setActiveCropId = (id: string) => {
-    setActiveCropIdState(id);
-    localStorage.setItem(STORAGE_KEYS.ACTIVE_CROP, id);
-  };
+  const crops: readonly FarmCrop[] = scopedState.crops;
+  const fields: readonly FarmField[] = scopedState.fields;
+  const activeCropId: string = scopedState.activeCropId;
 
   const activeCrop = crops.find((c) => c.id === activeCropId) || crops[0] || DEFAULT_CROPS[0]!;
-
-  const farmerLocation = farmProfile.location;
 
   // Adapt FarmerLocation directly into UserLocation for useWeatherData hook
   const farmLocationAsUserLocation: UserLocation = useMemo(() => {
     return {
-      city: farmerLocation.city,
-      region: farmerLocation.state,
+      city: farmerLocation.city || farmerLocation.village || farmerLocation.district || 'Farm Site',
+      region: farmerLocation.state || 'Region',
       country: farmerLocation.country || 'India',
       lat: farmerLocation.latitude,
       lng: farmerLocation.longitude,
-      formattedAddress: farmerLocation.formattedAddress,
+      formattedAddress: farmerLocation.formattedAddress || `${farmerLocation.village}, ${farmerLocation.district}`,
     };
   }, [farmerLocation]);
 
-  const updateFarmProfile = (updates: Partial<FarmProfile>) => {
-    setFarmProfile((prev) => {
-      const updated = { ...prev, ...updates };
-      return updated;
-    });
-  };
+  const setActiveCropId = useCallback((id: string) => {
+    setScopedState((prev) => ({ ...prev, activeCropId: id }));
+    if (currentUserId) {
+      localStorage.setItem(getScopedKey(currentUserId, 'active_crop'), id);
+    }
+  }, [currentUserId]);
 
-  const updateFarmLocation = (newLocation: FarmerLocation) => {
+  const updateFarmProfile = useCallback((updates: Partial<FarmProfile>) => {
+    setScopedState((prev) => {
+      const base = prev.profile || fallbackEmptyProfile;
+      const updated: FarmProfile = {
+        ...base,
+        ...updates,
+        isProfileComplete: true,
+      };
+      if (currentUserId) {
+        localStorage.setItem(getScopedKey(currentUserId, 'profile'), JSON.stringify(updated));
+      }
+      return {
+        ...prev,
+        profile: updated,
+        isComplete: true,
+      };
+    });
+  }, [currentUserId, fallbackEmptyProfile]);
+
+  const updateFarmLocation = useCallback((newLocation: FarmerLocation) => {
     setIsLocationUpdating(true);
-    setFarmProfile((prev) => ({
-      ...prev,
-      location: newLocation,
-      name: prev.name.includes('Farm') ? prev.name : `${newLocation.village} Farm Parcel`,
-    }));
+    setScopedState((prev) => {
+      const base = prev.profile || fallbackEmptyProfile;
+      const updated: FarmProfile = {
+        ...base,
+        location: newLocation,
+        name: base.name && !base.name.includes('Unassigned') ? base.name : `${newLocation.village} Farm Parcel`,
+        isProfileComplete: true,
+      };
+      if (currentUserId) {
+        localStorage.setItem(getScopedKey(currentUserId, 'profile'), JSON.stringify(updated));
+      }
+      return {
+        ...prev,
+        profile: updated,
+        isComplete: true,
+      };
+    });
 
     setTimeout(() => {
       setIsLocationUpdating(false);
     }, 400);
-  };
+  }, [currentUserId, fallbackEmptyProfile]);
 
-  const completeOnboarding = (
+  const completeOnboarding = useCallback((
     profileData: {
       name: string;
       farmerName: string;
@@ -245,51 +339,109 @@ export const FarmerProvider: React.FC<{ children: ReactNode }> = ({ children }) 
 
     const newProfile: FarmProfile = {
       name: profileData.name || `${profileData.location.village} Farm Parcel`,
-      farmerName: profileData.farmerName || user?.fullName || 'Darshil Farmer',
+      farmerName: profileData.farmerName || user?.fullName || 'Farmer',
       email: user?.email,
       location: profileData.location,
-      totalAreaAcres: profileData.totalAreaAcres || 10.0,
+      totalAreaAcres: profileData.totalAreaAcres || 5.0,
       soilType: profileData.soilType || 'Clayey / Black Cotton',
       isProfileComplete: true,
     };
 
-    setFields(formattedFields.length > 0 ? formattedFields : DEFAULT_FIELDS);
-    setCrops(formattedCrops.length > 0 ? formattedCrops : DEFAULT_CROPS);
-    setActiveCropId(formattedCrops[0]?.id || 'crop-1');
-    setFarmProfile(newProfile);
+    const finalFields = formattedFields.length > 0 ? formattedFields : DEFAULT_FIELDS;
+    const finalCrops = formattedCrops.length > 0 ? formattedCrops : DEFAULT_CROPS;
+    const finalActiveCropId = finalCrops[0]?.id || 'crop-1';
 
-    localStorage.setItem(STORAGE_KEYS.PROFILE, JSON.stringify(newProfile));
-    localStorage.setItem(STORAGE_KEYS.CROPS, JSON.stringify(formattedCrops.length > 0 ? formattedCrops : DEFAULT_CROPS));
-    localStorage.setItem(STORAGE_KEYS.FIELDS, JSON.stringify(formattedFields.length > 0 ? formattedFields : DEFAULT_FIELDS));
-  };
+    setScopedState({
+      profile: newProfile,
+      crops: finalCrops,
+      fields: finalFields,
+      activeCropId: finalActiveCropId,
+      isComplete: true,
+    });
 
-  const addCrop = (newCrop: Omit<FarmCrop, 'id'>) => {
+    if (currentUserId) {
+      localStorage.setItem(getScopedKey(currentUserId, 'profile'), JSON.stringify(newProfile));
+      localStorage.setItem(getScopedKey(currentUserId, 'crops'), JSON.stringify(finalCrops));
+      localStorage.setItem(getScopedKey(currentUserId, 'fields'), JSON.stringify(finalFields));
+      localStorage.setItem(getScopedKey(currentUserId, 'active_crop'), finalActiveCropId);
+    }
+  }, [currentUserId, user]);
+
+  const addCrop = useCallback((newCrop: Omit<FarmCrop, 'id'>) => {
     const crop: FarmCrop = {
       ...newCrop,
       id: `crop-${Date.now()}`,
     };
-    setCrops((prev) => [...prev, crop]);
-    setActiveCropId(crop.id);
-  };
+    setScopedState((prev) => {
+      const nextCrops = [...prev.crops, crop];
+      if (currentUserId) {
+        localStorage.setItem(getScopedKey(currentUserId, 'crops'), JSON.stringify(nextCrops));
+        localStorage.setItem(getScopedKey(currentUserId, 'active_crop'), crop.id);
+      }
+      return {
+        ...prev,
+        crops: nextCrops,
+        activeCropId: crop.id,
+      };
+    });
+  }, [currentUserId]);
 
-  const updateCropStage = (cropId: string, stage: string) => {
-    setCrops((prev) =>
-      prev.map((c) => (c.id === cropId ? { ...c, currentStage: stage } : c))
-    );
-  };
+  const updateCropStage = useCallback((cropId: string, stage: string) => {
+    setScopedState((prev) => {
+      const nextCrops = prev.crops.map((c) => (c.id === cropId ? { ...c, currentStage: stage } : c));
+      if (currentUserId) {
+        localStorage.setItem(getScopedKey(currentUserId, 'crops'), JSON.stringify(nextCrops));
+      }
+      return {
+        ...prev,
+        crops: nextCrops,
+      };
+    });
+  }, [currentUserId]);
 
-  const addField = (newField: Omit<FarmField, 'id'>) => {
+  const addField = useCallback((newField: Omit<FarmField, 'id'>) => {
     const field: FarmField = {
       ...newField,
       id: `field-${Date.now()}`,
     };
-    setFields((prev) => [...prev, field]);
-  };
+    setScopedState((prev) => {
+      const nextFields = [...prev.fields, field];
+      if (currentUserId) {
+        localStorage.setItem(getScopedKey(currentUserId, 'fields'), JSON.stringify(nextFields));
+      }
+      return {
+        ...prev,
+        fields: nextFields,
+      };
+    });
+  }, [currentUserId]);
 
-  const resetToDefaultOnboarding = () => {
-    localStorage.removeItem(STORAGE_KEYS.PROFILE);
-    setFarmProfile((prev) => ({ ...prev, isProfileComplete: false }));
-  };
+  const resetToDefaultOnboarding = useCallback(() => {
+    if (currentUserId) {
+      localStorage.removeItem(getScopedKey(currentUserId, 'profile'));
+    }
+    setScopedState((prev) => ({
+      ...prev,
+      profile: null,
+      isComplete: false,
+    }));
+  }, [currentUserId]);
+
+  const clearFarmerSession = useCallback(() => {
+    if (currentUserId) {
+      localStorage.removeItem(getScopedKey(currentUserId, 'profile'));
+      localStorage.removeItem(getScopedKey(currentUserId, 'crops'));
+      localStorage.removeItem(getScopedKey(currentUserId, 'fields'));
+      localStorage.removeItem(getScopedKey(currentUserId, 'active_crop'));
+    }
+    setScopedState({
+      profile: null,
+      crops: DEFAULT_CROPS,
+      fields: DEFAULT_FIELDS,
+      activeCropId: 'crop-1',
+      isComplete: false,
+    });
+  }, [currentUserId]);
 
   return (
     <FarmerContext.Provider
@@ -301,7 +453,7 @@ export const FarmerProvider: React.FC<{ children: ReactNode }> = ({ children }) 
         fields,
         activeCropId,
         activeCrop,
-        isProfileComplete: farmProfile.isProfileComplete,
+        isProfileComplete,
         isLocationUpdating,
         updateFarmProfile,
         updateFarmLocation,
@@ -311,6 +463,7 @@ export const FarmerProvider: React.FC<{ children: ReactNode }> = ({ children }) 
         updateCropStage,
         addField,
         resetToDefaultOnboarding,
+        clearFarmerSession,
       }}
     >
       {children}

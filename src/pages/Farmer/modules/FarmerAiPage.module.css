@@ -45,6 +45,29 @@
   color: var(--rai-color-text-primary);
 }
 
+.updateLocationBtn {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--rai-radius-full);
+  background-color: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  color: #16a34a;
+  font-family: var(--rai-font-mono);
+  font-size: 0.65625rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--rai-transition-all);
+}
+
+.updateLocationBtn:hover {
+  background-color: #dcfce7;
+  border-color: #86efac;
+  color: #15803d;
+}
+
 /* Chat Card (Fills remaining height) */
 .chatCard {
   flex: 1;

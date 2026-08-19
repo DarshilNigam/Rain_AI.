@@ -16,11 +16,17 @@ import { Badge } from '../../../components/ui/Badge';
 import { FarmerModuleHeader } from '../components/FarmerModuleHeader';
 import { useFarmerContext } from '../../../context/FarmerContext';
 import { useWeatherData } from '../../../hooks/useWeatherData';
+import { HourlyWeatherPoint, DailyWeatherPoint } from '../../../types/weather';
+import { FarmerOnboardingPage } from '../onboarding/FarmerOnboardingPage';
 import styles from './FarmWeatherPage.module.css';
 
 export const FarmWeatherPage: React.FC = () => {
-  const { farmProfile, farmerLocation, farmLocationAsUserLocation, activeCrop } = useFarmerContext();
+  const { farmProfile, farmerLocation, farmLocationAsUserLocation, activeCrop, isProfileComplete } = useFarmerContext();
   const { weatherData } = useWeatherData(farmLocationAsUserLocation);
+
+  if (!isProfileComplete) {
+    return <FarmerOnboardingPage />;
+  }
 
   const curr = weatherData?.current;
   const hourly = weatherData?.hourly.slice(0, 8) || [];
@@ -152,7 +158,7 @@ export const FarmWeatherPage: React.FC = () => {
           </div>
 
           <div className={styles.hourlyList}>
-            {hourly.map((h, i) => {
+            {hourly.map((h: HourlyWeatherPoint, i: number) => {
               const date = new Date(h.time);
               const hourStr = i === 0 ? 'Now' : date.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
 
@@ -179,7 +185,7 @@ export const FarmWeatherPage: React.FC = () => {
           </div>
 
           <div className={styles.dailyList}>
-            {daily.map((d) => {
+            {daily.map((d: DailyWeatherPoint) => {
               const dayDate = new Date(d.date);
               const dayName = dayDate.toLocaleDateString([], { weekday: 'short', month: 'short', day: 'numeric' });
 
