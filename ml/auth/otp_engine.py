@@ -86,6 +86,7 @@ class RaiOtpEngine:
     def __init__(self):
         self._challenges: Dict[str, ServerOTPChallenge] = {}
         self._rate_limits: Dict[str, List[float]] = {}
+        self._in_flight: set[str] = set()
         self._cleanup_lock = threading.Lock()
 
     @classmethod
@@ -264,7 +265,7 @@ class RaiOtpEngine:
             encoded_id = urllib.parse.quote(clean_id)
             unblock_req = urllib.request.Request(
                 f"https://api.brevo.com/v3/smtp/blockedContacts/{encoded_id}",
-                headers={"api-key": api_key, "Accept": "application/json"},
+                headers={"api-key": api_key, "Accept": "application/json", "User-Agent": "RAI-Backend/1.0"},
                 method="DELETE"
             )
             urllib.request.urlopen(unblock_req, timeout=3)
@@ -322,70 +323,86 @@ class RaiOtpEngine:
 
         self._purge_expired_challenges()
 
-        # Check request rate limit
-        allowed, err_msg = self._check_rate_limit(clean)
-        if not allowed:
-            raise ValueError(err_msg)
-
-        now = time.time()
-
-        # Invalidate any previous challenges for this identifier & purpose
+        # In-flight lock to prevent duplicate simultaneous sends
         with self._cleanup_lock:
+            if clean in self._in_flight:
+                raise ValueError("A verification request is already in progress. Please wait a moment.")
+            self._in_flight.add(clean)
+
+        try:
+            # Check cooldown against existing active challenge
+            now = time.time()
             for cid, ch in list(self._challenges.items()):
                 if ch.identifier == clean and ch.purpose == purpose:
-                    self._challenges.pop(cid, None)
+                    if now < ch.resend_available_at:
+                        wait_sec = max(1, int(ch.resend_available_at - now))
+                        raise ValueError(f"Please wait {wait_sec} second(s) before requesting another code.")
 
-        # Generate cryptographically secure 6-digit numeric OTP
-        raw_code = f"{secrets.randbelow(900000) + 100000}"
-        hashed = self._hash_otp(clean, raw_code)
-        challenge_id = f"otp-ch-{int(now * 1000)}-{secrets.token_hex(4)}"
+            # Check request rate limit
+            allowed, err_msg = self._check_rate_limit(clean)
+            if not allowed:
+                raise ValueError(err_msg)
 
-        challenge = ServerOTPChallenge(
-            challenge_id=challenge_id,
-            identifier=clean,
-            hashed_code=hashed,
-            purpose=purpose,
-            created_at=now,
-            expires_at=now + OTP_EXPIRY_SECONDS,
-            resend_available_at=now + RESEND_COOLDOWN_SECONDS,
-            attempts_remaining=MAX_VERIFY_ATTEMPTS,
-            pending_data=pending_data or {}
-        )
+            # Invalidate any previous challenges for this identifier & purpose
+            with self._cleanup_lock:
+                for cid, ch in list(self._challenges.items()):
+                    if ch.identifier == clean and ch.purpose == purpose:
+                        self._challenges.pop(cid, None)
 
-        # Dispatch via Brevo
-        success, dispatch_msg = self._dispatch_brevo_email(clean, raw_code, purpose)
-        if not success:
-            raise RuntimeError(dispatch_msg)
+            # Generate cryptographically secure 6-digit numeric OTP
+            raw_code = f"{secrets.randbelow(900000) + 100000}"
+            hashed = self._hash_otp(clean, raw_code)
+            challenge_id = f"otp-ch-{int(now * 1000)}-{secrets.token_hex(4)}"
 
-        # Store challenge in persistent database store
-        db_record = {
-            "id": challenge_id,
-            "identifier": clean,
-            "hashed_code": hashed,
-            "purpose": purpose,
-            "attempts_remaining": MAX_VERIFY_ATTEMPTS,
-            "created_at": datetime.fromtimestamp(now, timezone.utc).isoformat(),
-            "expires_at": datetime.fromtimestamp(now + OTP_EXPIRY_SECONDS, timezone.utc).isoformat(),
-            "resend_available_at": datetime.fromtimestamp(now + RESEND_COOLDOWN_SECONDS, timezone.utc).isoformat(),
-            "pending_data": pending_data or {}
-        }
-        db_client.save_otp_challenge(db_record)
+            challenge = ServerOTPChallenge(
+                challenge_id=challenge_id,
+                identifier=clean,
+                hashed_code=hashed,
+                purpose=purpose,
+                created_at=now,
+                expires_at=now + OTP_EXPIRY_SECONDS,
+                resend_available_at=now + RESEND_COOLDOWN_SECONDS,
+                attempts_remaining=MAX_VERIFY_ATTEMPTS,
+                pending_data=pending_data or {}
+            )
 
-        # Also store in memory cache for instant single-worker lookups
-        with self._cleanup_lock:
-            self._challenges[challenge_id] = challenge
+            # Dispatch via Brevo
+            success, dispatch_msg = self._dispatch_brevo_email(clean, raw_code, purpose)
+            if not success:
+                raise RuntimeError(dispatch_msg)
 
-        masked = self.mask_identifier(clean)
-        return {
-            "success": True,
-            "challengeId": challenge_id,
-            "maskedRecipient": masked,
-            "createdAt": int(challenge.created_at * 1000),
-            "expiresAt": int(challenge.expires_at * 1000),
-            "resendAvailableAt": int(challenge.resend_available_at * 1000),
-            "attemptsRemaining": challenge.attempts_remaining,
-            "provider": "API_EMAIL"
-        }
+            # Store challenge in persistent database store
+            db_record = {
+                "id": challenge_id,
+                "identifier": clean,
+                "hashed_code": hashed,
+                "purpose": purpose,
+                "attempts_remaining": MAX_VERIFY_ATTEMPTS,
+                "created_at": datetime.fromtimestamp(now, timezone.utc).isoformat(),
+                "expires_at": datetime.fromtimestamp(now + OTP_EXPIRY_SECONDS, timezone.utc).isoformat(),
+                "resend_available_at": datetime.fromtimestamp(now + RESEND_COOLDOWN_SECONDS, timezone.utc).isoformat(),
+                "pending_data": pending_data or {}
+            }
+            db_client.save_otp_challenge(db_record)
+
+            # Also store in memory cache for instant single-worker lookups
+            with self._cleanup_lock:
+                self._challenges[challenge_id] = challenge
+
+            masked = self.mask_identifier(clean)
+            return {
+                "success": True,
+                "challengeId": challenge_id,
+                "maskedRecipient": masked,
+                "createdAt": int(challenge.created_at * 1000),
+                "expiresAt": int(challenge.expires_at * 1000),
+                "resendAvailableAt": int(challenge.resend_available_at * 1000),
+                "attemptsRemaining": challenge.attempts_remaining,
+                "provider": "API_EMAIL"
+            }
+        finally:
+            with self._cleanup_lock:
+                self._in_flight.discard(clean)
 
     def resend_challenge(self, challenge_id: str) -> Dict[str, Any]:
         self._purge_expired_challenges()
