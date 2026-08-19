@@ -13,7 +13,62 @@ import { UserLocation, PRESET_CITIES } from '../../../types/location';
 import { radarService, RadarFrameInfo } from '../../../services/radar.service';
 import styles from './InteractiveRiskMap.module.css';
 
-interface InteractiveRiskMapProps {
+export const MAP_RISK_PALETTE = {
+  LOW: {
+    label: 'LOW',
+    threshold: '< 0.75%',
+    color: '#10b981',
+    dotGlow: 'rgba(16, 185, 129, 0.45)',
+    contourFill: 'rgba(16, 185, 129, 0.22)',
+  },
+  MODERATE: {
+    label: 'MODERATE',
+    threshold: '0.75–1.5%',
+    color: '#06b6d4',
+    dotGlow: 'rgba(6, 182, 212, 0.45)',
+    contourFill: 'rgba(6, 182, 212, 0.22)',
+  },
+  HIGH: {
+    label: 'HIGH',
+    threshold: '1.5–5.0%',
+    color: '#f59e0b',
+    dotGlow: 'rgba(245, 158, 11, 0.45)',
+    contourFill: 'rgba(245, 158, 11, 0.22)',
+  },
+  CRITICAL: {
+    label: 'CRITICAL',
+    threshold: '≥ 5.0%',
+    color: '#dc2626',
+    dotGlow: 'rgba(220, 38, 38, 0.45)',
+    contourFill: 'rgba(220, 38, 38, 0.22)',
+  },
+} as const;
+
+export const MAP_CONCENTRIC_ZONES = [
+  {
+    id: 'radar',
+    label: 'Outer Observation / Radar Field',
+    color: '#0284c7',
+    fillColor: 'rgba(56, 189, 248, 0.25)',
+    borderStyle: 'dashed',
+  },
+  {
+    id: 'risk',
+    label: 'Model Risk Boundary Zone',
+    color: '#d97706',
+    fillColor: 'rgba(251, 191, 36, 0.22)',
+    borderStyle: 'solid',
+  },
+  {
+    id: 'node',
+    label: 'Selected Location Node',
+    color: '#0ea5e9',
+    fillColor: 'rgba(6, 182, 212, 0.9)',
+    borderStyle: 'pulse',
+  },
+] as const;
+
+export interface InteractiveRiskMapProps {
   readonly userLocation: UserLocation;
   readonly activeLocation: UserLocation;
   readonly onSelectCity: (loc: UserLocation) => void;

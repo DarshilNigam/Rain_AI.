@@ -172,8 +172,9 @@ export const RiskMapPage: React.FC = () => {
               />
             </div>
 
-            {/* Polished Compact Map Legend & Interpretation Guide */}
+            {/* Polished Map-Synchronized Legend & Interpretation Guide */}
             <div className={styles.mapLegendCard}>
+              {/* Header with Title and Integrated Horizontal Severity Gradient Bar */}
               <div className={styles.legendCardHeader}>
                 <div className={styles.legendHeaderLeft}>
                   <div className={styles.legendIconWrap}>
@@ -187,45 +188,62 @@ export const RiskMapPage: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Subtle Map-Synchronized Severity Progression Scale */}
-                <div className={styles.severityScaleBar}>
-                  <span className={styles.severityScaleLabel}>SEVERITY SCALE:</span>
-                  <div className={styles.severityTrackContainer}>
-                    <div className={styles.severityGradientTrack} />
-                    <div className={styles.severityPillsGroup}>
-                      <div className={styles.severityPill}>
-                        <span className={styles.dotLow} />
-                        <span className={styles.pillText}>LOW</span>
-                        <span className={styles.pillThreshold}>&lt;0.75%</span>
+                {/* Spatial Concentric Risk Scale with Continuous Gradient Bar & Direct Thresholds */}
+                <div className={styles.spatialScaleContainer}>
+                  <div className={styles.scaleTrackWrap}>
+                    <div className={styles.spatialGradientTrack} />
+                    <div className={styles.scaleTicksRow}>
+                      <div className={styles.scaleTickNode}>
+                        <span className={styles.tickPipLow} />
+                        <span className={styles.tickLabel}>LOW</span>
+                        <span className={styles.tickValue}>&lt; 0.75%</span>
                       </div>
-                      <div className={styles.severityPill}>
-                        <span className={styles.dotModerate} />
-                        <span className={styles.pillText}>MODERATE</span>
-                        <span className={styles.pillThreshold}>0.75–1.5%</span>
+                      <div className={styles.scaleTickNode}>
+                        <span className={styles.tickPipModerate} />
+                        <span className={styles.tickLabel}>MODERATE</span>
+                        <span className={styles.tickValue}>0.75–1.5%</span>
                       </div>
-                      <div className={styles.severityPill}>
-                        <span className={styles.dotHigh} />
-                        <span className={styles.pillText}>HIGH</span>
-                        <span className={styles.pillThreshold}>1.5–5.0%</span>
+                      <div className={styles.scaleTickNode}>
+                        <span className={styles.tickPipHigh} />
+                        <span className={styles.tickLabel}>HIGH</span>
+                        <span className={styles.tickValue}>1.5–5.0%</span>
                       </div>
-                      <div className={styles.severityPill}>
-                        <span className={styles.dotCritical} />
-                        <span className={styles.pillText}>CRITICAL</span>
-                        <span className={styles.pillThreshold}>≥5.0%</span>
+                      <div className={styles.scaleTickNode}>
+                        <span className={styles.tickPipCritical} />
+                        <span className={styles.tickLabel}>CRITICAL</span>
+                        <span className={styles.tickValue}>≥ 5.0%</span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* 4-Item Visual Legend Grid */}
+              {/* Concentric Spatial Zones Sub-Key */}
+              <div className={styles.concentricKeyRow}>
+                <div className={styles.concentricKeyList}>
+                  <div className={styles.concentricKeyItem}>
+                    <span className={styles.zoneCircleObservation} />
+                    <span>Outer observation & radar field</span>
+                  </div>
+                  <div className={styles.concentricKeyItem}>
+                    <span className={styles.zoneCircleRisk} />
+                    <span>Model risk boundary zone</span>
+                  </div>
+                  <div className={styles.concentricKeyItem}>
+                    <span className={styles.zoneCircleNode} />
+                    <span>Selected location node</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* 4 Explanatory Cards */}
               <div className={styles.legendGrid}>
                 <div className={styles.legendGridItem}>
-                  <div className={styles.legendItemIconCircle}>
+                  <div className={styles.legendItemIconCircle} style={{ borderColor: '#bae6fd' }}>
                     <Cloud size={15} color="#0284c7" />
                   </div>
                   <div className={styles.legendItemText}>
-                    <span className={styles.legendItemTitle}>WEATHER / OBSERVED</span>
+                    <span className={styles.legendItemTitle} style={{ color: '#0369a1' }}>WEATHER / OBSERVED</span>
                     <p className={styles.legendItemDesc}>
                       Current meteorological conditions from the live weather feed.
                     </p>
@@ -233,11 +251,11 @@ export const RiskMapPage: React.FC = () => {
                 </div>
 
                 <div className={styles.legendGridItem}>
-                  <div className={styles.legendItemIconCircle}>
+                  <div className={styles.legendItemIconCircle} style={{ borderColor: '#a5f3fc' }}>
                     <CloudRain size={15} color="#0891b2" />
                   </div>
                   <div className={styles.legendItemText}>
-                    <span className={styles.legendItemTitle}>RAIN / RADAR</span>
+                    <span className={styles.legendItemTitle} style={{ color: '#0e7490' }}>RAIN / RADAR</span>
                     <p className={styles.legendItemDesc}>
                       Radar precipitation activity across the visible region.
                     </p>
@@ -245,11 +263,11 @@ export const RiskMapPage: React.FC = () => {
                 </div>
 
                 <div className={styles.legendGridItem}>
-                  <div className={styles.legendItemIconCircle}>
+                  <div className={styles.legendItemIconCircle} style={{ borderColor: '#fde68a' }}>
                     <ShieldAlert size={15} color="#d97706" />
                   </div>
                   <div className={styles.legendItemText}>
-                    <span className={styles.legendItemTitle}>RAINFALL RISK</span>
+                    <span className={styles.legendItemTitle} style={{ color: '#b45309' }}>RAINFALL RISK</span>
                     <p className={styles.legendItemDesc}>
                       Model-derived rainfall risk around monitored locations.
                     </p>
@@ -257,11 +275,11 @@ export const RiskMapPage: React.FC = () => {
                 </div>
 
                 <div className={styles.legendGridItem}>
-                  <div className={styles.legendItemIconCircle}>
+                  <div className={styles.legendItemIconCircle} style={{ borderColor: '#7dd3fc' }}>
                     <MapPin size={15} color="#0ea5e9" />
                   </div>
                   <div className={styles.legendItemText}>
-                    <span className={styles.legendItemTitle}>SELECTED LOCATION</span>
+                    <span className={styles.legendItemTitle} style={{ color: '#0284c7' }}>SELECTED LOCATION</span>
                     <p className={styles.legendItemDesc}>
                       Your active location used for local telemetry and prediction.
                     </p>
