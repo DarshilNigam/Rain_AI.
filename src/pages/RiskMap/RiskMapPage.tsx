@@ -187,25 +187,32 @@ export const RiskMapPage: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Subtle Severity Scale */}
+                {/* Subtle Map-Synchronized Severity Progression Scale */}
                 <div className={styles.severityScaleBar}>
                   <span className={styles.severityScaleLabel}>SEVERITY SCALE:</span>
-                  <div className={styles.severityPillsGroup}>
-                    <div className={styles.severityPill}>
-                      <span className={styles.dotLow} />
-                      <span>LOW</span>
-                    </div>
-                    <div className={styles.severityPill}>
-                      <span className={styles.dotModerate} />
-                      <span>MODERATE</span>
-                    </div>
-                    <div className={styles.severityPill}>
-                      <span className={styles.dotHigh} />
-                      <span>HIGH</span>
-                    </div>
-                    <div className={styles.severityPill}>
-                      <span className={styles.dotCritical} />
-                      <span>CRITICAL</span>
+                  <div className={styles.severityTrackContainer}>
+                    <div className={styles.severityGradientTrack} />
+                    <div className={styles.severityPillsGroup}>
+                      <div className={styles.severityPill}>
+                        <span className={styles.dotLow} />
+                        <span className={styles.pillText}>LOW</span>
+                        <span className={styles.pillThreshold}>&lt;0.75%</span>
+                      </div>
+                      <div className={styles.severityPill}>
+                        <span className={styles.dotModerate} />
+                        <span className={styles.pillText}>MODERATE</span>
+                        <span className={styles.pillThreshold}>0.75–1.5%</span>
+                      </div>
+                      <div className={styles.severityPill}>
+                        <span className={styles.dotHigh} />
+                        <span className={styles.pillText}>HIGH</span>
+                        <span className={styles.pillThreshold}>1.5–5.0%</span>
+                      </div>
+                      <div className={styles.severityPill}>
+                        <span className={styles.dotCritical} />
+                        <span className={styles.pillText}>CRITICAL</span>
+                        <span className={styles.pillThreshold}>≥5.0%</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -251,7 +258,7 @@ export const RiskMapPage: React.FC = () => {
 
                 <div className={styles.legendGridItem}>
                   <div className={styles.legendItemIconCircle}>
-                    <MapPin size={15} color="#16a34a" />
+                    <MapPin size={15} color="#0ea5e9" />
                   </div>
                   <div className={styles.legendItemText}>
                     <span className={styles.legendItemTitle}>SELECTED LOCATION</span>

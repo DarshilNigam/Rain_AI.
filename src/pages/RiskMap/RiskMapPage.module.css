@@ -270,37 +270,72 @@
 
 .severityScaleBar {
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+@media (min-width: 768px) {
+  .severityScaleBar {
+    align-items: flex-end;
+  }
 }
 
 .severityScaleLabel {
   font-family: var(--rai-font-mono);
-  font-size: 0.59375rem;
+  font-size: 0.5625rem;
   font-weight: 800;
   color: var(--rai-color-text-tertiary);
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
+}
+
+.severityTrackContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.severityGradientTrack {
+  height: 3px;
+  width: 100%;
+  border-radius: var(--rai-radius-full);
+  background: linear-gradient(
+    90deg,
+    #16a34a 0%,
+    #d97706 33%,
+    #ea580c 66%,
+    #dc2626 100%
+  );
+  opacity: 0.85;
 }
 
 .severityPillsGroup {
   display: flex;
   align-items: center;
   gap: 0.35rem;
+  flex-wrap: wrap;
 }
 
 .severityPill {
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
-  padding: 0.2rem 0.5rem;
+  padding: 0.18rem 0.45rem;
   border-radius: var(--rai-radius-full);
   background-color: var(--rai-color-bg-surface-subtle);
   border: 1px solid var(--rai-color-border-subtle);
   font-family: var(--rai-font-mono);
+}
+
+.pillText {
   font-size: 0.59375rem;
-  font-weight: 700;
-  color: var(--rai-color-text-secondary);
+  font-weight: 800;
+  color: var(--rai-color-text-primary);
+}
+
+.pillThreshold {
+  font-size: 0.53125rem;
+  font-weight: 600;
+  color: var(--rai-color-text-tertiary);
 }
 
 .dotLow {
@@ -315,8 +350,8 @@
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background-color: #0284c7;
-  box-shadow: 0 0 6px rgba(2, 132, 199, 0.45);
+  background-color: #d97706;
+  box-shadow: 0 0 6px rgba(217, 119, 6, 0.45);
 }
 
 .dotHigh {
