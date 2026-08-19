@@ -21,36 +21,39 @@ interface LiveWeatherNewsProps {
 export const LiveWeatherNews: React.FC<LiveWeatherNewsProps> = ({
   location,
   className,
-  maxArticles = 4,
+  maxArticles = 5,
 }) => {
   const { weatherData } = useWeatherData(location);
   const [articles, setArticles] = useState<WeatherNewsArticle[]>([]);
   const [isNewsLoading, setIsNewsLoading] = useState<boolean>(true);
   const [isRefreshing, setIsRefreshing] = useState<boolean>(false);
 
-  const fetchNews = useCallback(async () => {
+  const fetchNews = useCallback(async (force = false) => {
     try {
-      setIsNewsLoading(true);
-      const data = await newsService.getWeatherNews(location.city, location.region, maxArticles);
+      if (force) {
+        setIsRefreshing(true);
+      } else {
+        setIsNewsLoading(true);
+      }
+      const data = await newsService.getWeatherNews(location.city, location.region, maxArticles, force);
       setArticles(data);
     } catch {
-      // Handled by service fallback
+      setArticles([]);
     } finally {
       setIsNewsLoading(false);
+      setIsRefreshing(false);
     }
   }, [location.city, location.region, maxArticles]);
 
   useEffect(() => {
-    fetchNews();
+    fetchNews(false);
     // Auto-refresh news every 5 minutes
-    const interval = setInterval(fetchNews, 5 * 60 * 1000);
+    const interval = setInterval(() => fetchNews(false), 5 * 60 * 1000);
     return () => clearInterval(interval);
   }, [fetchNews]);
 
   const handleManualRefresh = async () => {
-    setIsRefreshing(true);
-    await fetchNews();
-    setTimeout(() => setIsRefreshing(false), 500);
+    await fetchNews(true);
   };
 
   const curr = weatherData?.current;
@@ -87,7 +90,7 @@ export const LiveWeatherNews: React.FC<LiveWeatherNewsProps> = ({
           className={styles.refreshBtn}
           onClick={handleManualRefresh}
           disabled={isRefreshing || isNewsLoading}
-          title="Refresh real-time weather & headlines"
+          title="Force refresh real-time weather & headlines"
           aria-label="Refresh intelligence"
         >
           <RefreshCw size={12} className={isRefreshing ? styles.spinIcon : ''} />
@@ -178,7 +181,7 @@ export const LiveWeatherNews: React.FC<LiveWeatherNewsProps> = ({
           </div>
         ) : (
           <div className={styles.emptyState}>
-            Live regional headlines temporarily syncing. Regional atmospheric telemetry active.
+            Fresh regional weather headlines are currently unavailable.
           </div>
         )}
       </div>

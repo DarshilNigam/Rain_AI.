@@ -396,6 +396,64 @@
   line-height: 1.35;
 }
 
+.shapCardList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.shapFactorCard {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 0.45rem 0.65rem;
+  border-radius: var(--rai-radius-md);
+  background-color: #f8fafc;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+}
+
+.shapFactorHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shapFactorName {
+  font-family: var(--rai-font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--rai-color-text-primary);
+}
+
+.shapBadge {
+  font-family: var(--rai-font-mono);
+  font-size: 0.65625rem;
+  font-weight: 700;
+  padding: 1px 5px;
+  border-radius: var(--rai-radius-sm);
+}
+
+.shapBadgeNegative {
+  background-color: #f0fdf4;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+}
+
+.shapBadgePositive {
+  background-color: #fff7ed;
+  color: #c2410c;
+  border: 1px solid #fed7aa;
+}
+
+.shapFactorSub {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--rai-font-body);
+  font-size: 0.6875rem;
+  color: var(--rai-color-text-secondary);
+}
+
 .scientificNote {
   font-family: var(--rai-font-body);
   font-size: 0.6875rem;

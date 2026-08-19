@@ -10,7 +10,6 @@ import {
   MapPin,
   Sparkles,
   Activity,
-  Compass,
   LucideIcon,
   CloudRain,
   Wind,
@@ -310,7 +309,7 @@ export const DashboardPage: React.FC = () => {
             </div>
             <div className={styles.metricDetailRow}>
               <span>🤖 Model: <strong>Calibrated XGBoost</strong></span>
-              <span>🔍 Status: <strong>{mlProbRaw >= 0.015 ? (isHindi ? 'सीमा से अधिक' : 'Exceeds Trigger') : (isHindi ? 'सीमा के भीतर' : 'Sub-Threshold')}</strong></span>
+              <span>🔍 Status: <strong>{mlProbRaw >= 0.015 ? (isHindi ? 'परिचालन सीमा से अधिक (≥1.5%)' : 'Exceeds Trigger (≥1.5%)') : (isHindi ? 'परिचालन सीमा के भीतर (<1.5%)' : 'Below Operational Threshold (1.5%)')}</strong></span>
             </div>
           </div>
         </div>
@@ -348,136 +347,144 @@ export const DashboardPage: React.FC = () => {
               {PILLARS_NODES.map((node) => {
                 const rad = (node.angleDeg * Math.PI) / 180;
                 const rOrb = 82;
-                const rNodePos = 168;
-                const x1 = rOrb * Math.cos(rad);
-                const y1 = rOrb * Math.sin(rad);
-                const x2 = rNodePos * Math.cos(rad);
-                const y2 = rNodePos * Math.sin(rad);
-
-                const isActive = activeHoverNode === node.id;
+                const rNode = 168;
+                const x1 = Math.cos(rad) * rOrb;
+                const y1 = Math.sin(rad) * rOrb;
+                const x2 = Math.cos(rad) * rNode;
+                const y2 = Math.sin(rad) * rNode;
+                const isHovered = activeHoverNode === node.id;
 
                 return (
-                  <line
-                    key={`line-${node.id}`}
-                    x1={x1}
-                    y1={y1}
-                    x2={x2}
-                    y2={y2}
-                    stroke={isActive ? node.themeColor : 'rgba(203, 213, 225, 0.65)'}
-                    strokeWidth={isActive ? 2.5 : 1}
-                    strokeDasharray={isActive ? 'none' : '3 3'}
-                    className={styles.beamLine}
-                  />
+                  <g key={node.id}>
+                    <line
+                      x1={x1}
+                      y1={y1}
+                      x2={x2}
+                      y2={y2}
+                      stroke={isHovered ? node.themeColor : 'rgba(203, 213, 225, 0.75)'}
+                      strokeWidth={isHovered ? 2 : 1.25}
+                      strokeDasharray={isHovered ? 'none' : '3 3'}
+                    />
+                    {isHovered && (
+                      <circle
+                        cx={x2}
+                        cy={y2}
+                        r={4}
+                        fill={node.themeColor}
+                        filter="drop-shadow(0 0 4px rgba(6, 182, 212, 0.8))"
+                      />
+                    )}
+                  </g>
                 );
               })}
             </svg>
 
-            {/* 1. CENTRAL LOCATION ORB (REAL WEATHER INTEGRATED) */}
+            {/* Central Planetary Core Orb */}
             <div
-              className={styles.centerLocationOrb}
+              className={styles.centralAtmosphericCore}
               onClick={() => setIsLocationModalOpen(true)}
-              title="Current City Intelligence Node (Click to switch location)"
+              title="Click to change monitored location node"
               role="button"
               tabIndex={0}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') setIsLocationModalOpen(true);
+              }}
             >
-              <div className={styles.orbGlowAura} />
-              <div className={styles.orbPulseRing} />
-              <div className={styles.orbSurface}>
-                <div className={styles.orbAtmosphereParticles} />
-                <span className={styles.orbBrandName}>R.A.I.</span>
-                <span className={styles.orbCityName}>{location.city}</span>
-
-                {isWeatherLoading ? (
-                  <span className={styles.orbLoadingText}>Connecting local telemetry...</span>
-                ) : weatherError ? (
-                  <span className={styles.orbErrorText}>Telemetry offline</span>
-                ) : currWeather ? (
-                  <div className={styles.orbLiveWeatherRow}>
-                    <span className={styles.orbTempText}>{currWeather.temperature.toFixed(1)}°C</span>
-                    <span className={styles.orbConditionText}>{currWeather.weatherCondition}</span>
-                  </div>
-                ) : (
-                  <span className={styles.orbRegionName}>{location.region}</span>
-                )}
-
+              <div className={styles.coreAtmosphereHalo} />
+              <div className={styles.coreOrbSurface}>
+                <span className={styles.orbCityName}>{location.city.toUpperCase()}</span>
+                <span className={styles.orbRegionName}>{location.region}</span>
                 <div className={styles.orbStatusPill}>
-                  <div className={weatherError ? styles.liveRedDot : styles.liveGreenDot} />
-                  <span>{isWeatherLoading ? 'SYNCING...' : weatherError ? 'OFFLINE' : 'LIVE NODE'}</span>
+                  <span className={isWeatherLoading ? styles.liveRedDot : styles.liveGreenDot} />
+                  <span>{isWeatherLoading ? 'CONNECTING' : 'TELEMETRY ACTIVE'}</span>
                 </div>
+                <span className={styles.orbTempDisplay}>
+                  {currWeather ? `${currWeather.temperature.toFixed(1)}°C` : '--'}
+                </span>
+                <span className={styles.orbConditionText}>
+                  {currWeather?.weatherCondition || 'Connecting sensors...'}
+                </span>
               </div>
             </div>
 
-            {/* 2. FIVE SATELLITE PILLAR NODES */}
+            {/* Satellite 5 Pillar Circular Nodes */}
             {PILLARS_NODES.map((node) => {
               const rad = (node.angleDeg * Math.PI) / 180;
-              const dist = 168;
-              const xPos = Math.round(dist * Math.cos(rad));
-              const yPos = Math.round(dist * Math.sin(rad));
-
-              const isActive = activeHoverNode === node.id;
+              const radius = 168; // px from center
+              const x = Math.cos(rad) * radius;
+              const y = Math.sin(rad) * radius;
+              const isHovered = activeHoverNode === node.id;
               const IconComp = node.icon;
 
               return (
                 <div
                   key={node.id}
-                  className={`${styles.satelliteNode} ${isActive ? styles.satelliteNodeActive : ''}`}
+                  className={`${styles.satelliteNode} ${isHovered ? styles.satelliteNodeActive : ''}`}
                   style={
                     {
-                      transform: `translate(${xPos}px, ${yPos}px) ${isActive ? 'scale(1.08)' : 'scale(1)'}`,
-                      '--node-glow': node.themeGlow,
+                      transform: `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`,
                       '--node-color': node.themeColor,
+                      '--node-light': node.themeLight,
+                      '--node-border': node.themeBorder,
+                      '--node-glow': node.themeGlow,
                     } as React.CSSProperties
                   }
                   onMouseEnter={() => setActiveHoverNode(node.id)}
-                  onMouseLeave={() => setActiveHoverNode(null)}
                   onClick={() => navigate(node.path)}
                   role="button"
                   tabIndex={0}
-                  onKeyDown={(e) => e.key === 'Enter' && navigate(node.path)}
-                  aria-label={`Open ${node.title} for ${location.city}`}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') navigate(node.path);
+                  }}
+                  aria-label={`Open ${node.title}`}
                 >
                   <div
                     className={styles.nodeIconCircle}
                     style={{
                       backgroundColor: node.themeLight,
-                      borderColor: isActive ? node.themeColor : node.themeBorder,
+                      borderColor: node.themeBorder,
+                      color: node.themeColor,
                     }}
                   >
-                    <IconComp size={18} color={node.themeColor} />
+                    <IconComp size={16} />
                   </div>
                   <div className={styles.nodeLabelGroup}>
                     <span className={styles.nodeNumber} style={{ color: node.themeColor }}>
-                      {node.number}
+                      PILLAR {node.number}
                     </span>
-                    <span className={styles.nodeTitle}>{node.title.replace('R.A.I. ', '')}</span>
+                    <span className={styles.nodeTitle}>{node.title}</span>
                   </div>
                 </div>
               );
             })}
           </div>
 
-          {/* Synchronized Contextual Detail Strip */}
+          {/* Synchronized Hover Detail Strip */}
           <div className={styles.bottomDetailStrip}>
             <div className={styles.detailCard}>
               <div className={styles.detailCardLeft}>
                 <div
                   className={styles.detailIconCircle}
-                  style={{ backgroundColor: activeNodeData.themeLight }}
+                  style={{
+                    backgroundColor: activeNodeData.themeLight,
+                    color: activeNodeData.themeColor,
+                  }}
                 >
-                  <activeNodeData.icon size={20} color={activeNodeData.themeColor} />
+                  {React.createElement(activeNodeData.icon, { size: 20 })}
                 </div>
                 <div className={styles.detailTextGroup}>
                   <div className={styles.detailPillRow}>
-                    <Badge variant="ai">Pillar {activeNodeData.number}</Badge>
+                    <Badge variant="ai">
+                      PILLAR {activeNodeData.number}
+                    </Badge>
                     <span className={styles.detailLocationContext}>
-                      📍 Scope: {location.city}, {location.region}
+                      {activeNodeData.description}
                     </span>
                   </div>
                   <h3 className={styles.detailTitle}>{activeNodeData.title}</h3>
-                  <p className={styles.detailDesc}>{activeNodeData.description}</p>
+                  <p className={styles.detailDesc}>{activeNodeData.purpose}</p>
                 </div>
               </div>
-
               <div className={styles.detailCardRight}>
                 <button
                   type="button"
@@ -485,66 +492,64 @@ export const DashboardPage: React.FC = () => {
                   style={{ backgroundColor: activeNodeData.themeColor }}
                   onClick={() => navigate(activeNodeData.path)}
                 >
-                  <span>Launch {activeNodeData.title.replace('R.A.I. ', '')}</span>
-                  <ArrowRight size={14} />
+                  <span>Launch Pillar</span>
+                  <ArrowRight size={13} />
                 </button>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Mobile Vertical Node Stack */}
+        {/* Mobile Vertical Fallback Node List */}
         <div className={styles.mobileStackLayout}>
-          <div className={styles.mobileOrbCard} onClick={() => setIsLocationModalOpen(true)}>
+          <div className={styles.mobileOrbCard}>
             <div className={styles.mobileOrbHeader}>
-              <span className={styles.orbBrandName}>R.A.I.</span>
-              <span className={styles.mobileCityTitle}>{location.city}</span>
-              {isWeatherLoading ? (
-                <span className={styles.mobileRegionText}>Connecting local weather intelligence...</span>
-              ) : weatherError ? (
-                <span className={styles.mobileRegionText}>{weatherError}</span>
-              ) : currWeather ? (
-                <div className={styles.mobileWeatherRow}>
-                  <span className={styles.mobileTemp}>{currWeather.temperature.toFixed(1)}°C</span>
-                  <span className={styles.mobileCondition}>
-                    {currWeather.weatherCondition} • {currWeather.humidity}% Humidity
-                  </span>
-                </div>
-              ) : (
-                <span className={styles.mobileRegionText}>{location.region} • Local Node</span>
-              )}
+              <span className={styles.mobileCityTitle}>{location.city.toUpperCase()}</span>
+              <span className={styles.mobileRegionText}>{location.region}</span>
             </div>
-            <div className={styles.mobileChangeLocationRow}>
-              <Compass size={14} color="#06b6d4" />
-              <span>Tap to Change Active Location</span>
+            <div className={styles.mobileWeatherRow}>
+              <span className={styles.mobileTemp}>
+                {currWeather ? `${currWeather.temperature.toFixed(1)}°C` : '--'}
+              </span>
+              <span className={styles.mobileCondition}>
+                {currWeather?.weatherCondition || 'Sensors Active'}
+              </span>
             </div>
+            <button
+              type="button"
+              className={styles.mobileChangeLocationRow}
+              onClick={() => setIsLocationModalOpen(true)}
+            >
+              <MapPin size={13} color="#0891b2" />
+              <span>Change Location Node ⇄</span>
+            </button>
           </div>
 
           <div className={styles.mobilePillarsList}>
             {PILLARS_NODES.map((node) => {
-              const IconComponent = node.icon;
+              const IconComp = node.icon;
               return (
                 <div
-                  key={`mobile-${node.id}`}
+                  key={node.id}
                   className={styles.mobilePillarCard}
                   onClick={() => navigate(node.path)}
                 >
                   <div
                     className={styles.mobileNodeIcon}
-                    style={{ backgroundColor: node.themeLight, borderColor: node.themeBorder }}
+                    style={{ backgroundColor: node.themeLight, color: node.themeColor }}
                   >
-                    <IconComponent size={20} color={node.themeColor} />
+                    <IconComp size={18} />
                   </div>
                   <div className={styles.mobileNodeBody}>
                     <div className={styles.mobileNodeTop}>
-                      <span className={styles.nodeNumber} style={{ color: node.themeColor }}>
+                      <Badge variant="ai">
                         {node.number}
-                      </span>
+                      </Badge>
                       <h4 className={styles.mobileNodeTitle}>{node.title}</h4>
                     </div>
                     <p className={styles.mobileNodeDesc}>{node.purpose}</p>
                   </div>
-                  <ArrowRight size={16} className={styles.mobileArrow} />
+                  <ArrowRight size={14} className={styles.mobileArrow} />
                 </div>
               );
             })}
@@ -582,34 +587,66 @@ export const DashboardPage: React.FC = () => {
           {showTechnicalDetails && (
             <div className={styles.technicalCard}>
               <div className={styles.technicalGrid}>
+                {/* Factors Reducing Risk */}
                 <div className={styles.shapColumn}>
                   <div className={styles.shapColHeader} style={{ color: '#16a34a' }}>
                     <TrendingDown size={14} />
-                    <span>{t('dashboard.factorsReducing')}</span>
+                    <span>{t('dashboard.factorsReducing', 'FACTORS REDUCING RISK')}</span>
                   </div>
-                  <ul className={styles.shapList}>
-                    <li>
-                      <strong>{isHindi ? 'बादलों का आवरण (90%):' : 'Cloud Cover (90%):'}</strong> {isHindi ? 'घने बादल तीव्र सतही तापीय हीटिंग को सीमित करते हैं (SHAP -2.34)।' : 'Dense stratiform cloud layer limits high thermal surface heating (SHAP -2.34).'}
-                    </li>
-                    <li>
-                      <strong>{isHindi ? `हवा की गति (${currWeather?.windSpeed.toFixed(1) || '10.5'} km/h):` : `Wind Shear (${currWeather?.windSpeed.toFixed(1) || '10.5'} km/h):`}</strong> {isHindi ? 'स्थानीय ऊर्ध्वाधर नमी को तितर-बितर करती है (SHAP -2.25)।' : 'Disperses localized vertical moisture columns (SHAP -2.25).'}
-                    </li>
-                  </ul>
+                  <div className={styles.shapCardList}>
+                    <div className={styles.shapFactorCard}>
+                      <div className={styles.shapFactorHeader}>
+                        <span className={styles.shapFactorName}>• {isHindi ? 'बादलों का आवरण' : 'Cloud Cover'} — {currWeather?.cloudCover ?? 90}%</span>
+                        <span className={`${styles.shapBadge} ${styles.shapBadgeNegative}`}>SHAP −2.34</span>
+                      </div>
+                      <div className={styles.shapFactorSub}>
+                        <span>Contribution: −2.34</span>
+                        <span>• Effect: {isHindi ? 'मॉडल जोखिम कम' : 'Lower model risk'}</span>
+                      </div>
+                    </div>
+
+                    <div className={styles.shapFactorCard}>
+                      <div className={styles.shapFactorHeader}>
+                        <span className={styles.shapFactorName}>• {isHindi ? 'हवा की गति / विंड फील्ड' : 'Wind Speed / Wind Field'} — {currWeather ? `${currWeather.windSpeed.toFixed(1)} km/h` : '2.4 km/h'}</span>
+                        <span className={`${styles.shapBadge} ${styles.shapBadgeNegative}`}>SHAP −2.25</span>
+                      </div>
+                      <div className={styles.shapFactorSub}>
+                        <span>Contribution: −2.25</span>
+                        <span>• Effect: {isHindi ? 'मॉडल जोखिम कम' : 'Lower model risk'}</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
+                {/* Factors Increasing Risk */}
                 <div className={styles.shapColumn}>
                   <div className={styles.shapColHeader} style={{ color: '#ea580c' }}>
                     <TrendingUp size={14} />
-                    <span>{t('dashboard.factorsIncreasing')}</span>
+                    <span>{t('dashboard.factorsIncreasing', 'FACTORS INCREASING RISK')}</span>
                   </div>
-                  <ul className={styles.shapList}>
-                    <li>
-                      <strong>{isHindi ? 'संवहनी अस्थिरता (Convective Instability):' : 'Convective Instability:'}</strong> {isHindi ? 'ऊर्ध्वाधर बादलों के निर्माण को बढ़ावा देती है (SHAP +0.94)।' : 'Elevated lapse rate provides upward buoyant forcing (SHAP +0.94).'}
-                    </li>
-                    <li>
-                      <strong>{isHindi ? `सतही वायुदाब (${currWeather?.pressure.toFixed(0) || '986'} hPa):` : `Barometric Pressure (${currWeather?.pressure.toFixed(0) || '986'} hPa):`}</strong> {isHindi ? 'कम दबाव क्षेत्र नमी को अपनी ओर खींचता है (SHAP +0.30)।' : 'Lower surface pressure reflects localized moisture trough (SHAP +0.30).'}
-                    </li>
-                  </ul>
+                  <div className={styles.shapCardList}>
+                    <div className={styles.shapFactorCard}>
+                      <div className={styles.shapFactorHeader}>
+                        <span className={styles.shapFactorName}>• {isHindi ? 'संवहनी अस्थिरता' : 'Convective Instability'}</span>
+                        <span className={`${styles.shapBadge} ${styles.shapBadgePositive}`}>SHAP +0.94</span>
+                      </div>
+                      <div className={styles.shapFactorSub}>
+                        <span>Contribution: +0.94</span>
+                        <span>• Effect: {isHindi ? 'मॉडल जोखिम अधिक' : 'Higher model risk'}</span>
+                      </div>
+                    </div>
+
+                    <div className={styles.shapFactorCard}>
+                      <div className={styles.shapFactorHeader}>
+                        <span className={styles.shapFactorName}>• {isHindi ? 'सतही वायुदाब' : 'Surface Pressure'} — {currWeather ? `${currWeather.pressure.toFixed(0)} hPa` : '981 hPa'}</span>
+                        <span className={`${styles.shapBadge} ${styles.shapBadgePositive}`}>SHAP +0.30</span>
+                      </div>
+                      <div className={styles.shapFactorSub}>
+                        <span>Contribution: +0.30</span>
+                        <span>• Effect: {isHindi ? 'मॉडल जोखिम अधिक' : 'Higher model risk'}</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className={styles.scientificNote}>

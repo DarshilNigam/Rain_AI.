@@ -73,6 +73,21 @@ export const hi: TranslationDict = {
   'dash.xaiIncreasing': 'जोखिम बढ़ाने वाले कारक',
   'dash.xaiDecreasing': 'जोखिम कम करने वाले कारक',
 
+  'dashboard.liveObsTitle': 'लाइव अवलोकन',
+  'dashboard.humidity': 'आर्द्रता',
+  'dashboard.windVelocity': 'हवा की गति',
+  'dashboard.surfacePressure': 'सतही वायुदाब',
+  'dashboard.rain24hTitle': 'वर्षा पूर्वानुमान',
+  'dashboard.peakProbability': 'चरम संभावना',
+  'dashboard.accumExpected': 'अनुमानित वर्षा संचय',
+  'dashboard.mlRiskTitle': 'AI वर्षा जोखिम',
+  'dashboard.operationalThresh': 'परिचालन सीमा',
+  'dashboard.factorsReducing': 'जोखिम घटाने वाले कारक',
+  'dashboard.factorsIncreasing': 'जोखिम बढ़ाने वाले कारक',
+  'dashboard.modelStatus': 'मॉडल स्थिति',
+  'dashboard.subThreshold': 'परिचालन सीमा के भीतर',
+  'dashboard.exceedsTrigger': 'परिचालन सीमा से अधिक',
+
   // Risk Map
   'riskMap.badge': 'स्तंभ 02 • भू-स्थानिक जोखिम मानचित्र',
   'riskMap.title': 'भू-स्थानिक जोखिम मानचित्र व वर्षा लेयर्स',
@@ -83,6 +98,8 @@ export const hi: TranslationDict = {
   'emergency.title': 'आपातकालीन प्रोटोकॉल एवं सुरक्षा समन्वय',
   'emergency.subtitle': 'प्रमाणित बाढ़ सुरक्षा उपाय, नागरिक तैयारी चेकलिस्ट और आपातकालीन हेल्पलाइन।',
   'emergency.whatShouldIDo': 'मुझे अभी क्या करना चाहिए?',
+  'emergency.helplineTitle': 'आपातकालीन हेल्पलाइन निर्देशिका',
+  'emergency.callNow': 'हेल्पलाइन पर कॉल करें',
 
   // Relief
   'relief.badge': 'स्तंभ 04 • राहत एवं नागरिक सहायता',

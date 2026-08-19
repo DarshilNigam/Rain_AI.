@@ -34,42 +34,53 @@ class RaiNewsService:
         return clean.strip()
 
     @staticmethod
-    def _calculate_relative_time(pub_date_str: str) -> str:
-        """Parses RFC-822 date and converts to human readable relative time."""
+    def _parse_pub_date(pub_date_str: str):
+        """Parses RFC-822 date string from RSS metadata into a timezone-aware datetime."""
+        if not pub_date_str:
+            return None
         try:
             from email.utils import parsedate_to_datetime
+            return parsedate_to_datetime(pub_date_str)
+        except Exception:
+            return None
+
+    @staticmethod
+    def _calculate_relative_time(dt) -> str:
+        """Calculates human-readable relative time from a datetime object."""
+        if not dt:
+            return "Today"
+        try:
             from datetime import datetime, timezone
-            dt = parsedate_to_datetime(pub_date_str)
             now = datetime.now(timezone.utc)
             diff_seconds = int((now - dt).total_seconds())
-            if diff_seconds < 0:
+            if diff_seconds < 60:
                 return "Just now"
             if diff_seconds < 3600:
                 mins = max(1, diff_seconds // 60)
                 return f"{mins}m ago"
             if diff_seconds < 86400:
-                hrs = diff_seconds // 3600
+                hrs = max(1, diff_seconds // 3600)
                 return f"{hrs}h ago"
-            days = diff_seconds // 86400
+            days = max(1, diff_seconds // 86400)
             return f"{days}d ago"
         except Exception:
-            return "Recent"
+            return "Today"
 
     def get_weather_news(self, city: str = "Kanpur", state: str = "Uttar Pradesh", limit: int = 5) -> List[Dict[str, Any]]:
         clean_city = (city or "Kanpur").strip()
         clean_state = (state or "Uttar Pradesh").strip()
         cache_key = f"{clean_city.lower()}_{clean_state.lower()}"
-        now = time.time()
+        now_ts = time.time()
 
         if cache_key in self._cache:
             entry = self._cache[cache_key]
-            if entry["expires_at"] > now:
+            if entry["expires_at"] > now_ts:
                 return entry["articles"][:limit]
 
         articles: List[Dict[str, Any]] = []
 
         try:
-            query = f"{clean_city} weather OR {clean_city} rain OR {clean_state} monsoon rainfall"
+            query = f"{clean_city} weather OR {clean_city} rain OR {clean_state} monsoon rainfall OR India weather IMD"
             encoded_query = urllib.parse.quote(query)
             rss_url = f"https://news.google.com/rss/search?q={encoded_query}&hl=en-IN&gl=IN&ceid=IN:en"
 
@@ -86,25 +97,47 @@ class RaiNewsService:
                 root = ET.fromstring(xml_data)
                 items = root.findall(".//item")
 
-                seen_titles = set()
+                from datetime import datetime, timezone
+                now_utc = datetime.now(timezone.utc)
+                seen_fingerprints = set()
+
                 for item in items:
                     raw_title = item.find("title").text if item.find("title") is not None else ""
                     if not raw_title:
                         continue
 
                     title = self._clean_title(raw_title)
-                    if not title or title.lower() in seen_titles:
+                    if not title or len(title) < 10:
                         continue
-                    seen_titles.add(title.lower())
+
+                    # Deduplication fingerprint
+                    fingerprint = re.sub(r"[^a-z0-9]", "", title.lower())
+                    if not fingerprint or fingerprint in seen_fingerprints:
+                        continue
+
+                    link_el = item.find("link")
+                    link_url = link_el.text.strip() if link_el is not None and link_el.text else ""
+                    if not link_url or link_url == "#":
+                        continue
 
                     source_el = item.find("source")
-                    source_name = source_el.text if source_el is not None and source_el.text else "Regional Weather Desk"
-                    link_el = item.find("link")
-                    link_url = link_el.text if link_el is not None and link_el.text else "#"
-                    pub_date_el = item.find("pubDate")
-                    pub_date_str = pub_date_el.text if pub_date_el is not None and pub_date_el.text else ""
+                    source_name = source_el.text.strip() if source_el is not None and source_el.text else "Regional Weather Desk"
 
-                    rel_time = self._calculate_relative_time(pub_date_str) if pub_date_str else "Today"
+                    pub_date_el = item.find("pubDate")
+                    pub_date_str = pub_date_el.text.strip() if pub_date_el is not None and pub_date_el.text else ""
+                    
+                    dt = self._parse_pub_date(pub_date_str)
+                    # STRICT FRESHNESS: Accept articles within the past 24 hours (Today)
+                    if dt is not None:
+                        age_seconds = (now_utc - dt).total_seconds()
+                        if age_seconds > 24 * 3600 or age_seconds < -300:
+                            # Skip stale articles older than 24h
+                            continue
+                        pub_timestamp = dt.timestamp()
+                    else:
+                        pub_timestamp = now_ts
+
+                    rel_time = self._calculate_relative_time(dt)
 
                     # Categorize weather urgency
                     title_lower = title.lower()
@@ -115,67 +148,34 @@ class RaiNewsService:
                     else:
                         category = "METEOROLOGY"
 
+                    seen_fingerprints.add(fingerprint)
                     articles.append({
                         "title": title,
                         "source": source_name,
                         "url": link_url,
                         "pubDate": pub_date_str,
+                        "timestamp": pub_timestamp,
                         "relativeTime": rel_time,
                         "category": category,
                         "city": clean_city,
                         "region": clean_state
                     })
 
-                    if len(articles) >= 10:
+                    if len(articles) >= 12:
                         break
 
-        except Exception as err:
-            # Fallback to curated seasonal meteorological intelligence
-            articles = self._get_fallback_news(clean_city, clean_state)
+            # Sort strictly from newest -> oldest
+            articles.sort(key=lambda a: a.get("timestamp", 0), reverse=True)
 
-        if not articles:
-            articles = self._get_fallback_news(clean_city, clean_state)
+        except Exception:
+            # When feed is temporarily unreachable, do not invent fake news
+            articles = []
 
         self._cache[cache_key] = {
             "articles": articles,
-            "expires_at": now + NEWS_CACHE_TTL_SECONDS
+            "expires_at": now_ts + NEWS_CACHE_TTL_SECONDS
         }
 
         return articles[:limit]
-
-    def _get_fallback_news(self, city: str, state: str) -> List[Dict[str, Any]]:
-        """Resilient offline seasonal fallback headlines when external feeds are unreachable."""
-        return [
-            {
-                "title": f"IMD Regional Monsoon Outlook: Atmospheric convection monitoring active for {city} and {state}",
-                "source": "IMD Regional Weather Desk",
-                "url": "https://mausam.imd.gov.in",
-                "pubDate": "",
-                "relativeTime": "Live Intel",
-                "category": "METEOROLOGY",
-                "city": city,
-                "region": state
-            },
-            {
-                "title": f"Precipitation & Drainage Advisory: Local municipal and catchment monitoring active across {city}",
-                "source": "R.A.I. Field Telemetry",
-                "url": "#",
-                "pubDate": "",
-                "relativeTime": "1h ago",
-                "category": "WEATHER_ALERT",
-                "city": city,
-                "region": state
-            },
-            {
-                "title": f"Agronomic Soil Moisture Update: Favorable moisture retention reported across {state} agricultural tracts",
-                "source": "Agricultural Weather Network",
-                "url": "#",
-                "pubDate": "",
-                "relativeTime": "3h ago",
-                "category": "MONSOON_UPDATE",
-                "city": city,
-                "region": state
-            }
-        ]
 
 news_service = RaiNewsService.get_instance()

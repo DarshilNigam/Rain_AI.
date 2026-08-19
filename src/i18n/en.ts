@@ -73,6 +73,21 @@ export const en: TranslationDict = {
   'dash.xaiIncreasing': 'Factors Increasing Risk',
   'dash.xaiDecreasing': 'Factors Reducing Risk',
 
+  'dashboard.liveObsTitle': 'LIVE OBSERVATIONS',
+  'dashboard.humidity': 'Humidity',
+  'dashboard.windVelocity': 'Wind',
+  'dashboard.surfacePressure': 'Surface Pressure',
+  'dashboard.rain24hTitle': 'RAINFALL FORECAST',
+  'dashboard.peakProbability': 'Peak Probability',
+  'dashboard.accumExpected': 'Expected Accumulation',
+  'dashboard.mlRiskTitle': 'AI RAINFALL RISK',
+  'dashboard.operationalThresh': 'Operational Threshold',
+  'dashboard.factorsReducing': 'FACTORS REDUCING RISK',
+  'dashboard.factorsIncreasing': 'FACTORS INCREASING RISK',
+  'dashboard.modelStatus': 'Model Status',
+  'dashboard.subThreshold': 'Below Operational Threshold',
+  'dashboard.exceedsTrigger': 'Exceeds Operational Trigger',
+
   // Risk Map
   'riskMap.badge': 'Pillar 02 • Spatial Intelligence',
   'riskMap.title': 'GEOSPATIAL RISK MAP & PRECIPITATION LAYERS',
@@ -83,6 +98,8 @@ export const en: TranslationDict = {
   'emergency.title': 'EMERGENCY PROTOCOLS & RESCUE COORDINATION',
   'emergency.subtitle': 'Verified flood safety actions, citizen preparation checklists, and emergency helpline dispatch.',
   'emergency.whatShouldIDo': 'What Should I Do Right Now?',
+  'emergency.helplineTitle': 'Emergency Helpline Directory',
+  'emergency.callNow': 'Call Helpline',
 
   // Relief
   'relief.badge': 'Pillar 04 • Humanitarian Logistics',
