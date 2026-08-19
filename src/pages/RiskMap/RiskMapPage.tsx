@@ -39,6 +39,8 @@ export const RiskMapPage: React.FC = () => {
   const [activeLocation, setActiveLocation] = useState<UserLocation>(userLocation);
   const [isLocationModalOpen, setIsLocationModalOpen] = useState<boolean>(false);
   const [radarEnabled, setRadarEnabled] = useState<boolean>(true);
+  const [cloudsEnabled, setCloudsEnabled] = useState<boolean>(true);
+  const [riskLayerEnabled, setRiskLayerEnabled] = useState<boolean>(true);
 
   // Sync activeLocation when user switches saved location in profile context
   useEffect(() => {
@@ -161,6 +163,10 @@ export const RiskMapPage: React.FC = () => {
               onSelectCity={(loc) => setActiveLocation(loc)}
               radarEnabled={radarEnabled}
               onToggleRadar={() => setRadarEnabled((prev) => !prev)}
+              cloudsEnabled={cloudsEnabled}
+              onToggleClouds={() => setCloudsEnabled((prev) => !prev)}
+              riskLayerEnabled={riskLayerEnabled}
+              onToggleRiskLayer={() => setRiskLayerEnabled((prev) => !prev)}
               className={styles.mapElement}
             />
           </div>

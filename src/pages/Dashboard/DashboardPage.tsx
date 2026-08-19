@@ -25,6 +25,7 @@ import {
 import { Container } from '../../components/ui/Container';
 import { Badge } from '../../components/ui/Badge';
 import { LocationSwitcher } from '../../components/ui/LocationSwitcher';
+import { LiveWeatherNews } from '../../components/weather/LiveWeatherNews';
 import { useAuth } from '../../context/AuthContext';
 import { useLocationContext } from '../../context/LocationContext';
 import { useWeatherData } from '../../hooks/useWeatherData';
@@ -548,6 +549,13 @@ export const DashboardPage: React.FC = () => {
               );
             })}
           </div>
+        </div>
+
+        {/* =========================================================================
+            3.5. LIVE WEATHER & FIELD INTEL FEED
+            ========================================================================= */}
+        <div style={{ marginTop: '1.5rem', marginBottom: '1rem' }}>
+          <LiveWeatherNews location={location} />
         </div>
 
         {/* =========================================================================

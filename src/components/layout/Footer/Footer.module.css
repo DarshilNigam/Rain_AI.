@@ -14,7 +14,7 @@
 
 @media (min-width: 768px) {
   .grid {
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 2.5fr 1fr;
   }
 }
 
@@ -35,7 +35,7 @@
   font-family: var(--rai-font-body);
   font-size: 0.8125rem;
   color: var(--rai-color-text-tertiary);
-  max-width: 420px;
+  max-width: 540px;
   line-height: 1.6;
 }
 
@@ -84,14 +84,8 @@
   }
 }
 
-.phaseBadge {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--rai-space-2xs);
-  padding: 0.125rem 0.5rem;
-  border-radius: var(--rai-radius-xs);
-  background-color: var(--rai-color-ai-50);
-  border: 1px solid var(--rai-color-ai-200);
-  color: var(--rai-color-ai-700);
-  font-weight: 600;
+.systemStatusText {
+  font-size: 0.75rem;
+  color: var(--rai-color-text-tertiary);
+  font-weight: 500;
 }

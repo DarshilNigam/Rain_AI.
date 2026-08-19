@@ -260,8 +260,10 @@ class RaiOtpEngine:
 
         # Clear any prior bounce suppression in Brevo
         try:
+            import urllib.parse
+            encoded_id = urllib.parse.quote(clean_id)
             unblock_req = urllib.request.Request(
-                f"https://api.brevo.com/v3/smtp/blockedContacts/{clean_id}",
+                f"https://api.brevo.com/v3/smtp/blockedContacts/{encoded_id}",
                 headers={"api-key": api_key, "Accept": "application/json"},
                 method="DELETE"
             )
@@ -296,7 +298,7 @@ class RaiOtpEngine:
                     if data.get("messageId"):
                         return True, "Verification email accepted for delivery by provider."
                     return True, "Verification email accepted by provider."
-                return False, f"Email delivery failed with provider status {resp.status}."
+                return False, "Verification email could not be delivered. Please try again later."
         except urllib.error.HTTPError as he:
             err_body = he.read().decode("utf-8")
             try:
@@ -304,9 +306,9 @@ class RaiOtpEngine:
                 msg = err_json.get("message", f"HTTP {he.code}")
             except Exception:
                 msg = f"HTTP {he.code}"
-            return False, f"Email delivery failed: {msg}"
+            return False, f"Verification email could not be delivered: {msg}"
         except Exception:
-            return False, "Email delivery unavailable: failed to connect to transactional email provider."
+            return False, "Verification email could not be delivered. Please try again later."
 
     def create_and_send_challenge(
         self,

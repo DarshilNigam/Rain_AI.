@@ -287,6 +287,17 @@ class AuthService {
       if (resp.ok) {
         const data = await resp.json();
         if (data.user && data.user.verificationStatus === 'VERIFIED') {
+          const userLocation: UserLocation | undefined = data.user.location || (
+            data.user.locationCity ? {
+              city: data.user.locationCity,
+              region: data.user.locationState || 'Uttar Pradesh',
+              lat: data.user.locationLat ?? 26.4499,
+              lng: data.user.locationLng ?? 80.3319,
+              country: 'India',
+              formattedAddress: `${data.user.locationCity}, ${data.user.locationState || 'Uttar Pradesh'}, India`,
+            } : undefined
+          );
+
           const validatedUser: User = {
             id: data.user.id,
             fullName: data.user.fullName,
@@ -294,8 +305,10 @@ class AuthService {
             role: data.user.role,
             verificationStatus: data.user.verificationStatus,
             emailVerifiedAt: data.user.emailVerifiedAt,
+            location: userLocation,
             villageArea: data.user.villageArea,
             district: data.user.district,
+            farmLocation: data.user.farmLocation,
             createdAt: data.user.createdAt || new Date().toISOString(),
           };
           return validatedUser;
@@ -363,6 +376,17 @@ class AuthService {
       if (resp.ok) {
         const data = await resp.json();
         if (data.user) {
+          const userLocation: UserLocation | undefined = data.user.location || (
+            data.user.locationCity ? {
+              city: data.user.locationCity,
+              region: data.user.locationState || 'Uttar Pradesh',
+              lat: data.user.locationLat ?? 26.4499,
+              lng: data.user.locationLng ?? 80.3319,
+              country: 'India',
+              formattedAddress: `${data.user.locationCity}, ${data.user.locationState || 'Uttar Pradesh'}, India`,
+            } : undefined
+          );
+
           const user: User = {
             id: data.user.id,
             fullName: data.user.fullName,
@@ -370,6 +394,7 @@ class AuthService {
             role: data.user.role,
             verificationStatus: data.user.verificationStatus,
             emailVerifiedAt: data.user.emailVerifiedAt,
+            location: userLocation,
             villageArea: data.user.villageArea,
             district: data.user.district,
             farmLocation: data.user.farmLocation,
@@ -705,6 +730,7 @@ class AuthService {
         role: verification.user.role,
         verificationStatus: 'VERIFIED',
         emailVerifiedAt: verification.user.emailVerifiedAt || new Date().toISOString(),
+        location: verification.user.location,
         villageArea: verification.user.villageArea,
         district: verification.user.district,
         farmLocation: verification.user.farmLocation,
@@ -816,17 +842,53 @@ class AuthService {
   }
 
   public async updateUserLocation(userId: string, location: UserLocation): Promise<User> {
-    const users = this.getStoredUsers();
-    const index = users.findIndex((u) => u.id === userId);
-    if (index === -1) {
-      throw new Error('User not found');
+    const token = this.getSessionToken();
+    if (token) {
+      const baseApi = (APP_CONFIG.apiBaseUrl || 'http://127.0.0.1:8000/api').replace(/\/+$/, '');
+      fetch(`${baseApi}/user/location`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify({
+          city: location.city,
+          region: location.region,
+          lat: location.lat,
+          lng: location.lng,
+          formattedAddress: location.formattedAddress,
+        }),
+      }).catch(() => {});
     }
 
-    const updatedUser: StoredUserRecord = { ...users[index]!, location };
-    users[index] = updatedUser;
-    this.saveStoredUsers(users);
-    this.saveSession(updatedUser);
-    return updatedUser;
+    const session = this.getSession();
+    if (session && session.id === userId) {
+      const updated: User = { ...session, location };
+      this.saveSession(updated);
+      return updated;
+    }
+
+    const users = this.getStoredUsers();
+    const index = users.findIndex((u) => u.id === userId);
+    if (index !== -1) {
+      const updatedUser: StoredUserRecord = { ...users[index]!, location };
+      users[index] = updatedUser;
+      this.saveStoredUsers(users);
+      this.saveSession(updatedUser);
+      return updatedUser;
+    }
+
+    const fallbackUser: User = session || {
+      id: userId,
+      fullName: 'User',
+      email: '',
+      role: 'user',
+      verificationStatus: 'VERIFIED',
+      location,
+      createdAt: new Date().toISOString(),
+    };
+    this.saveSession(fallbackUser);
+    return fallbackUser;
   }
 }
 

@@ -28,23 +28,12 @@ export const Footer: React.FC = () => {
               ))}
             </div>
           </div>
-
-          {/* Architectural Notes */}
-          <div>
-            <h4 className={styles.colTitle}>System Architecture</h4>
-            <div className={styles.linkList}>
-              <span className={styles.link}>Predict → Explain → Locate</span>
-              <span className={styles.link}>Warn → Connect → Help → Recover</span>
-              <span className={styles.link}>Explainable AI (XAI) Engine</span>
-              <span className={styles.link}>Telemetry & Risk Mapping</span>
-            </div>
-          </div>
         </div>
 
         {/* Bottom bar */}
         <div className={styles.bottomBar}>
           <span>&copy; {new Date().getFullYear()} R.A.I. Rainfall Intelligence Platform. All rights reserved.</span>
-          <span className={styles.phaseBadge}>Foundation Build — Phase 0</span>
+          <span className={styles.systemStatusText}>Operational Climate Intelligence Grid</span>
         </div>
       </Container>
     </footer>

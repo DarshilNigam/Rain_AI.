@@ -16,6 +16,7 @@ interface OpenMeteoResponse {
   readonly current?: {
     readonly time: string;
     readonly temperature_2m: number;
+    readonly apparent_temperature?: number;
     readonly relative_humidity_2m: number;
     readonly precipitation: number;
     readonly rain: number;
@@ -23,6 +24,7 @@ interface OpenMeteoResponse {
     readonly weather_code: number;
     readonly cloud_cover: number;
     readonly wind_speed_10m: number;
+    readonly wind_gusts_10m?: number;
     readonly wind_direction_10m: number;
     readonly surface_pressure: number;
     readonly is_day?: number;
@@ -30,6 +32,7 @@ interface OpenMeteoResponse {
   readonly hourly?: {
     readonly time: readonly string[];
     readonly temperature_2m: readonly number[];
+    readonly apparent_temperature?: readonly number[];
     readonly precipitation: readonly number[];
     readonly rain: readonly number[];
     readonly showers: readonly number[];
@@ -37,6 +40,7 @@ interface OpenMeteoResponse {
     readonly relative_humidity_2m: readonly number[];
     readonly cloud_cover: readonly number[];
     readonly wind_speed_10m: readonly number[];
+    readonly wind_gusts_10m?: readonly number[];
     readonly surface_pressure: readonly number[];
   };
   readonly daily?: {
@@ -84,11 +88,11 @@ class WeatherService {
       url.searchParams.set('longitude', location.lng.toString());
       url.searchParams.set(
         'current',
-        'temperature_2m,relative_humidity_2m,precipitation,rain,showers,weather_code,cloud_cover,wind_speed_10m,wind_direction_10m,surface_pressure,is_day'
+        'temperature_2m,apparent_temperature,relative_humidity_2m,precipitation,rain,showers,weather_code,cloud_cover,wind_speed_10m,wind_gusts_10m,wind_direction_10m,surface_pressure,is_day'
       );
       url.searchParams.set(
         'hourly',
-        'temperature_2m,precipitation,rain,showers,precipitation_probability,relative_humidity_2m,cloud_cover,wind_speed_10m,surface_pressure'
+        'temperature_2m,apparent_temperature,precipitation,rain,showers,precipitation_probability,relative_humidity_2m,cloud_cover,wind_speed_10m,wind_gusts_10m,surface_pressure'
       );
       url.searchParams.set(
         'daily',
@@ -138,14 +142,11 @@ class WeatherService {
     const curr = forecast.current;
 
     // Calculate sum of precipitation for the next 24 hourly buckets
-    const next24hHours = forecast.hourly.slice(0, 24);
-    const next24hPrecipSum = next24hHours.reduce((sum, h) => sum + h.precipitation, 0);
-    const maxProb24h = next24hHours.reduce(
-      (max, h) => Math.max(max, h.precipitationProbability || 0),
-      0
-    );
+    const hourly24 = forecast.hourly.slice(0, 24);
+    const next24hPrecipSum = hourly24.reduce((acc, h) => acc + h.precipitation, 0);
+    const maxProb24h = hourly24.reduce((acc, h) => Math.max(acc, h.precipitationProbability), 0);
 
-    const plainSummary = `Current conditions at ${location.city}, ${location.region}: ${curr.temperature.toFixed(1)}°C, ${curr.weatherCondition}, humidity ${curr.humidity}%, wind ${curr.windSpeed.toFixed(1)} km/h. Next 24h accumulated precipitation projection: ${next24hPrecipSum.toFixed(1)} mm (peak probability: ${maxProb24h}%).`;
+    const plainSummary = `${curr.weatherCondition} with temperature at ${curr.temperature}°C, humidity at ${curr.humidity}%, surface pressure ${curr.pressure} hPa, and wind speed ${curr.windSpeed} km/h. Next 24h accumulated precipitation expected: ${next24hPrecipSum.toFixed(1)} mm.`;
 
     return {
       locationLabel: `${location.city}, ${location.region}`,
@@ -167,16 +168,20 @@ class WeatherService {
   private normalizeResponse(raw: OpenMeteoResponse, location: UserLocation): RaiWeatherData {
     const currRaw = raw.current;
     const weatherCode = currRaw?.weather_code ?? 0;
+    const firstHourlyProb = raw.hourly?.precipitation_probability?.[0] ?? 0;
 
     const current: WeatherSnapshot = {
       timestamp: currRaw?.time || new Date().toISOString(),
       temperature: currRaw?.temperature_2m ?? 0,
+      apparentTemperature: currRaw?.apparent_temperature ?? currRaw?.temperature_2m ?? 0,
       humidity: currRaw?.relative_humidity_2m ?? 0,
       precipitation: currRaw?.precipitation ?? 0,
+      precipitationProbability: firstHourlyProb,
       rain: currRaw?.rain ?? 0,
       showers: currRaw?.showers ?? 0,
       cloudCover: currRaw?.cloud_cover ?? 0,
       windSpeed: currRaw?.wind_speed_10m ?? 0,
+      windGusts: currRaw?.wind_gusts_10m ?? currRaw?.wind_speed_10m ?? 0,
       windDirection: currRaw?.wind_direction_10m ?? 0,
       pressure: currRaw?.surface_pressure ?? 1013.25,
       weatherCode,

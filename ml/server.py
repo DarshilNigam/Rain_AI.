@@ -35,6 +35,7 @@ from ml.inference.service import RaiInferenceService
 from ml.pipelines.multi_horizon import get_multi_horizon_status
 from ml.auth.otp_engine import otp_engine
 from ml.db.client import db_client
+from ml.news.service import news_service
 
 # Password & Token Cryptographic Helpers
 _AUTH_PEPPER = os.environ.get("AUTH_SERVER_PEPPER", "rai-sih-auth-pepper-2026")
@@ -148,6 +149,13 @@ class AddPlotRequest(BaseModel):
     irrigationType: Optional[str] = None
     sowingDate: Optional[str] = None
 
+class LocationUpdateRequest(BaseModel):
+    city: str = Field(..., min_length=1, max_length=100)
+    region: Optional[str] = Field("Uttar Pradesh", max_length=100)
+    lat: float
+    lng: float
+    formattedAddress: Optional[str] = None
+
 # Helper to verify authenticated session from Bearer token header
 def _get_authenticated_user_record(request: Request) -> Dict[str, Any]:
     auth_header = request.headers.get("Authorization", "")
@@ -260,6 +268,40 @@ def initiate_registration_endpoint(req: InitiateRegistrationRequest, request: Re
         },
     }
 
+def _format_client_user(user: Dict[str, Any], profile: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
+    city = user.get("location_city") or (profile.get("village_area") if profile else None) or "Kanpur"
+    region = user.get("location_state") or (profile.get("district") if profile else None) or "Uttar Pradesh"
+    lat = float(profile.get("farm_lat")) if (profile and profile.get("farm_lat") is not None) else (float(user.get("location_lat")) if user.get("location_lat") is not None else 26.4499)
+    lng = float(profile.get("farm_lng")) if (profile and profile.get("farm_lng") is not None) else (float(user.get("location_lng")) if user.get("location_lng") is not None else 80.3319)
+    
+    return {
+        "id": user["id"],
+        "email": user["email"],
+        "fullName": user["full_name"],
+        "role": user["role"],
+        "verificationStatus": user.get("verification_status", "VERIFIED"),
+        "emailVerifiedAt": user.get("email_verified_at"),
+        "villageArea": profile.get("village_area") if profile else user.get("location_city"),
+        "district": profile.get("district") if profile else user.get("location_state"),
+        "locationCity": city,
+        "locationState": region,
+        "locationLat": lat,
+        "locationLng": lng,
+        "location": {
+            "city": city,
+            "region": region,
+            "lat": lat,
+            "lng": lng,
+            "country": "India",
+            "formattedAddress": f"{city}, {region}, India",
+        },
+        "farmLocation": {
+            "lat": profile.get("farm_lat"),
+            "lng": profile.get("farm_lng"),
+            "addressLabel": profile.get("address_label"),
+        } if profile and profile.get("farm_lat") is not None else None
+    }
+
 @app.post("/api/auth/login")
 @app.post("/api/v1/auth/login")
 @app.post("/auth/login")
@@ -322,21 +364,7 @@ def login_endpoint(req: LoginRequest):
         "success": True,
         "sessionToken": raw_token,
         "expiresAt": expires_at,
-        "user": {
-            "id": user["id"],
-            "email": user["email"],
-            "fullName": user["full_name"],
-            "role": user["role"],
-            "verificationStatus": user["verification_status"],
-            "emailVerifiedAt": user.get("email_verified_at"),
-            "villageArea": profile.get("village_area") if profile else user.get("location_city"),
-            "district": profile.get("district") if profile else user.get("location_state"),
-            "farmLocation": {
-                "lat": profile.get("farm_lat"),
-                "lng": profile.get("farm_lng"),
-                "addressLabel": profile.get("address_label"),
-            } if profile and profile.get("farm_lat") else None
-        }
+        "user": _format_client_user(user, profile)
     }
 
 @app.post("/api/auth/logout")
@@ -364,16 +392,47 @@ def get_session_endpoint(request: Request):
     profile = db_client.get_farmer_profile(user["id"]) if user["role"] == "farmer" else None
     return {
         "success": True,
-        "user": {
-            "id": user["id"],
-            "email": user["email"],
-            "fullName": user["full_name"],
-            "role": user["role"],
-            "verificationStatus": user["verification_status"],
-            "emailVerifiedAt": user.get("email_verified_at"),
-            "villageArea": profile.get("village_area") if profile else user.get("location_city"),
-            "district": profile.get("district") if profile else user.get("location_state"),
-        }
+        "user": _format_client_user(user, profile)
+    }
+
+@app.post("/api/user/location")
+@app.post("/api/v1/user/location")
+@app.put("/api/user/location")
+def update_user_location_endpoint(req: LocationUpdateRequest, request: Request):
+    """
+    Persists updated location preferences for the authenticated user in Supabase.
+    """
+    user = _get_authenticated_user_record(request)
+    updated = {
+        **user,
+        "location_city": req.city.strip(),
+        "location_state": (req.region or "Uttar Pradesh").strip(),
+        "location_lat": req.lat,
+        "location_lng": req.lng,
+    }
+    saved = db_client.upsert_user(updated)
+    profile = db_client.get_farmer_profile(user["id"]) if user["role"] == "farmer" else None
+    return {"success": True, "user": _format_client_user(saved, profile)}
+
+@app.get("/api/news/weather")
+@app.get("/api/v1/news/weather")
+@app.get("/news/weather")
+def get_weather_news_endpoint(
+    city: str = Query("Kanpur", description="City name for localized weather headlines"),
+    state: str = Query("Uttar Pradesh", description="State or province name"),
+    limit: int = Query(5, ge=1, le=20, description="Max news articles to return")
+):
+    """
+    Retrieves real-time localized rainfall, flood, monsoon, and weather headlines
+    with resilient caching and deduplication.
+    """
+    articles = news_service.get_weather_news(city=city, state=state, limit=limit)
+    return {
+        "success": True,
+        "city": city,
+        "region": state,
+        "count": len(articles),
+        "articles": articles
     }
 
 @app.post("/api/auth/password-reset")

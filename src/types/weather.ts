@@ -6,12 +6,15 @@
 export interface WeatherSnapshot {
   readonly timestamp: string;
   readonly temperature: number; // Celsius (°C)
+  readonly apparentTemperature?: number; // Perceived temperature (°C)
   readonly humidity: number; // Relative Humidity (%)
   readonly precipitation: number; // Current precipitation (mm)
+  readonly precipitationProbability?: number; // Current precipitation probability (%)
   readonly rain: number; // Continuous rain (mm)
   readonly showers: number; // Convective showers (mm)
   readonly cloudCover: number; // Total cloud cover (%)
   readonly windSpeed: number; // Wind speed (km/h)
+  readonly windGusts?: number; // Max wind gusts (km/h)
   readonly windDirection: number; // Wind direction (degrees)
   readonly pressure: number; // Surface pressure (hPa)
   readonly weatherCode: number; // WMO weather code
