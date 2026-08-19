@@ -96,7 +96,7 @@ export const DashboardPage: React.FC = () => {
       number: '01',
       title: isHindi ? 'R.A.I. मौसम इंटेलिजेंस' : 'R.A.I. INTELLIGENCE',
       path: '/intelligence',
-      angleDeg: -90, // Top
+      angleDeg: -90, // Top (12 o'clock)
       icon: Brain,
       themeColor: '#0891b2',
       themeLight: '#ecfeff',
@@ -112,7 +112,7 @@ export const DashboardPage: React.FC = () => {
       number: '02',
       title: isHindi ? 'R.A.I. जोखिम मानचित्र' : 'R.A.I. RISK MAP',
       path: '/risk-map',
-      angleDeg: -162, // Top Left
+      angleDeg: -18, // Top Right (2 o'clock)
       icon: Map,
       themeColor: '#0284c7',
       themeLight: '#f0f9ff',
@@ -126,7 +126,7 @@ export const DashboardPage: React.FC = () => {
       number: '03',
       title: isHindi ? 'R.A.I. आपातकालीन अलर्ट' : 'R.A.I. EMERGENCY',
       path: '/emergency',
-      angleDeg: -18, // Top Right
+      angleDeg: 54, // Bottom Right (4 o'clock)
       icon: AlertTriangle,
       themeColor: '#d97706',
       themeLight: '#fffbeb',
@@ -140,7 +140,7 @@ export const DashboardPage: React.FC = () => {
       number: '04',
       title: isHindi ? 'R.A.I. राहत सहायता' : 'R.A.I. RELIEF',
       path: '/relief',
-      angleDeg: 126, // Bottom Left
+      angleDeg: -162, // Top Left (10 o'clock)
       icon: HeartHandshake,
       themeColor: '#10b981',
       themeLight: '#f0fdf4',
@@ -154,7 +154,7 @@ export const DashboardPage: React.FC = () => {
       number: '05',
       title: isHindi ? 'R.A.I. किसान AI' : 'R.A.I. FARMER',
       path: '/farmer',
-      angleDeg: 54, // Bottom Right
+      angleDeg: 126, // Bottom Left (8 o'clock)
       icon: Sprout,
       themeColor: '#16a34a',
       themeLight: '#f0fdf4',
@@ -347,144 +347,141 @@ export const DashboardPage: React.FC = () => {
               {PILLARS_NODES.map((node) => {
                 const rad = (node.angleDeg * Math.PI) / 180;
                 const rOrb = 82;
-                const rNode = 168;
-                const x1 = Math.cos(rad) * rOrb;
-                const y1 = Math.sin(rad) * rOrb;
-                const x2 = Math.cos(rad) * rNode;
-                const y2 = Math.sin(rad) * rNode;
-                const isHovered = activeHoverNode === node.id;
+                const rNodePos = 168;
+                const x1 = rOrb * Math.cos(rad);
+                const y1 = rOrb * Math.sin(rad);
+                const x2 = rNodePos * Math.cos(rad);
+                const y2 = rNodePos * Math.sin(rad);
+
+                const isActive = activeHoverNode === node.id;
 
                 return (
-                  <g key={node.id}>
-                    <line
-                      x1={x1}
-                      y1={y1}
-                      x2={x2}
-                      y2={y2}
-                      stroke={isHovered ? node.themeColor : 'rgba(203, 213, 225, 0.75)'}
-                      strokeWidth={isHovered ? 2 : 1.25}
-                      strokeDasharray={isHovered ? 'none' : '3 3'}
-                    />
-                    {isHovered && (
-                      <circle
-                        cx={x2}
-                        cy={y2}
-                        r={4}
-                        fill={node.themeColor}
-                        filter="drop-shadow(0 0 4px rgba(6, 182, 212, 0.8))"
-                      />
-                    )}
-                  </g>
+                  <line
+                    key={`line-${node.id}`}
+                    x1={x1}
+                    y1={y1}
+                    x2={x2}
+                    y2={y2}
+                    stroke={isActive ? node.themeColor : 'rgba(203, 213, 225, 0.65)'}
+                    strokeWidth={isActive ? 2.5 : 1}
+                    strokeDasharray={isActive ? 'none' : '3 3'}
+                    className={styles.beamLine}
+                  />
                 );
               })}
             </svg>
 
-            {/* Central Planetary Core Orb */}
+            {/* 1. CENTRAL LOCATION ORB (REAL WEATHER INTEGRATED) */}
             <div
-              className={styles.centralAtmosphericCore}
+              className={styles.centerLocationOrb}
               onClick={() => setIsLocationModalOpen(true)}
-              title="Click to change monitored location node"
+              title="Current City Intelligence Node (Click to switch location)"
               role="button"
               tabIndex={0}
               onKeyDown={(e) => {
                 if (e.key === 'Enter' || e.key === ' ') setIsLocationModalOpen(true);
               }}
             >
-              <div className={styles.coreAtmosphereHalo} />
-              <div className={styles.coreOrbSurface}>
-                <span className={styles.orbCityName}>{location.city.toUpperCase()}</span>
-                <span className={styles.orbRegionName}>{location.region}</span>
+              <div className={styles.orbGlowAura} />
+              <div className={styles.orbPulseRing} />
+              <div className={styles.orbSurface}>
+                <div className={styles.orbAtmosphereParticles} />
+                <span className={styles.orbBrandName}>R.A.I.</span>
+                <span className={styles.orbCityName}>{location.city}</span>
+
+                {isWeatherLoading ? (
+                  <span className={styles.orbLoadingText}>Connecting local telemetry...</span>
+                ) : weatherError ? (
+                  <span className={styles.orbErrorText}>Telemetry offline</span>
+                ) : currWeather ? (
+                  <div className={styles.orbLiveWeatherRow}>
+                    <span className={styles.orbTempText}>{currWeather.temperature.toFixed(1)}°C</span>
+                    <span className={styles.orbConditionText}>{currWeather.weatherCondition}</span>
+                  </div>
+                ) : (
+                  <span className={styles.orbRegionName}>{location.region}</span>
+                )}
+
                 <div className={styles.orbStatusPill}>
-                  <span className={isWeatherLoading ? styles.liveRedDot : styles.liveGreenDot} />
-                  <span>{isWeatherLoading ? 'CONNECTING' : 'TELEMETRY ACTIVE'}</span>
+                  <div className={weatherError ? styles.liveRedDot : styles.liveGreenDot} />
+                  <span>{isWeatherLoading ? 'SYNCING...' : weatherError ? 'OFFLINE' : 'LIVE NODE'}</span>
                 </div>
-                <span className={styles.orbTempDisplay}>
-                  {currWeather ? `${currWeather.temperature.toFixed(1)}°C` : '--'}
-                </span>
-                <span className={styles.orbConditionText}>
-                  {currWeather?.weatherCondition || 'Connecting sensors...'}
-                </span>
               </div>
             </div>
 
-            {/* Satellite 5 Pillar Circular Nodes */}
+            {/* 2. FIVE SATELLITE PILLAR NODES */}
             {PILLARS_NODES.map((node) => {
               const rad = (node.angleDeg * Math.PI) / 180;
-              const radius = 168; // px from center
-              const x = Math.cos(rad) * radius;
-              const y = Math.sin(rad) * radius;
-              const isHovered = activeHoverNode === node.id;
+              const dist = 168;
+              const xPos = Math.round(dist * Math.cos(rad));
+              const yPos = Math.round(dist * Math.sin(rad));
+
+              const isActive = activeHoverNode === node.id;
               const IconComp = node.icon;
 
               return (
                 <div
                   key={node.id}
-                  className={`${styles.satelliteNode} ${isHovered ? styles.satelliteNodeActive : ''}`}
+                  className={`${styles.satelliteNode} ${isActive ? styles.satelliteNodeActive : ''}`}
                   style={
                     {
-                      transform: `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`,
-                      '--node-color': node.themeColor,
-                      '--node-light': node.themeLight,
-                      '--node-border': node.themeBorder,
+                      transform: `translate(${xPos}px, ${yPos}px) ${isActive ? 'scale(1.08)' : 'scale(1)'}`,
                       '--node-glow': node.themeGlow,
+                      '--node-color': node.themeColor,
                     } as React.CSSProperties
                   }
                   onMouseEnter={() => setActiveHoverNode(node.id)}
+                  onMouseLeave={() => setActiveHoverNode(null)}
                   onClick={() => navigate(node.path)}
                   role="button"
                   tabIndex={0}
                   onKeyDown={(e) => {
                     if (e.key === 'Enter' || e.key === ' ') navigate(node.path);
                   }}
-                  aria-label={`Open ${node.title}`}
+                  aria-label={`Open ${node.title} for ${location.city}`}
                 >
                   <div
                     className={styles.nodeIconCircle}
                     style={{
                       backgroundColor: node.themeLight,
-                      borderColor: node.themeBorder,
-                      color: node.themeColor,
+                      borderColor: isActive ? node.themeColor : node.themeBorder,
                     }}
                   >
-                    <IconComp size={16} />
+                    <IconComp size={18} color={node.themeColor} />
                   </div>
                   <div className={styles.nodeLabelGroup}>
                     <span className={styles.nodeNumber} style={{ color: node.themeColor }}>
-                      PILLAR {node.number}
+                      {node.number}
                     </span>
-                    <span className={styles.nodeTitle}>{node.title}</span>
+                    <span className={styles.nodeTitle}>{node.title.replace('R.A.I. ', '')}</span>
                   </div>
                 </div>
               );
             })}
           </div>
 
-          {/* Synchronized Hover Detail Strip */}
+          {/* Synchronized Contextual Detail Strip */}
           <div className={styles.bottomDetailStrip}>
             <div className={styles.detailCard}>
               <div className={styles.detailCardLeft}>
                 <div
                   className={styles.detailIconCircle}
-                  style={{
-                    backgroundColor: activeNodeData.themeLight,
-                    color: activeNodeData.themeColor,
-                  }}
+                  style={{ backgroundColor: activeNodeData.themeLight }}
                 >
-                  {React.createElement(activeNodeData.icon, { size: 20 })}
+                  <activeNodeData.icon size={20} color={activeNodeData.themeColor} />
                 </div>
                 <div className={styles.detailTextGroup}>
                   <div className={styles.detailPillRow}>
-                    <Badge variant="ai">
-                      PILLAR {activeNodeData.number}
-                    </Badge>
+                    <Badge variant="ai">Pillar {activeNodeData.number}</Badge>
                     <span className={styles.detailLocationContext}>
-                      {activeNodeData.description}
+                      📍 Scope: {location.city}, {location.region}
                     </span>
                   </div>
                   <h3 className={styles.detailTitle}>{activeNodeData.title}</h3>
-                  <p className={styles.detailDesc}>{activeNodeData.purpose}</p>
+                  <p className={styles.detailDesc}>{activeNodeData.description}</p>
                 </div>
               </div>
+
               <div className={styles.detailCardRight}>
                 <button
                   type="button"
@@ -492,64 +489,66 @@ export const DashboardPage: React.FC = () => {
                   style={{ backgroundColor: activeNodeData.themeColor }}
                   onClick={() => navigate(activeNodeData.path)}
                 >
-                  <span>Launch Pillar</span>
-                  <ArrowRight size={13} />
+                  <span>Launch {activeNodeData.title.replace('R.A.I. ', '')}</span>
+                  <ArrowRight size={14} />
                 </button>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Mobile Vertical Fallback Node List */}
+        {/* Mobile Vertical Node Stack */}
         <div className={styles.mobileStackLayout}>
-          <div className={styles.mobileOrbCard}>
+          <div className={styles.mobileOrbCard} onClick={() => setIsLocationModalOpen(true)}>
             <div className={styles.mobileOrbHeader}>
-              <span className={styles.mobileCityTitle}>{location.city.toUpperCase()}</span>
-              <span className={styles.mobileRegionText}>{location.region}</span>
+              <span className={styles.orbBrandName}>R.A.I.</span>
+              <span className={styles.mobileCityTitle}>{location.city}</span>
+              {isWeatherLoading ? (
+                <span className={styles.mobileRegionText}>Connecting local weather intelligence...</span>
+              ) : weatherError ? (
+                <span className={styles.mobileRegionText}>{weatherError}</span>
+              ) : currWeather ? (
+                <div className={styles.mobileWeatherRow}>
+                  <span className={styles.mobileTemp}>{currWeather.temperature.toFixed(1)}°C</span>
+                  <span className={styles.mobileCondition}>
+                    {currWeather.weatherCondition} • {currWeather.humidity}% Humidity
+                  </span>
+                </div>
+              ) : (
+                <span className={styles.mobileRegionText}>{location.region} • Local Node</span>
+              )}
             </div>
-            <div className={styles.mobileWeatherRow}>
-              <span className={styles.mobileTemp}>
-                {currWeather ? `${currWeather.temperature.toFixed(1)}°C` : '--'}
-              </span>
-              <span className={styles.mobileCondition}>
-                {currWeather?.weatherCondition || 'Sensors Active'}
-              </span>
+            <div className={styles.mobileChangeLocationRow}>
+              <MapPin size={14} color="#0891b2" />
+              <span>Tap to Change Active Location</span>
             </div>
-            <button
-              type="button"
-              className={styles.mobileChangeLocationRow}
-              onClick={() => setIsLocationModalOpen(true)}
-            >
-              <MapPin size={13} color="#0891b2" />
-              <span>Change Location Node ⇄</span>
-            </button>
           </div>
 
           <div className={styles.mobilePillarsList}>
             {PILLARS_NODES.map((node) => {
-              const IconComp = node.icon;
+              const IconComponent = node.icon;
               return (
                 <div
-                  key={node.id}
+                  key={`mobile-${node.id}`}
                   className={styles.mobilePillarCard}
                   onClick={() => navigate(node.path)}
                 >
                   <div
                     className={styles.mobileNodeIcon}
-                    style={{ backgroundColor: node.themeLight, color: node.themeColor }}
+                    style={{ backgroundColor: node.themeLight, borderColor: node.themeBorder }}
                   >
-                    <IconComp size={18} />
+                    <IconComponent size={20} color={node.themeColor} />
                   </div>
                   <div className={styles.mobileNodeBody}>
                     <div className={styles.mobileNodeTop}>
-                      <Badge variant="ai">
+                      <span className={styles.nodeNumber} style={{ color: node.themeColor }}>
                         {node.number}
-                      </Badge>
+                      </span>
                       <h4 className={styles.mobileNodeTitle}>{node.title}</h4>
                     </div>
                     <p className={styles.mobileNodeDesc}>{node.purpose}</p>
                   </div>
-                  <ArrowRight size={14} className={styles.mobileArrow} />
+                  <ArrowRight size={16} className={styles.mobileArrow} />
                 </div>
               );
             })}
