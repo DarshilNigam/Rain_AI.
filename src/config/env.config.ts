@@ -68,8 +68,15 @@ const resolveApiBaseUrl = (): string => {
   if (envUrl && envUrl.startsWith('http')) {
     return envUrl.replace(/\/+$/, '');
   }
-  // In development browser, connect to backend port 8000 matching current hostname
+  if (envUrl && envUrl.startsWith('/')) {
+    return envUrl.replace(/\/+$/, '');
+  }
+  // In development browser, connect to proxy /api or backend on 127.0.0.1:8000
   if (typeof window !== 'undefined' && window.location) {
+    // If running on dev server (localhost:3000 / localhost:5173), relative /api is proxied by Vite
+    if (window.location.port === '3000' || window.location.port === '5173') {
+      return '/api';
+    }
     const host = window.location.hostname || '127.0.0.1';
     return `http://${host}:8000/api`;
   }
@@ -86,6 +93,36 @@ export const APP_CONFIG: AppConfig = {
   isDevelopment: isDev,
   sessionDurationMs: 24 * 60 * 60 * 1000, // 24-hour rolling session
 };
+
+/**
+ * Resilient API fetch wrapper with automated proxy/direct fallback.
+ * Prevents "Failed to fetch" on cross-origin / IPv6 localhost mismatches.
+ */
+export async function apiFetch(endpoint: string, init?: RequestInit): Promise<Response> {
+  const cleanEndpoint = endpoint.startsWith('/') ? endpoint : `/${endpoint}`;
+  const base = (APP_CONFIG.apiBaseUrl || '/api').replace(/\/+$/, '');
+  const primaryUrl = `${base}${cleanEndpoint}`;
+
+  // Fallback URL: if primary was relative (/api), try direct http://127.0.0.1:8000/api; if direct, try /api
+  const isRelative = base.startsWith('/');
+  const fallbackBase = isRelative ? 'http://127.0.0.1:8000/api' : '/api';
+  const fallbackUrl = `${fallbackBase}${cleanEndpoint}`;
+
+  try {
+    const resp = await fetch(primaryUrl, init);
+    return resp;
+  } catch (err: unknown) {
+    if (typeof window !== 'undefined') {
+      try {
+        const fallbackResp = await fetch(fallbackUrl, init);
+        return fallbackResp;
+      } catch {
+        // rethrow original error
+      }
+    }
+    throw err;
+  }
+}
 
 /**
  * Sanitizes and formats error messages safely for production end-users.

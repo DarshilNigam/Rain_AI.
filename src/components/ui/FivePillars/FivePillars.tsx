@@ -32,6 +32,7 @@ export interface PillarSpec {
   readonly tagline: string;
   readonly purpose: string;
   readonly explanation: string;
+  readonly actionLabel: string;
   readonly badgeVariant: 'ai' | 'weather' | 'caution' | 'safe' | 'highRisk';
   readonly icon: LucideIcon;
   readonly theme: {
@@ -58,6 +59,7 @@ export const FIVE_PILLARS_DATA: readonly PillarSpec[] = [
     purpose: "Understand what's happening.",
     explanation:
       'Multi-horizon rainfall forecasting engine decoding complex atmospheric drivers into transparent SHAP attributions, probability bounds, and meteorological explanations.',
+    actionLabel: 'Open Intelligence',
     badgeVariant: 'ai',
     icon: Brain,
     theme: {
@@ -85,6 +87,7 @@ export const FIVE_PILLARS_DATA: readonly PillarSpec[] = [
     purpose: "Understand where it's happening.",
     explanation:
       'High-resolution spatial risk modeling that maps terrain elevation contours, catchment hydrology run-offs, dynamic inundation footprints, and live storm hotspots.',
+    actionLabel: 'Explore Risk Map',
     badgeVariant: 'weather',
     icon: Map,
     theme: {
@@ -111,6 +114,7 @@ export const FIVE_PILLARS_DATA: readonly PillarSpec[] = [
     purpose: 'Know how to respond.',
     explanation:
       'Standardized early warning broadcast protocols aligning with civil defense guidelines to direct evacuations, monitor flood surges, and locate accessible safe havens.',
+    actionLabel: 'Open Emergency',
     badgeVariant: 'caution',
     icon: AlertTriangle,
     theme: {
@@ -137,6 +141,7 @@ export const FIVE_PILLARS_DATA: readonly PillarSpec[] = [
     purpose: 'Connect help with affected communities.',
     explanation:
       'Civic resource matching system verifying emergency supply shortages (clean water, medical kits, sandbags) and synchronizing NGO relief logistics with municipal aid.',
+    actionLabel: 'Find Relief',
     badgeVariant: 'safe',
     icon: HeartHandshake,
     theme: {
@@ -163,6 +168,7 @@ export const FIVE_PILLARS_DATA: readonly PillarSpec[] = [
     purpose: 'Help agriculture adapt.',
     explanation:
       'Hyper-localized agronomic guidance evaluating soil saturation limits, crop growth vulnerability stages, and precision field drainage schedules to protect yields.',
+    actionLabel: 'Open Farmer Hub',
     badgeVariant: 'safe',
     icon: Sprout,
     theme: {
@@ -491,7 +497,7 @@ export const FivePillars: React.FC<FivePillarsProps> = ({ onOpenAuth }) => {
 
         {/* Key Capabilities */}
         <div className={styles.capabilitiesSection}>
-          <span className={styles.capabilitiesHeading}>{t('pillars.keyCapabilities')}</span>
+          <span className={styles.capabilitiesHeading}>{t('pillars.keyCapabilities', 'Key Architectural Capabilities')}</span>
           <div className={styles.capabilitiesGrid}>
             {activePillar.capabilities.map((cap) => {
               const CapIcon = cap.icon;
@@ -518,7 +524,7 @@ export const FivePillars: React.FC<FivePillarsProps> = ({ onOpenAuth }) => {
             style={{ backgroundColor: activePillar.theme.primary }}
             onClick={() => handleAccessPillar(activePillar.route)}
           >
-            {t('pillars.accessBtn', { name: activePillar.shortName })}
+            {activePillar.actionLabel}
           </Button>
         </div>
       </div>

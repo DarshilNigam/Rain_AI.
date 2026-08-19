@@ -162,4 +162,13 @@ export const hi: TranslationDict = {
   'auth_reset_btn': 'पासवर्ड अपडेट करें और साइन इन करें',
   'auth_unverified_notice': 'आपके खाते को अभी सत्यापन की आवश्यकता है।',
   'auth_verify_now': 'अभी सत्यापित करें',
+
+  // Five Pillars Section
+  'pillars.keyCapabilities': 'मुख्य वास्तुशिल्प क्षमताएं',
+  'pillars.accessBtn': '{name} देखें',
+  'pillars.openIntelligence': 'इंटेलिजेंस खोलें',
+  'pillars.exploreRiskMap': 'जोखिम मानचित्र देखें',
+  'pillars.openEmergency': 'आपातकालीन प्रणाली खोलें',
+  'pillars.findRelief': 'राहत खोजें',
+  'pillars.openFarmerHub': 'किसान हब खोलें',
 };

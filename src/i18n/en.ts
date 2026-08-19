@@ -162,4 +162,13 @@ export const en: TranslationDict = {
   'auth_reset_btn': 'Update Password & Sign In',
   'auth_unverified_notice': 'Your account still needs verification.',
   'auth_verify_now': 'Verify now',
+
+  // Five Pillars Section
+  'pillars.keyCapabilities': 'Key Architectural Capabilities',
+  'pillars.accessBtn': 'Explore {name}',
+  'pillars.openIntelligence': 'Open Intelligence',
+  'pillars.exploreRiskMap': 'Explore Risk Map',
+  'pillars.openEmergency': 'Open Emergency',
+  'pillars.findRelief': 'Find Relief',
+  'pillars.openFarmerHub': 'Open Farmer Hub',
 };

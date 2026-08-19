@@ -22,7 +22,7 @@ import {
 import { UserLocation, DEFAULT_USER_LOCATION } from '../types/location';
 import { CryptoService } from './crypto.service';
 import { otpService, OTPDeliveryResult } from './otp.service';
-import { APP_CONFIG } from '../config/env.config';
+import { APP_CONFIG, apiFetch } from '../config/env.config';
 
 const STORAGE_USERS_KEY = 'rai_registered_users_v3_secure';
 const STORAGE_SESSION_KEY = 'rai_auth_session_v3_secure';
@@ -246,8 +246,7 @@ class AuthService {
     try {
       const token = this.getSessionToken();
       if (token) {
-        const baseApi = (APP_CONFIG.apiBaseUrl || 'http://127.0.0.1:8000/api').replace(/\/+$/, '');
-        fetch(`${baseApi}/auth/logout`, {
+        apiFetch('/auth/logout', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -275,8 +274,7 @@ class AuthService {
     if (!token) return null;
 
     try {
-      const baseApi = (APP_CONFIG.apiBaseUrl || 'http://127.0.0.1:8000/api').replace(/\/+$/, '');
-      const resp = await fetch(`${baseApi}/auth/session`, {
+      const resp = await apiFetch('/auth/session', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -365,9 +363,9 @@ class AuthService {
     }
 
     // Try FastAPI Backend first
+    let backendNetworkError = false;
     try {
-      const baseApi = (APP_CONFIG.apiBaseUrl || 'http://127.0.0.1:8000/api').replace(/\/+$/, '');
-      const resp = await fetch(`${baseApi}/auth/login`, {
+      const resp = await apiFetch('/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),
@@ -403,6 +401,11 @@ class AuthService {
           this.saveSession(user, rememberMe, data.sessionToken);
           return user;
         }
+      } else if (resp.status === 401) {
+        const errData = (await resp.json().catch(() => ({}))) as { detail?: string };
+        validAttempts.push(now);
+        this.failedLoginAttempts.set(email, validAttempts);
+        throw new Error(errData.detail || "Invalid email or password. Please verify your credentials.");
       } else if (resp.status === 403) {
         await resp.json().catch(() => ({}));
         throw new UnverifiedAccountError(
@@ -417,12 +420,22 @@ class AuthService {
           errData.detail || 'Account locked for 15 minutes due to multiple failed login attempts.',
           lockUntil
         );
+      } else {
+        const errData = (await resp.json().catch(() => ({}))) as { detail?: string };
+        throw new Error(errData.detail || 'Authentication failed. Please try again.');
       }
     } catch (backendErr: unknown) {
       if (backendErr instanceof UnverifiedAccountError || backendErr instanceof AccountLockedError) {
         throw backendErr;
       }
-      // Continue to local verification fallback
+      if (backendErr instanceof Error && !backendErr.message.includes('Failed to fetch') && !backendErr.message.includes('NetworkError')) {
+        throw backendErr;
+      }
+      backendNetworkError = true;
+    }
+
+    if (!backendNetworkError) {
+      throw new Error("Invalid email or password. Please verify your credentials.");
     }
 
     const users = this.getStoredUsers();
@@ -519,39 +532,44 @@ class AuthService {
       throw new Error('Passwords do not match. Please verify.');
     }
 
-    if (APP_CONFIG.otpProvider === 'API_EMAIL') {
-      const baseApi = (APP_CONFIG.apiBaseUrl || 'http://127.0.0.1:8000/api').replace(/\/+$/, '');
-      const resp = await fetch(`${baseApi}/auth/register/initiate`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          fullName,
-          email,
-          password,
-          role: 'user',
-          locationCity: location.city,
-          locationState: location.region,
-          locationLat: location.lat,
-          locationLng: location.lng,
-        }),
-      });
+    if (APP_CONFIG.otpProvider === 'API_EMAIL' || APP_CONFIG.apiBaseUrl) {
+      try {
+        const resp = await apiFetch('/auth/register/initiate', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            fullName,
+            email,
+            password,
+            role: 'user',
+            locationCity: location.city,
+            locationState: location.region,
+            locationLat: location.lat,
+            locationLng: location.lng,
+          }),
+        });
 
-      if (!resp.ok) {
-        const errData = await resp.json().catch(() => ({}));
-        throw new Error(errData.detail || 'Registration failed.');
+        if (!resp.ok) {
+          const errData = (await resp.json().catch(() => ({}))) as { detail?: string };
+          throw new Error(errData.detail || 'Registration failed.');
+        }
+
+        const data = await resp.json();
+        return {
+          challenge: data.challenge,
+          delivery: {
+            success: true,
+            provider: 'API_EMAIL',
+            message: `Verification code dispatched to ${data.challenge.maskedRecipient}.`,
+            maskedRecipient: data.challenge.maskedRecipient,
+          },
+          tempUser: data.user,
+        };
+      } catch (err: unknown) {
+        if (err instanceof Error && !err.message.includes('Failed to fetch') && !err.message.includes('NetworkError')) {
+          throw err;
+        }
       }
-
-      const data = await resp.json();
-      return {
-        challenge: data.challenge,
-        delivery: {
-          success: true,
-          provider: 'API_EMAIL',
-          message: `Verification code dispatched to ${data.challenge.maskedRecipient}.`,
-          maskedRecipient: data.challenge.maskedRecipient,
-        },
-        tempUser: data.user,
-      };
     }
 
     const users = this.getStoredUsers();
@@ -634,41 +652,46 @@ class AuthService {
       throw new Error('Please specify your farm location coordinates or address.');
     }
 
-    if (APP_CONFIG.otpProvider === 'API_EMAIL') {
-      const baseApi = (APP_CONFIG.apiBaseUrl || 'http://127.0.0.1:8000/api').replace(/\/+$/, '');
-      const resp = await fetch(`${baseApi}/auth/register/initiate`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          fullName,
-          email,
-          password,
-          role: 'farmer',
-          villageArea,
-          district,
-          state: 'Maharashtra',
-          farmLat: payload.farmLocation.lat,
-          farmLng: payload.farmLocation.lng,
-          addressLabel: payload.farmLocation.addressLabel,
-        }),
-      });
+    if (APP_CONFIG.otpProvider === 'API_EMAIL' || APP_CONFIG.apiBaseUrl) {
+      try {
+        const resp = await apiFetch('/auth/register/initiate', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            fullName,
+            email,
+            password,
+            role: 'farmer',
+            villageArea,
+            district,
+            state: 'Maharashtra',
+            farmLat: payload.farmLocation.lat,
+            farmLng: payload.farmLocation.lng,
+            addressLabel: payload.farmLocation.addressLabel,
+          }),
+        });
 
-      if (!resp.ok) {
-        const errData = await resp.json().catch(() => ({}));
-        throw new Error(errData.detail || 'Farmer registration failed.');
+        if (!resp.ok) {
+          const errData = (await resp.json().catch(() => ({}))) as { detail?: string };
+          throw new Error(errData.detail || 'Farmer registration failed.');
+        }
+
+        const data = await resp.json();
+        return {
+          challenge: data.challenge,
+          delivery: {
+            success: true,
+            provider: 'API_EMAIL',
+            message: `Verification code dispatched to ${data.challenge.maskedRecipient}.`,
+            maskedRecipient: data.challenge.maskedRecipient,
+          },
+          tempUser: data.user,
+        };
+      } catch (err: unknown) {
+        if (err instanceof Error && !err.message.includes('Failed to fetch') && !err.message.includes('NetworkError')) {
+          throw err;
+        }
       }
-
-      const data = await resp.json();
-      return {
-        challenge: data.challenge,
-        delivery: {
-          success: true,
-          provider: 'API_EMAIL',
-          message: `Verification code dispatched to ${data.challenge.maskedRecipient}.`,
-          maskedRecipient: data.challenge.maskedRecipient,
-        },
-        tempUser: data.user,
-      };
     }
 
     const users = this.getStoredUsers();
@@ -693,6 +716,14 @@ class AuthService {
       villageArea,
       district,
       farmLocation: payload.farmLocation,
+      location: {
+        city: villageArea,
+        region: district,
+        lat: payload.farmLocation.lat,
+        lng: payload.farmLocation.lng,
+        country: 'India',
+        formattedAddress: payload.farmLocation.addressLabel,
+      },
       createdAt: new Date().toISOString(),
     };
 
@@ -714,7 +745,7 @@ class AuthService {
   }
 
   /**
-   * Verifies OTP challenge, transitions account to VERIFIED, and establishes active session.
+   * Verifies registration OTP and transitions user status to VERIFIED.
    */
   public async verifyRegistrationOTP(challengeId: string, code: string): Promise<User> {
     await new Promise((resolve) => setTimeout(resolve, 350));
@@ -736,7 +767,7 @@ class AuthService {
         farmLocation: verification.user.farmLocation,
         createdAt: verification.user.createdAt || new Date().toISOString(),
       };
-      this.saveSession(verifiedUser);
+      this.saveSession(verifiedUser, false, verification.sessionToken);
       return verifiedUser;
     }
 
@@ -768,33 +799,6 @@ class AuthService {
     purpose: 'REGISTRATION' | 'LOGIN_VERIFICATION' | 'PASSWORD_RESET'
   ): Promise<{ challenge: OTPChallenge; delivery: OTPDeliveryResult }> {
     const cleanEmail = (email || '').trim().toLowerCase();
-    const users = this.getStoredUsers();
-    const found = users.find((u) => u.email.toLowerCase() === cleanEmail);
-
-    if (!found && purpose !== 'REGISTRATION') {
-      // Account enumeration protection: simulate success delay without revealing non-existence
-      await new Promise((resolve) => setTimeout(resolve, 400));
-      return {
-        challenge: {
-          challengeId: `dummy-${Date.now()}`,
-          identifier: cleanEmail,
-          purpose,
-          createdAt: Date.now(),
-          expiresAt: Date.now() + 5 * 60 * 1000,
-          attemptsRemaining: 5,
-          resendAvailableAt: Date.now() + 60 * 1000,
-          isExpired: false,
-          maskedIdentifier: CryptoService.maskIdentifier(cleanEmail),
-        },
-        delivery: {
-          success: true,
-          provider: 'DEVELOPMENT_SIMULATOR',
-          message: `If an account exists for ${CryptoService.maskIdentifier(cleanEmail)}, a verification code has been dispatched.`,
-          maskedRecipient: CryptoService.maskIdentifier(cleanEmail),
-        },
-      };
-    }
-
     return await otpService.createChallenge(cleanEmail, purpose);
   }
 
@@ -808,9 +812,6 @@ class AuthService {
     const newPassword = (payload.newPassword || '').trim();
     const confirmNewPassword = (payload.confirmNewPassword || '').trim();
 
-    // Verify OTP challenge first
-    await otpService.verifyCode(payload.challengeId, payload.code);
-
     const policyCheck = CryptoService.evaluatePasswordPolicy(newPassword);
     if (!policyCheck.isValid) {
       throw new Error(policyCheck.feedbackMessages[0] || 'Password does not meet the security requirements.');
@@ -819,6 +820,34 @@ class AuthService {
     if (newPassword !== confirmNewPassword) {
       throw new Error('Passwords do not match. Please verify.');
     }
+
+    // Try backend password reset endpoint first
+    try {
+      const resp = await apiFetch('/auth/password-reset', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email,
+          challengeId: payload.challengeId,
+          code: payload.code,
+          newPassword,
+        }),
+      });
+
+      if (resp.ok) {
+        this.clearSession();
+        return true;
+      }
+      const errData = (await resp.json().catch(() => ({}))) as { detail?: string };
+      throw new Error(errData.detail || 'Password reset failed.');
+    } catch (err: unknown) {
+      if (err instanceof Error && !err.message.includes('Failed to fetch') && !err.message.includes('NetworkError')) {
+        throw err;
+      }
+    }
+
+    // Offline / local fallback
+    await otpService.verifyCode(payload.challengeId, payload.code);
 
     const users = this.getStoredUsers();
     const index = users.findIndex((u) => u.email.toLowerCase() === email);
@@ -844,8 +873,7 @@ class AuthService {
   public async updateUserLocation(userId: string, location: UserLocation): Promise<User> {
     const token = this.getSessionToken();
     if (token) {
-      const baseApi = (APP_CONFIG.apiBaseUrl || 'http://127.0.0.1:8000/api').replace(/\/+$/, '');
-      fetch(`${baseApi}/user/location`, {
+      apiFetch('/user/location', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

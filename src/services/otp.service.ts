@@ -12,7 +12,7 @@
 import { OTPChallenge, User } from '../types/auth';
 import { CryptoService } from './crypto.service';
 import { getActiveOtpProvider, IOtpProvider, OTPDeliveryResult } from './otp.provider';
-import { APP_CONFIG } from '../config/env.config';
+import { APP_CONFIG, apiFetch } from '../config/env.config';
 
 const OTP_EXPIRY_MS = 5 * 60 * 1000; // 5 minutes
 const RESEND_COOLDOWN_MS = 60 * 1000; // 60 seconds
@@ -83,10 +83,8 @@ class OTPService {
 
     // 1. Backend REST API Mode (API_EMAIL)
     if (this.provider.providerType === 'API_EMAIL' || APP_CONFIG.otpProvider === 'API_EMAIL') {
-      const baseApi = (APP_CONFIG.apiBaseUrl || 'http://127.0.0.1:8000/api').replace(/\/+$/, '');
-      const apiUrl = `${baseApi}/auth/otp/send`;
       try {
-        const resp = await fetch(apiUrl, {
+        const resp = await apiFetch('/auth/otp/send', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ email: cleanId, purpose, pendingData }),
@@ -122,7 +120,7 @@ class OTPService {
       } catch (err: unknown) {
         if (err instanceof Error) {
           if (err.message.includes('Failed to fetch') || err.message.includes('NetworkError')) {
-            throw new Error(`Unable to reach R.A.I. Authentication Server at ${apiUrl}. Please ensure the FastAPI backend is running on port 8000.`);
+            throw new Error('Unable to reach R.A.I. Authentication Server. Please ensure the backend is running.');
           }
           throw err;
         }
@@ -192,10 +190,8 @@ class OTPService {
   ): Promise<{ challenge: OTPChallenge; delivery: OTPDeliveryResult }> {
     // 1. Backend REST API Mode (API_EMAIL)
     if (this.provider.providerType === 'API_EMAIL' || APP_CONFIG.otpProvider === 'API_EMAIL') {
-      const baseApi = (APP_CONFIG.apiBaseUrl || 'http://127.0.0.1:8000/api').replace(/\/+$/, '');
-      const apiUrl = `${baseApi}/auth/otp/resend`;
       try {
-        const resp = await fetch(apiUrl, {
+        const resp = await apiFetch('/auth/otp/resend', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ challengeId }),
@@ -231,7 +227,7 @@ class OTPService {
       } catch (err: unknown) {
         if (err instanceof Error) {
           if (err.message.includes('Failed to fetch') || err.message.includes('NetworkError')) {
-            throw new Error(`Unable to reach R.A.I. Authentication Server at ${apiUrl}. Please ensure the FastAPI backend is running.`);
+            throw new Error('Unable to reach R.A.I. Authentication Server. Please ensure the backend is running.');
           }
           throw err;
         }
@@ -278,10 +274,8 @@ class OTPService {
 
     // 1. Backend REST API Mode (API_EMAIL)
     if (this.provider.providerType === 'API_EMAIL' || APP_CONFIG.otpProvider === 'API_EMAIL') {
-      const baseApi = (APP_CONFIG.apiBaseUrl || 'http://127.0.0.1:8000/api').replace(/\/+$/, '');
-      const apiUrl = `${baseApi}/auth/otp/verify`;
       try {
-        const resp = await fetch(apiUrl, {
+        const resp = await apiFetch('/auth/otp/verify', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ challengeId, code: cleanInput }),
@@ -304,7 +298,7 @@ class OTPService {
       } catch (err: unknown) {
         if (err instanceof Error) {
           if (err.message.includes('Failed to fetch') || err.message.includes('NetworkError')) {
-            throw new Error(`Unable to reach R.A.I. Authentication Server at ${apiUrl}. Please ensure the FastAPI backend is running.`);
+            throw new Error('Unable to reach R.A.I. Authentication Server. Please ensure the backend is running.');
           }
           throw err;
         }

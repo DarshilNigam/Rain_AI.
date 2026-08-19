@@ -186,25 +186,31 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, defaultMo
           }
         }
 
-        if (minDistance < 0.5) {
+        if (minDistance < 0.6) {
           setSelectedUserCity({ ...bestMatch, lat, lng });
         } else {
           setSelectedUserCity({
-            city: `Local Node (${lat.toFixed(2)}°N)`,
-            region: 'Regional Catchment',
+            city: `GPS Location (${lat.toFixed(2)}°N, ${lng.toFixed(2)}°E)`,
+            region: bestMatch.region || 'Regional Catchment',
             country: 'India',
             lat,
             lng,
-            formattedAddress: `Local Coordinates: [${lat}° N, ${lng}° E]`,
+            formattedAddress: `Current Location: [${lat}° N, ${lng}° E]`,
           });
         }
         setIsLocating(false);
       },
-      () => {
+      (err) => {
         setIsLocating(false);
-        setSelectedUserCity(DEFAULT_USER_LOCATION);
+        let msg = 'Unable to detect location. You can select your city manually from the search box.';
+        if (err.code === 1) {
+          msg = 'Location permission was denied. Please allow location access or select your city manually below.';
+        } else if (err.code === 3) {
+          msg = 'Location request timed out. Please try again or select your city manually.';
+        }
+        setFormError(msg);
       },
-      { timeout: 8000 }
+      { timeout: 10000, enableHighAccuracy: true }
     );
   };
 
@@ -225,16 +231,31 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, defaultMo
         setFarmCoords({ lat, lng });
         const generatedLabel = `GPS: [${lat}° N, ${lng}° E] Catchment Area`;
         setFarmLocationLabel(generatedLabel);
-        if (!villageArea) setVillageArea('Detected Local Agro Basin');
-        if (!district) setDistrict('Agricultural District');
+
+        let bestMatch: UserLocation = PRESET_CITIES[0]!;
+        let minDistance = Infinity;
+        for (const city of PRESET_CITIES) {
+          const dist = Math.hypot(city.lat - lat, city.lng - lng);
+          if (dist < minDistance) {
+            minDistance = dist;
+            bestMatch = city;
+          }
+        }
+        if (!villageArea) setVillageArea(bestMatch.city);
+        if (!district) setDistrict(bestMatch.region);
         setIsLocating(false);
       },
-      () => {
+      (err) => {
         setIsLocating(false);
-        setFarmCoords({ lat: 18.5204, lng: 73.8567 });
-        setFarmLocationLabel('Western Ghats Catchment Zone (18.52° N, 73.85° E)');
+        let msg = 'Unable to detect farm coordinates. Please enter your village/district manually.';
+        if (err.code === 1) {
+          msg = 'Location permission was denied. Please enter your farm coordinates/village manually below.';
+        } else if (err.code === 3) {
+          msg = 'Location request timed out. Please try again or enter your farm coordinates manually.';
+        }
+        setFormError(msg);
       },
-      { timeout: 8000 }
+      { timeout: 10000, enableHighAccuracy: true }
     );
   };
 

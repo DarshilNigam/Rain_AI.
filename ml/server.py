@@ -609,11 +609,12 @@ def verify_otp_endpoint(req: VerifyOtpRequest):
         expires_at = None
         
         if user:
-            db_client.upsert_user({
+            updated_user = {
                 **user,
                 "verification_status": "VERIFIED",
                 "email_verified_at": now.isoformat(),
-            })
+            }
+            db_client.upsert_user(updated_user)
             
             # Create session in database
             session_token = secrets.token_hex(32)
@@ -629,16 +630,7 @@ def verify_otp_endpoint(req: VerifyOtpRequest):
                 "verified": True,
                 "sessionToken": session_token,
                 "expiresAt": expires_at,
-                "user": {
-                    "id": user["id"],
-                    "email": user["email"],
-                    "fullName": user["full_name"],
-                    "role": user["role"],
-                    "verificationStatus": "VERIFIED",
-                    "emailVerifiedAt": now.isoformat(),
-                    "villageArea": profile.get("village_area") if profile else user.get("location_city"),
-                    "district": profile.get("district") if profile else user.get("location_state"),
-                }
+                "user": _format_client_user(updated_user, profile)
             }
         
         return result
