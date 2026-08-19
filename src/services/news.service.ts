@@ -43,7 +43,8 @@ class NewsService {
     }
 
     try {
-      const endpoint = `/news/weather?city=${encodeURIComponent(cleanCity)}&state=${encodeURIComponent(cleanState)}&limit=${limit}`;
+      const forceParam = forceRefresh ? '&force=true' : '';
+      const endpoint = `/news/weather?city=${encodeURIComponent(cleanCity)}&state=${encodeURIComponent(cleanState)}&limit=${limit}${forceParam}`;
       const resp = await apiFetch(endpoint);
 
       if (!resp.ok) {
@@ -51,7 +52,13 @@ class NewsService {
       }
 
       const data: NewsApiResponse = await resp.json();
-      const articles = [...(data.articles || [])];
+      // Client-side safety filter: ensure relativeTime is strictly valid and not older than 24h
+      const articles = (data.articles || []).filter((art) => {
+        if (!art || !art.title || !art.relativeTime) return false;
+        // Never allow 'd ago' or 'days ago'
+        if (art.relativeTime.includes('d ago') || art.relativeTime.includes('days ago')) return false;
+        return true;
+      });
 
       this.cache.set(cacheKey, {
         articles,

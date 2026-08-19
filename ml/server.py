@@ -420,13 +420,14 @@ def update_user_location_endpoint(req: LocationUpdateRequest, request: Request):
 def get_weather_news_endpoint(
     city: str = Query("Kanpur", description="City name for localized weather headlines"),
     state: str = Query("Uttar Pradesh", description="State or province name"),
-    limit: int = Query(5, ge=1, le=20, description="Max news articles to return")
+    limit: int = Query(5, ge=1, le=20, description="Max news articles to return"),
+    force: bool = Query(False, description="Bypass cache and force fetch fresh live news")
 ):
     """
     Retrieves real-time localized rainfall, flood, monsoon, and weather headlines
-    with resilient caching and deduplication.
+    strictly within the 24-hour freshness window.
     """
-    articles = news_service.get_weather_news(city=city, state=state, limit=limit)
+    articles = news_service.get_weather_news(city=city, state=state, limit=limit, force_refresh=force)
     return {
         "success": True,
         "city": city,
