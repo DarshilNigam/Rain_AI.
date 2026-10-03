@@ -5,9 +5,10 @@ model health telemetry, and NASA GPM satellite layer status.
 """
 from fastapi import FastAPI, Query, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from typing import Optional
+from typing import Optional, List
 import uvicorn
 import json
+import os
 
 from ml.src.config import METADATA_DIR
 from ml.src.predict import RaiPredictionService
@@ -18,10 +19,18 @@ app = FastAPI(
     version="1.0.0"
 )
 
+# Environment-configurable CORS
+def get_allowed_origins() -> List[str]:
+    raw = os.environ.get(
+        "ALLOWED_ORIGINS",
+        "http://localhost:3000,http://localhost:5173,http://127.0.0.1:3000,http://127.0.0.1:5173"
+    )
+    return [origin.strip() for origin in raw.split(",") if origin.strip()]
+
 # Enable CORS for frontend integration
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=get_allowed_origins(),
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
