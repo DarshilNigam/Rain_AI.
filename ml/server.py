@@ -60,18 +60,29 @@ app = FastAPI(
 def get_allowed_origins() -> List[str]:
     raw = os.environ.get(
         "ALLOWED_ORIGINS",
-        "http://localhost:3000,http://localhost:5173,http://127.0.0.1:3000,http://127.0.0.1:5173,https://rainain.in,https://www.rainain.in"
+        "http://localhost:3000,http://localhost:5173,http://127.0.0.1:3000,http://127.0.0.1:5173,https://rainain.in,https://www.rainain.in,https://rain-ai.vercel.app"
     )
     return [origin.strip() for origin in raw.split(",") if origin.strip()]
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=get_allowed_origins(),
-    allow_origin_regex=r"^https?://(localhost|127\.0\.0\.1)(:[0-9]+)?$",
+    allow_origin_regex=r"^(https?://(localhost|127\.0\.0\.1)(:[0-9]+)?|https://[a-zA-Z0-9_.-]+\.vercel\.app)$",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+@app.get("/health")
+@app.get("/api/health")
+def health_endpoint():
+    """Operational health check endpoint for Render/hosting platform probes."""
+    return {
+        "status": "healthy",
+        "service": "R.A.I. Rainfall Intelligence API",
+        "supabase": db_client.is_supabase_active,
+        "timestamp": _now_utc().isoformat()
+    }
 
 # Defensive Security Headers Middleware
 @app.middleware("http")

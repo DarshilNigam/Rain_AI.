@@ -78,7 +78,12 @@ const resolveApiBaseUrl = (): string => {
       return '/api';
     }
     const host = window.location.hostname || '127.0.0.1';
-    return `http://${host}:8000/api`;
+    const isLocal = host === 'localhost' || host === '127.0.0.1' || host === '0.0.0.0';
+    if (isLocal) {
+      return `http://${host}:8000/api`;
+    }
+    // In production on HTTPS domain without explicit VITE_API_BASE_URL, use relative /api
+    return '/api';
   }
   return 'http://127.0.0.1:8000/api';
 };

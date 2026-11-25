@@ -23,7 +23,7 @@ app = FastAPI(
 def get_allowed_origins() -> List[str]:
     raw = os.environ.get(
         "ALLOWED_ORIGINS",
-        "http://localhost:3000,http://localhost:5173,http://127.0.0.1:3000,http://127.0.0.1:5173"
+        "http://localhost:3000,http://localhost:5173,http://127.0.0.1:3000,http://127.0.0.1:5173,https://rain-ai.vercel.app,https://rainain.in,https://www.rainain.in"
     )
     return [origin.strip() for origin in raw.split(",") if origin.strip()]
 
@@ -31,10 +31,17 @@ def get_allowed_origins() -> List[str]:
 app.add_middleware(
     CORSMiddleware,
     allow_origins=get_allowed_origins(),
+    allow_origin_regex=r"^(https?://(localhost|127\.0\.0\.1)(:[0-9]+)?|https://[a-zA-Z0-9_.-]+\.vercel\.app)$",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+@app.get("/health")
+@app.get("/api/health")
+def health_endpoint():
+    """Operational health check endpoint."""
+    return {"status": "healthy", "service": "R.A.I. ML Service"}
 
 # Singleton prediction service instance
 prediction_service: Optional[RaiPredictionService] = None
